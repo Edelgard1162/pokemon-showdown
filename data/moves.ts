@@ -4390,7 +4390,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	drainpunch: {
 		num: 409,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Drain Punch",
 		pp: 10,
@@ -6789,7 +6789,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	gigadrain: {
 		num: 202,
 		accuracy: 100,
-		basePower: 75,
+		basePower: 80,
 		category: "Special",
 		name: "Giga Drain",
 		pp: 10,
@@ -16330,7 +16330,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	scald: {
 		num: 503,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 70,
 		category: "Special",
 		name: "Scald",
 		pp: 15,
@@ -18173,10 +18173,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'Spikes');
 				this.effectState.layers++;
 			},
-			onSwitchIn(pokemon) {
+			onSwitchIn(pokemon) { //FIXME
 				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
-				const damageAmounts = [0, 3, 4, 6]; // 1/8, 1/6, 1/4
-				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 24);
+				const damageAmounts = [0, (1/8), (1/6), (1/4)];
+				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp);
 			},
 		},
 		secondary: null,
@@ -18493,10 +18493,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			// this is a side condition
 			onSideStart(side) {
 				this.add('-sidestart', side, 'move: Stealth Rock');
-			},
+			}, 
 			onSwitchIn(pokemon) {
-				if (pokemon.hasItem('heavydutyboots')) return;
-				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+				// 1. Conditions preventing grounded or boots-using mons from taking rock damage were added.
+				// 2. upper limit in clamp changed from 6 to 1: this caps stealth rock at 25% damage.
+				if (pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
+				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 1); 
 				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
 			},
 		},

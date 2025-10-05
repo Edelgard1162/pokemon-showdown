@@ -10328,7 +10328,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	knockoff: {
 		num: 282,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 20,
 		category: "Physical",
 		name: "Knock Off",
 		pp: 20,
@@ -10338,7 +10338,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			const item = target.getItem();
 			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
 			if (item.id) {
-				return this.chainModify(1.5);
+				return this.chainModify(1.0);
 			}
 		},
 		onAfterHit(target, source) {

@@ -4043,7 +4043,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	misdreavus: {
 		num: 200,
 		name: "Misdreavus",
-		types: ["Ghost"],
+		types: ["Ghost", "Fairy"],
 		baseStats: { hp: 60, atk: 60, def: 60, spa: 85, spd: 85, spe: 85 },
 		abilities: { 0: "Levitate" },
 		heightm: 0.7,
@@ -7725,7 +7725,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	mismagius: {
 		num: 429,
 		name: "Mismagius",
-		types: ["Ghost"],
+		types: ["Ghost", "Fairy"],
 		baseStats: { hp: 60, atk: 60, def: 60, spa: 105, spd: 105, spe: 105 },
 		abilities: { 0: "Levitate" },
 		heightm: 0.9,
@@ -7898,7 +7898,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Spiritomb",
 		types: ["Ghost", "Dark"],
 		baseStats: { hp: 50, atk: 92, def: 108, spa: 92, spd: 108, spe: 35 },
-		abilities: { 0: "Pressure", H: "Infiltrator" },
+		abilities: { 0: "Pressure", 1: "Cursed Body",H: "Infiltrator" },
 		heightm: 1,
 		weightkg: 108,
 		color: "Purple",

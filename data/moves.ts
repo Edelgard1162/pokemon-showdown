@@ -789,7 +789,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	aurasphere: {
 		num: 396,
 		accuracy: true,
-		basePower: 80,
+		basePower: 90,
 		category: "Special",
 		name: "Aura Sphere",
 		pp: 20,

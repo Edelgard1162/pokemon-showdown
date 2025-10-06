@@ -460,14 +460,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	blaze: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Blaze boost');
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Blaze boost');
 				return this.chainModify(1.5);
 			}
@@ -3058,14 +3058,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	overgrow: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Overgrow boost');
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Overgrow boost');
 				return this.chainModify(1.5);
 			}
@@ -4274,7 +4274,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).crit) {
 				this.debug('Sniper boost');
-				return this.chainModify(1.5);
+				return this.chainModify([5448, 4096]);
 			}
 		},
 		flags: {},
@@ -4671,14 +4671,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	swarm: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Swarm boost');
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Swarm boost');
 				return this.chainModify(1.5);
 			}
@@ -4958,14 +4958,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	torrent: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Torrent boost');
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 3) {
+			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Torrent boost');
 				return this.chainModify(1.5);
 			}

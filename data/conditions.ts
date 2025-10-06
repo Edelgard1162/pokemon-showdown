@@ -10,6 +10,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			} else {
 				this.add('-status', target, 'brn');
 			}
+			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
+				target.formeChange('Shaymin', this.effect, true);
+			}
 		},
 		// Damage reduction is handled directly in the sim/battle.js damage function
 		onResidualOrder: 10,
@@ -25,6 +28,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				this.add('-status', target, 'par', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 			} else {
 				this.add('-status', target, 'par');
+			}
+			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
+				target.formeChange('Shaymin', this.effect, true);
 			}
 		},
 		onModifySpePriority: -101,
@@ -61,6 +67,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 
 			if (target.removeVolatile('nightmare')) {
 				this.add('-end', target, 'Nightmare', '[silent]');
+			}
+			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
+				target.formeChange('Shaymin', this.effect, true);
 			}
 		},
 		onBeforeMovePriority: 10,
@@ -129,6 +138,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			} else {
 				this.add('-status', target, 'psn');
 			}
+			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
+				target.formeChange('Shaymin', this.effect, true);
+			}
 		},
 		onResidualOrder: 9,
 		onResidual(pokemon) {
@@ -146,6 +158,9 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				this.add('-status', target, 'tox', '[from] ability: ' + sourceEffect.name, `[of] ${source}`);
 			} else {
 				this.add('-status', target, 'tox');
+			}
+			if (target.species.name === 'Shaymin-Sky' && target.baseSpecies.baseSpecies === 'Shaymin') {
+				target.formeChange('Shaymin', this.effect, true);
 			}
 		},
 		onSwitchIn() {

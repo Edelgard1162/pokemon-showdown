@@ -32942,6 +32942,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			powergem: ["9M"],
 			poweruppunch: ["6M"],
 			protect: ["9M", "8M", "7M", "7V", "6M", "6S5", "5M", "4M", "3M"],
+			pursuit: ["9L1","8L1"],
 			raindance: ["9M", "8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			rest: ["9M", "8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			retaliate: ["8M", "6M", "5M"],

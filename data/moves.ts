@@ -10163,20 +10163,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	kinesis: {
 		num: 134,
-		accuracy: 80,
-		basePower: 0,
-		category: "Status",
+			accuracy: 100,
+		basePower: 70,
+		category: "Special",
 		name: "Kinesis",
-		pp: 15,
+		pp: 20,
 		priority: 0,
-		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
-		boosts: {
-			accuracy: -1,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Steel') return 1;
 		},
-		secondary: null,
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
 		target: "normal",
 		type: "Psychic",
-		zMove: { boost: { evasion: 1 } },
 		contestType: "Clever",
 	},
 	kingsshield: {
@@ -17991,7 +17993,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onSwitchIn(pokemon) { //FIXM
 				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
-				const damageAmounts = [0, (1/8), (1/6), (1/4)];
+				const damageAmounts = [0, (1/12), (1/6), (1/4)];
 				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp);
 			},
 		},
@@ -20751,7 +20753,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	uturn: {
 		num: 369,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 60,
 		category: "Physical",
 		name: "U-turn",
 		pp: 20,
@@ -21005,7 +21007,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	voltswitch: {
 		num: 521,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 60,
 		category: "Special",
 		name: "Volt Switch",
 		pp: 20,

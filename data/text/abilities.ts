@@ -11,7 +11,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	aerilate: {
 		name: "Aerilate",
 		desc: "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's Normal-type moves become Flying type and have 1.2x power.",
+		shortDesc: "This Pokemon's Normal-type moves become Flying type.",
 		gen6: {
 			desc: "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			shortDesc: "This Pokemon's Normal-type moves become Flying type and have 1.3x power.",
@@ -241,7 +241,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		activate: "  [POKEMON] was swallowed by [TARGET] and became [TARGET]'s commander!",
 	},
 	competitive: {
-		name: "Competitive",
+		name: "competitive",
 		desc: "This Pokemon's Special Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
 		shortDesc: "This Pokemon's Sp. Atk is raised by 2 for each of its stats that is lowered by a foe.",
 	},
@@ -568,7 +568,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	galewings: {
 		name: "Gale Wings",
-		shortDesc: "If this Pokemon is at full HP, its Flying-type moves have their priority increased by 1.",
+		shortDesc: "If this Pokemon is at more than 1/2 HP, its Flying-type moves have their priority increased by 1.",
 		gen6: {
 			shortDesc: "This Pokemon's Flying-type moves have their priority increased by 1.",
 		},
@@ -576,7 +576,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	galvanize: {
 		name: "Galvanize",
 		desc: "This Pokemon's Normal-type moves become Electric-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's Normal-type moves become Electric type and have 1.2x power.",
+		shortDesc: "This Pokemon's Normal-type moves become Electric type.",
 	},
 	gluttony: {
 		name: "Gluttony",
@@ -812,8 +812,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	ironfist: {
 		name: "Iron Fist",
-		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.2.",
-		shortDesc: "This Pokemon's punch-based attacks have 1.2x power. Sucker Punch is not boosted.",
+		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's punch-based attacks have 1.5x power. Sucker Punch is not boosted.",
 	},
 	justified: {
 		name: "Justified",
@@ -1242,7 +1242,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	pixilate: {
 		name: "Pixilate",
 		desc: "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's Normal-type moves become Fairy type and have 1.2x power.",
+		shortDesc: "This Pokemon's Normal-type moves become Fairy type.",
 		gen6: {
 			desc: "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			shortDesc: "This Pokemon's Normal-type moves become Fairy type and have 1.3x power.",
@@ -1458,7 +1458,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	refrigerate: {
 		name: "Refrigerate",
 		desc: "This Pokemon's Normal-type moves become Ice-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
-		shortDesc: "This Pokemon's Normal-type moves become Ice type and have 1.2x power.",
+		shortDesc: "This Pokemon's Normal-type moves become Ice type.",
 		gen6: {
 			desc: "This Pokemon's Normal-type moves become Ice-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 			shortDesc: "This Pokemon's Normal-type moves become Ice type and have 1.3x power.",

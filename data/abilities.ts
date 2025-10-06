@@ -68,7 +68,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4096, 4096]);
 		},
 		flags: {},
 		name: "Aerilate",
@@ -1530,7 +1530,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	galewings: {
 		onModifyPriority(priority, pokemon, target, move) {
-			if (move?.type === 'Flying' && pokemon.hp === pokemon.maxhp) return priority + 1;
+			if (move?.type === 'Flying' && pokemon.hp === pokemon.maxhp / 2) return priority + 1;
 		},
 		flags: {},
 		name: "Gale Wings",
@@ -1551,7 +1551,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4096, 4096]);
 		},
 		flags: {},
 		name: "Galvanize",
@@ -2180,7 +2180,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['punch']) {
 				this.debug('Iron Fist boost');
-				return this.chainModify([4915, 4096]);
+				return this.chainModify([6144, 4096]);
 			}
 		},
 		flags: {},
@@ -3227,7 +3227,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4096, 4096]);
 		},
 		flags: {},
 		name: "Pixilate",
@@ -3742,7 +3742,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4096, 4096]);
 		},
 		flags: {},
 		name: "Refrigerate",

@@ -1716,9 +1716,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	snowwarning: {
 		name: "Snow Warning",
-		shortDesc: "On switch-in, this Pokemon summons Snow.",
+		shortDesc: "On switch-in, this Pokemon summons Snowstorm.",
 		gen8: {
-			shortDesc: "On switch-in, this Pokemon summons Hail.",
+			shortDesc: "On switch-in, this Pokemon summons Snowstorm.",
 		},
 	},
 	solarpower: {

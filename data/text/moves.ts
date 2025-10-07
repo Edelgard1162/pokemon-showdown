@@ -2315,8 +2315,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	freezedry: {
 		name: "Freeze-Dry",
-		desc: "Has a 10% chance to freeze the target. This move's type effectiveness against Water is changed to be super effective no matter what this move's type is.",
-		shortDesc: "10% chance to freeze. Super effective on Water.",
+		desc: "This move's type effectiveness against Water is changed to be super effective no matter what this move's type is.",
+		shortDesc: "Super effective on Water.",
 	},
 	freezeshock: {
 		name: "Freeze Shock",
@@ -2838,15 +2838,16 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			desc: "Power is equal to (25 * target's current Speed / user's current Speed) + 1, rounded down, but not more than 150. If the user's current Speed is 0, it is treated as 1 instead.",
 		},
 	},
-	hail: {
-		name: "Hail",
-		desc: "For 5 turns, the weather becomes Hail. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are an Ice type or have the Ice Body, Magic Guard, Overcoat, or Snow Cloak Abilities. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Hail.",
-		shortDesc: "For 5 turns, hail crashes down.",
+	snowstorm: {
+		name: "Snowstorm",
+		desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Slush Rush, or Snow Cloak Abilities. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snowstorm.",
+		shortDesc: "For 5 turns, a snowstorm rages. Ice: 1.5x Def.",
 		gen4: {
-			desc: "For 5 turns, the weather becomes Hail. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are an Ice type or have the Ice Body, Magic Guard, or Snow Cloak Abilities. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Hail.",
+			desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Magic Guard or Snow Cloak Abilities. During the effect, Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snowstorm.",
 		},
 		gen3: {
-			desc: "For 5 turns, the weather becomes Hail. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are an Ice type. Fails if the current weather is Hail.",
+			desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Snow Cloak Ability. Fails if the current weather is Snowstorm.",
+			shortDesc: "For 5 turns, a snowstorm rages.",
 		},
 	},
 	hammerarm: {
@@ -3468,8 +3469,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	kinesis: {
 		name: "Kinesis",
-		desc: "Lowers the target's accuracy by 1 stage.",
-		shortDesc: "Lowers the target's accuracy by 1.",
+		desc: "This move's type effectiveness against Water is changed to be super effective no matter what this move's type is.",
+		shortDesc: "Super effective on Steel.",
 	},
 	kingsshield: {
 		name: "King's Shield",
@@ -3891,7 +3892,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 
 		activate: "  [POKEMON] protected itself!",
 	},
-	maxhailstorm: {
+	maxsnowstormstorm: {
 		name: "Max Hailstorm",
 		desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Hail begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
 		shortDesc: "Base move affects power. Starts Hail.",

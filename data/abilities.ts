@@ -1284,43 +1284,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	flashfire: {
 		onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Fire') {
-				move.accuracy = true;
-				if (!target.addVolatile('flashfire')) {
+				if (!this.boost({ spa: 1 })) {
 					this.add('-immune', target, '[from] ability: Flash Fire');
 				}
 				return null;
 			}
 		},
-		onEnd(pokemon) {
-			pokemon.removeVolatile('flashfire');
-		},
-		condition: {
-			noCopy: true, // doesn't get copied by Baton Pass
-			onStart(target) {
-				this.add('-start', target, 'ability: Flash Fire');
-			},
-			onModifyAtkPriority: 5,
-			onModifyAtk(atk, attacker, defender, move) {
-				if (move.type === 'Fire' && attacker.hasAbility('flashfire')) {
-					this.debug('Flash Fire boost');
-					return this.chainModify(1.5);
+		onAnyRedirectTarget(target, source, source2, move) {
+			if (move.type !== 'Fire' || move.flags['pledgecombo']) return;
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				if (this.effectState.target !== target) {
+					this.add('-activate', this.effectState.target, 'ability: Flash Fire');
 				}
-			},
-			onModifySpAPriority: 5,
-			onModifySpA(atk, attacker, defender, move) {
-				if (move.type === 'Fire' && attacker.hasAbility('flashfire')) {
-					this.debug('Flash Fire boost');
-					return this.chainModify(1.5);
-				}
-			},
-			onEnd(target) {
-				this.add('-end', target, 'ability: Flash Fire', '[silent]');
-			},
+				return this.effectState.target;
+			}
 		},
 		flags: { breakable: 1 },
 		name: "Flash Fire",
-		rating: 3.5,
-		num: 18,
+		rating: 3,
+		num: 31,
 	},
 	flowergift: {
 		onSwitchInPriority: -2,
@@ -4301,7 +4285,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	snowwarning: {
 		onStart(source) {
-			this.field.setWeather('snowscape');
+			this.field.setWeather('hail');
 		},
 		flags: {},
 		name: "Snow Warning",

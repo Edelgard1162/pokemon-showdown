@@ -5091,8 +5091,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	ragefist: {
 		name: "Rage Fist",
-		desc: "Power is equal to 50+(X*50), where X is the total number of times the user has been hit by a damaging attack during the battle, even if the user did not lose HP from the attack. X cannot be greater than 6 and does not reset upon switching out or fainting. Each hit of a multi-hit attack is counted, but confusion damage is not counted.",
-		shortDesc: "+50 power for each time user was hit. Max 6 hits.",
+		desc: "Power is equal to 40+(X*40), where X is the total number of times the user has been hit by a damaging attack during the battle, even if the user did not lose HP from the attack. X cannot be greater than 3 and does not reset upon switching out or fainting. Each hit of a multi-hit attack is counted, but confusion damage is not counted.",
+		shortDesc: "+40 power for each time user was hit. Max 3 hits.",
 	},
 	ragepowder: {
 		name: "Rage Powder",
@@ -6238,8 +6238,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	spiritshackle: {
 		name: "Spirit Shackle",
-		desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.",
-		shortDesc: "Prevents the target from switching out.",
+		desc: "Prevents the target from switching out and has a higher chance for a critical hit. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Flip Turn, Parting Shot, Teleport, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field.",
+		shortDesc: "High Crit. Prevents the target from switching out.",
 		gen7: {
 			desc: "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
 		},

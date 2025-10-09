@@ -552,12 +552,12 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bleakwindstorm: {
 		name: "Bleakwind Storm",
 		desc: "Has a 30% chance to lower the target's Speed by 1 stage. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "30% to lower foe(s) Speed by 1. Rain: can't miss.",
+		shortDesc: "30% to lower foe(s) Speed by 1. Rain: can not miss.",
 	},
 	blizzard: {
 		name: "Blizzard",
 		desc: "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
-		shortDesc: "10% chance to freeze foe(s). Can't miss in Snow.",
+		shortDesc: "10% chance to freeze foe(s). Snow: can not miss.",
 		gen8: {
 			desc: "Has a 10% chance to freeze the target. If the weather is Hail, this move does not check accuracy.",
 			shortDesc: "10% chance to freeze foe(s). Can't miss in Hail.",
@@ -2321,7 +2321,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	freezeshock: {
 		name: "Freeze Shock",
 		desc: "Has a 30% chance to paralyze the target. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Charges turn 1. Hits turn 2. 30% paralyze.",
+		shortDesc: "Charges turn 1. Hits turn 2. 30% paralyze. Snow: no charge.",
 
 		prepare: "  [POKEMON] became cloaked in a freezing light!",
 	},
@@ -3246,7 +3246,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	iceburn: {
 		name: "Ice Burn",
 		desc: "Has a 30% chance to burn the target. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Charges turn 1. Hits turn 2. 30% burn.",
+		shortDesc: "Charges turn 1. Hits turn 2. 30% burn. Snow: no charge.",
 
 		prepare: "  [POKEMON] became cloaked in freezing air!",
 	},
@@ -5499,8 +5499,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	sandsearstorm: {
 		name: "Sandsear Storm",
-		desc: "Has a 20% chance to burn the target. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "20% chance to burn foe(s). Can't miss in rain.",
+		desc: "Has a 20% chance to burn the target. If the weather is Sandstorm, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
+		shortDesc: "20% chance to burn foe(s). Sand: can not miss.",
 	},
 	sandstorm: {
 		name: "Sandstorm",
@@ -7471,7 +7471,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	wildboltstorm: {
 		name: "Wildbolt Storm",
 		desc: "Has a 20% chance to paralyze the target. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "20% chance to paralyze foe(s). Rain: can't miss.",
+		shortDesc: "20% chance to paralyze foe(s). Rain: can not miss.",
 	},
 	wildcharge: {
 		name: "Wild Charge",

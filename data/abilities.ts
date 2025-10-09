@@ -120,7 +120,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			if (boosted) {
 				this.debug('Analytic boost');
-				return this.chainModify([5325, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		flags: {},
@@ -339,7 +339,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onAllyBasePower(basePower, attacker, defender, move) {
 			if (attacker !== this.effectState.target && move.category === 'Special') {
 				this.debug('Battery boost');
-				return this.chainModify([5325, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		flags: {},
@@ -668,7 +668,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceModifyAccuracy(accuracy) {
 			if (typeof accuracy !== 'number') return;
 			this.debug('compoundeyes - enhancing accuracy');
-			return this.chainModify([5325, 4096]);
+			return this.chainModify([5461, 4096]);
 		},
 		flags: {},
 		name: "Compound Eyes",
@@ -1282,29 +1282,45 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 138,
 	},
 	flashfire: {
-		onTryHit(target, source, move) {
+			onTryHit(target, source, move) {
 			if (target !== source && move.type === 'Fire') {
-				if (!this.boost({ spa: 1 })) {
+				move.accuracy = true;
+				if (!target.addVolatile('flashfire')) {
 					this.add('-immune', target, '[from] ability: Flash Fire');
 				}
 				return null;
 			}
 		},
-		onAnyRedirectTarget(target, source, source2, move) {
-			if (move.type !== 'Fire' || move.flags['pledgecombo']) return;
-			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
-			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
-				if (move.smartTarget) move.smartTarget = false;
-				if (this.effectState.target !== target) {
-					this.add('-activate', this.effectState.target, 'ability: Flash Fire');
+		onEnd(pokemon) {
+			pokemon.removeVolatile('flashfire');
+		},
+		condition: {
+			noCopy: true, // doesn't get copied by Baton Pass
+			onStart(target) {
+				this.add('-start', target, 'ability: Flash Fire');
+			},
+			onModifyAtkPriority: 5,
+			onModifyAtk(atk, attacker, defender, move) {
+				if (move.type === 'Fire' && attacker.hasAbility('flashfire')) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.5);
 				}
-				return this.effectState.target;
-			}
+			},
+			onModifySpAPriority: 5,
+			onModifySpA(atk, attacker, defender, move) {
+				if (move.type === 'Fire' && attacker.hasAbility('flashfire')) {
+					this.debug('Flash Fire boost');
+					return this.chainModify(1.5);
+				}
+			},
+			onEnd(target) {
+				this.add('-end', target, 'ability: Flash Fire', '[silent]');
+			},
 		},
 		flags: { breakable: 1 },
 		name: "Flash Fire",
-		rating: 3,
-		num: 31,
+		rating: 3.5,
+		num: 18,
 	},
 	flowergift: {
 		onSwitchInPriority: -2,
@@ -2164,8 +2180,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['punch']) {
 				this.debug('Iron Fist boost');
-				return this.chainModify([6144, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
+		},
+		onModifyMovePriority: 1,
+		onModifyMove(move) {
+			if (move.flags['punch']) delete move.flags['contact'];
 		},
 		flags: {},
 		name: "Iron Fist",
@@ -2916,7 +2936,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onBasePowerPriority: 23,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([5461, 4096]);
 		},
 		flags: {},
 		name: "Normalize",
@@ -3317,7 +3337,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onAllyBasePower(basePower, attacker, defender, move) {
 			if (attacker !== this.effectState.target) {
 				this.debug('Power Spot boost');
-				return this.chainModify([5325, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		flags: {},
@@ -3494,7 +3514,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['sound']) {
 				this.debug('Punk Rock boost');
-				return this.chainModify([5325, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		onSourceModifyDamage(damage, source, target, move) {
@@ -3862,7 +3882,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			if (this.field.isWeather('sandstorm')) {
 				if (move.type === 'Rock' || move.type === 'Ground' || move.type === 'Steel') {
 					this.debug('Sand Force boost');
-					return this.chainModify([5325, 4096]);
+					return this.chainModify([5461, 4096]);
 				}
 			}
 		},
@@ -4963,7 +4983,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onBasePowerPriority: 21,
 		onBasePower(basePower, attacker, defender, move) {
 			if (move.flags['contact']) {
-				return this.chainModify([5325, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		flags: {},

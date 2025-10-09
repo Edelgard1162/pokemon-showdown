@@ -813,7 +813,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	ironfist: {
 		name: "Iron Fist",
 		desc: "This Pokemon's punch-based attacks have their power multiplied by 1.33 and do not make contact.",
-		shortDesc: "This Pokemon's punch-based attacks have 1.33x power and do not make contact. Sucker Punch is not boosted.",
+		shortDesc: "This Pokemon's punch-based attacks have 1.33x power and do not make contact.",
 	},
 	justified: {
 		name: "Justified",

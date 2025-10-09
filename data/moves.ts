@@ -11812,6 +11812,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { snatch: 1, metronome: 1 },
 		boosts: {
 			atk: 1,
+			spd: 1,
 		},
 		secondary: null,
 		target: "self",
@@ -14955,9 +14956,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	ragefist: {
 		num: 889,
 		accuracy: 100,
-		basePower: 50,
+		basePower: 40,
 		basePowerCallback(pokemon) {
-			return Math.min(350, 50 + 50 * pokemon.timesAttacked);
+			return Math.min(160, 40 + 40 * pokemon.timesAttacked);
 		},
 		category: "Physical",
 		name: "Rage Fist",
@@ -18100,12 +18101,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	spiritshackle: {
 		num: 662,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Physical",
 		name: "Spirit Shackle",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
+		critRatio: 2,
 		secondary: {
 			chance: 100,
 			onHit(target, source, move) {

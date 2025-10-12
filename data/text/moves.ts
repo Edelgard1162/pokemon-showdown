@@ -1874,8 +1874,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	explosion: {
 		name: "Explosion",
-		desc: "The user faints after using this move, even if this move fails for having no target. This move is prevented from executing if any active Pokemon has the Damp Ability.",
-		shortDesc: "Hits adjacent Pokemon. The user faints.",
+		desc: "The user faints after using this move, even if this move fails for having no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+		shortDesc: "Target's Def halved during damage. User faints.",
 		gen4: {
 			desc: "The user faints after using this move, unless this move has no target. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
 			shortDesc: "Target's Def halved during damage. User faints.",

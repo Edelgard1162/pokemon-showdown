@@ -19,8 +19,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	aftermath: {
 		name: "Aftermath",
-		desc: "If this Pokemon is knocked out with a contact move, that move's user loses 1/4 of its maximum HP, rounded down. This effect is prevented if the move's user has the Magic Guard Ability or if any active Pokemon has the Damp Ability.",
-		shortDesc: "If this Pokemon is KOed with a contact move, that move's user loses 1/4 its max HP.",
+		desc: "If this Pokemon is knocked out with a contact move, that move's user loses 1/2 of its maximum HP, rounded down. This effect is prevented if the move's user has the Magic Guard Ability or if any active Pokemon has the Damp Ability.",
+		shortDesc: "If this Pokemon is KOed with a contact move, that move's user loses 1/2 its max HP.",
 
 		damage: "  [POKEMON] was hurt!",
 	},
@@ -261,7 +261,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	corrosion: {
 		name: "Corrosion",
-		shortDesc: "This Pokemon can poison or badly poison a Pokemon regardless of its typing.",
+		shortDesc: "This Pokemon can hit Steel types with Poison-type moves.",
 	},
 	costar: {
 		name: "Costar",
@@ -702,8 +702,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If Snow is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
 		shortDesc: "If Snow is active, this Pokemon heals 1/16 of its max HP each turn.",
 		gen8: {
-			desc: "If Hail is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This Pokemon takes no damage from Hail.",
-			shortDesc: "If Hail is active, this Pokemon heals 1/16 of its max HP each turn; immunity to Hail.",
+			desc: "If Snowstorm is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This Pokemon takes no damage from Snowstorm.",
+			shortDesc: "If Snowstorm is active, this Pokemon heals 1/16 of its max HP each turn; immunity to Snowstorm.",
 		},
 	},
 	iceface: {
@@ -711,8 +711,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If this Pokemon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Snow begins or when Eiscue switches in while Snow is active. Confusion damage also breaks the ice face.",
 		shortDesc: "If Eiscue, the first physical hit it takes deals 0 damage. Effect is restored in Snow.",
 		gen8: {
-			desc: "If this Pokemon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Hail begins or when Eiscue switches in while Hail is active. Confusion damage also breaks the ice face.",
-			shortDesc: "If Eiscue, the first physical hit it takes deals 0 damage. This effect is restored in Hail.",
+			desc: "If this Pokemon is an Eiscue, the first physical hit it takes in battle deals 0 neutral damage. Its ice face is then broken and it changes forme to Noice Face. Eiscue regains its Ice Face forme when Snowstorm begins or when Eiscue switches in while Snowstorm is active. Confusion damage also breaks the ice face.",
+			shortDesc: "If Eiscue, the first physical hit it takes deals 0 damage. This effect is restored in Snowstorm.",
 		},
 	},
 	icescales: {
@@ -1167,12 +1167,12 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon is immune to powder moves, damage from Sandstorm, and the effects of Rage Powder and the Effect Spore Ability.",
 		shortDesc: "This Pokemon is immune to powder moves, Sandstorm damage, and Effect Spore.",
 		gen8: {
-			desc: "This Pokemon is immune to powder moves, damage from Sandstorm or Hail, and the effects of Rage Powder and the Effect Spore Ability.",
-			shortDesc: "This Pokemon is immune to powder moves, Sandstorm or Hail damage, Effect Spore.",
+			desc: "This Pokemon is immune to powder moves, damage from Sandstorm or Snowstorm, and the effects of Rage Powder and the Effect Spore Ability.",
+			shortDesc: "This Pokemon is immune to powder moves, Sandstorm or Snowstorm damage, Effect Spore.",
 		},
 		gen5: {
-			desc: "This Pokemon is immune to damage from Sandstorm or Hail.",
-			shortDesc: "This Pokemon is immune to damage from Sandstorm or Hail.",
+			desc: "This Pokemon is immune to damage from Sandstorm or Snowstorm.",
+			shortDesc: "This Pokemon is immune to damage from Sandstorm or Snowstorm.",
 		},
 	},
 	overgrow: {
@@ -1698,7 +1698,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Slush Rush",
 		shortDesc: "If Snow is active, this Pokemon's Speed is doubled.",
 		gen8: {
-			shortDesc: "If Hail is active, this Pokemon's Speed is doubled.",
+			shortDesc: "If Snowstorm is active, this Pokemon's Speed is doubled.",
 		},
 	},
 	sniper: {
@@ -1710,8 +1710,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "If Snow is active, the accuracy of moves used against this Pokemon is multiplied by 0.8.",
 		shortDesc: "If Snow is active, this Pokemon's evasiveness is 1.25x.",
 		gen8: {
-			desc: "If Hail is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Hail.",
-			shortDesc: "If Hail is active, this Pokemon's evasiveness is 1.25x; immunity to Hail.",
+			desc: "If Snowstorm is active, the accuracy of moves used against this Pokemon is multiplied by 0.8. This Pokemon takes no damage from Snowstorm.",
+			shortDesc: "If Snowstorm is active, this Pokemon's evasiveness is 1.25x; immunity to Snowstorm.",
 		},
 	},
 	snowwarning: {
@@ -1984,7 +1984,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	teravolt: {
 		name: "Teravolt",
 		desc: "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
-		shortDesc: "This Pokemon's offensive stat is 1.5x with Electric attacks. Moves and their effects ignore Abilities.",
+		shortDesc: "This Pokemon's offensive stat is 1.33x with Electric attacks. Moves and their effects ignore Abilities.",
 		gen8: {
 			desc: "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Grass Pelt, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
 		},
@@ -2100,7 +2100,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	turboblaze: {
 		name: "Turboblaze",
 		desc: "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Armor Tail, Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Earth Eater, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Good as Gold, Grass Pelt, Guard Dog, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Illuminate, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mind's Eye, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Purifying Salt, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Tera Shell, Thermal Exchange, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, Well-Baked Body, White Smoke, Wind Rider, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
-		shortDesc: "This Pokemon's offensive stat is 1.5x with Fire attacks. Moves and their effects ignore Abilities.",
+		shortDesc: "This Pokemon's offensive stat is 1.33x with Fire attacks. Moves and their effects ignore Abilities.",
 		gen8: {
 			desc: "This Pokemon's moves and their effects ignore certain Abilities of other Pokemon. The Abilities that can be negated are Aroma Veil, Aura Break, Battle Armor, Big Pecks, Bulletproof, Clear Body, Contrary, Damp, Dazzling, Disguise, Dry Skin, Filter, Flash Fire, Flower Gift, Flower Veil, Fluffy, Friend Guard, Fur Coat, Grass Pelt, Heatproof, Heavy Metal, Hyper Cutter, Ice Face, Ice Scales, Immunity, Inner Focus, Insomnia, Keen Eye, Leaf Guard, Levitate, Light Metal, Lightning Rod, Limber, Magic Bounce, Magma Armor, Marvel Scale, Mirror Armor, Motor Drive, Multiscale, Oblivious, Overcoat, Own Tempo, Pastel Veil, Punk Rock, Queenly Majesty, Sand Veil, Sap Sipper, Shell Armor, Shield Dust, Simple, Snow Cloak, Solid Rock, Soundproof, Sticky Hold, Storm Drain, Sturdy, Suction Cups, Sweet Veil, Tangled Feet, Telepathy, Thick Fat, Unaware, Vital Spirit, Volt Absorb, Water Absorb, Water Bubble, Water Veil, White Smoke, Wonder Guard, and Wonder Skin. This affects every other Pokemon on the field, whether or not it is a target of this Pokemon's move, and whether or not their Ability is beneficial to this Pokemon.",
 		},
@@ -2185,7 +2185,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	watercompaction: {
 		name: "Water Compaction",
-		shortDesc: "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+		shortDesc: "This Pokemon's Defense is raised 2 stages if hit by a Water move; Water immunity.",
 	},
 	waterveil: {
 		name: "Water Veil",

@@ -1094,7 +1094,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Grass",
 		contestType: "Cute",
 	},
 	barrier: {
@@ -1508,7 +1508,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		onModifyMove(move, pokemon, target) {
-			if (target && ['raindance', 'primordialsea'].includes(target.effectiveWeather())) {
+			if (target && ['snowstorm, snowscape'].includes(target.effectiveWeather())) {
 				move.accuracy = true;
 			}
 		},
@@ -3669,7 +3669,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	dig: {
 		num: 91,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Physical",
 		name: "Dig",
 		pp: 10,
@@ -3840,7 +3840,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	dive: {
 		num: 291,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 90,
 		category: "Physical",
 		name: "Dive",
 		pp: 10,
@@ -4296,21 +4296,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	dragonrush: {
-		num: 407,
-		accuracy: 80,
+		num: 916,
+		accuracy: 95,
 		basePower: 100,
 		category: "Physical",
 		name: "Dragon Rush",
-		pp: 10,
+		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
+		hasCrashDamage: true,
+		onMoveFail(target, source, move) {
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Dragon Rush'));
 		},
+		secondary: null,
 		target: "normal",
 		type: "Dragon",
-		contestType: "Tough",
 	},
 	dragontail: {
 		num: 525,
@@ -4344,7 +4344,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	drainpunch: {
 		num: 409,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 75,
 		category: "Physical",
 		name: "Drain Punch",
 		pp: 10,
@@ -4648,7 +4648,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === 'Electric' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
 					this.debug('electric terrain boost');
-					return this.chainModify([5325, 4096]);
+					return this.chainModify([5461, 4096]);
 				}
 			},
 			onFieldStart(field, source, effect) {
@@ -5475,22 +5475,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	firefang: {
 		num: 424,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
 		name: "Fire Fang",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
-		secondaries: [
-			{
-				chance: 10,
-				status: 'brn',
-			}, {
-				chance: 10,
-				volatileStatus: 'flinch',
-			},
-		],
+		secondary: {
+			chance: 10,
+			status: 'brn',
+		},
 		target: "normal",
 		type: "Fire",
 		contestType: "Cool",
@@ -7866,7 +7861,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	grassyglide: {
 		num: 803,
 		accuracy: 100,
-		basePower: 55,
+		basePower: 60,
 		category: "Physical",
 		name: "Grassy Glide",
 		pp: 20,
@@ -7910,7 +7905,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				}
 				if (move.type === 'Grass' && attacker.isGrounded()) {
 					this.debug('grassy terrain boost');
-					return this.chainModify([5325, 4096]);
+					return this.chainModify([5461, 4096]);
 				}
 			},
 			onFieldStart(field, source, effect) {
@@ -9587,22 +9582,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	icefang: {
 		num: 423,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
 		name: "Ice Fang",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
-		secondaries: [
-			{
-				chance: 10,
-				status: 'frz',
-			}, {
-				chance: 10,
-				volatileStatus: 'flinch',
-			},
-		],
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
 		target: "normal",
 		type: "Ice",
 		contestType: "Cool",
@@ -10156,7 +10146,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		secondary: {
 			chance: 10,
-			status: 'frz',
+			boosts: {
+				spd: -1,
+			},
 		},
 		target: "normal",
 		type: "Psychic",
@@ -10233,7 +10225,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			const item = target.getItem();
 			if (!this.singleEvent('TakeItem', item, target.itemState, target, target, move, item)) return;
 			if (item.id) {
-				return this.chainModify(1.5);
+				return this.chainModify(1.0);
 			}
 		},
 		onAfterHit(target, source) {
@@ -11219,8 +11211,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	makeitrain: {
 		num: 874,
-		accuracy: 100,
-		basePower: 120,
+		accuracy: 90,
+		basePower: 130,
 		category: "Special",
 		name: "Make It Rain",
 		pp: 5,
@@ -11228,7 +11220,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1 },
 		self: {
 			boosts: {
-				spa: -1,
+				spa: -2,
 			},
 		},
 		secondary: null,
@@ -13728,7 +13720,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	playrough: {
 		num: 583,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 90,
 		category: "Physical",
 		name: "Play Rough",
@@ -14492,7 +14484,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === 'Psychic' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
 					this.debug('psychic terrain boost');
-					return this.chainModify([5325, 4096]);
+					return this.chainModify([5461, 4096]);
 				}
 			},
 			onFieldStart(field, source, effect) {
@@ -16060,7 +16052,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		onModifyMove(move, pokemon, target) {
-			if (target && ['raindance', 'primordialsea'].includes(target.effectiveWeather())) {
+			if (target && ['sandstorm'].includes(target.effectiveWeather())) {
 				move.accuracy = true;
 			}
 		},
@@ -17567,13 +17559,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	snipeshot: {
 		num: 745,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 70,
 		category: "Special",
 		name: "Snipe Shot",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		critRatio: 2,
+		willCrit: true,
 		tracksTarget: true,
 		secondary: null,
 		target: "normal",
@@ -17913,6 +17905,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onHit(target, source, move) {
 			return target.addVolatile('trapped', source, move, 'trapper');
 		},
+		onAfterHit(target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('stickyweb');
+				}
+			}
+		},
+		onAfterSubDamage(damage, target, source, move) {
+			if (!move.hasSheerForce && source.hp) {
+				for (const side of source.side.foeSidesWithConditions()) {
+					side.addSideCondition('stickyweb');
+				}
+			}
+		},
 		secondary: null,
 		target: "normal",
 		type: "Bug",
@@ -18242,14 +18248,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cute",
 	},
 	springtidestorm: {
-		num: 831,
+		num: 846,
 		accuracy: 80,
 		basePower: 100,
 		category: "Special",
 		name: "Springtide Storm",
-		pp: 5,
+		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1, wind: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
+		onModifyMove(move, pokemon, target) {
+			if (target && ['sunnyday', 'desolateland'].includes(target.effectiveWeather())) {
+				move.accuracy = true;
+			}
+		},
 		secondary: {
 			chance: 30,
 			boosts: {
@@ -20023,22 +20034,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	thunderfang: {
 		num: 422,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 65,
 		category: "Physical",
 		name: "Thunder Fang",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1 },
-		secondaries: [
-			{
-				chance: 10,
-				status: 'par',
-			}, {
-				chance: 10,
-				volatileStatus: 'flinch',
-			},
-		],
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
 		target: "normal",
 		type: "Electric",
 		contestType: "Cool",

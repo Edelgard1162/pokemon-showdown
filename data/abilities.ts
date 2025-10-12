@@ -79,7 +79,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onDamagingHitOrder: 1,
 		onDamagingHit(damage, target, source, move) {
 			if (!target.hp && this.checkMoveMakesContact(move, source, target, true)) {
-				this.damage(source.baseMaxhp / 4, source, target);
+				this.damage(source.baseMaxhp / 2, source, target);
 			}
 		},
 		flags: {},
@@ -690,6 +690,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	corrosion: {
 		// Implemented in sim/pokemon.js:Pokemon#setStatus
+		onModifyMovePriority: -5,
+		onModifyMove(move) {
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Poison'] = true;
+			}
+		},
 		flags: {},
 		name: "Corrosion",
 		rating: 2.5,
@@ -1427,7 +1434,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			case 'primordialsea':
 				if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
 				break;
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
 				break;
@@ -1897,12 +1904,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	icebody: {
 		onWeather(target, source, effect) {
-			if (effect.id === 'hail' || effect.id === 'snowscape') {
+			if (effect.id === 'snowstorm' || effect.id === 'snowscape') {
 				this.heal(target.baseMaxhp / 16);
 			}
 		},
 		onImmunity(type, pokemon) {
-			if (type === 'hail') return false;
+			if (type === 'snowstorm') return false;
 		},
 		flags: {},
 		name: "Ice Body",
@@ -1912,7 +1919,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	iceface: {
 		onSwitchInPriority: -2,
 		onStart(pokemon) {
-			if (this.field.isWeather(['hail', 'snowscape']) && pokemon.species.id === 'eiscuenoice') {
+			if (this.field.isWeather(['snowstorm', 'snowscape']) && pokemon.species.id === 'eiscuenoice') {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);
@@ -1949,10 +1956,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		onWeatherChange(pokemon, source, sourceEffect) {
-			// snow/hail resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
+			// snow/snowstorm resuming because Cloud Nine/Air Lock ended does not trigger Ice Face
 			if ((sourceEffect as Ability)?.suppressWeather) return;
 			if (!pokemon.hp) return;
-			if (this.field.isWeather(['hail', 'snowscape']) && pokemon.species.id === 'eiscuenoice') {
+			if (this.field.isWeather(['snowstorm', 'snowscape']) && pokemon.species.id === 'eiscuenoice') {
 				this.add('-activate', pokemon, 'ability: Ice Face');
 				this.effectState.busted = false;
 				pokemon.formeChange('Eiscue', this.effect, true);
@@ -3059,7 +3066,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	overcoat: {
 		onImmunity(type, pokemon) {
-			if (type === 'sandstorm' || type === 'hail' || type === 'powder') return false;
+			if (type === 'sandstorm' || type === 'snowstorm' || type === 'powder') return false;
 		},
 		onTryHitPriority: 1,
 		onTryHit(target, source, move) {
@@ -3935,6 +3942,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onStart(source) {
 			this.field.setWeather('sandstorm');
 		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
+		},
 		flags: {},
 		name: "Sand Stream",
 		rating: 4,
@@ -4279,7 +4289,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	slushrush: {
 		onModifySpe(spe, pokemon) {
-			if (this.field.isWeather(['hail', 'snowscape'])) {
+			if (this.field.isWeather(['snowstorm', 'snowscape'])) {
 				return this.chainModify(2);
 			}
 		},
@@ -4292,7 +4302,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).crit) {
 				this.debug('Sniper boost');
-				return this.chainModify([5448, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		flags: {},
@@ -4302,12 +4312,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	snowcloak: {
 		onImmunity(type, pokemon) {
-			if (type === 'hail') return false;
+			if (type === 'snowstorm') return false;
 		},
 		onModifyAccuracyPriority: -1,
 		onModifyAccuracy(accuracy) {
 			if (typeof accuracy !== 'number') return;
-			if (this.field.isWeather(['hail', 'snowscape'])) {
+			if (this.field.isWeather(['snowstorm', 'snowscape'])) {
 				this.debug('Snow Cloak - decreasing accuracy');
 				return this.chainModify([3277, 4096]);
 			}
@@ -4319,7 +4329,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	snowwarning: {
 		onStart(source) {
-			this.field.setWeather('hail');
+			this.field.setWeather('snowstorm');
+		},
+		onImmunity(type, pokemon) {
+			if (type === 'sandstorm') return false;
 		},
 		flags: {},
 		name: "Snow Warning",
@@ -4916,14 +4929,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Electric') {
 				this.debug('Teravolt boost');
-				return this.chainModify(1.5);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (move.type === 'Electric') {
 				this.debug('Teravolt boost');
-				return this.chainModify(1.5);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		flags: {},
@@ -5154,14 +5167,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Fire') {
 				this.debug('Turboblaze boost');
-				return this.chainModify(1.5);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		onModifySpAPriority: 5,
 		onModifySpA(atk, attacker, defender, move) {
 			if (move.type === 'Fire') {
 				this.debug('Turboblaze boost');
-				return this.chainModify(1.5);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		flags: {},
@@ -5387,15 +5400,18 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 199,
 	},
 	watercompaction: {
-		onDamagingHit(damage, target, source, move) {
-			if (move.type === 'Water') {
-				this.boost({ def: 2 });
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fire') {
+				if (!this.boost({ def: 2 })) {
+					this.add('-immune', target, '[from] ability: Water Compaction');
+				}
+				return null;
 			}
 		},
-		flags: {},
+		flags: { breakable: 1 },
 		name: "Water Compaction",
-		rating: 1.5,
-		num: 195,
+		rating: 3.5,
+		num: 273,
 	},
 	waterveil: {
 		onUpdate(pokemon) {

@@ -112,7 +112,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	aurabreak: {
 		name: "Aura Break",
 		desc: "While this Pokemon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33.",
-		shortDesc: "While this Pokemon is active, the Dark Aura and Fairy Aura power modifier is 0.75x.",
+		shortDesc: "While this Pokemon is active, the Dark Aura power modifier is 0.75x.and Fairy Aura power modifier is 0.375x.",
 
 		start: "  [POKEMON] reversed all other Pok\u00E9mon's auras!",
 	},
@@ -640,11 +640,11 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	healer: {
 		name: "Healer",
-		desc: "30% chance this Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
-		shortDesc: "30% chance this Pokemon's ally has its status cured at the end of each turn.",
+		desc: "This Pokemon's ally has its non-volatile status condition cured at the end of each turn.",
+		shortDesc: "This Pokemon's ally has its status cured at the end of each turn.",
 		gen6: {
-			desc: "30% chance each of this Pokemon's adjacent allies has its non-volatile status condition cured at the end of each turn.",
-			shortDesc: "30% chance each adjacent ally has its status cured at the end of each turn.",
+			desc: "Each of this Pokemon's adjacent allies has its non-volatile status condition cured at the end of each turn.",
+			shortDesc: "Each adjacent ally has its status cured at the end of each turn.",
 		},
 	},
 	heatproof: {
@@ -1716,9 +1716,9 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	snowwarning: {
 		name: "Snow Warning",
-		shortDesc: "On switch-in, this Pokemon summons Snowstorm.",
+		shortDesc: "On switch-in, this Pokemon summons Snow.",
 		gen8: {
-			shortDesc: "On switch-in, this Pokemon summons Snowstorm.",
+			shortDesc: "On switch-in, this Pokemon summons Snow.",
 		},
 	},
 	solarpower: {

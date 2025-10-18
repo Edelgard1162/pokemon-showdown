@@ -856,7 +856,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { snatch: 1, metronome: 1 },
 		sideCondition: 'auroraveil',
 		onTry() {
-			return this.field.isWeather(['snowstorm', 'snowscape']);
+			return this.field.isWeather(['hail', 'snowscape']);
 		},
 		condition: {
 			duration: 5,
@@ -1508,7 +1508,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		onModifyMove(move, pokemon, target) {
-			if (target && ['snowstorm, snowscape'].includes(target.effectiveWeather())) {
+			if (target && ['hail, snowscape'].includes(target.effectiveWeather())) {
 				move.accuracy = true;
 			}
 		},
@@ -1531,7 +1531,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, wind: 1 },
 		onModifyMove(move) {
-			if (this.field.isWeather(['snowstorm', 'snowscape'])) move.accuracy = true;
+			if (this.field.isWeather(['hail', 'snowscape'])) move.accuracy = true;
 		},
 		secondary: {
 			chance: 10,
@@ -3422,7 +3422,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, mirror: 1, distance: 1, metronome: 1, pulse: 1 },
 		secondary: {
 			chance: 20,
-			volatileStatus: 'flinch',
+			boosts: {
+				spd: -1,
+			},
 		},
 		target: "any",
 		type: "Dark",
@@ -3692,7 +3694,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 2,
 			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'snowstorm') return false;
+				if (type === 'sandstorm' || type === 'hail') return false;
 			},
 			onInvulnerability(target, source, move) {
 				if (['earthquake', 'magnitude'].includes(move.id)) {
@@ -3867,7 +3869,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		condition: {
 			duration: 2,
 			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'snowstorm') return false;
+				if (type === 'sandstorm' || type === 'hail') return false;
 			},
 			onInvulnerability(target, source, move) {
 				if (['surf', 'whirlpool'].includes(move.id)) {
@@ -4295,18 +4297,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dragon",
 		contestType: "Cool",
 	},
-	dragonrush: {
+	dragondive: {
 		num: 916,
 		accuracy: 95,
 		basePower: 100,
 		category: "Physical",
-		name: "Dragon Rush",
+		name: "Dragon Dive",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		hasCrashDamage: true,
 		onMoveFail(target, source, move) {
-			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Dragon Rush'));
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Dragon Dive'));
 		},
 		secondary: null,
 		target: "normal",
@@ -6096,19 +6098,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	focusblast: {
 		num: 411,
-		accuracy: 70,
-		basePower: 120,
+		accuracy: 85,
+		basePower: 110,
 		category: "Special",
 		name: "Focus Blast",
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
-		secondary: {
-			chance: 10,
-			boosts: {
-				spd: -1,
-			},
-		},
 		target: "normal",
 		type: "Fighting",
 		contestType: "Cool",
@@ -6340,7 +6336,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			this.add('-prepare', attacker, move.name);
 			this.boost({ spa: 1 }, attacker, attacker, move);
-			if (['snowstorm', 'snowscape'].includes(attacker.effectiveWeather())) {
+			if (['hail', 'snowscape'].includes(attacker.effectiveWeather())) {
 				this.attrLastMove('[still]');
 				this.addMove('-anim', attacker, move.name, defender);
 				return;
@@ -8275,7 +8271,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		maxMove: { basePower: 130 },
 		contestType: "Cool",
 	},
-	snowstorm: {
+	hail: {
 		num: 258,
 		accuracy: true,
 		basePower: 0,
@@ -8284,7 +8280,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { metronome: 1 },
-		weather: 'snowstorm',
+		weather: 'hail',
 		secondary: null,
 		target: "all",
 		type: "Ice",
@@ -9298,7 +9294,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	hydropump: {
 		num: 56,
-		accuracy: 80,
+		accuracy: 85,
 		basePower: 110,
 		category: "Special",
 		name: "Hydro Pump",
@@ -9565,7 +9561,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 			this.add('-prepare', attacker, move.name);
 			this.boost({ spa: 1 }, attacker, attacker, move);
-			if (['snowstorm', 'snowscape'].includes(attacker.effectiveWeather())) {
+			if (['hail', 'snowscape'].includes(attacker.effectiveWeather())) {
 				this.attrLastMove('[still]');
 				this.addMove('-anim', attacker, move.name, defender);
 				return;
@@ -10215,7 +10211,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	knockoff: {
 		num: 282,
 		accuracy: 100,
-		basePower: 20,
+		basePower: 40,
 		category: "Physical",
 		name: "Knock Off",
 		pp: 20,
@@ -11493,7 +11489,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		self: {
 			onHit(source) {
 				if (!source.volatiles['dynamax']) return;
-				this.field.setWeather('snowstorm');
+				this.field.setWeather('hail');
 			},
 		},
 		target: "adjacentFoe",
@@ -12211,7 +12207,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			onRestart: () => null,
 			onSourceModifyDamage(damage, source, target, move) {
 				const boostedMoves = [
-					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragonrush', 'heatcrash', 'heavyslam', 'maliciousmoonsault', 'supercellslam',
+					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragondive', 'heatcrash', 'heavyslam', 'maliciousmoonsault', 'thunderdive',
 				];
 				if (boostedMoves.includes(move.id)) {
 					return this.chainModify(2);
@@ -12219,7 +12215,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			},
 			onAccuracy(accuracy, target, source, move) {
 				const boostedMoves = [
-					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragonrush', 'heatcrash', 'heavyslam', 'maliciousmoonsault', 'supercellslam',
+					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragondive', 'heatcrash', 'heavyslam', 'maliciousmoonsault', 'thunderdive',
 				];
 				if (boostedMoves.includes(move.id)) {
 					return true;
@@ -12542,18 +12538,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		onHit(pokemon) {
-			let factor = 0.5;
+			let factor = 0.667;
 			switch (pokemon.effectiveWeather()) {
 			case 'sunnyday':
 			case 'desolateland':
-				factor = 0.667;
+				factor = 0.5;
 				break;
 			case 'raindance':
 			case 'primordialsea':
 			case 'sandstorm':
-			case 'snowstorm':
+			case 'hail':
 			case 'snowscape':
-				factor = 0.25;
+				factor = 0.375;
 				break;
 			}
 			const success = !!this.heal(this.modify(pokemon.maxhp, factor));
@@ -12579,18 +12575,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
 		onHit(pokemon) {
-			let factor = 0.5;
+			let factor = 0.667;
 			switch (pokemon.effectiveWeather()) {
 			case 'sunnyday':
 			case 'desolateland':
-				factor = 0.667;
+				factor = 0.5;
 				break;
 			case 'raindance':
 			case 'primordialsea':
 			case 'sandstorm':
-			case 'snowstorm':
+			case 'hail':
 			case 'snowscape':
-				factor = 0.25;
+				factor = 0.375;
 				break;
 			}
 			const success = !!this.heal(this.modify(pokemon.maxhp, factor));
@@ -13728,7 +13724,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 30,
 			boosts: {
 				atk: -1,
 			},
@@ -14400,7 +14396,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 20,
 			boosts: {
 				spd: -1,
 			},
@@ -14528,7 +14524,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	psychocut: {
 		num: 427,
 		accuracy: 100,
-		basePower: 70,
+		basePower: 80,
 		category: "Physical",
 		name: "Psycho Cut",
 		pp: 20,
@@ -15597,7 +15593,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	rockslide: {
 		num: 157,
 		accuracy: 90,
-		basePower: 75,
+		basePower: 80,
 		category: "Physical",
 		name: "Rock Slide",
 		pp: 10,
@@ -16754,7 +16750,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onHit(pokemon) {
 			let factor = 0.5;
 			if (this.field.isWeather('sandstorm')) {
-				factor = 0.667;
+				this.boost({spd: 1}, pokemon);
 			}
 			const success = !!this.heal(this.modify(pokemon.maxhp, factor));
 			if (!success) {
@@ -17064,12 +17060,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Normal",
 		contestType: "Tough",
 	},
-	skyattack: {
+	godbird: {
 		num: 143,
 		accuracy: 90,
 		basePower: 140,
 		category: "Physical",
-		name: "Sky Attack",
+		name: "God Bird",
 		pp: 5,
 		priority: 0,
 		flags: { charge: 1, protect: 1, mirror: 1, distance: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1 },
@@ -17672,7 +17668,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'snowstorm', 'snowscape'];
+			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -17709,7 +17705,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'snowstorm', 'snowscape'];
+			const weakWeathers = ['raindance', 'primordialsea', 'sandstorm', 'hail', 'snowscape'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -18877,7 +18873,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 70,
 		category: "Physical",
-		name: "Sucker Punch",
+		name: "Surprise Attack",
 		pp: 5,
 		priority: 1,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
@@ -18924,18 +18920,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Steel",
 		contestType: "Cool",
 	},
-	supercellslam: {
+	thunderdive: {
 		num: 916,
 		accuracy: 95,
 		basePower: 100,
 		category: "Physical",
-		name: "Supercell Slam",
+		name: "Thunder Dive",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		hasCrashDamage: true,
 		onMoveFail(target, source, move) {
-			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Supercell Slam'));
+			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Thunder Dive'));
 		},
 		secondary: null,
 		target: "normal",
@@ -19236,9 +19232,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			case 'raindance':
 			case 'primordialsea':
 			case 'sandstorm':
-			case 'snowstorm':
+			case 'hail':
 			case 'snowscape':
-				factor = 0.25;
+				factor = 0.375;
 				break;
 			}
 			const success = !!this.heal(this.modify(pokemon.maxhp, factor));
@@ -20670,7 +20666,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	twineedle: {
 		num: 41,
 		accuracy: 100,
-		basePower: 25,
+		basePower: 50,
 		category: "Physical",
 		name: "Twineedle",
 		pp: 20,
@@ -21259,7 +21255,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			case 'sandstorm':
 				move.type = 'Rock';
 				break;
-			case 'snowstorm':
+			case 'hail':
 			case 'snowscape':
 				move.type = 'Ice';
 				break;
@@ -21278,7 +21274,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			case 'sandstorm':
 				move.basePower *= 2;
 				break;
-			case 'snowstorm':
+			case 'hail':
 			case 'snowscape':
 				move.basePower *= 2;
 				break;
@@ -21691,6 +21687,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1 },
+		critRatio: 2,
 		secondary: null,
 		target: "normal",
 		type: "Bug",

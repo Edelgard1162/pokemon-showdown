@@ -5631,7 +5631,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 303,
 		name: "Mawile",
 		types: ["Steel", "Fairy"],
-		baseStats: { hp: 50, atk: 125, def: 95, spa: 55, spd: 55, spe: 50 },
+		baseStats: { hp: 50, atk: 125, def: 85, spa: 55, spd: 55, spe: 50 },
 		abilities: { 0: "Hyper Cutter", 1: "Intimidate", H: "Sheer Force" },
 		heightm: 0.6,
 		weightkg: 11.5,

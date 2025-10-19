@@ -10,7 +10,7 @@ const SKIP_LASTDAMAGE = new Set([
 	'splash', 'stunspore', 'substitute', 'supersonic', 'teleport', 'thunderwave', 'toxic', 'transform',
 ]);
 
-const TWO_TURN_MOVES = ['dig', 'fly', 'razorwind', 'skullbash', 'godbird', 'solarbeam'];
+const TWO_TURN_MOVES = ['dig', 'fly', 'razorwind', 'skullbash', 'skyattack', 'solarbeam'];
 
 export const Scripts: ModdedBattleScriptsData = {
 	inherit: 'gen2',

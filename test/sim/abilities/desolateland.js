@@ -54,7 +54,7 @@ describe('Desolate Land', () => {
 		assert.sets(() => soakTarget.getTypes().join('/'), 'Water', () => battle.makeChoices('move helpinghand', 'move soak'));
 	});
 
-	it('should prevent moves and abilities from setting the weather to Sunny Day, Rain Dance, Sandstorm, or Hail', () => {
+	it('should prevent moves and abilities from setting the weather to Sunny Day, Rain Dance, Sandstorm, or Snowstorm', () => {
 		battle = common.createBattle([[
 			{ species: "Groudon", ability: 'desolateland', moves: ['helpinghand'] },
 		], [

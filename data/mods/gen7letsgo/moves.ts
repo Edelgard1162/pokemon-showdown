@@ -72,7 +72,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	godbird: {
+	skyattack: {
 		inherit: true,
 		basePower: 200,
 	},

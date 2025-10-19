@@ -61,7 +61,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			safeguard: ["7M", "5M"],
 			scratch: ["7L4"],
 			secretpower: ["7M"],
-			godbird: ["7L55"],
+			skyattack: ["7L55"],
 			skydrop: ["7M", "7L49", "5M", "5L50"],
 			snore: ["7T"],
 			solarbeam: ["7M", "5M"],

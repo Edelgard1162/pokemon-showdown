@@ -1422,7 +1422,7 @@
         "moves": ["calmmind", "hiddenpowerfire", "hypervoice", "protect", "psyshock", "wish"]
     },
     "hawlucha": {
-        "moves": ["acrobatics", "highjumpkick", "godbird", "substitute", "swordsdance"]
+        "moves": ["acrobatics", "highjumpkick", "skyattack", "substitute", "swordsdance"]
     },
     "dedenne": {
         "moves": ["protect", "recycle", "thunderbolt", "toxic"]

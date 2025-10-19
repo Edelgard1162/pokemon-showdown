@@ -700,7 +700,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			return null;
 		},
 	},
-	godbird: {
+	skyattack: {
 		inherit: true,
 		onTryMove(attacker, defender, move) {
 			if (attacker.removeVolatile('twoturnmove')) {

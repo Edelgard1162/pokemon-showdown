@@ -730,7 +730,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			return source.status !== 'slp';
 		},
 	},
-	godbird: {
+	skyattack: {
 		inherit: true,
 		critRatio: 1,
 		onPrepareHit(target, source) {

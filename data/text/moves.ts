@@ -2690,8 +2690,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Power is equal to the base move's Max Move power. If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
 		shortDesc: "Base move affects power. Ends Terrain, hazards.",
 	},
-	godbird: {
-		name: "God Bird",
+	skyattack: {
+		name: "Sky Attack",
 		desc: "Has a 30% chance to make the target flinch and a higher chance for a critical hit. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
 		shortDesc: "Charges, then hits turn 2. 30% flinch. High crit.",
 		gen3: {
@@ -3894,7 +3894,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		activate: "  [POKEMON] protected itself!",
 	},
 	maxhailstorm: {
-		name: "Max Snowstorm",
+		name: "Max Snowstorm.",
 		desc: "Power is equal to the base move's Max Move power. If this move is successful, the effect of Snow begins. This effect does not happen if the user is not Dynamaxed. If this move is used as a base move, it deals damage with a power of 0.",
 		shortDesc: "Base move affects power. Starts Snow.",
 	},
@@ -6027,7 +6027,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "For 5 turns, snow falls. Ice: 1.5x Def.",
 	},
 	snowstorm: {
-		name: "Snowstorm",
+		name: "Snowstorm.",
 		desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Slush Rush, or Snow Cloak Abilities. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
 		shortDesc: "For 5 turns, a snowstorm rages. Ice: 1.5x Def.",
 		gen4: {

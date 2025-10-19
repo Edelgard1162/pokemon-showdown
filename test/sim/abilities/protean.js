@@ -74,7 +74,7 @@ describe('Protean', () => {
 		assert(kecleon.hasType('Normal'), `Protean changed typing when a non-Fire type used Burn Up.`);
 
 		battle.makeChoices('move auroraveil', 'auto');
-		assert(kecleon.hasType('Normal'), `Protean changed typing when Aurora Veil used out of Hail.`);
+		assert(kecleon.hasType('Normal'), `Protean changed typing when Aurora Veil used out of Snowstorm`);
 
 		battle.makeChoices('move ingrain', 'auto');
 		battle.makeChoices('move magnetrise', 'auto');

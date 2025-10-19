@@ -79,7 +79,7 @@ describe(`Pressure`, () => {
 		]]);
 		battle.makeChoices();
 		let move = battle.p2.active[0].getMoveData(Dex.moves.get('snowstorm'));
-		assert.equal(move.pp, move.maxpp - 4, `Hail should lose 3 additional PP from Pressure`);
+		assert.equal(move.pp, move.maxpp - 4, `Snowstorm should lose 3 additional PP from Pressure`);
 		move = battle.p2.active[1].getMoveData(Dex.moves.get('spikes'));
 		assert.equal(move.pp, move.maxpp - 4, `Spikes should lose 3 additional PP from Pressure`);
 		move = battle.p2.active[2].getMoveData(Dex.moves.get('rockslide'));
@@ -250,7 +250,7 @@ describe('Pressure [Gen 4]', () => {
 		]]);
 		battle.makeChoices();
 		let move = battle.p2.active[0].getMoveData(Dex.moves.get('snowstorm'));
-		assert.equal(move.pp, move.maxpp - 4, `Hail should lose 3 additional PP from Pressure`);
+		assert.equal(move.pp, move.maxpp - 4, `Snowstorm should lose 3 additional PP from Pressure`);
 		move = battle.p2.active[1].getMoveData(Dex.moves.get('earthquake'));
 		assert.equal(move.pp, move.maxpp - 4, `Earthquake should lose 3 additional PP from Pressure`);
 	});

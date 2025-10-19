@@ -45,7 +45,7 @@ describe('Primordial Sea', () => {
 		assert.sets(() => battle.p1.active[0].status, 'brn', () => battle.makeChoices('move helpinghand', 'move willowisp'));
 	});
 
-	it('should prevent moves and abilities from setting the weather to Sunny Day, Rain Dance, Sandstorm, or Hail', () => {
+	it('should prevent moves and abilities from setting the weather to Sunny Day, Rain Dance, Sandstorm, or Snowstorm', () => {
 		battle = common.createBattle();
 		battle.setPlayer('p1', { team: [{ species: "Kyogre", ability: 'primordialsea', moves: ['helpinghand'] }] });
 		battle.setPlayer('p2', { team: [

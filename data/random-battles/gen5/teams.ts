@@ -25,7 +25,7 @@ const SETUP = [
 const NO_STAB = [
 	'aquajet', 'bulletpunch', 'chatter', 'clearsmog', 'dragontail', 'eruption', 'explosion', 'fakeout', 'flamecharge',
 	'futuresight', 'iceshard', 'icywind', 'incinerate', 'knockoff', 'machpunch', 'pluck', 'pursuit', 'quickattack',
-	'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'godbird', 'skydrop', 'snarl', 'surpriseattack',
+	'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skyattack', 'skydrop', 'snarl', 'surpriseattack',
 	'uturn', 'vacuumwave', 'voltswitch', 'waterspout',
 ];
 // Hazard-setting moves
@@ -873,7 +873,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 			// Illusion shouldn't be in the last slot
 			if (species.name === 'Zoroark' && pokemon.length >= (this.maxTeamSize - 1)) continue;
 
-			// Prevent Shedinja from generating after Sandstorm/Hail setters
+			// Prevent Shedinja from generating after Sandstorm/Snowstorm setters
 			if (species.name === 'Shedinja' && (teamDetails.sand || teamDetails.snowstorm)) continue;
 
 			// Dynamically scale limits for different team sizes. The default and minimum value is 1.

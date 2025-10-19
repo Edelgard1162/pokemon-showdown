@@ -36,7 +36,7 @@ describe('Weather damage calculation', () => {
 		assert.equal(basePower, move.basePower);
 	});
 
-	it('should make Hail/Sandstorm damage some pokemon but not others', () => {
+	it('should make Snowstorm/Sandstorm damage some pokemon but not others', () => {
 		battle = common.gen(8).createBattle();
 		battle.randomizer = dmg => dmg; // max damage
 		battle.setPlayer('p1', { team: [{ species: 'Abomasnow', ability: 'snowwarning', moves: ['protect'] }] });

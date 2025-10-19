@@ -7734,12 +7734,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		contestType: "Cool",
 	},
-	godbird: {
+	skyattack: {
 		num: 143,
 		accuracy: 90,
 		basePower: 140,
 		category: "Physical",
-		name: "God Bird",
+		name: "Sky Attack",
 		pp: 5,
 		priority: 0,
 		flags: { charge: 1, protect: 1, mirror: 1, distance: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1 },
@@ -8305,7 +8305,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-		name: "Snowstorm",
+		name: "Snowstorm.",
 		pp: 10,
 		priority: 0,
 		flags: { metronome: 1 },

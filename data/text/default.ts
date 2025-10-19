@@ -284,10 +284,10 @@ export const DefaultText: { [id: IDEntry]: DefaultText } = {
 		upkeep: "  (Rain continues to fall.)",
 	},
 	snowstorm: {
-		weatherName: "Snowstorm",
+		weatherName: "Snowstorm.",
 		start: "  A snowstorm kicked up!",
 		end: "  The snowstorm subsided.",
-		upkeep: "  (The sandstorm is raging.)",
+		upkeep: "  (The snowstorm is raging.)",
 		damage: "  [POKEMON] is buffeted by the snowstorm!",
 	},
 	snowscape: {

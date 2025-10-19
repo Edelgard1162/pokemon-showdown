@@ -5891,7 +5891,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["acrobatics", "highjumpkick", "godbird", "substitute", "swordsdance"],
+                "movepool": ["acrobatics", "highjumpkick", "skyattack", "substitute", "swordsdance"],
                 "abilities": ["Unburden"]
             }
         ]

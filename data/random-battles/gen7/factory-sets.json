@@ -1849,7 +1849,7 @@
 				"ability": ["Snow Warning"],
 				"evs": {"hp": 248, "spa": 8, "spe": 252},
 				"nature": "Timid",
-				"moves": [["Aurora Veil"], ["Freeze-Dry"], ["Hypnosis"], ["Hail"]]
+				"moves": [["Aurora Veil"], ["Freeze-Dry"], ["Hypnosis"], ["Snowstorm."]]
 			}]
 		},
 		"pelipper": {

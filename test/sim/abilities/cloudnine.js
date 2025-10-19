@@ -63,7 +63,7 @@ describe('Cloud Nine', () => {
 		assert.false.hurts(battle.p2.active[0], () => battle.makeChoices('move dragondance', 'move calmmind'));
 	});
 
-	it('should negate the damage-dealing effects of Hail', () => {
+	it('should negate the damage-dealing effects of Snowstorm', () => {
 		battle = common.createBattle([[
 			{ species: 'Abomasnow', ability: 'snowwarning', moves: ['rest'] },
 		], [

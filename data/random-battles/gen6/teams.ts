@@ -29,7 +29,7 @@ const SETUP = [
 const NO_STAB = [
 	'aquajet', 'bulletpunch', 'clearsmog', 'dragontail', 'eruption', 'explosion', 'fakeout', 'flamecharge',
 	'futuresight', 'iceshard', 'icywind', 'incinerate', 'infestation', 'machpunch', 'nuzzle', 'pluck', 'poweruppunch',
-	'pursuit', 'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'godbird', 'skydrop', 'snarl',
+	'pursuit', 'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skyattack', 'skydrop', 'snarl',
 	'surpriseattack', 'uturn', 'watershuriken', 'vacuumwave', 'voltswitch', 'waterspout',
 ];
 // Hazard-setting moves
@@ -651,7 +651,7 @@ export class RandomGen6Teams extends RandomGen7Teams {
 		}
 		if (moves.has('bellydrum')) return 'Sitrus Berry';
 		if (moves.has('waterspout')) return 'Choice Scarf';
-		if (moves.has('geomancy') || moves.has('godbird')) return 'Power Herb';
+		if (moves.has('geomancy') || moves.has('skyattack')) return 'Power Herb';
 		if (moves.has('shellsmash')) {
 			return (ability === 'Solid Rock' && !!counter.get('priority')) ? 'Weakness Policy' : 'White Herb';
 		}

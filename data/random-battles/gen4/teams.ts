@@ -19,7 +19,7 @@ const SETUP = [
 const NO_STAB = [
 	'aquajet', 'bulletpunch', 'chatter', 'eruption', 'explosion', 'fakeout', 'focuspunch', 'futuresight', 'iceshard',
 	'icywind', 'knockoff', 'machpunch', 'pluck', 'pursuit', 'quickattack', 'rapidspin', 'reversal', 'selfdestruct',
-	'shadowsneak', 'godbird', 'surpriseattack', 'uturn', 'vacuumwave', 'waterspout',
+	'shadowsneak', 'skyattack', 'surpriseattack', 'uturn', 'vacuumwave', 'waterspout',
 ];
 // Hazard-setting moves
 const HAZARDS = [

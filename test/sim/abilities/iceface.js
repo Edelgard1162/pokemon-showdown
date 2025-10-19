@@ -8,7 +8,7 @@ let battle;
 describe('Ice Face', () => {
 	afterEach(() => battle.destroy());
 
-	it(`should block damage from one physical move per Hail`, () => {
+	it(`should block damage from one physical move per Snow`, () => {
 		battle = common.createBattle([[
 			{ species: 'Eiscue', ability: 'iceface', moves: ['splash'] },
 		], [

@@ -1180,7 +1180,7 @@
             },
             {
                 "role": "Z-Move user",
-                "movepool": ["earthquake", "honeclaws", "godbird", "stoneedge"],
+                "movepool": ["earthquake", "honeclaws", "skyattack", "stoneedge"],
                 "abilities": ["Unnerve"],
                 "preferredTypes": ["Flying"]
             }
@@ -6362,7 +6362,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["acrobatics", "highjumpkick", "godbird", "substitute", "swordsdance"],
+                "movepool": ["acrobatics", "highjumpkick", "skyattack", "substitute", "swordsdance"],
                 "abilities": ["Unburden"]
             }
         ]

@@ -278,7 +278,7 @@ export const TypeChart: import('../sim/dex-data').TypeDataTable = {
 	},
 	ice: {
 		damageTaken: {
-			hail: 3,
+			snowstorm: 3,
 			frz: 3,
 			Bug: 0,
 			Dark: 0,
@@ -406,7 +406,7 @@ export const TypeChart: import('../sim/dex-data').TypeDataTable = {
 	},
 	steel: {
 		damageTaken: {
-			hail: 3,
+			snowstorm: 3,
 			psn: 3,
 			tox: 3,
 			sandstorm: 3,
@@ -458,7 +458,7 @@ export const TypeChart: import('../sim/dex-data').TypeDataTable = {
 	},
 	water: {
 		damageTaken: {
-			hail: 3,
+			snowstorm: 3,
 			Bug: 0,
 			Dark: 0,
 			Dragon: 0,

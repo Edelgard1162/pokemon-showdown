@@ -1580,6 +1580,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. In Double Battles, this move attempts to hit the targeted Pokemon and its ally once each. If hitting one of these Pokemon would be prevented by immunity, protection, semi-invulnerability, an Ability, or accuracy, it attempts to hit the other Pokemon twice instead. If this move is redirected, it hits that target twice.",
 		shortDesc: "Hits twice. Doubles: Tries to hit each foe once.",
 	},
+	dragondive: {
+		name: "Dragon Dive",
+		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+		shortDesc: "User is hurt by 50% of its max HP if it misses.",
+
+		damage: "#crash",
+	},
 	dragonenergy: {
 		name: "Dragon Energy",
 		desc: "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
@@ -1596,14 +1603,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	dragonrage: {
 		name: "Dragon Rage",
 		shortDesc: "Deals 40 HP of damage to the target.",
-	},
-	dragonrush: {
-		name: "Dragon Rush",
-		desc: "Has a 20% chance to make the target flinch. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "20% chance to make the target flinch.",
-		gen5: {
-			desc: "Has a 20% chance to make the target flinch.",
-		},
 	},
 	dragontail: {
 		name: "Dragon Tail",
@@ -2691,6 +2690,20 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "Power is equal to the base move's Max Move power. If this move is successful, the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain end, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of G-Max Steelsurge, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side.",
 		shortDesc: "Base move affects power. Ends Terrain, hazards.",
 	},
+	godbird: {
+		name: "God Bird",
+		desc: "Has a 30% chance to make the target flinch and a higher chance for a critical hit. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
+		shortDesc: "Charges, then hits turn 2. 30% flinch. High crit.",
+		gen3: {
+			desc: "Has a 30% chance to make the target flinch and a higher chance for a critical hit. This attack charges on the first turn and executes on the second.",
+		},
+		gen2: {
+			desc: "This attack charges on the first turn and executes on the second.",
+			shortDesc: "Charges turn 1. Hits turn 2.",
+		},
+
+		prepare: "[POKEMON] became cloaked in a harsh light!",
+	},
 	grassknot: {
 		name: "Grass Knot",
 		desc: "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, and 120 if greater than or equal to 200 kg.",
@@ -2836,18 +2849,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "More power the slower the user than the target.",
 		gen5: {
 			desc: "Power is equal to (25 * target's current Speed / user's current Speed) + 1, rounded down, but not more than 150. If the user's current Speed is 0, it is treated as 1 instead.",
-		},
-	},
-	hail: {
-		name: "Snow",
-		desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Slush Rush, or Snow Cloak Abilities. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
-		shortDesc: "For 5 turns, a snowstorm rages. Ice: 1.5x Def.",
-		gen4: {
-			desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Magic Guard or Snow Cloak Abilities. During the effect, Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
-		},
-		gen3: {
-			desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Snow Cloak Ability. Fails if the current weather is Snow.",
-			shortDesc: "For 5 turns, a snowstorm rages.",
 		},
 	},
 	hammerarm: {
@@ -4173,13 +4174,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	minimize: {
 		name: "Minimize",
-		desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Rush, Flying Press, Heat Crash, Heavy Slam, Malicious Moonsault, Steamroller, Stomp, and Supercell Slam will not check accuracy and have their damage doubled if used against the user while it is active.",
+		desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Dive, Flying Press, Heat Crash, Heavy Slam, Malicious Moonsault, Steamroller, Stomp, and Thunder Dive will not check accuracy and have their damage doubled if used against the user while it is active.",
 		shortDesc: "Raises the user's evasiveness by 2.",
 		gen8: {
-			desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Rush, Flying Press, Heat Crash, Heavy Slam, Malicious Moonsault, Steamroller, and Stomp will not check accuracy and have their damage doubled if used against the user while it is active.",
+			desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Dive, Flying Press, Heat Crash, Heavy Slam, Malicious Moonsault, Steamroller, and Stomp will not check accuracy and have their damage doubled if used against the user while it is active.",
 		},
 		gen6: {
-			desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Rush, Flying Press, Heat Crash, Phantom Force, Shadow Force, Steamroller, and Stomp will not check accuracy and have their damage doubled if used against the user while it is active.",
+			desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Dive, Flying Press, Heat Crash, Phantom Force, Shadow Force, Steamroller, and Stomp will not check accuracy and have their damage doubled if used against the user while it is active.",
 		},
 		gen5: {
 			desc: "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Stomp and Steamroller will have their damage doubled if used against the user while it is active.",
@@ -5863,20 +5864,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 
 		prepare: "[POKEMON] tucked in its head!",
 	},
-	skyattack: {
-		name: "God Bird",
-		desc: "Has a 30% chance to make the target flinch and a higher chance for a critical hit. This attack charges on the first turn and executes on the second. If the user is holding a Power Herb, the move completes in one turn.",
-		shortDesc: "Charges, then hits turn 2. 30% flinch. High crit.",
-		gen3: {
-			desc: "Has a 30% chance to make the target flinch and a higher chance for a critical hit. This attack charges on the first turn and executes on the second.",
-		},
-		gen2: {
-			desc: "This attack charges on the first turn and executes on the second.",
-			shortDesc: "Charges turn 1. Hits turn 2.",
-		},
-
-		prepare: "[POKEMON] became cloaked in a harsh light!",
-	},
 	skydrop: {
 		name: "Sky Drop",
 		desc: "This attack takes the target into the air with the user on the first turn and executes on the second. Pokemon weighing 200 kg or more cannot be lifted. On the first turn, the user and the target avoid all attacks other than Gust, Hurricane, Sky Uppercut, Smack Down, Thousand Arrows, Thunder, and Twister. The user and the target cannot make a move between turns, but the target can select a move to use. This move cannot damage Flying-type Pokemon. Fails on the first turn if the target is an ally, if the target has a substitute, or if the target is using Bounce, Dig, Dive, Fly, Phantom Force, Shadow Force, or Sky Drop.",
@@ -6038,6 +6025,18 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Snowscape",
 		desc: "For 5 turns, the weather becomes Snow. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
 		shortDesc: "For 5 turns, snow falls. Ice: 1.5x Def.",
+	},
+	snowstorm: {
+		name: "Snowstorm",
+		desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Magic Guard, Overcoat, Sand Force, Slush Rush, or Snow Cloak Abilities. During the effect, the Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
+		shortDesc: "For 5 turns, a snowstorm rages. Ice: 1.5x Def.",
+		gen4: {
+			desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Magic Guard or Snow Cloak Abilities. During the effect, Defense of Ice-type Pokemon is multiplied by 1.5 when taking damage from a physical attack. Lasts for 8 turns if the user is holding Icy Rock. Fails if the current weather is Snow.",
+		},
+		gen3: {
+			desc: "For 5 turns, the weather becomes Snowstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Water, Ice, or Steel type, or have the Snow Cloak Ability. Fails if the current weather is Snow.",
+			shortDesc: "For 5 turns, a snowstorm rages.",
+		},
 	},
 	soak: {
 		name: "Soak",
@@ -6529,14 +6528,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Subzero Slammer",
 		shortDesc: "Power is equal to the base move's Z-Power.",
 	},
-	suckerpunch: {
-		name: "Surprise Attack",
-		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
-		shortDesc: "Usually goes first. Fails if target is not attacking.",
-		gen4: {
-			desc: "Fails if the target did not select a physical or special attack for use this turn, or if the target moves before the user.",
-		},
-	},
 	sunnyday: {
 		name: "Sunny Day",
 		desc: "For 5 turns, the weather becomes Sunny Day. The damage of Fire-type attacks is multiplied by 1.5 and the damage of Water-type attacks is multiplied by 0.66 during the effect. Lasts for 8 turns if the user is holding Heat Rock. Fails if the current weather is Sunny Day.",
@@ -6552,13 +6543,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Sunsteel Strike",
 		desc: "This move and its effects ignore the Abilities of other Pokemon.",
 		shortDesc: "Ignores the Abilities of other Pokemon.",
-	},
-	supercellslam: {
-		name: "Supercell Slam",
-		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "User is hurt by 50% of its max HP if it misses.",
-
-		damage: "#crash",
 	},
 	superfang: {
 		name: "Super Fang",
@@ -6602,6 +6586,15 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Surging Strikes",
 		desc: "Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
 		shortDesc: "Always results in a critical hit. Hits 3 times.",
+		
+	},
+	surpriseattack: {
+		name: "Surprise Attack",
+		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
+		shortDesc: "Usually goes first. Fails if target is not attacking.",
+		gen4: {
+			desc: "Fails if the target did not select a physical or special attack for use this turn, or if the target moves before the user.",
+		},
 	},
 	swagger: {
 		name: "Swagger",
@@ -6975,6 +6968,13 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Thunderclap",
 		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
 		shortDesc: "Usually goes first. Fails if target is not attacking.",
+	},
+	thunderdive: {
+		name: "Thunder Dive",
+		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+		shortDesc: "User is hurt by 50% of its max HP if it misses.",
+
+		damage: "#crash",
 	},
 	thunderfang: {
 		name: "Thunder Fang",

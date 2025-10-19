@@ -705,7 +705,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
 			this.add('-weather', 'Snowstorm', '[upkeep]');
-			if (this.field.isWeather('hail')) this.eachEvent('Weather');
+			if (this.field.isWeather('snowstorm')) this.eachEvent('Weather');
 		},
 		onWeather(target) {
 			this.damage(target.baseMaxhp / 16);

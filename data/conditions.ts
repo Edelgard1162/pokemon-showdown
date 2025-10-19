@@ -482,7 +482,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		onBasePowerPriority: 14,
 		onBasePower(basePower, user, target, move) {
 			this.debug('Gem Boost');
-			return this.chainModify([5325, 4096]);
+			return this.chainModify([5461, 4096]);
 		},
 	},
 
@@ -506,7 +506,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			if (move.type === 'Fire') {
 				this.debug('rain fire suppress');
-				return this.chainModify(0.5);
+				return this.chainModify([2730, 4096]);
 			}
 		},
 		onFieldStart(field, source, effect) {
@@ -580,7 +580,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			if (move.type === 'Water') {
 				this.debug('Sunny Day water suppress');
-				return this.chainModify(0.5);
+				return this.chainModify([2730, 4096]);
 			}
 		},
 		onFieldStart(battle, source, effect) {
@@ -679,7 +679,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		},
 	},
 	hail: {
-		name: 'Hail',
+		name: 'Snowstorm',
 		effectType: 'Weather',
 		duration: 5,
 		durationCallback(source, effect) {
@@ -688,17 +688,23 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			}
 			return 5;
 		},
+		onModifyDefPriority: 10,
+		onModifyDef(def, pokemon) {
+			if (pokemon.hasType('Ice') && this.field.isWeather('hail')) {
+				return this.modify(def, 1.5);
+			}
+		},
 		onFieldStart(field, source, effect) {
 			if (effect?.effectType === 'Ability') {
 				if (this.gen <= 5) this.effectState.duration = 0;
-				this.add('-weather', 'Hail', '[from] ability: ' + effect.name, `[of] ${source}`);
+				this.add('-weather', 'Snowstorm', '[from] ability: ' + effect.name, `[of] ${source}`);
 			} else {
-				this.add('-weather', 'Hail');
+				this.add('-weather', 'Snowstorm');
 			}
 		},
 		onFieldResidualOrder: 1,
 		onFieldResidual() {
-			this.add('-weather', 'Hail', '[upkeep]');
+			this.add('-weather', 'Snowstorm', '[upkeep]');
 			if (this.field.isWeather('hail')) this.eachEvent('Weather');
 		},
 		onWeather(target) {

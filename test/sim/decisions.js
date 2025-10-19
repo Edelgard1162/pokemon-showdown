@@ -277,7 +277,7 @@ describe('Choices', () => {
 			battle = common.gen(5).createBattle({ gameType: 'triples' });
 			battle.setPlayer('p1', { team: [
 				{ species: "Pineco", ability: 'sturdy', moves: ['harden'] },
-				{ species: "Geodude", ability: 'sturdy', moves: ['suckerpunch'] },
+				{ species: "Geodude", ability: 'sturdy', moves: ['surpriseattack'] },
 				{ species: "Gastly", ability: 'levitate', moves: ['spite'] },
 			] });
 			battle.setPlayer('p2', { team: [
@@ -285,7 +285,7 @@ describe('Choices', () => {
 				{ species: "Aggron", ability: 'sturdy', moves: ['earthquake'] },
 				{ species: "Golem", ability: 'sturdy', moves: ['defensecurl'] },
 			] });
-			battle.makeChoices('shift, move suckerpunch 2, shift', 'shift, move earthquake, shift');
+			battle.makeChoices('shift, move surpriseattack 2, shift', 'shift, move earthquake, shift');
 
 			for (const [index, species] of ['Gastly', 'Pineco', 'Geodude'].entries()) {
 				assert.species(battle.p1.active[index], species);

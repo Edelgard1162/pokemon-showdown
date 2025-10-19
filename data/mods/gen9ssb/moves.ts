@@ -6451,7 +6451,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		condition: {
 			duration: 2,
 			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'deserteddunes' || type === 'hail') return false;
+				if (type === 'sandstorm' || type === 'deserteddunes' || type === 'snowstorm') return false;
 			},
 			onInvulnerability(target, source, move) {
 				if (['earthquake', 'magnitude'].includes(move.id)) {
@@ -6471,7 +6471,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		condition: {
 			duration: 2,
 			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'deserteddunes' || type === 'hail') return false;
+				if (type === 'sandstorm' || type === 'deserteddunes' || type === 'snowstorm') return false;
 			},
 			onInvulnerability(target, source, move) {
 				if (['surf', 'whirlpool'].includes(move.id)) {
@@ -6633,7 +6633,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'stormsurge':
 			case 'sandstorm':
 			case 'deserteddunes':
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				factor = 0.25;
 				break;
@@ -6660,7 +6660,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'stormsurge':
 			case 'sandstorm':
 			case 'deserteddunes':
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				factor = 0.25;
 				break;
@@ -6790,7 +6790,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	solarbeam: {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'stormsurge', 'sandstorm', 'deserteddunes', 'hail', 'snowscape'];
+			const weakWeathers = ['raindance', 'primordialsea', 'stormsurge', 'sandstorm', 'deserteddunes', 'snowstorm', 'snowscape'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -6800,7 +6800,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	solarblade: {
 		inherit: true,
 		onBasePower(basePower, pokemon, target) {
-			const weakWeathers = ['raindance', 'primordialsea', 'stormsurge', 'sandstorm', 'deserteddunes', 'hail', 'snowscape'];
+			const weakWeathers = ['raindance', 'primordialsea', 'stormsurge', 'sandstorm', 'deserteddunes', 'snowstorm', 'snowscape'];
 			if (weakWeathers.includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
@@ -6834,7 +6834,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'stormsurge':
 			case 'sandstorm':
 			case 'deserteddunes':
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				factor = 0.25;
 				break;
@@ -6890,7 +6890,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'deserteddunes':
 				move.type = 'Rock';
 				break;
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				move.type = 'Ice';
 				break;
@@ -6905,7 +6905,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'stormsurge':
 			case 'sandstorm':
 			case 'deserteddunes':
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				move.basePower *= 2;
 				break;

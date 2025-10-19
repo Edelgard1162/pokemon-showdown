@@ -209,7 +209,7 @@
 				"ability": ["Dark Aura"],
 				"evs": {"atk": 4, "spa": 252, "spe": 252},
 				"nature": "Rash",
-				"moves": [["Oblivion Wing"], ["Dark Pulse"], ["Sucker Punch", "Toxic"], ["Taunt"]]
+				"moves": [["Oblivion Wing"], ["Dark Pulse"], ["Surprise Attack", "Toxic"], ["Taunt"]]
 			}, {
 				"species": "Yveltal",
 				"item": ["Choice Scarf"],
@@ -223,7 +223,7 @@
 				"ability": ["Dark Aura"],
 				"evs": {"hp": 248, "def": 252, "spd": 8},
 				"nature": "Impish",
-				"moves": [["Foul Play"], ["Taunt"], ["Roost"], ["Sucker Punch", "Toxic"]]
+				"moves": [["Foul Play"], ["Taunt"], ["Roost"], ["Surprise Attack", "Toxic"]]
 			}, {
 				"species": "Yveltal",
 				"item": ["Choice Specs"],
@@ -1149,7 +1149,7 @@
 				"ability": ["Defiant"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Adamant", "Jolly"],
-				"moves": [["Knock Off"], ["Iron Head"], ["Sucker Punch"], ["Swords Dance"]]
+				"moves": [["Knock Off"], ["Iron Head"], ["Surprise Attack"], ["Swords Dance"]]
 			}]
 		},
 		"blacephalon": {
@@ -1753,14 +1753,14 @@
 				"ability": ["Intimidate", "Hyper Cutter"],
 				"evs": {"hp": 92, "atk": 252, "spe": 164},
 				"nature": "Adamant",
-				"moves": [["Swords Dance"], ["Play Rough"], ["Sucker Punch"], ["Knock Off", "Thunder Punch"]]
+				"moves": [["Swords Dance"], ["Play Rough"], ["Surprise Attack"], ["Knock Off", "Thunder Punch"]]
 			}, {
 				"species": "Mawile",
 				"item": ["Mawilite"],
 				"ability": ["Hyper Cutter"],
 				"evs": {"hp": 92, "atk": 252, "spe": 164},
 				"nature": "Adamant",
-				"moves": [["Play Rough"], ["Sucker Punch", "Ice Punch"], ["Thunder Punch"], ["Fire Fang", "Focus Punch", "Brick Break"]]
+				"moves": [["Play Rough"], ["Surprise Attack", "Ice Punch"], ["Thunder Punch"], ["Fire Fang", "Focus Punch", "Brick Break"]]
 			}]
 		},
 		"medicham": {
@@ -2877,14 +2877,14 @@
 				"ability": ["Defiant"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Jolly", "Adamant"],
-				"moves": [["Knock Off"], ["Sucker Punch"], ["Swords Dance"], ["Iron Head"]]
+				"moves": [["Knock Off"], ["Surprise Attack"], ["Swords Dance"], ["Iron Head"]]
 			}, {
 				"species": "Bisharp",
 				"item": ["Assault Vest"],
 				"ability": ["Defiant"],
 				"evs": {"hp": 188, "atk": 236, "spe": 84},
 				"nature": ["Adamant"],
-				"moves": [["Knock Off"], ["Sucker Punch"], ["Pursuit"], ["Iron Head"]]
+				"moves": [["Knock Off"], ["Surprise Attack"], ["Pursuit"], ["Iron Head"]]
 			}]
 		},
 		"hydreigon": {
@@ -3922,7 +3922,7 @@
 				"ability": ["Justified"],
 				"evs": {"atk": 252, "spa": 4, "spe": 252},
 				"nature": "Naive",
-				"moves": [["Knock Off"], ["Pursuit"], ["Fire Blast", "Superpower"], ["Sucker Punch", "Iron Tail"]]
+				"moves": [["Knock Off"], ["Pursuit"], ["Fire Blast", "Superpower"], ["Surprise Attack", "Iron Tail"]]
 			}]
 		},
 		"bewear": {
@@ -4063,7 +4063,7 @@
 				"ability": ["Dry Skin"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch"], ["Sucker Punch"]]
+				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch"], ["Surprise Attack"]]
 			}]
 		},
 		"barbaracle": {
@@ -4794,7 +4794,7 @@
 				"ability": ["Moxie"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Brave Bird"], ["Sucker Punch"], ["Pursuit"], ["Superpower"]]
+				"moves": [["Brave Bird"], ["Surprise Attack"], ["Pursuit"], ["Superpower"]]
 			}]
 		},
 		"houndoom": {
@@ -4827,7 +4827,7 @@
 				"ability": ["Tough Claws"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Stone Edge"], ["Fire Fang"], ["Sucker Punch"]]
+				"moves": [["Swords Dance"], ["Stone Edge"], ["Fire Fang"], ["Surprise Attack"]]
 			}]
 		},
 		"machamp": {
@@ -5236,7 +5236,7 @@
 				"ability": ["Dry Skin"],
 				"evs": {"hp": 4, "atk": 252, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch"], ["Sucker Punch"]]
+				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch"], ["Surprise Attack"]]
 			}]
 		},
 		"tsareena": {
@@ -5412,7 +5412,7 @@
 				"ability": ["Super Luck"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Knock Off"], ["Pursuit"], ["Sucker Punch"], ["Superpower"]]
+				"moves": [["Knock Off"], ["Pursuit"], ["Surprise Attack"], ["Superpower"]]
 			}]
 		},
 		"accelgor": {
@@ -6264,14 +6264,14 @@
 				"ability": ["Aftermath"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Sucker Punch"], ["Pursuit"], ["Poison Jab"], ["Defog"]]
+				"moves": [["Surprise Attack"], ["Pursuit"], ["Poison Jab"], ["Defog"]]
 			}, {
 				"species": "Skuntank",
 				"item": ["Black Glasses", "Rocky Helmet", "Black Sludge", "Darkinium Z"],
 				"ability": ["Aftermath"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Sucker Punch"], ["Pursuit"], ["Poison Jab", "Defog"], ["Crunch"]]
+				"moves": [["Surprise Attack"], ["Pursuit"], ["Poison Jab", "Defog"], ["Crunch"]]
 			}]
 		},
 		"carracosta": {
@@ -6413,14 +6413,14 @@
 				"ability": ["Scrappy"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Fake Out"], ["Double-Edge"], ["Sucker Punch"], ["Earthquake"]]
+				"moves": [["Fake Out"], ["Double-Edge"], ["Surprise Attack"], ["Earthquake"]]
 			}, {
 				"species": "Kangaskhan",
 				"item": ["Fightinium Z"],
 				"ability": ["Scrappy"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Fake Out", "Power-Up Punch"], ["Double-Edge"], ["Sucker Punch"], ["Focus Punch"]]
+				"moves": [["Fake Out", "Power-Up Punch"], ["Double-Edge"], ["Surprise Attack"], ["Focus Punch"]]
 			}]
 		},
 		"primeape": {
@@ -6460,14 +6460,14 @@
 				"ability": ["Chlorophyll"],
 				"evs": {"atk": 252, "spa": 4, "spe": 252},
 				"nature": "Lonely",
-				"moves": [["Knock Off"], ["Leaf Storm"], ["Sucker Punch"], ["Defog"]]
+				"moves": [["Knock Off"], ["Leaf Storm"], ["Surprise Attack"], ["Defog"]]
 			}, {
 				"species": "Shiftry",
 				"item": ["Grassium Z", "Life Orb"],
 				"ability": ["Chlorophyll"],
 				"evs": {"hp": 4, "atk": 252, "spe": 252},
 				"nature": ["Adamant", "Jolly"],
-				"moves": [["Swords Dance"], ["Knock Off"], ["Seed Bomb"], ["Sucker Punch"]]
+				"moves": [["Swords Dance"], ["Knock Off"], ["Seed Bomb"], ["Surprise Attack"]]
 			}, {
 				"species": "Shiftry",
 				"item": ["Choice Scarf"],
@@ -6517,7 +6517,7 @@
 				"ability": ["Justified"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Knock Off"], ["Sucker Punch"], ["Play Rough"]]
+				"moves": [["Swords Dance"], ["Knock Off"], ["Surprise Attack"], ["Play Rough"]]
 			}]
 		},
 		"gourgeistsuper": {
@@ -6597,7 +6597,7 @@
 				"ability": ["Hustle"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Double-Edge"], ["Sucker Punch"], ["Knock Off"]]
+				"moves": [["Swords Dance"], ["Double-Edge"], ["Surprise Attack"], ["Knock Off"]]
 			}]
 		},
 		"typenull": {
@@ -6692,7 +6692,7 @@
 				"ability": ["Limber"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Knock Off"], ["Pursuit"], ["Play Rough"], ["U-turn", "Sucker Punch"]]
+				"moves": [["Knock Off"], ["Pursuit"], ["Play Rough"], ["U-turn", "Surprise Attack"]]
 			}, {
 				"species": "Liepard",
 				"item": ["Choice Band"],
@@ -6876,7 +6876,7 @@
 				"ability": ["Tangling Hair"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Stone Edge"], ["Sucker Punch"], ["Earthquake"], ["Iron Head"]]
+				"moves": [["Stone Edge"], ["Surprise Attack"], ["Earthquake"], ["Iron Head"]]
 			}]
 		},
 		"gorebyss": {
@@ -6899,7 +6899,7 @@
 				"ability": ["Protean"],
 				"evs": {"hp": 172, "atk": 252, "spe": 84},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Drain Punch"], ["Shadow Sneak"], ["Sucker Punch", "Power-Up Punch"]]
+				"moves": [["Knock Off"], ["Drain Punch"], ["Shadow Sneak"], ["Surprise Attack", "Power-Up Punch"]]
 			}]
 		},
 		"leafeon": {
@@ -7050,7 +7050,7 @@
 				"ability": ["Sturdy"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Stealth Rock"], ["Earthquake"], ["Stone Edge", "Rock Blast"], ["Sucker Punch", "Explosion"]]
+				"moves": [["Stealth Rock"], ["Earthquake"], ["Stone Edge", "Rock Blast"], ["Surprise Attack", "Explosion"]]
 			}]
 		},
 		"kadabra": {
@@ -7079,7 +7079,7 @@
 				"ability": ["Sheer Force"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Play Rough"], ["Iron Head"], ["Swords Dance"], ["Sucker Punch"]]
+				"moves": [["Play Rough"], ["Iron Head"], ["Swords Dance"], ["Surprise Attack"]]
 			}]
 		},
 		"munchlax": {
@@ -7101,7 +7101,7 @@
 				"ability": ["Prankster"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Mirror Move"], ["Brave Bird"], ["Sucker Punch"], ["Pursuit", "Protect"]]
+				"moves": [["Mirror Move"], ["Brave Bird"], ["Surprise Attack"], ["Pursuit", "Protect"]]
 			}]
 		},
 		"smeargle": {
@@ -7359,7 +7359,7 @@
 				"ability": ["Infiltrator"],
 				"evs": {"hp": 248, "atk": 252, "def": 8},
 				"nature": "Brave",
-				"moves": [["Pursuit"], ["Sucker Punch"], ["Psychic"], ["Will-O-Wisp"]]
+				"moves": [["Pursuit"], ["Surprise Attack"], ["Psychic"], ["Will-O-Wisp"]]
 			}, {
 				"species": "Spiritomb",
 				"item": ["Leftovers", "Darkinium Z"],
@@ -7620,7 +7620,7 @@
 				"ability": ["Dry Skin"],
 				"evs": {"hp": 52, "atk": 188, "def": 116, "spd": 116, "spe": 36},
 				"nature": "Adamant",
-				"moves": [["Drain Punch"], ["Gunk Shot"], ["Sucker Punch"], ["Bulk Up", "Knock Off"]]
+				"moves": [["Drain Punch"], ["Gunk Shot"], ["Surprise Attack"], ["Bulk Up", "Knock Off"]]
 			}, {
 				"species": "Croagunk",
 				"item": ["Eviolite"],
@@ -7634,7 +7634,7 @@
 				"ability": ["Dry Skin"],
 				"evs": {"hp": 132, "atk": 108, "def": 116, "spa": 28, "spd": 116},
 				"nature": "Brave",
-				"moves": [["Fake Out"], ["Sucker Punch"], ["Drain Punch", "Gunk Shot"], ["Vacuum Wave"]]
+				"moves": [["Fake Out"], ["Surprise Attack"], ["Drain Punch", "Gunk Shot"], ["Vacuum Wave"]]
 			}]
 		},
 		"gastly": {
@@ -7691,21 +7691,21 @@
 				"ability": ["Arena Trap"],
 				"evs": {"hp": 36, "atk": 236, "spe": 236},
 				"nature": "Jolly",
-				"moves": [["Earthquake"], ["Rock Slide"], ["Sucker Punch", "Reversal"], ["Memento"]]
+				"moves": [["Earthquake"], ["Rock Slide"], ["Surprise Attack", "Reversal"], ["Memento"]]
 			}, {
 				"species": "Diglett",
 				"item": ["Focus Sash"],
 				"ability": ["Arena Trap"],
 				"evs": {"hp": 36, "atk": 236, "spe": 236},
 				"nature": "Jolly",
-				"moves": [["Earthquake"], ["Rock Slide"], ["Sucker Punch", "Reversal"], ["Stealth Rock"]]
+				"moves": [["Earthquake"], ["Rock Slide"], ["Surprise Attack", "Reversal"], ["Stealth Rock"]]
 			}, {
 				"species": "Diglett",
 				"item": ["Life Orb", "Groundium Z"],
 				"ability": ["Arena Trap"],
 				"evs": {"hp": 36, "atk": 236, "spe": 236},
 				"nature": "Jolly",
-				"moves": [["Earthquake"], ["Rock Slide"], ["Sucker Punch"], ["Substitute", "Sludge Bomb"]]
+				"moves": [["Earthquake"], ["Rock Slide"], ["Surprise Attack"], ["Substitute", "Sludge Bomb"]]
 			}]
 		},
 		"foongus": {
@@ -7835,21 +7835,21 @@
 				"ability": ["Defiant"],
 				"evs": {"atk": 156, "def": 36, "spd": 116, "spe": 196},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Knock Off"], ["Iron Head"], ["Sucker Punch"]]
+				"moves": [["Swords Dance"], ["Knock Off"], ["Iron Head"], ["Surprise Attack"]]
 			}, {
 				"species": "Pawniard",
 				"item": ["Eviolite"],
 				"ability": ["Defiant"],
 				"evs": {"atk": 156, "def": 36, "spd": 116, "spe": 196},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Iron Head"], ["Thunder Wave"], ["Sucker Punch"]]
+				"moves": [["Knock Off"], ["Iron Head"], ["Thunder Wave"], ["Surprise Attack"]]
 			}, {
 				"species": "Pawniard",
 				"item": ["Eviolite"],
 				"ability": ["Defiant"],
 				"evs": {"atk": 156, "def": 36, "spd": 116, "spe": 196},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Iron Head"], ["Stealth Rock"], ["Sucker Punch"]]
+				"moves": [["Knock Off"], ["Iron Head"], ["Stealth Rock"], ["Surprise Attack"]]
 			}, {
 				"species": "Pawniard",
 				"item": ["Life Orb"],
@@ -7857,7 +7857,7 @@
 				"evs": {"atk": 236, "def": 36, "spd": 36, "spe": 196},
 				"ivs": {"hp": 0},
 				"nature": "Jolly",
-				"moves": [["Knock Off"], ["Iron Head"], ["Sucker Punch"], ["Substitute", "Pursuit"]]
+				"moves": [["Knock Off"], ["Iron Head"], ["Surprise Attack"], ["Substitute", "Pursuit"]]
 			}, {
 				"species": "Pawniard",
 				"item": ["Choice Scarf"],
@@ -8628,7 +8628,7 @@
 				"evs": {"atk": 36, "def": 36, "spa": 196, "spe": 236},
 				"ivs": {"hp": 9},
 				"nature": "Naive",
-				"moves": [["Fire Blast"], ["Dark Pulse"], ["Sucker Punch"], ["Flame Charge", "Pursuit"]]
+				"moves": [["Fire Blast"], ["Dark Pulse"], ["Surprise Attack"], ["Flame Charge", "Pursuit"]]
 			}, {
 				"species": "Houndour",
 				"item": ["Choice Scarf"],
@@ -9724,35 +9724,35 @@
 				"ability": ["Defiant"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Sucker Punch"], ["Swords Dance"], ["Iron Head"]]
+				"moves": [["Knock Off"], ["Surprise Attack"], ["Swords Dance"], ["Iron Head"]]
 			}, {
 				"species": "Bisharp",
 				"item": ["Life Orb"],
 				"ability": ["Defiant"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Knock Off"], ["Sucker Punch"], ["Swords Dance"], ["Iron Head"]]
+				"moves": [["Knock Off"], ["Surprise Attack"], ["Swords Dance"], ["Iron Head"]]
 			}, {
 				"species": "Bisharp",
 				"item": ["Focus Sash"],
 				"ability": ["Defiant"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Stealth Rock"], ["Sucker Punch"], ["Iron Head"], ["Swords Dance", "Knock Off"]]
+				"moves": [["Stealth Rock"], ["Surprise Attack"], ["Iron Head"], ["Swords Dance", "Knock Off"]]
 			}, {
 				"species": "Bisharp",
 				"item": ["Darkinium Z"],
 				"ability": ["Defiant"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Sucker Punch"], ["Swords Dance"], ["Iron Head"]]
+				"moves": [["Knock Off"], ["Surprise Attack"], ["Swords Dance"], ["Iron Head"]]
 			}, {
 				"species": "Bisharp",
 				"item": ["Life Orb"],
 				"ability": ["Defiant"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Knock Off"], ["Sucker Punch"], ["Swords Dance"], ["Iron Head"]]
+				"moves": [["Knock Off"], ["Surprise Attack"], ["Swords Dance"], ["Iron Head"]]
 			}]
 		},
 		"hydreigon": {
@@ -10027,7 +10027,7 @@
 				"ability": ["Moxie"],
 				"evs": {"atk": 252, "spa": 4, "spe": 252},
 				"nature": "Naive",
-				"moves": [["Sucker Punch"], ["Brave Bird"], ["Superpower"], ["Dark Pulse", "Heat Wave"]]
+				"moves": [["Surprise Attack"], ["Brave Bird"], ["Superpower"], ["Dark Pulse", "Heat Wave"]]
 			}]
 		},
 		"weavile": {
@@ -10091,7 +10091,7 @@
 				"ability": ["Water Absorb"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Spikes"], ["Sucker Punch"], ["Seed Bomb"], ["Swords Dance"]]
+				"moves": [["Spikes"], ["Surprise Attack"], ["Seed Bomb"], ["Swords Dance"]]
 			}]
 		},
 		"houndoom": {
@@ -11827,7 +11827,7 @@
 				"ability": ["Dry Skin"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Gunk Shot"], ["Drain Punch"], ["Sucker Punch"], ["Swords Dance"]]
+				"moves": [["Gunk Shot"], ["Drain Punch"], ["Surprise Attack"], ["Swords Dance"]]
 			}, {
 				"species": "Toxicroak",
 				"item": ["Life Orb"],
@@ -12705,7 +12705,7 @@
 				"ability": ["Overgrow"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Roost"], ["Spirit Shackle"], ["Leaf Blade", "Sucker Punch"], ["Swords Dance"]]
+				"moves": [["Roost"], ["Spirit Shackle"], ["Leaf Blade", "Surprise Attack"], ["Swords Dance"]]
 			}, {
 				"species": "Decidueye",
 				"item": ["Leftovers"],
@@ -12719,7 +12719,7 @@
 				"ability": ["Overgrow"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Spirit Shackle"], ["Leaf Blade", "Sucker Punch"], ["Roost"]]
+				"moves": [["Swords Dance"], ["Spirit Shackle"], ["Leaf Blade", "Surprise Attack"], ["Roost"]]
 			}]
 		},
 		"jellicent": {
@@ -13299,7 +13299,7 @@
 				"evs": {"atk": 252, "spa": 4, "spe": 252},
 				"ivs": {"hp": 21, "def": 0, "spd": 0},
 				"nature": "Naive",
-				"moves": [["Earthquake"], ["Reversal"], ["Sucker Punch"], ["Sludge Wave"]]
+				"moves": [["Earthquake"], ["Reversal"], ["Surprise Attack"], ["Sludge Wave"]]
 			}]
 		},
 		"mamoswine": {
@@ -14333,21 +14333,21 @@
 				"ability": ["Aftermath"],
 				"evs": {"hp": 252, "atk": 252, "def": 4},
 				"nature": "Adamant",
-				"moves": [["Sucker Punch"], ["Defog"], ["Poison Jab"], ["Pursuit"]]
+				"moves": [["Surprise Attack"], ["Defog"], ["Poison Jab"], ["Pursuit"]]
 			}, {
 				"species": "Skuntank",
 				"item": ["Life Orb"],
 				"ability": ["Aftermath"],
 				"evs": {"hp": 252, "atk": 252, "def": 4},
 				"nature": "Naughty",
-				"moves": [["Sucker Punch"], ["Fire Blast"], ["Poison Jab"], ["Pursuit"]]
+				"moves": [["Surprise Attack"], ["Fire Blast"], ["Poison Jab"], ["Pursuit"]]
 			}, {
 				"species": "Skuntank",
 				"item": ["Life Orb"],
 				"ability": ["Aftermath"],
 				"evs": {"hp": 252, "atk": 252, "def": 4},
 				"nature": "Naughty",
-				"moves": [["Sucker Punch"], ["Fire Blast"], ["Defog"], ["Pursuit"]]
+				"moves": [["Surprise Attack"], ["Fire Blast"], ["Defog"], ["Pursuit"]]
 			}]
 		},
 		"beedrill": {

@@ -12,14 +12,14 @@ describe('Ice Face', () => {
 		battle = common.createBattle([[
 			{ species: 'Eiscue', ability: 'iceface', moves: ['splash'] },
 		], [
-			{ species: 'Mewtwo', ability: 'pressure', moves: ['tackle', 'watergun', 'hail'] },
+			{ species: 'Mewtwo', ability: 'pressure', moves: ['tackle', 'watergun', 'snowstorm'] },
 		]]);
 		const eiscue = battle.p1.active[0];
 
 		assert.hurts(eiscue, () => battle.makeChoices('auto', 'move watergun'));
 		assert.false.hurts(eiscue, () => battle.makeChoices());
 		assert.hurts(eiscue, () => battle.makeChoices());
-		assert.false.hurts(eiscue, () => battle.makeChoices('auto', 'move hail'));
+		assert.false.hurts(eiscue, () => battle.makeChoices('auto', 'move snowstorm'));
 		assert.false.hurts(eiscue, () => battle.makeChoices());
 		assert.hurts(eiscue, () => battle.makeChoices());
 	});
@@ -29,7 +29,7 @@ describe('Ice Face', () => {
 			{ species: 'Eiscue', ability: 'iceface', moves: ['transform'] },
 			{ species: 'Wynaut', moves: ['sleeptalk'] },
 		], [
-			{ species: 'Eiscue', ability: 'iceface', moves: ['sleeptalk', 'aerialace', 'hail'] },
+			{ species: 'Eiscue', ability: 'iceface', moves: ['sleeptalk', 'aerialace', 'snowstorm'] },
 		]]);
 		battle.makeChoices();
 		battle.makeChoices('move aerialace', 'move aerialace');
@@ -40,8 +40,8 @@ describe('Ice Face', () => {
 		battle.makeChoices('switch 2', 'auto');
 		battle.makeChoices('switch 2', 'auto');
 		battle.makeChoices('move transform', 'auto');
-		battle.makeChoices('move hail', 'auto');
-		assert.species(transformedEiscue, 'Eiscue-Noice', `Transformed Eiscue should not have changed to Eiscue after hail was set`);
+		battle.makeChoices('move snowstorm', 'auto');
+		assert.species(transformedEiscue, 'Eiscue-Noice', `Transformed Eiscue should not have changed to Eiscue after snowstorm was set`);
 	});
 
 	it(`should not trigger if the Pokemon was KOed by Max Hailstorm`, () => {
@@ -69,7 +69,7 @@ describe('Ice Face', () => {
 		]]);
 		const eiscue = battle.p1.active[0];
 		battle.makeChoices();
-		battle.makeChoices('switch 2', 'move finalgambit'); // hail activates
+		battle.makeChoices('switch 2', 'move finalgambit'); // snowstorm activates
 		battle.makeChoices('switch 2', 'switch 2'); // sun should activate first, even though Torkoal is slower, so Ice Face misses the timing
 		assert.species(eiscue, 'Eiscue-Noice');
 	});

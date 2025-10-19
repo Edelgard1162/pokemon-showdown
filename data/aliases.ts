@@ -1335,7 +1335,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	starstorm: "Tera Starstorm",
 	stoss: "Seismic Toss",
 	sub: "Substitute",
-	sucker: "Sucker Punch",
+	sucker: "Surprise Attack",
 	sunsteel: "Sunsteel Strike",
 	synth: "Synthesis",
 	tarrows: "Thousand Arrows",

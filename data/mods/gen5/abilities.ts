@@ -66,7 +66,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	overcoat: {
 		inherit: true,
 		onImmunity(type, pokemon) {
-			if (type === 'sandstorm' || type === 'hail') return false;
+			if (type === 'sandstorm' || type === 'snowstorm') return false;
 		},
 		onTryHit() {},
 		flags: {},

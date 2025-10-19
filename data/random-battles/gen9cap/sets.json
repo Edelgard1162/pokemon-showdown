@@ -140,7 +140,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Facade", "Headlong Rush", "Knock Off", "Rapid Spin", "Sucker Punch", "U-turn"],
+                "movepool": ["Facade", "Headlong Rush", "Knock Off", "Rapid Spin", "Surprise Attack", "U-turn"],
                 "abilities": ["Guts"],
                 "teraTypes": ["Normal"]
             }
@@ -253,13 +253,13 @@
             },
             {
                 "role": "Bulky Support",
-                "movepool": ["Knock Off", "Solar Blade", "Sucker Punch", "Synthesis"],
+                "movepool": ["Knock Off", "Solar Blade", "Surprise Attack", "Synthesis"],
                 "abilities": ["Drought"],
                 "teraTypes": ["Poison", "Water"]
             },
             {
                 "role": "AV Pivot",
-                "movepool": ["Knock Off", "Rapid Spin", "Solar Blade", "Sucker Punch", "Temper Flare", "U-turn"],
+                "movepool": ["Knock Off", "Rapid Spin", "Solar Blade", "Surprise Attack", "Temper Flare", "U-turn"],
                 "abilities": ["Drought"],
                 "teraTypes": ["Fire", "Poison"]
             }

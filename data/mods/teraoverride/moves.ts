@@ -823,7 +823,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'sandstorm':
 				move.type = pokemon.teraType;
 				break;
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				move.type = pokemon.teraType;
 				break;

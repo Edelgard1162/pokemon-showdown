@@ -19,7 +19,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	auroraveil: {
 		inherit: true,
 		onTry() {
-			return this.field.isWeather('hail');
+			return this.field.isWeather('snowstorm');
 		},
 	},
 	autotomize: {
@@ -37,7 +37,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	blizzard: {
 		inherit: true,
 		onModifyMove(move) {
-			if (this.field.isWeather('hail')) move.accuracy = true;
+			if (this.field.isWeather('snowstorm')) move.accuracy = true;
 		},
 	},
 	boltbeak: {
@@ -210,7 +210,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	hail: {
+	snowstorm: {
 		inherit: true,
 		isNonstandard: null,
 	},

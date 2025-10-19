@@ -487,7 +487,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onHit(pokemon) {
 			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
 				this.heal(pokemon.maxhp);
-			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'hail'])) {
+			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'snowstorm'])) {
 				this.heal(pokemon.baseMaxhp / 4);
 			} else {
 				this.heal(pokemon.baseMaxhp / 2);
@@ -499,7 +499,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onHit(pokemon) {
 			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
 				this.heal(pokemon.maxhp);
-			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'hail'])) {
+			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'snowstorm'])) {
 				this.heal(pokemon.baseMaxhp / 4);
 			} else {
 				this.heal(pokemon.baseMaxhp / 2);
@@ -730,7 +730,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			return source.status !== 'slp';
 		},
 	},
-	skyattack: {
+	godbird: {
 		inherit: true,
 		critRatio: 1,
 		onPrepareHit(target, source) {
@@ -871,7 +871,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		onHit(pokemon) {
 			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
 				this.heal(pokemon.maxhp);
-			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'hail'])) {
+			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'snowstorm'])) {
 				this.heal(pokemon.baseMaxhp / 4);
 			} else {
 				this.heal(pokemon.baseMaxhp / 2);

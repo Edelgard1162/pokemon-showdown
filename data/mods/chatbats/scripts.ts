@@ -69,7 +69,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData('Learnsets', 'chiyu').learnset.tripledive = ['9L1'];
 		this.modData('Learnsets', 'chiyu').learnset.pyroball = ['9L1'];
 		this.modData('Learnsets', 'chiyu').learnset.knockoff = ['9L1'];
-		this.modData('Learnsets', 'chiyu').learnset.suckerpunch = ['9L1'];
+		this.modData('Learnsets', 'chiyu').learnset.surpriseattack = ['9L1'];
 
 		this.modData('Learnsets', 'wochien').learnset.partingshot = ['9L1'];
 		this.modData('Learnsets', 'wochien').learnset.strengthsap = ['9L1'];
@@ -196,11 +196,11 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData('Learnsets', 'urshifu').learnset.aquajet = ['9L1'];
 
 		this.modData('Learnsets', 'urshifurapidstrike').learnset.agility = ['9L1'];
-		this.modData('Learnsets', 'urshifurapidstrike').learnset.suckerpunch = ['9L1'];
+		this.modData('Learnsets', 'urshifurapidstrike').learnset.surpriseattack = ['9L1'];
 
 		this.modData('Learnsets', 'stonjourner').learnset.rockwrecker = ['9L1'];
 		this.modData('Learnsets', 'stonjourner').learnset.meteorassault = ['9L1'];
-		this.modData('Learnsets', 'stonjourner').learnset.skyattack = ['9L1'];
+		this.modData('Learnsets', 'stonjourner').learnset.godbird = ['9L1'];
 		this.modData('Learnsets', 'stonjourner').learnset.solarblade = ['9L1'];
 
 		this.modData('Learnsets', 'veluza').learnset.ragefist = ['9L1'];

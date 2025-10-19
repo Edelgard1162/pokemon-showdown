@@ -63,7 +63,7 @@ const NO_STAB = [
 	'accelerock', 'aquajet', 'bulletpunch', 'clearsmog', 'dragontail', 'eruption', 'explosion',
 	'fakeout', 'firstimpression', 'flamecharge', 'futuresight', 'iceshard', 'icywind', 'incinerate', 'infestation', 'machpunch',
 	'nuzzle', 'pluck', 'poweruppunch', 'pursuit', 'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak',
-	'skyattack', 'skydrop', 'snarl', 'suckerpunch', 'uturn', 'watershuriken', 'vacuumwave', 'voltswitch', 'waterspout',
+	'godbird', 'skydrop', 'snarl', 'surpriseattack', 'uturn', 'watershuriken', 'vacuumwave', 'voltswitch', 'waterspout',
 ];
 // Hazard-setting moves
 const HAZARDS = [
@@ -364,7 +364,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 			// Liepard
 			['copycat', 'uturn'],
 			// Seviper
-			['switcheroo', 'suckerpunch'],
+			['switcheroo', 'surpriseattack'],
 			// Jirachi
 			['bodyslam', 'healingwish'],
 		];
@@ -372,7 +372,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 		for (const pair of incompatiblePairs) this.incompatibleMoves(moves, movePool, pair[0], pair[1]);
 
 		if (!types.includes('Dark') && preferredType !== 'Dark') {
-			this.incompatibleMoves(moves, movePool, 'knockoff', ['pursuit', 'suckerpunch']);
+			this.incompatibleMoves(moves, movePool, 'knockoff', ['pursuit', 'surpriseattack']);
 		}
 
 		const statusInflictingMoves = ['thunderwave', 'toxic', 'willowisp', 'yawn'];
@@ -750,7 +750,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 		case 'Sand Force': case 'Sand Rush':
 			return !teamDetails.sand;
 		case 'Slush Rush':
-			return !teamDetails.hail;
+			return !teamDetails.snowstorm;
 		case 'Swarm':
 			return !counter.get('Bug');
 		}
@@ -874,7 +874,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 			}
 		}
 		if (moves.has('waterspout')) return 'Choice Scarf';
-		if (moves.has('geomancy') || moves.has('skyattack')) return 'Power Herb';
+		if (moves.has('geomancy') || moves.has('godbird')) return 'Power Herb';
 		if (moves.has('shellsmash')) {
 			return (ability === 'Solid Rock' && !!counter.get('priority')) ? 'Weakness Policy' : 'White Herb';
 		}
@@ -913,7 +913,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 		);
 
 		if (
-			moves.has('pursuit') && moves.has('suckerpunch') && counter.get('Dark') && !this.priorityPokemon.includes(species.id)
+			moves.has('pursuit') && moves.has('surpriseattack') && counter.get('Dark') && !this.priorityPokemon.includes(species.id)
 		) return 'Black Glasses';
 		if (counter.get('Special') === 4) {
 			return (
@@ -1366,7 +1366,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 				// Track what the team has
 				if (item.megaStone || species.name === 'Rayquaza-Mega') hasMega = true;
 				if (item.zMove) teamDetails.zMove = 1;
-				if (set.ability === 'Snow Warning' || set.moves.includes('hail')) teamDetails.hail = 1;
+				if (set.ability === 'Snow Warning' || set.moves.includes('snowstorm')) teamDetails.snowstorm = 1;
 				if (set.moves.includes('raindance') || set.ability === 'Drizzle' && !item.isPrimalOrb) teamDetails.rain = 1;
 				if (set.ability === 'Sand Stream') teamDetails.sand = 1;
 				if (set.moves.includes('sunnyday') || set.ability === 'Drought' && !item.isPrimalOrb) teamDetails.sun = 1;
@@ -1421,7 +1421,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 			hydration: 'raindance', swiftswim: 'raindance',
 			leafguard: 'sunnyday', solarpower: 'sunnyday', chlorophyll: 'sunnyday',
 			sandforce: 'sandstorm', sandrush: 'sandstorm', sandveil: 'sandstorm',
-			slushrush: 'hail', snowcloak: 'hail',
+			slushrush: 'snowstorm', snowcloak: 'snowstorm',
 		};
 		const weatherAbilities = ['drizzle', 'drought', 'snowwarning', 'sandstream'];
 
@@ -1555,7 +1555,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 		const weatherAbilitiesSet: { [k: string]: string } = {
 			drizzle: 'raindance',
 			drought: 'sunnyday',
-			snowwarning: 'hail',
+			snowwarning: 'snowstorm',
 			sandstream: 'sandstorm',
 		};
 		const resistanceAbilities: { [k: string]: string[] } = {
@@ -1819,7 +1819,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 		const weatherAbilitiesSet: { [k: string]: string } = {
 			drizzle: 'raindance',
 			drought: 'sunnyday',
-			snowwarning: 'hail',
+			snowwarning: 'snowstorm',
 			sandstream: 'sandstorm',
 		};
 		const resistanceAbilities: { [k: string]: string[] } = {

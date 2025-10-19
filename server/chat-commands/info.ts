@@ -1032,7 +1032,7 @@ export const commands: Chat.ChatCommands = {
 		const statuses: { [k: string]: string } = {
 			brn: "Burn",
 			frz: "Frozen",
-			hail: "Hail damage",
+			snowstorm: "Hail damage",
 			par: "Paralysis",
 			powder: "Powder moves",
 			prankster: "Prankster",

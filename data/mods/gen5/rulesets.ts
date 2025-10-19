@@ -9,8 +9,8 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
 		inherit: true,
 		banlist: [
 			// Shell Smash: Clamperl Gen 5+ level-up
-			// Sucker Punch: Huntail Gen 4 tutor
-			'Huntail + Shell Smash + Sucker Punch',
+			// Surprise Attack: Huntail Gen 4 tutor
+			'Huntail + Shell Smash + Surprise Attack',
 		],
 	},
 	teampreview: {

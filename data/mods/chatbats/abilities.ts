@@ -687,21 +687,21 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			this.add('-activate', pokemon, 'ability: Hail Mary');
 		},
 		onModifySpe(spe, pokemon) {
-			if (this.field.isWeather(['hail', 'snowscape'])) {
-				this.debug('hail mary spe boost');
+			if (this.field.isWeather(['snowstorm', 'snowscape'])) {
+				this.debug('snowstorm mary spe boost');
 				return this.chainModify(2);
 			}
 		},
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, pokemon) {
-			if (this.field.isWeather(['hail', 'snowscape'])) {
-				this.debug('hail mary atk boost');
+			if (this.field.isWeather(['snowstorm', 'snowscape'])) {
+				this.debug('snowstorm mary atk boost');
 				return this.chainModify(1.5);
 			}
 		},
 		onSourceModifyAccuracyPriority: -1,
 		onSourceModifyAccuracy(accuracy, target, source, move) {
-			if (this.field.isWeather(['hail', 'snowscape'])) {
+			if (this.field.isWeather(['snowstorm', 'snowscape'])) {
 				if (move.category === 'Physical' && typeof accuracy === 'number') {
 					return this.chainModify([3277, 4096]);
 				}

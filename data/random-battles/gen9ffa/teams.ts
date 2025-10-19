@@ -9,7 +9,7 @@ const NO_STAB = [
 	'accelerock', 'aquajet', 'bounce', 'breakingswipe', 'bulldoze', 'bulletpunch', 'chatter', 'chloroblast', 'clearsmog', 'covet',
 	'dragontail', 'doomdesire', 'electroweb', 'eruption', 'explosion', 'fakeout', 'feint', 'flamecharge', 'flipturn', 'futuresight',
 	'grassyglide', 'iceshard', 'icywind', 'incinerate', 'infestation', 'machpunch', 'meteorbeam', 'mortalspin', 'nuzzle', 'pluck', 'pursuit',
-	'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skydrop', 'snarl', 'strugglebug', 'suckerpunch', 'thunderclap', 'trailblaze',
+	'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skydrop', 'snarl', 'strugglebug', 'surpriseattack', 'thunderclap', 'trailblaze',
 	'uturn', 'vacuumwave', 'voltswitch', 'watershuriken', 'waterspout',
 ];
 
@@ -233,7 +233,7 @@ export class RandomFFATeams extends RandomTeams {
 
 		if (!types.includes('Ice')) this.incompatibleMoves(moves, movePool, 'icebeam', 'icywind');
 
-		if (!types.includes('Dark') && teraType !== 'Dark') this.incompatibleMoves(moves, movePool, 'knockoff', 'suckerpunch');
+		if (!types.includes('Dark') && teraType !== 'Dark') this.incompatibleMoves(moves, movePool, 'knockoff', 'surpriseattack');
 
 		if (!types.includes('Rock')) this.incompatibleMoves(moves, movePool, 'rockslide', 'stoneedge');
 

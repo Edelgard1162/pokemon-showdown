@@ -16,7 +16,7 @@ const SETUP = [
 ];
 // Moves that shouldn't be the only STAB moves:
 const NO_STAB = [
-	'explosion', 'icywind', 'machpunch', 'pursuit', 'quickattack', 'rapidspin', 'selfdestruct', 'skyattack', 'thief',
+	'explosion', 'icywind', 'machpunch', 'pursuit', 'quickattack', 'rapidspin', 'selfdestruct', 'godbird', 'thief',
 ];
 
 // Moves that should be paired together when possible

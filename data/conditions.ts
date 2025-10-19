@@ -678,7 +678,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			this.add('-weather', 'none');
 		},
 	},
-	hail: {
+	snowstorm: {
 		name: 'Snowstorm',
 		effectType: 'Weather',
 		duration: 5,
@@ -690,7 +690,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 		},
 		onModifyDefPriority: 10,
 		onModifyDef(def, pokemon) {
-			if (pokemon.hasType('Ice') && this.field.isWeather('hail')) {
+			if (pokemon.hasType('Ice') && this.field.isWeather('snowstorm')) {
 				return this.modify(def, 1.5);
 			}
 		},

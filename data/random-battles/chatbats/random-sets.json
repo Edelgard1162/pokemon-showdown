@@ -159,13 +159,13 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Sucker Punch", "Mighty Cleave", "Earthquake", "Salt Cure", "Acrobatics", "Swords Dance"],
+                "movepool": ["Surprise Attack", "Mighty Cleave", "Earthquake", "Salt Cure", "Acrobatics", "Swords Dance"],
                 "abilities": ["Arena Trap"],
                 "teraTypes": ["Flying", "Ground"]
             },
             {
                 "role": "Fast Attacker",
-                "movepool": ["Sucker Punch", "Mighty Cleave", "Earthquake", "Tera Blast"],
+                "movepool": ["Surprise Attack", "Mighty Cleave", "Earthquake", "Tera Blast"],
                 "abilities": ["Arena Trap"],
                 "teraTypes": ["Flying"]
             }
@@ -265,7 +265,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Splash", "Triple Dive", "Pyro Ball", "Sucker Punch", "Knock Off"],
+                "movepool": ["Splash", "Triple Dive", "Pyro Ball", "Surprise Attack", "Knock Off"],
                 "abilities": ["Water Absorb"],
                 "teraTypes": ["Water", "Fire"]
             }
@@ -769,13 +769,13 @@
         "sets": [
             {
                 "role": "AV Pivot",
-                "movepool": ["Wicked Blow", "Close Combat", "Aqua Jet", "Sucker Punch", "U-turn"],
+                "movepool": ["Wicked Blow", "Close Combat", "Aqua Jet", "Surprise Attack", "U-turn"],
                 "abilities": ["Sniper"],
                 "teraTypes": ["Stellar"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Wicked Blow", "Close Combat", "Aqua Jet", "Sucker Punch", "Swords Dance", "Agility"],
+                "movepool": ["Wicked Blow", "Close Combat", "Aqua Jet", "Surprise Attack", "Swords Dance", "Agility"],
                 "abilities": ["Sniper"],
                 "teraTypes": ["Stellar"]
             }
@@ -786,13 +786,13 @@
         "sets": [
             {
                 "role": "AV Pivot",
-                "movepool": ["Surging Strikes", "Close Combat", "Aqua Jet", "Sucker Punch", "U-turn"],
+                "movepool": ["Surging Strikes", "Close Combat", "Aqua Jet", "Surprise Attack", "U-turn"],
                 "abilities": ["Sniper"],
                 "teraTypes": ["Stellar"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Surging Strikes", "Close Combat", "Aqua Jet", "Sucker Punch", "Swords Dance", "Agility"],
+                "movepool": ["Surging Strikes", "Close Combat", "Aqua Jet", "Surprise Attack", "Swords Dance", "Agility"],
                 "abilities": ["Sniper"],
                 "teraTypes": ["Stellar"]
             }
@@ -1030,13 +1030,13 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Crowverload", "Sucker Punch", "Oblivion Wing", "U-turn"],
+                "movepool": ["Crowverload", "Surprise Attack", "Oblivion Wing", "U-turn"],
                 "abilities": ["Supreme Overlord"],
                 "teraTypes": ["Dark"]
             },
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Crowverload", "Sucker Punch", "Oblivion Wing", "Close Combat"],
+                "movepool": ["Crowverload", "Surprise Attack", "Oblivion Wing", "Close Combat"],
                 "abilities": ["Supreme Overlord"],
                 "teraTypes": ["Fighting"]
             }

@@ -857,7 +857,7 @@ Example request object:
         },
         "moves": [
           "fireblast",
-          "suckerpunch",
+          "surpriseattack",
           "gigadrain",
           "focusblast"
         ],

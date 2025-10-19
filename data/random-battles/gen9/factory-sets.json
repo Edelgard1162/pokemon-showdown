@@ -460,7 +460,7 @@
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Dark"],
-				"moves": [["Swords Dance"], ["Icicle Crash"], ["Crunch"], ["Sucker Punch", "Ice Shard"]]
+				"moves": [["Swords Dance"], ["Icicle Crash"], ["Crunch"], ["Surprise Attack", "Ice Shard"]]
 			}, {
 				"species": "Chien-Pao",
 				"weight": 30,
@@ -469,7 +469,7 @@
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Adamant"],
 				"teraType": ["Dark"],
-				"moves": [["Swords Dance"], ["Icicle Crash"], ["Sucker Punch"], ["Ice Shard"]]
+				"moves": [["Swords Dance"], ["Icicle Crash"], ["Surprise Attack"], ["Ice Shard"]]
 			}, {
 				"species": "Chien-Pao",
 				"weight": 40,
@@ -478,7 +478,7 @@
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Dark", "Ice"],
-				"moves": [["Icicle Crash", "Ice Spinner"], ["Crunch"], ["Sucker Punch"], ["Ice Shard"]]
+				"moves": [["Icicle Crash", "Ice Spinner"], ["Crunch"], ["Surprise Attack"], ["Ice Shard"]]
 			}]
 		},
 		"deoxysattack": {
@@ -564,7 +564,7 @@
 				"evs": {"hp": 252, "atk": 252, "spd": 4},
 				"nature": ["Adamant"],
 				"teraType": ["Dark", "Flying"],
-				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head"], ["Sucker Punch"]]
+				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head"], ["Surprise Attack"]]
 			}, {
 				"species": "Kingambit",
 				"weight": 30,
@@ -573,7 +573,7 @@
 				"evs": {"hp": 252, "atk": 252, "spd": 4},
 				"nature": ["Adamant"],
 				"teraType": ["Fire"],
-				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head"], ["Sucker Punch"]]
+				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head"], ["Surprise Attack"]]
 			}]
 		},
 		"kyuremblack": {
@@ -661,7 +661,7 @@
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Adamant", "Jolly"],
 				"teraType": ["Dark"],
-				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head", "Low Kick"], ["Sucker Punch"]]
+				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head", "Low Kick"], ["Surprise Attack"]]
 			}, {
 				"species": "Kingambit",
 				"weight": 20,
@@ -670,7 +670,7 @@
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Adamant", "Jolly"],
 				"teraType": ["Ghost", "Fairy"],
-				"moves": [["Low Kick"], ["Swords Dance"], ["Iron Head", "Kowtow Cleave"], ["Sucker Punch"]]
+				"moves": [["Low Kick"], ["Swords Dance"], ["Iron Head", "Kowtow Cleave"], ["Surprise Attack"]]
 			}, {
 				"species": "Kingambit",
 				"weight": 20,
@@ -679,7 +679,7 @@
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Adamant"],
 				"teraType": ["Ghost", "Fairy"],
-				"moves": [["Iron Head"], ["Swords Dance"], ["Kowtow Cleave"], ["Sucker Punch"]]
+				"moves": [["Iron Head"], ["Swords Dance"], ["Kowtow Cleave"], ["Surprise Attack"]]
 			}, {
 				"species": "Kingambit",
 				"weight": 40,
@@ -688,7 +688,7 @@
 				"evs": {"hp": 252, "atk": 252, "spd": 4},
 				"nature": ["Adamant"],
 				"teraType": ["Ghost", "Fairy"],
-				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head"], ["Sucker Punch"]]
+				"moves": [["Kowtow Cleave"], ["Swords Dance"], ["Iron Head"], ["Surprise Attack"]]
 			}]
 		},
 		"zamazenta": {
@@ -769,7 +769,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Ghost"],
-				"moves": [["Dragon Darts"], ["Tera Blast"], ["U-turn"], ["Phantom Force", "Sucker Punch"]]
+				"moves": [["Dragon Darts"], ["Tera Blast"], ["U-turn"], ["Phantom Force", "Surprise Attack"]]
 			}]
 		},
 		"gholdengo": {
@@ -1352,7 +1352,7 @@
 				"evs": {"hp": 172, "atk": 252, "spe": 84},
 				"nature": ["Adamant"],
 				"teraType": ["Poison"],
-				"moves": [["Ceaseless Edge"], ["Razor Shell", "Aqua Cutter"], ["Knock Off", "Flip Turn"], ["Aqua Jet", "Sucker Punch"]]
+				"moves": [["Ceaseless Edge"], ["Razor Shell", "Aqua Cutter"], ["Knock Off", "Flip Turn"], ["Aqua Jet", "Surprise Attack"]]
 			}]
 		},
 		"slowkinggalar": {
@@ -1445,7 +1445,7 @@
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Fire"],
-				"moves": [["Pyro Ball"], ["U-turn"], ["Court Change"], ["Sucker Punch", "Gunk Shot"]]
+				"moves": [["Pyro Ball"], ["U-turn"], ["Court Change"], ["Surprise Attack", "Gunk Shot"]]
 			}]
 		},
 		"deoxysspeed": {
@@ -2427,7 +2427,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Adamant"],
 				"teraType": ["Bug"],
-				"moves": [["First Impression"], ["Knock Off"], ["U-turn"], ["Sucker Punch"]]
+				"moves": [["First Impression"], ["Knock Off"], ["U-turn"], ["Surprise Attack"]]
 			}, {
 				"species": "Lokix",
 				"weight": 30,
@@ -2436,7 +2436,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Adamant", "Jolly"],
 				"teraType": ["Dark"],
-				"moves": [["First Impression", "Protect"], ["Knock Off"], ["Swords Dance"], ["Sucker Punch"]]
+				"moves": [["First Impression", "Protect"], ["Knock Off"], ["Swords Dance"], ["Surprise Attack"]]
 			}]
 		},
 		"greninja": {
@@ -3198,7 +3198,7 @@
 				"evs": {"hp": 80, "atk": 252, "spe": 176},
 				"nature": ["Adamant"],
 				"teraType": ["Flying", "Dark"],
-				"moves": [["Swords Dance"], ["Sucker Punch"], ["Iron Head"], ["Throat Chop"]]
+				"moves": [["Swords Dance"], ["Surprise Attack"], ["Iron Head"], ["Throat Chop"]]
 			}]
 		},
 		"cyclizar": {
@@ -4645,7 +4645,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Dark"],
-				"moves": [["Close Combat", "Drain Punch"], ["Gunk Shot"], ["Swords Dance"], ["Knock Off", "Sucker Punch"]]
+				"moves": [["Close Combat", "Drain Punch"], ["Gunk Shot"], ["Swords Dance"], ["Knock Off", "Surprise Attack"]]
 			}, {
 				"species": "Toxicroak",
 				"weight": 10,
@@ -4654,7 +4654,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly", "Adamant"],
 				"teraType": ["Dark"],
-				"moves": [["Close Combat"], ["Knock Off"], ["Swords Dance"], ["Sucker Punch"]]
+				"moves": [["Close Combat"], ["Knock Off"], ["Swords Dance"], ["Surprise Attack"]]
 			}, {
 				"species": "Toxicroak",
 				"weight": 30,
@@ -6032,7 +6032,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Adamant"],
 				"teraType": ["Dark"],
-				"moves": [["Knock Off"], ["Brave Bird"], ["Sucker Punch"], ["Taunt", "Stealth Rock", "Roost"]]
+				"moves": [["Knock Off"], ["Brave Bird"], ["Surprise Attack"], ["Taunt", "Stealth Rock", "Roost"]]
 			}]
 		},
 		"florges": {
@@ -6201,7 +6201,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Dark"],
-				"moves": [["Knock Off"], ["Sucker Punch"], ["Swords Dance"], ["Low Kick", "Aerial Ace"]]
+				"moves": [["Knock Off"], ["Surprise Attack"], ["Swords Dance"], ["Low Kick", "Aerial Ace"]]
 			}]
 		},
 		"bellibolt": {
@@ -6352,7 +6352,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly", "Adamant"],
 				"teraType": ["Dark", "Ghost"],
-				"moves": [["Gunk Shot"], ["Knock Off"], ["Sucker Punch"], ["Taunt", "Toxic", "Toxic Spikes"]]
+				"moves": [["Gunk Shot"], ["Knock Off"], ["Surprise Attack"], ["Taunt", "Toxic", "Toxic Spikes"]]
 			}]
 		},
 		"bruxish": {
@@ -6429,7 +6429,7 @@
 				"evs": {"hp": 252, "atk": 4, "spd": 252},
 				"nature": ["Careful"],
 				"teraType": ["Poison", "Steel"],
-				"moves": [["Parting Shot"], ["Spirit Break"], ["Sucker Punch"], ["Thunder Wave"]]
+				"moves": [["Parting Shot"], ["Spirit Break"], ["Surprise Attack"], ["Thunder Wave"]]
 			}, {
 				"species": "Grimmsnarl",
 				"weight": 50,
@@ -6438,7 +6438,7 @@
 				"evs": {"hp": 252, "atk": 4, "spd": 252},
 				"nature": ["Careful"],
 				"teraType": ["Poison", "Steel"],
-				"moves": [["Bulk Up"], ["Spirit Break"], ["Sucker Punch"], ["Substitute"]]
+				"moves": [["Bulk Up"], ["Spirit Break"], ["Surprise Attack"], ["Substitute"]]
 			}]
 		},
 		"mudsdale": {
@@ -6591,7 +6591,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Dark"],
-				"moves": [["Swords Dance"], ["Trailblaze", "Leaf Blade", "Sucker Punch"], ["Triple Arrows", "Close Combat"], ["Knock Off"]]
+				"moves": [["Swords Dance"], ["Trailblaze", "Leaf Blade", "Surprise Attack"], ["Triple Arrows", "Close Combat"], ["Knock Off"]]
 			}, {
 				"species": "Decidueye-Hisui",
 				"weight": 25,
@@ -6600,7 +6600,7 @@
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly"],
 				"teraType": ["Dark"],
-				"moves": [["Swords Dance"], ["Knock Off", "Leaf Blade"], ["Triple Arrows", "Close Combat"], ["Sucker Punch"]]
+				"moves": [["Swords Dance"], ["Knock Off", "Leaf Blade"], ["Triple Arrows", "Close Combat"], ["Surprise Attack"]]
 			}, {
 				"species": "Decidueye-Hisui",
 				"weight": 50,

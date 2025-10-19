@@ -25,7 +25,7 @@ const SETUP = [
 const NO_STAB = [
 	'aquajet', 'bulletpunch', 'chatter', 'clearsmog', 'dragontail', 'eruption', 'explosion', 'fakeout', 'flamecharge',
 	'futuresight', 'iceshard', 'icywind', 'incinerate', 'knockoff', 'machpunch', 'pluck', 'pursuit', 'quickattack',
-	'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skyattack', 'skydrop', 'snarl', 'suckerpunch',
+	'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'godbird', 'skydrop', 'snarl', 'surpriseattack',
 	'uturn', 'vacuumwave', 'voltswitch', 'waterspout',
 ];
 // Hazard-setting moves
@@ -219,7 +219,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 			// Smeargle
 			['memento', 'whirlwind'],
 			// Seviper
-			['switcheroo', 'suckerpunch'],
+			['switcheroo', 'surpriseattack'],
 			// Jirachi
 			['bodyslam', 'healingwish'],
 		];
@@ -242,7 +242,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 				if (moves.size + movePool.length <= this.maxMoveCount) return;
 			}
 			if (species.baseSpecies === 'Wormadam' && role === 'Staller') {
-				if (movePool.includes('suckerpunch')) this.fastPop(movePool, movePool.indexOf('suckerpunch'));
+				if (movePool.includes('surpriseattack')) this.fastPop(movePool, movePool.indexOf('surpriseattack'));
 				if (moves.size + movePool.length <= this.maxMoveCount) return;
 			}
 		}
@@ -635,7 +635,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 		);
 
 		if (
-			moves.has('pursuit') && moves.has('suckerpunch') && counter.get('Dark') &&
+			moves.has('pursuit') && moves.has('surpriseattack') && counter.get('Dark') &&
 			(!this.priorityPokemon.includes(species.id) || counter.get('Dark') >= 2)
 		) return 'Black Glasses';
 		if (counter.get('Special') === 4) {
@@ -874,7 +874,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 			if (species.name === 'Zoroark' && pokemon.length >= (this.maxTeamSize - 1)) continue;
 
 			// Prevent Shedinja from generating after Sandstorm/Hail setters
-			if (species.name === 'Shedinja' && (teamDetails.sand || teamDetails.hail)) continue;
+			if (species.name === 'Shedinja' && (teamDetails.sand || teamDetails.snowstorm)) continue;
 
 			// Dynamically scale limits for different team sizes. The default and minimum value is 1.
 			const limitFactor = Math.round(this.maxTeamSize / 6) || 1;
@@ -962,7 +962,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 			if (set.level === 100) numMaxLevelPokemon++;
 
 			// Team details
-			if (set.ability === 'Snow Warning' || set.moves.includes('hail')) teamDetails.hail = 1;
+			if (set.ability === 'Snow Warning' || set.moves.includes('snowstorm')) teamDetails.snowstorm = 1;
 			if (set.ability === 'Drizzle' || set.moves.includes('raindance')) teamDetails.rain = 1;
 			if (set.ability === 'Sand Stream') teamDetails.sand = 1;
 			if (set.ability === 'Drought' || set.moves.includes('sunnyday')) teamDetails.sun = 1;

@@ -21,35 +21,35 @@
 				"ability": ["Dark Aura"],
 				"evs": {"hp": 248, "def": 72, "spd": 188},
 				"nature": "Careful",
-				"moves": [["Knock Off"], ["U-turn", "Snarl", "Sucker Punch"], ["Defog"], ["Roost"]]
+				"moves": [["Knock Off"], ["U-turn", "Snarl", "Surprise Attack"], ["Defog"], ["Roost"]]
 			}, {
 				"species": "Yveltal",
 				"item": ["Heavy-Duty Boots"],
 				"ability": ["Dark Aura"],
 				"evs": {"hp": 248, "def": 72, "spd": 188},
 				"nature": "Careful",
-				"moves": [["Knock Off"], ["U-turn", "Snarl"], ["Sucker Punch"], ["Roost"]]
+				"moves": [["Knock Off"], ["U-turn", "Snarl"], ["Surprise Attack"], ["Roost"]]
 			}, {
 				"species": "Yveltal",
 				"item": ["Life Orb", "Black Glasses"],
 				"ability": ["Dark Aura"],
 				"evs": {"atk": 252, "spd": 72, "spe": 184},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Hone Claws"], ["Sucker Punch"], ["Acrobatics"]]
+				"moves": [["Knock Off"], ["Hone Claws"], ["Surprise Attack"], ["Acrobatics"]]
 			}, {
 				"species": "Yveltal",
 				"item": ["Life Orb", "Black Glasses"],
 				"ability": ["Dark Aura"],
 				"evs": {"atk": 252, "spd": 72, "spe": 184},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Hone Claws"], ["Sucker Punch", "Acrobatics"], ["Roost"]]
+				"moves": [["Knock Off"], ["Hone Claws"], ["Surprise Attack", "Acrobatics"], ["Roost"]]
 			}, {
 				"species": "Yveltal",
 				"item": ["Life Orb"],
 				"ability": ["Dark Aura"],
 				"evs": {"atk": 4, "spa": 252, "spe": 252},
 				"nature": "Hasty",
-				"moves": [["Dark Pulse"], ["Oblivion Wing"], ["Sucker Punch"], ["Taunt"]]
+				"moves": [["Dark Pulse"], ["Oblivion Wing"], ["Surprise Attack"], ["Taunt"]]
 			}, {
 				"species": "Yveltal",
 				"item": ["Choice Scarf"],
@@ -63,7 +63,7 @@
 				"ability": ["Dark Aura"],
 				"evs": {"atk": 252, "spd": 72, "spe": 184},
 				"nature": ["Adamant", "Jolly"],
-				"moves": [["Knock Off"], ["Dual Wingbeat"], ["Sucker Punch"], ["U-turn"]]
+				"moves": [["Knock Off"], ["Dual Wingbeat"], ["Surprise Attack"], ["U-turn"]]
 			}]
 		},
 		"eternatus": {
@@ -486,14 +486,14 @@
 				"ability": ["Unseen Fist"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Wicked Blow"], ["Low Kick"], ["Sucker Punch"], ["U-turn"]]
+				"moves": [["Wicked Blow"], ["Low Kick"], ["Surprise Attack"], ["U-turn"]]
 			}, {
 				"species": "Urshifu",
 				"item": ["Black Glasses"],
 				"ability": ["Unseen Fist"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": ["Adamant", "Jolly"],
-				"moves": [["Wicked Blow"], ["Low Kick"], ["Sucker Punch"], ["Bulk Up"]]
+				"moves": [["Wicked Blow"], ["Low Kick"], ["Surprise Attack"], ["Bulk Up"]]
 			}]
 		},
 		"blissey": {
@@ -1295,14 +1295,14 @@
 				"ability": ["Defiant"],
 				"evs": {"hp": 4, "atk": 252, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Iron Head"], ["Sucker Punch"], ["Assurance"]]
+				"moves": [["Knock Off"], ["Iron Head"], ["Surprise Attack"], ["Assurance"]]
 			}, {
 				"species": "Bisharp",
 				"item": ["Life Orb", "Black Glasses"],
 				"ability": ["Defiant"],
 				"evs": {"hp": 4, "atk": 252, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Knock Off"], ["Iron Head"], ["Sucker Punch"], ["Swords Dance"]]
+				"moves": [["Knock Off"], ["Iron Head"], ["Surprise Attack"], ["Swords Dance"]]
 			}]
 		},
 		"blaziken": {
@@ -3008,7 +3008,7 @@
 				"ability": ["Dry Skin"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
-				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch"], ["Sucker Punch", "Knock Off"]]
+				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch"], ["Surprise Attack", "Knock Off"]]
 			}]
 		},
 		"tyrantrum": {
@@ -3491,7 +3491,7 @@
 				"ability": ["Dry Skin"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": ["Jolly", "Adamant"],
-				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch", "Low Kick"], ["Sucker Punch", "Knock Off", "Earthquake"]]
+				"moves": [["Swords Dance"], ["Gunk Shot"], ["Drain Punch", "Low Kick"], ["Surprise Attack", "Knock Off", "Earthquake"]]
 			}]
 		},
 		"tsareena": {
@@ -3797,14 +3797,14 @@
 				"ability": ["Frisk"],
 				"evs": {"hp": 4, "atk": 252, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Superpower"], ["Darkest Lariat"], ["Play Rough"], ["Sucker Punch"]]
+				"moves": [["Superpower"], ["Darkest Lariat"], ["Play Rough"], ["Surprise Attack"]]
 			}, {
 				"species": "Grimmsnarl",
 				"item": ["Choice Band"],
 				"ability": ["Frisk"],
 				"evs": {"hp": 4, "atk": 252, "spe": 252},
 				"nature": "Adamant",
-				"moves": [["Superpower", "Sucker Punch"], ["Darkest Lariat"], ["Play Rough"], ["Power Whip"]]
+				"moves": [["Superpower", "Surprise Attack"], ["Darkest Lariat"], ["Play Rough"], ["Power Whip"]]
 			}]
 		},
 		"drampa": {
@@ -4900,7 +4900,7 @@
 				"ability": ["Arena Trap"],
 				"evs": {"hp": 36, "atk": 236, "spe": 236},
 				"nature": "Jolly",
-				"moves": [["Earthquake"], ["Beat Up"], ["Protect", "Substitute", "Sucker Punch"], ["Final Gambit"]]
+				"moves": [["Earthquake"], ["Beat Up"], ["Protect", "Substitute", "Surprise Attack"], ["Final Gambit"]]
 			}, {
 				"species": "Diglett",
 				"item": ["Eviolite"],
@@ -4914,7 +4914,7 @@
 				"ability": ["Arena Trap"],
 				"evs": {"hp": 36, "atk": 236, "spe": 236},
 				"nature": "Jolly",
-				"moves": [["Earthquake"], ["Beat Up"], ["Substitute"], ["Rock Slide", "Sucker Punch", "Protect"]]
+				"moves": [["Earthquake"], ["Beat Up"], ["Substitute"], ["Rock Slide", "Surprise Attack", "Protect"]]
 			}]
 		},
 		"foongus": {
@@ -4965,7 +4965,7 @@
 				"ability": ["Defiant", "Inner Focus"],
 				"evs": {"atk": 156, "def": 36, "spd": 116, "spe": 196},
 				"nature": "Adamant",
-				"moves": [["Stealth Rock"], ["Knock Off"], ["Iron Head"], ["Sucker Punch"]]
+				"moves": [["Stealth Rock"], ["Knock Off"], ["Iron Head"], ["Surprise Attack"]]
 			}]
 		},
 		"shellder": {
@@ -5277,7 +5277,7 @@
 				"ability": ["Aftermath"],
 				"evs": {"hp": 12, "atk": 252, "spe": 244},
 				"nature": "Hasty",
-				"moves": [["Crunch"], ["Sucker Punch"], ["Play Rough"], ["Fire Blast"]]
+				"moves": [["Crunch"], ["Surprise Attack"], ["Play Rough"], ["Fire Blast"]]
 			}]
 		},
 		"bunnelby": {
@@ -5454,7 +5454,7 @@
 				"ability": ["Libero"],
 				"evs": {"hp": 36, "atk": 188, "def": 36, "spd": 36, "spe": 204},
 				"nature": "Jolly",
-				"moves": [["Blaze Kick"], ["Gunk Shot"], ["High Jump Kick", "Sucker Punch"], ["U-turn"]]
+				"moves": [["Blaze Kick"], ["Gunk Shot"], ["High Jump Kick", "Surprise Attack"], ["U-turn"]]
 			}]
 		},
 		"skrelp": {

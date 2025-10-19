@@ -73,12 +73,12 @@ describe(`Pressure`, () => {
 			{ species: 'Palkia', ability: 'pressure', moves: ['rest'] },
 			{ species: 'Dialga', ability: 'pressure', moves: ['rest'] },
 		], [
-			{ species: 'Kyurem', ability: 'pressure', moves: ['hail'] },
+			{ species: 'Kyurem', ability: 'pressure', moves: ['snowstorm'] },
 			{ species: 'Zekrom', ability: 'teravolt', moves: ['spikes'] },
 			{ species: 'Reshiram', ability: 'turboblaze', moves: ['rockslide'] },
 		]]);
 		battle.makeChoices();
-		let move = battle.p2.active[0].getMoveData(Dex.moves.get('hail'));
+		let move = battle.p2.active[0].getMoveData(Dex.moves.get('snowstorm'));
 		assert.equal(move.pp, move.maxpp - 4, `Hail should lose 3 additional PP from Pressure`);
 		move = battle.p2.active[1].getMoveData(Dex.moves.get('spikes'));
 		assert.equal(move.pp, move.maxpp - 4, `Spikes should lose 3 additional PP from Pressure`);
@@ -245,11 +245,11 @@ describe('Pressure [Gen 4]', () => {
 			{ species: 'Palkia', ability: 'pressure', moves: ['rest'] },
 			{ species: 'Dialga', ability: 'pressure', moves: ['rest'] },
 		], [
-			{ species: 'Lugia', ability: 'pressure', moves: ['hail'] },
+			{ species: 'Lugia', ability: 'pressure', moves: ['snowstorm'] },
 			{ species: 'Ho-Oh', ability: 'pressure', moves: ['earthquake'] },
 		]]);
 		battle.makeChoices();
-		let move = battle.p2.active[0].getMoveData(Dex.moves.get('hail'));
+		let move = battle.p2.active[0].getMoveData(Dex.moves.get('snowstorm'));
 		assert.equal(move.pp, move.maxpp - 4, `Hail should lose 3 additional PP from Pressure`);
 		move = battle.p2.active[1].getMoveData(Dex.moves.get('earthquake'));
 		assert.equal(move.pp, move.maxpp - 4, `Earthquake should lose 3 additional PP from Pressure`);

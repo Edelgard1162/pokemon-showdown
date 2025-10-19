@@ -29,7 +29,7 @@ describe('Two Turn Moves [Gen 1]', () => {
 
 	it(`move is paused when asleep or frozen`, () => {
 		battle = common.gen(1).createBattle();
-		battle.setPlayer('p1', { team: [{ species: "Aerodactyl", moves: ['skyattack'] }] });
+		battle.setPlayer('p1', { team: [{ species: "Aerodactyl", moves: ['godbird'] }] });
 		battle.setPlayer('p2', { team: [{ species: "Parasect", moves: ['spore'] }] });
 		const aerodactyl = battle.p1.active[0];
 		for (let i = 0; i < 10; i++) {
@@ -41,7 +41,7 @@ describe('Two Turn Moves [Gen 1]', () => {
 
 	it(`two-turn move ends if it fails due to Disable, does not use PP`, () => {
 		battle = common.gen(1).createBattle({ forceRandomChance: true }, [[
-			{ species: 'Aerodactyl', moves: ['skyattack'] },
+			{ species: 'Aerodactyl', moves: ['godbird'] },
 		], [
 			{ species: 'Drowzee', moves: ['disable'] },
 		]]);

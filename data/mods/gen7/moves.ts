@@ -677,7 +677,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'raindance':
 			case 'primordialsea':
 			case 'sandstorm':
-			case 'hail':
+			case 'snowstorm':
 				factor = 0.25;
 				break;
 			}
@@ -701,7 +701,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'raindance':
 			case 'primordialsea':
 			case 'sandstorm':
-			case 'hail':
+			case 'snowstorm':
 				factor = 0.25;
 				break;
 			}
@@ -1102,7 +1102,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'raindance':
 			case 'primordialsea':
 			case 'sandstorm':
-			case 'hail':
+			case 'snowstorm':
 				factor = 0.25;
 				break;
 			}

@@ -67,7 +67,7 @@ describe('Delta Stream', () => {
 			{ species: "Kyogre", ability: 'drizzle', moves: ['raindance'] },
 			{ species: "Groudon", ability: 'drought', moves: ['sunnyday'] },
 			{ species: "Tyranitar", ability: 'sandstream', moves: ['sandstorm'] },
-			{ species: "Abomasnow", ability: 'snowwarning', moves: ['hail'] },
+			{ species: "Abomasnow", ability: 'snowwarning', moves: ['snowstorm'] },
 		]]);
 		for (let i = 2; i <= 5; i++) {
 			battle.makeChoices('move helpinghand', 'switch ' + i);

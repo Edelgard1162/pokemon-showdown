@@ -777,7 +777,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			case 'sandstorm':
 				move.type = 'Rock';
 				break;
-			case 'hail':
+			case 'snowstorm':
 				move.type = 'Ice';
 				move.category = 'Special';
 				break;

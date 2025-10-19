@@ -573,7 +573,7 @@
 			},
 			{
 				"role": "Bulky Attacker",
-				"movepool": ["Crunch", "Liquidation", "Slack Off", "Thunder Fang", "Sucker Punch"],
+				"movepool": ["Crunch", "Liquidation", "Slack Off", "Thunder Fang", "Surprise Attack"],
 				"abilities": ["Strong Jaw"],
 				"teraTypes": ["Dark"]
 			}
@@ -1092,13 +1092,13 @@
 		"sets": [
 			{
 				"role": "Fast Bulky Setup",
-				"movepool": ["Trick Room", "Close Combat", "Knock Off", "Sucker Punch", "Poison Jab", "Play Rough"],
+				"movepool": ["Trick Room", "Close Combat", "Knock Off", "Surprise Attack", "Poison Jab", "Play Rough"],
 				"abilities": ["Quark Drive"],
 				"teraTypes": ["Fighting"]
 			},
 			{
 				"role": "Bulky Support",
-				"movepool": ["Ceaseless Edge", "Close Combat", "Knock Off", "Slack Off", "Parting Shot", "Sucker Punch"],
+				"movepool": ["Ceaseless Edge", "Close Combat", "Knock Off", "Slack Off", "Parting Shot", "Surprise Attack"],
 				"abilities": ["Quark Drive"],
 				"teraTypes": ["Fighting"]
 			}

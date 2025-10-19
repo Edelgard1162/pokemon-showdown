@@ -93,13 +93,13 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Poison Jab", "Power Whip", "Sucker Punch", "Swords Dance"],
+                "movepool": ["Poison Jab", "Power Whip", "Surprise Attack", "Swords Dance"],
                 "abilities": ["Chlorophyll"],
                 "teraTypes": ["Dark", "Grass"]
             },
             {
                 "role": "Bulky Support",
-                "movepool": ["Knock Off", "Power Whip", "Sleep Powder", "Sludge Bomb", "Strength Sap", "Sucker Punch"],
+                "movepool": ["Knock Off", "Power Whip", "Sleep Powder", "Sludge Bomb", "Strength Sap", "Surprise Attack"],
                 "abilities": ["Chlorophyll"],
                 "teraTypes": ["Dark", "Steel"]
             },
@@ -138,7 +138,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["Earthquake", "Rock Blast", "Spikes", "Stealth Rock", "Stone Edge", "Sucker Punch"],
+                "movepool": ["Earthquake", "Rock Blast", "Spikes", "Stealth Rock", "Stone Edge", "Surprise Attack"],
                 "abilities": ["Sturdy"],
                 "teraTypes": ["Dragon", "Fairy"]
             }
@@ -222,13 +222,13 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Drain Punch", "Giga Drain", "Leaf Storm", "Poison Jab", "Spikes", "Sucker Punch", "Toxic Spikes"],
+                "movepool": ["Drain Punch", "Giga Drain", "Leaf Storm", "Poison Jab", "Spikes", "Surprise Attack", "Toxic Spikes"],
                 "abilities": ["Water Absorb"],
                 "teraTypes": ["Poison", "Steel"]
             },
             {
                 "role": "Bulky Setup",
-                "movepool": ["Bullet Seed", "Drain Punch", "Sucker Punch", "Swords Dance", "Thunder Punch"],
+                "movepool": ["Bullet Seed", "Drain Punch", "Surprise Attack", "Swords Dance", "Thunder Punch"],
                 "abilities": ["Water Absorb"],
                 "teraTypes": ["Dark", "Electric", "Fighting", "Grass"]
             }
@@ -575,7 +575,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Earthquake", "Stealth Rock", "Stone Edge", "Sucker Punch", "Swords Dance"],
+                "movepool": ["Earthquake", "Stealth Rock", "Stone Edge", "Surprise Attack", "Swords Dance"],
                 "abilities": ["Arena Trap"],
                 "teraTypes": ["Ground", "Rock"]
             }
@@ -1342,7 +1342,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Dark Pulse", "Flamethrower", "Nasty Plot", "Sludge Bomb", "Sucker Punch"],
+                "movepool": ["Dark Pulse", "Flamethrower", "Nasty Plot", "Sludge Bomb", "Surprise Attack"],
                 "abilities": ["Flash Fire"],
                 "teraTypes": ["Dark", "Fire", "Poison"]
             }
@@ -1382,7 +1382,7 @@
             },
             {
                 "role": "Bulky Support",
-                "movepool": ["Dark Pulse", "Dazzling Gleam", "Draining Kiss", "Parting Shot", "Sucker Punch", "Taunt", "Thunder Wave"],
+                "movepool": ["Dark Pulse", "Dazzling Gleam", "Draining Kiss", "Parting Shot", "Surprise Attack", "Taunt", "Thunder Wave"],
                 "abilities": ["Prankster"],
                 "teraTypes": ["Poison", "Steel"]
             }
@@ -1843,13 +1843,13 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Dark Pulse", "Heat Wave", "Hurricane", "Nasty Plot", "Sucker Punch"],
+                "movepool": ["Dark Pulse", "Heat Wave", "Hurricane", "Nasty Plot", "Surprise Attack"],
                 "abilities": ["Super Luck"],
                 "teraTypes": ["Dark", "Fairy", "Flying", "Steel"]
             },
             {
                 "role": "Fast Support",
-                "movepool": ["Brave Bird", "Sucker Punch", "Thunder Wave", "U-turn"],
+                "movepool": ["Brave Bird", "Surprise Attack", "Thunder Wave", "U-turn"],
                 "abilities": ["Prankster"],
                 "teraTypes": ["Fairy", "Steel"]
             }
@@ -1910,7 +1910,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["First Impression", "Leech Life", "Sucker Punch", "U-turn"],
+                "movepool": ["First Impression", "Leech Life", "Surprise Attack", "U-turn"],
                 "abilities": ["Tinted Lens"],
                 "teraTypes": ["Bug"]
             }
@@ -1960,7 +1960,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Iron Head", "Night Slash", "Sucker Punch", "Swords Dance"],
+                "movepool": ["Iron Head", "Night Slash", "Surprise Attack", "Swords Dance"],
                 "abilities": ["Defiant"],
                 "teraTypes": ["Dark", "Fairy", "Steel"]
             }
@@ -2094,7 +2094,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Crunch", "Play Rough", "Poison Fang", "Sucker Punch", "Super Fang", "Taunt", "Yawn"],
+                "movepool": ["Crunch", "Play Rough", "Poison Fang", "Surprise Attack", "Super Fang", "Taunt", "Yawn"],
                 "abilities": ["Rattled"],
                 "teraTypes": ["Fairy", "Poison"]
             }
@@ -2234,7 +2234,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Play Rough", "Stealth Rock", "Stomping Tantrum", "Stone Edge", "Sucker Punch", "Swords Dance"],
+                "movepool": ["Play Rough", "Stealth Rock", "Stomping Tantrum", "Stone Edge", "Surprise Attack", "Swords Dance"],
                 "abilities": ["Vital Spirit"],
                 "teraTypes": ["Fairy", "Ground", "Rock"]
             }
@@ -2362,7 +2362,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Flare Blitz", "Gunk Shot", "High Jump Kick", "Sucker Punch", "U-turn"],
+                "movepool": ["Flare Blitz", "Gunk Shot", "High Jump Kick", "Surprise Attack", "U-turn"],
                 "abilities": ["Libero"],
                 "teraTypes": ["Fighting"]
             },
@@ -2413,7 +2413,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["Body Slam", "Bullet Seed", "Defog", "Sucker Punch", "Synthesis"],
+                "movepool": ["Body Slam", "Bullet Seed", "Defog", "Surprise Attack", "Synthesis"],
                 "abilities": ["Chlorophyll", "Pickpocket"],
                 "teraTypes": ["Steel", "Water"]
             }
@@ -2815,7 +2815,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["Knock Off", "Leech Life", "Poison Jab", "Sticky Web", "Sucker Punch", "Toxic Spikes"],
+                "movepool": ["Knock Off", "Leech Life", "Poison Jab", "Sticky Web", "Surprise Attack", "Toxic Spikes"],
                 "abilities": ["Insomnia", "Swarm"],
                 "teraTypes": ["Dark", "Ghost", "Steel"]
             }
@@ -2837,7 +2837,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Bullet Seed", "Play Rough", "Shadow Claw", "Sucker Punch", "U-turn"],
+                "movepool": ["Bullet Seed", "Play Rough", "Shadow Claw", "Surprise Attack", "U-turn"],
                 "abilities": ["Protean"],
                 "teraTypes": ["Grass"]
             }
@@ -2893,7 +2893,7 @@
         "sets": [
             {
                 "role": "Fast Support",
-                "movepool": ["Fire Blast", "Gunk Shot", "Knock Off", "Sucker Punch", "Taunt", "Toxic Spikes"],
+                "movepool": ["Fire Blast", "Gunk Shot", "Knock Off", "Surprise Attack", "Taunt", "Toxic Spikes"],
                 "abilities": ["Aftermath"],
                 "teraTypes": ["Dark", "Poison"]
             }

@@ -232,7 +232,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	suckerpunch: {
+	surpriseattack: {
 		inherit: true,
 		basePower: 80,
 	},

@@ -462,7 +462,7 @@ declare namespace RandomTeamsTypes {
 		megaStone?: number;
 		zMove?: number;
 		snow?: number;
-		hail?: number;
+		snowstorm?: number;
 		rain?: number;
 		sand?: number;
 		sun?: number;

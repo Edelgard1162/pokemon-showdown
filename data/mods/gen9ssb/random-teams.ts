@@ -405,7 +405,7 @@ export const ssbSets: SSBSets = {
 	},
 	Froggeh: {
 		species: 'Toxicroak', ability: 'Super Luck', item: 'Leftovers', gender: 'M',
-		moves: ['Gunk Shot', 'Sucker Punch', 'Drain Punch'],
+		moves: ['Gunk Shot', 'Surprise Attack', 'Drain Punch'],
 		signatureMove: 'Cringe Dad Joke',
 		evs: { atk: 252, spd: 4, spe: 252 }, nature: 'Adamant', teraType: 'Dark',
 	},
@@ -495,7 +495,7 @@ export const ssbSets: SSBSets = {
 	},
 	Kalalokki: {
 		species: 'Flamigo', ability: 'Scrappy', item: 'Choice Band', gender: 'M',
-		moves: ['Brave Bird', 'Sucker Punch', ['Drain Punch', 'Rapid Spin']],
+		moves: ['Brave Bird', 'Surprise Attack', ['Drain Punch', 'Rapid Spin']],
 		signatureMove: 'Knot Weak',
 		evs: { atk: 252, def: 4, spe: 252 }, nature: 'Jolly', teraType: ['Fighting', 'Flying'],
 	},
@@ -555,7 +555,7 @@ export const ssbSets: SSBSets = {
 	},
 	Kry: {
 		species: 'Mawile', ability: 'Flash Freeze', item: 'Mawilite', gender: 'M',
-		moves: ['Sucker Punch', 'Fire Lash', 'Play Rough'],
+		moves: ['Surprise Attack', 'Fire Lash', 'Play Rough'],
 		signatureMove: 'Attack of Opportunity',
 		evs: { hp: 252, atk: 252, spd: 4 }, nature: 'Adamant', shiny: 1024,
 	},
@@ -651,7 +651,7 @@ export const ssbSets: SSBSets = {
 	},
 	Neko: {
 		species: 'Chien-Pao', ability: 'Weatherproof', item: 'Heavy-Duty Boots', gender: 'N',
-		moves: ['Swords Dance', 'Bitter Blade', ['Crunch', 'Sucker Punch']],
+		moves: ['Swords Dance', 'Bitter Blade', ['Crunch', 'Surprise Attack']],
 		signatureMove: 'Quality Control Zoomies',
 		evs: { atk: 252, def: 4, spe: 252 }, nature: 'Jolly', teraType: 'Fire',
 	},
@@ -741,7 +741,7 @@ export const ssbSets: SSBSets = {
 	},
 	PYRO: {
 		species: 'Kingambit', ability: 'Hardcore Hustle', item: 'Leftovers', gender: 'M',
-		moves: ['Kowtow Cleave', 'Sucker Punch', 'Swords Dance'],
+		moves: ['Kowtow Cleave', 'Surprise Attack', 'Swords Dance'],
 		signatureMove: 'Meat Grinder',
 		evs: { hp: 252, atk: 252, def: 4 }, nature: 'Adamant', teraType: 'Flying',
 	},

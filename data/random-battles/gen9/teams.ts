@@ -106,7 +106,7 @@ const NO_STAB = [
 	'accelerock', 'aquajet', 'bounce', 'breakingswipe', 'bulletpunch', 'chatter', 'chloroblast', 'clearsmog', 'covet',
 	'dragontail', 'doomdesire', 'electroweb', 'eruption', 'explosion', 'fakeout', 'feint', 'flamecharge', 'flipturn', 'futuresight',
 	'grassyglide', 'iceshard', 'icywind', 'incinerate', 'infestation', 'machpunch', 'meteorbeam', 'mortalspin', 'nuzzle', 'pluck', 'pursuit',
-	'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skydrop', 'snarl', 'strugglebug', 'suckerpunch', 'trailblaze',
+	'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skydrop', 'snarl', 'strugglebug', 'surpriseattack', 'trailblaze',
 	'uturn', 'vacuumwave', 'voltswitch', 'watershuriken', 'waterspout',
 ];
 // Hazard-setting moves
@@ -620,7 +620,7 @@ export class RandomTeams {
 
 		if (!isDoubles) this.incompatibleMoves(moves, movePool, 'taunt', 'encore');
 
-		if (!types.includes('Dark') && teraType !== 'Dark') this.incompatibleMoves(moves, movePool, 'knockoff', 'suckerpunch');
+		if (!types.includes('Dark') && teraType !== 'Dark') this.incompatibleMoves(moves, movePool, 'knockoff', 'surpriseattack');
 
 		if (!abilities.includes('Prankster')) this.incompatibleMoves(moves, movePool, 'thunderwave', 'yawn');
 
@@ -1268,7 +1268,7 @@ export class RandomTeams {
 			return (counter.get('Physical') > counter.get('Special')) ? 'Choice Band' : 'Choice Specs';
 		}
 		if (counter.get('Physical') >= moves.size &&
-			['fakeout', 'feint', 'firstimpression', 'rapidspin', 'suckerpunch'].every(m => !moves.has(m)) &&
+			['fakeout', 'feint', 'firstimpression', 'rapidspin', 'surpriseattack'].every(m => !moves.has(m)) &&
 			(moves.has('flipturn') || moves.has('uturn') || role === 'Doubles Wallbreaker')
 		) {
 			return (scarfReqs) ? 'Choice Scarf' : 'Choice Band';
@@ -2825,7 +2825,7 @@ export class RandomTeams {
 		const weatherAbilitiesSet: { [k: string]: string } = {
 			drizzle: "raindance",
 			drought: "sunnyday",
-			snowwarning: "hail",
+			snowwarning: "snowstorm",
 			sandstream: "sandstorm",
 		};
 		const resistanceAbilities: { [k: string]: string[] } = {

@@ -2493,7 +2493,7 @@ export const Conditions: { [id: IDEntry]: ModdedConditionData & { innateName?: s
 					type = 'Fire';
 				} else if (['sandstorm', 'deserteddunes'].includes(currentWeather) && !target.hasType('Rock')) {
 					type = 'Rock';
-				} else if (['hail', 'snowscape'].includes(currentWeather) && !target.hasType('Ice')) {
+				} else if (['snowstorm', 'snowscape'].includes(currentWeather) && !target.hasType('Ice')) {
 					type = 'Ice';
 				} else {
 					// do nothing if it's not the 4 primary weathers...unless there are more?

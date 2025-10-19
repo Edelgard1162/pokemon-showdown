@@ -258,7 +258,7 @@ describe('Neutralizing Gas', () => {
 
 	it(`should not prevent Ice Face from blocking damage nor reform Ice Face when leaving the field`, () => {
 		battle = common.createBattle([[
-			{ species: 'Eiscue', ability: 'iceface', moves: ['sleeptalk', 'hail'] },
+			{ species: 'Eiscue', ability: 'iceface', moves: ['sleeptalk', 'snowstorm'] },
 		], [
 			{ species: 'Mewtwo', ability: 'neutralizinggas', moves: ['tackle', 'sleeptalk'] },
 			{ species: 'Wynaut', moves: ['sleeptalk'] },
@@ -266,7 +266,7 @@ describe('Neutralizing Gas', () => {
 		const eiscue = battle.p1.active[0];
 		battle.makeChoices();
 		assert.species(eiscue, 'Eiscue-Noice');
-		battle.makeChoices('move hail', 'move sleeptalk');
+		battle.makeChoices('move snowstorm', 'move sleeptalk');
 		assert.species(eiscue, 'Eiscue');
 		battle.makeChoices();
 		assert.species(eiscue, 'Eiscue-Noice');

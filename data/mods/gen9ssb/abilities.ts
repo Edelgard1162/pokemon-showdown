@@ -1089,7 +1089,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 				"Safeguard", "Mist", "King's Shield", "Magic Coat", "Aurora Veil",
 			];
 			const move = this.dex.getActiveMove(this.sample(randomMove));
-			// allows use of Aurora Veil without hail
+			// allows use of Aurora Veil without snowstorm
 			if (move.name === "Aurora Veil") delete move.onTry;
 			this.actions.useMove(move, target);
 		},
@@ -1102,12 +1102,12 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		name: "Fortifying Frost",
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			if (['hail', 'snowscape'].includes(pokemon.effectiveWeather())) {
+			if (['snowstorm', 'snowscape'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpD(spd, pokemon) {
-			if (['hail', 'snowscape'].includes(pokemon.effectiveWeather())) {
+			if (['snowstorm', 'snowscape'].includes(pokemon.effectiveWeather())) {
 				return this.chainModify(1.5);
 			}
 		},
@@ -2984,7 +2984,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			case 'stormsurge':
 				if (pokemon.species.id !== 'castformrainy') forme = 'Castform-Rainy';
 				break;
-			case 'hail':
+			case 'snowstorm':
 			case 'snowscape':
 				if (pokemon.species.id !== 'castformsnowy') forme = 'Castform-Snowy';
 				break;
@@ -3037,7 +3037,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	overcoat: {
 		inherit: true,
 		onImmunity(type, pokemon) {
-			if (type === 'sandstorm' || type === 'deserteddunes' || type === 'hail' || type === 'powder') return false;
+			if (type === 'sandstorm' || type === 'deserteddunes' || type === 'snowstorm' || type === 'powder') return false;
 		},
 	},
 	primordialsea: {

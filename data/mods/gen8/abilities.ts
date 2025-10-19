@@ -955,7 +955,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	snowwarning: {
 		inherit: true,
 		onStart(source) {
-			this.field.setWeather('hail');
+			this.field.setWeather('snowstorm');
 		},
 		rating: 4,
 	},

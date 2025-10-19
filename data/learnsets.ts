@@ -35955,6 +35955,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			hyperbeam: ["9M", "8M", "7M", "6M", "5M", "4M", "3M"],
 			hypervoice: ["9M", "8M", "7T", "6T", "5T"],
 			hypnosis: ["9L9", "8L9", "7L49", "6L49", "5L65", "5S0", "4L60", "3L51"],
+			icebeam: ["9M", "8M", "7M", "6M", "5M", "5S0", "4M", "3M"],
 			icepunch: ["9M", "8M", "7T", "6T", "5T", "4T", "3T"],
 			icywind: ["9M", "8M", "7T", "6T", "5T", "4T", "3T"],
 			imprison: ["9M", "8M", "7L35", "6L35", "5L45", "4L40", "3L33"],

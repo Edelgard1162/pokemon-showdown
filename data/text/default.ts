@@ -283,7 +283,7 @@ export const DefaultText: { [id: IDEntry]: DefaultText } = {
 		end: "  The rain stopped.",
 		upkeep: "  (Rain continues to fall.)",
 	},
-	snowstorm: {
+	hail: {
 		weatherName: "Snowstorm",
 		start: "  A snowstorm kicked up!",
 		end: "  The snowstorm subsided.",

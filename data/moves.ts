@@ -5555,7 +5555,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		condition: {
-			duration: 4,
+			duration: 5,
 			onSideStart(targetSide) {
 				this.add('-sidestart', targetSide, 'Fire Pledge');
 			},
@@ -7734,6 +7734,35 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Flying",
 		contestType: "Cool",
 	},
+	godbird: {
+		num: 143,
+		accuracy: 90,
+		basePower: 140,
+		category: "Physical",
+		name: "God Bird",
+		pp: 5,
+		priority: 0,
+		flags: { charge: 1, protect: 1, mirror: 1, distance: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1 },
+		critRatio: 2,
+		onTryMove(attacker, defender, move) {
+			if (attacker.removeVolatile(move.id)) {
+				return;
+			}
+			this.add('-prepare', attacker, move.name);
+			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
+				return;
+			}
+			attacker.addVolatile('twoturnmove', defender);
+			return null;
+		},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Flying",
+		contestType: "Cool",
+	},
 	grassknot: {
 		num: 447,
 		accuracy: 100,
@@ -7820,7 +7849,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		condition: {
-			duration: 4,
+			duration: 5,
 			onSideStart(targetSide) {
 				this.add('-sidestart', targetSide, 'Grass Pledge');
 			},
@@ -15540,7 +15569,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	rockblast: {
 		num: 350,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		name: "Rock Blast",
@@ -17059,35 +17088,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Normal",
 		contestType: "Tough",
-	},
-	skyattack: {
-		num: 143,
-		accuracy: 90,
-		basePower: 140,
-		category: "Physical",
-		name: "God Bird",
-		pp: 5,
-		priority: 0,
-		flags: { charge: 1, protect: 1, mirror: 1, distance: 1, metronome: 1, nosleeptalk: 1, failinstruct: 1 },
-		critRatio: 2,
-		onTryMove(attacker, defender, move) {
-			if (attacker.removeVolatile(move.id)) {
-				return;
-			}
-			this.add('-prepare', attacker, move.name);
-			if (!this.runEvent('ChargeMove', attacker, defender, move)) {
-				return;
-			}
-			attacker.addVolatile('twoturnmove', defender);
-			return null;
-		},
-		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
-		},
-		target: "any",
-		type: "Flying",
-		contestType: "Cool",
 	},
 	skydrop: {
 		num: 507,
@@ -18868,27 +18868,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ice",
 		contestType: "Cool",
 	},
-	suckerpunch: {
-		num: 389,
-		accuracy: 100,
-		basePower: 70,
-		category: "Physical",
-		name: "Surprise Attack",
-		pp: 5,
-		priority: 1,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		onTry(source, target) {
-			const action = this.queue.willMove(target);
-			const move = action?.choice === 'move' ? action.move : null;
-			if (!move || (move.category === 'Status' && move.id !== 'mefirst') || target.volatiles['mustrecharge']) {
-				return false;
-			}
-		},
-		secondary: null,
-		target: "normal",
-		type: "Dark",
-		contestType: "Clever",
-	},
 	sunnyday: {
 		num: 241,
 		accuracy: true,
@@ -18919,6 +18898,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Steel",
 		contestType: "Cool",
+	},
+	surpriseattack: {
+		num: 389,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Surprise Attack",
+		pp: 5,
+		priority: 1,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		onTry(source, target) {
+			const action = this.queue.willMove(target);
+			const move = action?.choice === 'move' ? action.move : null;
+			if (!move || (move.category === 'Status' && move.id !== 'mefirst') || target.volatiles['mustrecharge']) {
+				return false;
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		contestType: "Clever",
 	},
 	thunderdive: {
 		num: 916,
@@ -21102,7 +21102,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		condition: {
-			duration: 4,
+			duration: 5,
 			onSideStart(targetSide) {
 				this.add('-sidestart', targetSide, 'Water Pledge');
 			},

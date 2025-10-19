@@ -849,7 +849,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Icy Rock",
 		shortDesc: "Holder's use of Snowscape lasts 8 turns instead of 5.",
 		gen8: {
-			shortDesc: "Holder's use of Hail lasts 8 turns instead of 5.",
+			shortDesc: "Holder's use of Snow lasts 8 turns instead of 5.",
 		},
 	},
 	inciniumz: {
@@ -1573,7 +1573,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	safetygoggles: {
 		name: "Safety Goggles",
-		shortDesc: "Holder is immune to powder moves and damage from Sandstorm or Hail.",
+		shortDesc: "Holder is immune to powder moves and damage from Sandstorm or Snowstorm.",
 
 		block: "  [POKEMON] is not affected by [MOVE] thanks to its Safety Goggles!",
 	},

@@ -2453,7 +2453,7 @@
         "level": 84,
         "moves": ["dragondance", "gravapple", "outrage", "surpriseattack", "uturn"],
         "doublesLevel": 89,
-        "doublesMoves": ["acrobatics", "dragondance", "dragonrush", "gravapple", "protect"]
+        "doublesMoves": ["acrobatics", "dragondance", "dragondive", "gravapple", "protect"]
     },
     "appletun": {
         "level": 91,
@@ -2657,7 +2657,7 @@
         "level": 77,
         "moves": ["crunch", "fishiousrend", "icefang", "lowkick", "psychicfangs"],
         "doublesLevel": 78,
-        "doublesMoves": ["crunch", "dragonrush", "fishiousrend", "icefang", "psychicfangs"]
+        "doublesMoves": ["crunch", "dragondive", "fishiousrend", "icefang", "psychicfangs"]
     },
     "arctovish": {
         "level": 87,

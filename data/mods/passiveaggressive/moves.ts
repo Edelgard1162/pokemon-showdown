@@ -263,7 +263,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		onMoveFail(target, source, move) {
 			const calc = calculate(this, source, source, 'supercellslam');
-			if (calc) this.damage(calc * source.baseMaxhp / 2, source, source, this.dex.conditions.get('Supercell Slam'));
+			if (calc) this.damage(calc * source.baseMaxhp / 2, source, source, this.dex.conditions.get('Thunder Dive'));
 		},
 	},
 	toxicspikes: {

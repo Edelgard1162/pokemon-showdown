@@ -473,7 +473,7 @@
             },
             {
                 "role": "Fast Attacker",
-                "movepool": ["Dragon Rush", "Earthquake", "First Impression", "U-turn"],
+                "movepool": ["Dragon Dive", "Earthquake", "First Impression", "U-turn"],
                 "abilities": ["Compound Eyes"],
                 "teraTypes": ["Bug", "Steel"]
             }

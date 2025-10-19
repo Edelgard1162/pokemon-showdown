@@ -127,7 +127,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Body Slam", "Double-Edge", "Flame Charge", "Supercell Slam", "Thunder Wave", "Trailblaze", "Volt Switch"],
+                "movepool": ["Body Slam", "Double-Edge", "Flame Charge", "Thunder Dive", "Thunder Wave", "Trailblaze", "Volt Switch"],
                 "abilities": ["Sap Sipper"],
                 "teraTypes": ["Electric", "Fire", "Grass", "Normal"]
             }
@@ -772,7 +772,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Cross Chop", "Ice Punch", "Knock Off", "Psychic", "Supercell Slam", "Taunt", "Volt Switch"],
+                "movepool": ["Cross Chop", "Ice Punch", "Knock Off", "Psychic", "Thunder Dive", "Taunt", "Volt Switch"],
                 "abilities": ["Static", "Vital Spirit"],
                 "teraTypes": ["Dark", "Electric", "Fighting", "Ice"]
             }

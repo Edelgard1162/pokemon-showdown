@@ -417,7 +417,7 @@ export const ssbSets: SSBSets = {
 	},
 	Frozoid: {
 		species: 'Gible', ability: 'Snowballer', item: 'Eviolite', gender: 'M',
-		moves: ['Dragon Dance', 'Dragon Rush', 'Precipice Blades'],
+		moves: ['Dragon Dance', 'Dragon Dive', 'Precipice Blades'],
 		signatureMove: 'Flat out falling',
 		evs: { atk: 252, spd: 4, spe: 252 }, nature: 'Adamant', teraType: 'Any', shiny: true,
 	},
@@ -950,7 +950,7 @@ export const ssbSets: SSBSets = {
 	},
 	'Two of Roses': {
 		species: 'Luxray', ability: 'As We See', item: 'Mirror Herb', gender: 'M',
-		moves: ['Knock Off', 'Supercell Slam', 'Trailblaze'],
+		moves: ['Knock Off', 'Thunder Dive', 'Trailblaze'],
 		signatureMove: 'Dilly Dally',
 		evs: { atk: 252, spd: 4, spe: 252 }, nature: 'Jolly', teraType: 'Flying', shiny: 1024,
 	},

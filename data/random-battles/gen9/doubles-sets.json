@@ -5102,7 +5102,7 @@
         "sets": [
             {
                 "role": "Doubles Bulky Attacker",
-                "movepool": ["Dragon Dance", "Dragon Rush", "Grav Apple", "Protect", "Surprise Attack"],
+                "movepool": ["Dragon Dance", "Dragon Dive", "Grav Apple", "Protect", "Surprise Attack"],
                 "abilities": ["Ripen"],
                 "teraTypes": ["Fire", "Grass", "Steel"]
             },

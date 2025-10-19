@@ -102,7 +102,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			noCopy: true,
 			onSourceModifyDamage(damage, source, target, move) {
 				const boostedMoves = [
-					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragonrush', 'phantomforce', 'heatcrash', 'shadowforce',
+					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragondive', 'phantomforce', 'heatcrash', 'shadowforce',
 				];
 				if (boostedMoves.includes(move.id)) {
 					return this.chainModify(2);
@@ -110,7 +110,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 			onAccuracy(accuracy, target, source, move) {
 				const boostedMoves = [
-					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragonrush', 'phantomforce', 'heatcrash', 'shadowforce',
+					'stomp', 'steamroller', 'bodyslam', 'flyingpress', 'dragondive', 'phantomforce', 'heatcrash', 'shadowforce',
 				];
 				if (boostedMoves.includes(move.id)) {
 					return true;

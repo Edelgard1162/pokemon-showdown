@@ -205,7 +205,7 @@ describe('Team Validator', () => {
 
 	it("should disallow illegal egg move combinations containing past gen universal moves", () => {
 		team = [
-			{ species: 'salamence', ability: 'intimidate', moves: ['defensecurl', 'thrash', 'dragonrage', 'dragonrush'], evs: { hp: 1 } },
+			{ species: 'salamence', ability: 'intimidate', moves: ['defensecurl', 'thrash', 'dragonrage', 'dragondive'], evs: { hp: 1 } },
 		];
 		assert.false.legalTeam(team, 'gen5ou');
 	});

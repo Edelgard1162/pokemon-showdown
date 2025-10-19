@@ -243,7 +243,7 @@
         "sets": [
             {
                 "role": "Fast Support",
-                "movepool": ["Volt Switch", "Supercell Slam", "Double-Edge", "Encore", "Rapid Spin"],
+                "movepool": ["Volt Switch", "Thunder Dive", "Double-Edge", "Encore", "Rapid Spin"],
                 "abilities": ["Short Fuse"],
                 "teraTypes": ["Electric", "Grass"]
             }

@@ -2699,7 +2699,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Facade", "Play Rough", "Supercell Slam", "Throat Chop", "Trailblaze"],
+                "movepool": ["Facade", "Play Rough", "Thunder Dive", "Throat Chop", "Trailblaze"],
                 "abilities": ["Guts"],
                 "teraTypes": ["Normal"]
             },
@@ -3077,13 +3077,13 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Earthquake", "Flamethrower", "Ice Punch", "Knock Off", "Supercell Slam", "Volt Switch"],
+                "movepool": ["Earthquake", "Flamethrower", "Ice Punch", "Knock Off", "Thunder Dive", "Volt Switch"],
                 "abilities": ["Motor Drive"],
                 "teraTypes": ["Dark", "Electric", "Ground"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Bulk Up", "Earthquake", "Ice Punch", "Supercell Slam"],
+                "movepool": ["Bulk Up", "Earthquake", "Ice Punch", "Thunder Dive"],
                 "abilities": ["Motor Drive"],
                 "teraTypes": ["Flying", "Ground"]
             }
@@ -3938,7 +3938,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["High Horsepower", "Overheat", "Supercell Slam", "Volt Switch"],
+                "movepool": ["High Horsepower", "Overheat", "Thunder Dive", "Volt Switch"],
                 "abilities": ["Sap Sipper"],
                 "teraTypes": ["Ground"]
             }
@@ -4263,7 +4263,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Coil", "Drain Punch", "Fire Punch", "Knock Off", "Supercell Slam"],
+                "movepool": ["Coil", "Drain Punch", "Fire Punch", "Knock Off", "Thunder Dive"],
                 "abilities": ["Levitate"],
                 "teraTypes": ["Fighting"]
             },
@@ -6056,7 +6056,7 @@
             },
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Earthquake", "Heat Crash", "Heavy Slam", "Knock Off", "Stone Edge", "Supercell Slam", "Superpower"],
+                "movepool": ["Earthquake", "Heat Crash", "Heavy Slam", "Knock Off", "Stone Edge", "Thunder Dive", "Superpower"],
                 "abilities": ["Heavy Metal"],
                 "teraTypes": ["Fire", "Steel"]
             }

@@ -1462,8 +1462,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	blazekick: {
 		num: 299,
-		accuracy: 90,
-		basePower: 85,
+		accuracy: 80,
+		basePower: 100,
 		category: "Physical",
 		name: "Blaze Kick",
 		pp: 10,
@@ -1471,8 +1471,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		critRatio: 2,
 		secondary: {
-			chance: 10,
-			status: 'brn',
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
 		},
 		target: "normal",
 		type: "Fire",
@@ -17958,10 +17962,10 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.add('-sidestart', side, 'Spikes');
 				this.effectState.layers++;
 			},
-			onSwitchIn(pokemon) { //FIXM
+			onSwitchIn(pokemon) {
 				if (!pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
-				const damageAmounts = [0, (1/12), (1/6), (1/4)];
-				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp);
+				const damageAmounts = [0, 2, 3, 4]; // 1/12, 1/6, 1/4
+				this.damage(damageAmounts[this.effectState.layers] * pokemon.maxhp / 16);
 			},
 		},
 		secondary: null,
@@ -18280,12 +18284,38 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			// this is a side condition
 			onSideStart(side) {
 				this.add('-sidestart', side, 'move: Stealth Rock');
+			},
+			onSwitchIn(pokemon) {
+				if (pokemon.hasItem('heavydutyboots')) return;
+				this.damage(pokemon.maxhp / 8);
+			},
+		},
+		secondary: null,
+		target: "foeSide",
+		type: "Rock",
+		zMove: { boost: { def: 1 } },
+		contestType: "Cool",
+	},
+	stealthrocks: {
+		num: 446,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Stealth Rock",
+		pp: 20,
+		priority: 0,
+		flags: { reflectable: 1, metronome: 1, mustpressure: 1 },
+		sideCondition: 'stealthrock',
+		condition: {
+			// this is a side condition
+			onSideStart(side) {
+				this.add('-sidestart', side, 'move: Stealth Rock');
 			}, 
 			onSwitchIn(pokemon) {
 				// 1. Conditions preventing grounded or boots-using mons from taking rock damage were added.
 				// 2. upper limit in clamp changed from 6 to 1: this caps stealth rock at 25% damage.
 				if (pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
-				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 1); 
+				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -1, 1); 
 				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
 			},
 		},

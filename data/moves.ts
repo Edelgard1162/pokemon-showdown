@@ -18296,35 +18296,6 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { def: 1 } },
 		contestType: "Cool",
 	},
-	stealthrocks: {
-		num: 446,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Stealth Rocks",
-		pp: 20,
-		priority: 0,
-		flags: { reflectable: 1, metronome: 1, mustpressure: 1 },
-		sideCondition: 'stealthrock',
-		condition: {
-			// this is a side condition
-			onSideStart(side) {
-				this.add('-sidestart', side, 'move: Stealth Rocks');
-			}, 
-			onSwitchIn(pokemon) {
-				// 1. Conditions preventing grounded or boots-using mons from taking rock damage were added.
-				// 2. upper limit in clamp changed from 6 to 1: this caps stealth rock at 25% damage.
-				if (pokemon.isGrounded() || pokemon.hasItem('heavydutyboots')) return;
-				const typeMod = this.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrocks')), -1, 1); 
-				this.damage(pokemon.maxhp * (2 ** typeMod) / 8);
-			},
-		},
-		secondary: null,
-		target: "foeSide",
-		type: "Rock",
-		zMove: { boost: { def: 1 } },
-		contestType: "Cool",
-	},
 	steameruption: {
 		num: 592,
 		accuracy: 95,

@@ -168,8 +168,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	aquastep: {
 		name: "Aqua Step",
-		desc: "Has a 100% chance to raise the user's Speed by 1 stage.",
-		shortDesc: "100% chance to raise the user's Speed by 1.",
+		desc: "If this move is successful and the user has not fainted, the effects of Leech Seed and binding moves end for the user, and all hazards are removed from the user's side of the field. Has a 100% chance to raise the user's Speed by 1 stage.",
+		shortDesc: "Frees user from hazards/bind/Leech Seed; 100% +1 Spe.",
 	},
 	aquatail: {
 		name: "Aqua Tail",
@@ -551,8 +551,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bleakwindstorm: {
 		name: "Bleakwind Storm",
-		desc: "Has a 30% chance to lower the target's Speed by 1 stage. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "30% to lower foe(s) Speed by 1. Rain: can not miss.",
+		desc: "Has a 30% chance to lower the target's Speed by 1 stage. If the weather is Snow, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
+		shortDesc: "30% to lower foe(s) Speed by 1. Snow: can not miss.",
 	},
 	blizzard: {
 		name: "Blizzard",
@@ -631,7 +631,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bonemerang: {
 		name: "Bonemerang",
 		desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
-		shortDesc: "Hits 2 times in one turn.",
+		shortDesc: "Hits 2 times in one turn. Neutral on Flying.",
 		gen4: {
 			desc: "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. If the target has a Focus Sash and had full HP when this move started, it will not be knocked out regardless of the number of hits.",
 		},
@@ -645,7 +645,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bonerush: {
 		name: "Bone Rush",
 		desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
-		shortDesc: "Hits 2-5 times in one turn.",
+		shortDesc: "Hits 2-5 times in one turn. Neutral on Flying.",
 		gen8: {
 			desc: "Hits two to five times. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times.",
 		},
@@ -4349,16 +4349,16 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	mudbomb: {
 		name: "Mud Bomb",
 		desc: "Has a 30% chance to lower the target's accuracy by 1 stage.",
-		shortDesc: "30% chance to lower the target's accuracy by 1.",
+		shortDesc: "30% chance to lower the target's accuracy by 1. Neutral on Flying.",
 	},
 	mudshot: {
 		name: "Mud Shot",
-		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
+		desc: "Has a 100% chance to lower the target's Speed by 1 stage. Neutral on Flying.",
 		shortDesc: "100% chance to lower the target's Speed by 1.",
 	},
 	mudslap: {
 		name: "Mud-Slap",
-		desc: "Has a 100% chance to lower the target's accuracy by 1 stage.",
+		desc: "Has a 100% chance to lower the target's accuracy by 1 stage. Neutral on Flying.",
 		shortDesc: "100% chance to lower the target's accuracy by 1.",
 	},
 	mudsport: {
@@ -6014,7 +6014,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	snipeshot: {
 		name: "Snipe Shot",
 		desc: "Has a higher chance for a critical hit. This move cannot be redirected to a different target by any effect.",
-		shortDesc: "High critical hit ratio. Cannot be redirected.",
+		shortDesc: "Always results in a critical hit; no accuracy check. Cannot be redirected.",
 	},
 	snore: {
 		name: "Snore",
@@ -6298,15 +6298,15 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	springtidestorm: {
 		name: "Springtide Storm",
-		desc: "Has a 30% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "30% chance to lower the foe(s) Attack by 1.",
+		desc: "Has a 30% chance to lower the foe(s) Attack by 1. If the weather is Sunny Day or Desolate Land, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
+		shortDesc: "30% chance to lower the foe(s) Attack by 1. Sun: can not miss.",
 	},
 	stealthrock: {
 		name: "Stealth Rock",
-		desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/8 of their maximum HP, rounded down. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
-		shortDesc: "Hurts foes on switch-in.",
+		desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/8 of their maximum HP, rounded down. This hazard ignores Heavy-Duty Boots. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+		shortDesc: "Hurts foes on switch-in. Ignores Heavy-Duty Boots.",
 		gen8: {
-			desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/8 of their maximum HP, rounded down. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+			desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/8 of their maximum HP, rounded down. This hazard ignores Heavy-Duty Boots. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
 		},
 		gen5: {
 			desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/8 of their maximum HP, rounded down. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin successfully, or is hit by Defog.",
@@ -6323,10 +6323,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	steamroller: {
 		name: "Steamroller",
-		desc: "Has a 30% chance to make the target flinch. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Has a 100% chance to raise the user's Speed by 1 stage. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+		shortDesc: "100% chance to raise the user's Speed by 1 stage.",
 		gen5: {
-			desc: "Has a 30% chance to make the target flinch. Damage doubles if the target has used Minimize while active.",
+			desc: "Has a 100% chance to raise the user's Speed by 1 stage. Damage doubles if the target has used Minimize while active.",
 		},
 	},
 	steelbeam: {
@@ -6402,7 +6402,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	stoneaxe: {
 		name: "Stone Axe",
-		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/8 of their maximum HP, rounded down. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
+		desc: "If this move is successful, it sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Foes lose 1/8 of their maximum HP, rounded down. This hazard ignores Heavy-Duty Boots. Can be removed from the opposing side if any Pokemon uses Tidy Up, or if any opposing Pokemon uses Mortal Spin, Rapid Spin, or Defog successfully, or is hit by Defog.",
 		shortDesc: "Sets Stealth Rock on the target's side.",
 	},
 	stoneedge: {

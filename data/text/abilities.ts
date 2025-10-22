@@ -948,7 +948,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	magmaarmor: {
 		name: "Magma Armor",
-		shortDesc: "This Pokemon cannot be frozen. Gaining this Ability while frozen cures it.",
+		desc: "This Pokemon's offensive stat is doubled while using a Fire-type attack. If a Pokemon uses a Water- or Ice-type attack against this Pokemon, that Pokemon's offensive stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be frozen. Gaining this Ability while burned cures it.",
+		shortDesc: "This Pokemon's Fire power is 2x; it can't be burned; Water and Ice power against it is halved.",
 	},
 	magnetpull: {
 		name: "Magnet Pull",

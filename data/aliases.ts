@@ -534,7 +534,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	tealpon: "Ogerpon",
 	grasspon: "Ogerpon",
 	ogerpont: "Ogerpon",
-	ogerponteal: "Ogerpon",
+	ogerpon: "Ogerpon",
 	ogerpontealmask: "Ogerpon",
 	oinkolognem: "Oinkologne",
 	palafinzero: "Palafin",

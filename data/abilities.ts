@@ -2469,14 +2469,39 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 170,
 	},
 	magmaarmor: {
+		onSourceModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(0.5);
+			}
+		},
+		onSourceModifySpAPriority: 5,
+		onSourceModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Water') {
+				return this.chainModify(0.5);
+			}
+		},
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				return this.chainModify(2);
+			}
+		},
 		onUpdate(pokemon) {
 			if (pokemon.status === 'frz') {
-				this.add('-activate', pokemon, 'ability: Magma Armor');
+				this.add('-activate', pokemon, 'ability: Water Bubble');
 				pokemon.cureStatus();
 			}
 		},
-		onImmunity(type, pokemon) {
-			if (type === 'frz') return false;
+		onSetStatus(status, target, source, effect) {
+			if (status.id !== 'frz') return;
+			if ((effect as Move)?.status) {
+				this.add('-immune', target, '[from] ability: Water Bubble');
+			}
+			return false;
 		},
 		flags: { breakable: 1 },
 		name: "Magma Armor",

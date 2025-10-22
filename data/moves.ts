@@ -507,6 +507,38 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, dance: 1, metronome: 1 },
+		onAfterHit(target, pokemon, move) {
+			if (!move.hasSheerForce) {
+				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', `[of] ${pokemon}`);
+				}
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', `[of] ${pokemon}`);
+					}
+				}
+				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
+				}
+			}
+		},
+		onAfterSubDamage(damage, target, pokemon, move) {
+			if (!move.hasSheerForce) {
+				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
+					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', `[of] ${pokemon}`);
+				}
+				const sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				for (const condition of sideConditions) {
+					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
+						this.add('-sideend', pokemon.side, this.dex.conditions.get(condition).name, '[from] move: Rapid Spin', `[of] ${pokemon}`);
+					}
+				}
+				if (pokemon.hp && pokemon.volatiles['partiallytrapped']) {
+					pokemon.removeVolatile('partiallytrapped');
+				}
+			}
+		},
 		secondary: {
 			chance: 100,
 			self: {
@@ -1462,8 +1494,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	blazekick: {
 		num: 299,
-		accuracy: 80,
-		basePower: 100,
+		accuracy: 100,
+		basePower: 90,
 		category: "Physical",
 		name: "Blaze Kick",
 		pp: 10,
@@ -1704,6 +1736,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		multihit: 2,
+		ignoreImmunity: { 'Ground': true },
 		secondary: null,
 		target: "normal",
 		type: "Ground",
@@ -1720,6 +1753,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		multihit: [2, 5],
+		ignoreImmunity: { 'Ground': true },
 		secondary: null,
 		target: "normal",
 		type: "Ground",
@@ -12639,11 +12673,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		num: 866,
 		accuracy: 100,
 		basePower: 30,
-		category: "Physical",
+		category: "Special",
 		name: "Mortal Spin",
 		pp: 15,
 		priority: 0,
-		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1 },
 		onAfterHit(target, pokemon, move) {
 			if (!move.hasSheerForce) {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
@@ -12708,6 +12742,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1, bullet: 1 },
+		ignoreImmunity: { 'Ground': true },
 		secondary: {
 			chance: 30,
 			boosts: {
@@ -12727,6 +12762,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
+		ignoreImmunity: { 'Ground': true },
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -12746,6 +12782,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
+		ignoreImmunity: { 'Ground': true },
 		secondary: {
 			chance: 100,
 			boosts: {
@@ -13699,7 +13736,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	pinmissile: {
 		num: 42,
-		accuracy: 95,
+		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
 		name: "Pin Missile",
@@ -17558,7 +17595,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	snipeshot: {
 		num: 745,
-		accuracy: 100,
+		accuracy: true,
 		basePower: 70,
 		category: "Special",
 		name: "Snipe Shot",
@@ -18317,15 +18354,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	steamroller: {
 		num: 537,
 		accuracy: 100,
-		basePower: 65,
+		basePower: 60,
 		category: "Physical",
 		name: "Steamroller",
 		pp: 20,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
+			chance: 100,
+			self: {
+				boosts: {
+					spe: 1,
+				},
+			},
 		},
 		target: "normal",
 		type: "Bug",

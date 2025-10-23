@@ -1608,8 +1608,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	shedskin: {
 		name: "Shed Skin",
-		desc: "This Pokemon has a 33% chance to have its non-volatile status condition cured at the end of each turn.",
-		shortDesc: "This Pokemon has a 33% chance to have its status cured at the end of each turn.",
+		desc: "This Pokemon has a 50% chance to have its non-volatile status condition cured at the end of each turn.",
+		shortDesc: "This Pokemon has a 50% chance to have its status cured at the end of each turn.",
 	},
 	sheerforce: {
 		name: "Sheer Force",

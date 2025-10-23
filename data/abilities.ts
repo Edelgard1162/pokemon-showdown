@@ -458,15 +458,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 145,
 	},
 	blaze: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 2) {
-				this.debug('Blaze boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
+		onBasePowerPriority: 2,
+		onBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Fire' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Blaze boost');
 				return this.chainModify(1.5);
@@ -2373,8 +2366,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceTryHeal(damage, target, source, effect) {
 			this.debug(`Heal is occurring: ${target} <- ${source} :: ${effect.id}`);
 			const canOoze = ['drain', 'leechseed', 'strengthsap'];
-			if (canOoze.includes(effect.id)) {
-				this.damage(damage);
+			if (canOoze.includes(effect.id) && this.activeMove?.id !== 'dreameater') {
+				this.damage(damage, null, null, null, true);
 				return 0;
 			}
 		},
@@ -3106,15 +3099,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 142,
 	},
 	overgrow: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) {
-				this.debug('Overgrow boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
+		onBasePowerPriority: 2,
+		onBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Grass' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Overgrow boost');
 				return this.chainModify(1.5);
@@ -4725,16 +4711,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 207,
 	},
 	swarm: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 2) {
-				this.debug('Swarm boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Bug' && attacker.hp <= attacker.maxhp / 2) {
+		onBasePowerPriority: 2,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.type === 'Swarm' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Swarm boost');
 				return this.chainModify(1.5);
 			}
@@ -4994,17 +4973,9 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 270,
 	},
 	thickfat: {
-		onSourceModifyAtkPriority: 6,
-		onSourceModifyAtk(atk, attacker, defender, move) {
+		onSourceBasePowerPriority: 1,
+		onSourceBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Ice' || move.type === 'Fire') {
-				this.debug('Thick Fat weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		onSourceModifySpAPriority: 5,
-		onSourceModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Ice' || move.type === 'Fire') {
-				this.debug('Thick Fat weaken');
 				return this.chainModify(0.5);
 			}
 		},
@@ -5026,15 +4997,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 110,
 	},
 	torrent: {
-		onModifyAtkPriority: 5,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 2) {
-				this.debug('Torrent boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpAPriority: 5,
-		onModifySpA(atk, attacker, defender, move) {
+		onBasePowerPriority: 2,
+		onBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Water' && attacker.hp <= attacker.maxhp / 2) {
 				this.debug('Torrent boost');
 				return this.chainModify(1.5);

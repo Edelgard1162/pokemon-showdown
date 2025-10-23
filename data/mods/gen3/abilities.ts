@@ -90,19 +90,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
-	lightningrod: {
-		onFoeRedirectTarget(target, source, source2, move) {
-			// don't count Hidden Power as Electric-type
-			if (this.dex.moves.get(move.id).type !== 'Electric') return;
-			if (this.validTarget(this.effectState.target, source, move.target)) {
-				return this.effectState.target;
-			}
-		},
-		flags: { breakable: 1 },
-		name: "Lightning Rod",
-		rating: 0,
-		num: 32,
-	},
 	magnetpull: {
 		inherit: true,
 		onFoeTrapPokemon() {},
@@ -120,36 +107,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 	},
-	minus: {
-		inherit: true,
-		onModifySpA(spa, pokemon) {
-			for (const active of this.getAllActive()) {
-				if (!active.fainted && active.hasAbility('plus')) {
-					return this.chainModify(1.5);
-				}
-			}
-		},
-	},
-	plus: {
-		inherit: true,
-		onModifySpA(spa, pokemon) {
-			for (const active of this.getAllActive()) {
-				if (!active.fainted && active.hasAbility('minus')) {
-					return this.chainModify(1.5);
-				}
-			}
-		},
-	},
-	poisonpoint: {
-		inherit: true,
-		onDamagingHit(damage, target, source, move) {
-			if (damage && move.flags['contact']) {
-				if (this.randomChance(1, 3)) {
-					source.trySetStatus('psn', target);
-				}
-			}
-		},
-	},
 	pressure: {
 		inherit: true,
 		onStart(pokemon) {
@@ -164,30 +121,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onResidual(pokemon) {
 			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
 				this.heal(pokemon.baseMaxhp / 16);
-			}
-		},
-	},
-	roughskin: {
-		inherit: true,
-		onDamagingHit(damage, target, source, move) {
-			if (damage && move.flags['contact']) {
-				this.damage(source.baseMaxhp / 16, source, target);
-			}
-		},
-	},
-	shadowtag: {
-		inherit: true,
-		onFoeTrapPokemon(pokemon) {
-			pokemon.trapped = true;
-		},
-	},
-	static: {
-		inherit: true,
-		onDamagingHit(damage, target, source, move) {
-			if (damage && move.flags['contact']) {
-				if (this.randomChance(1, 3)) {
-					source.trySetStatus('par', target);
-				}
 			}
 		},
 	},
@@ -217,17 +150,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		onResidualOrder: 27,
 		onResidual(pokemon) {
 			pokemon.truantTurn = !pokemon.truantTurn;
-		},
-	},
-	voltabsorb: {
-		inherit: true,
-		onTryHit(target, source, move) {
-			if (target !== source && move.type === 'Electric' && move.id !== 'thunderwave') {
-				if (!this.heal(target.baseMaxhp / 4)) {
-					this.add('-immune', target, '[from] ability: Volt Absorb');
-				}
-				return null;
-			}
 		},
 	},
 };

@@ -4346,6 +4346,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			megakick: ["8M", "7V", "3T"],
 			megapunch: ["8M", "7V", "3T"],
 			mimic: ["7V", "3T"],
+			moonlight: ["9L1", "8L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			mudshot: ["8M"],
 			mudslap: ["7V", "4T", "3T"],
 			naturalgift: ["4M"],

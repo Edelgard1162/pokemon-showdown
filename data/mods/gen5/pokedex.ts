@@ -65,21 +65,17 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	clefairy: {
 		inherit: true,
-		types: ["Normal"],
 	},
 	clefable: {
 		inherit: true,
-		types: ["Normal"],
 		baseStats: { hp: 95, atk: 70, def: 73, spa: 85, spd: 90, spe: 60 },
 	},
 	jigglypuff: {
 		inherit: true,
-		types: ["Normal"],
 		abilities: { 0: "Cute Charm", H: "Friend Guard" },
 	},
 	wigglytuff: {
 		inherit: true,
-		types: ["Normal"],
 		baseStats: { hp: 140, atk: 70, def: 45, spa: 75, spd: 50, spe: 45 },
 		abilities: { 0: "Cute Charm", H: "Frisk" },
 	},
@@ -158,20 +154,16 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	igglybuff: {
 		inherit: true,
-		types: ["Normal"],
 		abilities: { 0: "Cute Charm", H: "Friend Guard" },
 	},
 	togepi: {
 		inherit: true,
-		types: ["Normal"],
 	},
 	togetic: {
 		inherit: true,
-		types: ["Normal", "Flying"],
 	},
 	cleffa: {
 		inherit: true,
-		types: ["Normal"],
 	},
 	ampharos: {
 		inherit: true,
@@ -196,11 +188,9 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	snubbull: {
 		inherit: true,
-		types: ["Normal"],
 	},
 	granbull: {
 		inherit: true,
-		types: ["Normal"],
 	},
 	tyrogue: {
 		inherit: true,
@@ -276,7 +266,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	azurill: {
 		inherit: true,
-		types: ["Normal"],
 	},
 	mawile: {
 		inherit: true,
@@ -376,7 +365,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	togekiss: {
 		inherit: true,
-		types: ["Normal", "Flying"],
 	},
 	dusknoir: {
 		inherit: true,

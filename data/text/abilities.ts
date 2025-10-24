@@ -715,10 +715,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Inner Focus",
 		desc: "This Pokemon cannot be made to flinch. This Pokemon is immune to the effect of the Intimidate Ability.",
 		shortDesc: "This Pokemon cannot be made to flinch. Immune to Intimidate.",
-		gen7: {
-			desc: "This Pokemon cannot be made to flinch.",
-			shortDesc: "This Pokemon cannot be made to flinch.",
-		},
 	},
 	insomnia: {
 		name: "Insomnia",

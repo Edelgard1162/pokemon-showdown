@@ -3208,10 +3208,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	pickpocket: {
 		onAfterMoveSecondary(target, source, move) {
-			if (source && source !== target && move?.flags['contact']) {
-				if (target.item || target.switchFlag || target.forceSwitchFlag || source.switchFlag === true) {
-					return;
-				}
+			if (this.checkMoveMakesContact(move, target, source)) {
 				const yourItem = source.takeItem(target);
 				if (!yourItem) {
 					return;

@@ -149,7 +149,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 		inherit: true,
 		onFieldResidualOrder: 8,
 	},
-	hail: {
+	snowstorm: {
 		inherit: true,
 		onFieldResidualOrder: 8,
 	},

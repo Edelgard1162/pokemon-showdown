@@ -3489,7 +3489,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	hoothoot: {
 		num: 163,
 		name: "Hoothoot",
-		types: ["Normal", "Flying"],
+		types: ["Flying"],
 		baseStats: { hp: 60, atk: 30, def: 30, spa: 36, spd: 56, spe: 50 },
 		abilities: { 0: "Insomnia", 1: "Keen Eye", H: "Tinted Lens" },
 		heightm: 0.7,
@@ -3501,7 +3501,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	noctowl: {
 		num: 164,
 		name: "Noctowl",
-		types: ["Normal", "Flying"],
+		types: ["Flying"],
 		baseStats: { hp: 100, atk: 50, def: 50, spa: 86, spd: 96, spe: 70 },
 		abilities: { 0: "Insomnia", 1: "Keen Eye", H: "Tinted Lens" },
 		heightm: 1.6,

@@ -176,10 +176,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		flags: { contact: 1, charge: 1, protect: 1, mirror: 1, nonsky: 1, metronome: 1, nosleeptalk: 1 },
 	},
-	dracometeor: {
-		inherit: true,
-		basePower: 140,
-	},
 	dragonpulse: {
 		inherit: true,
 		basePower: 90,

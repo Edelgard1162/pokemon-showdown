@@ -491,9 +491,10 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		accuracy: true,
 	},
-	mindreader: {
+	meteormash: {
 		inherit: true,
-		accuracy: 100,
+		accuracy: 85,
+		basePower: 100,
 	},
 	mimic: {
 		inherit: true,

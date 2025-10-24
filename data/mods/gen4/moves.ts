@@ -1098,30 +1098,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			},
 		},
 	},
-	moonlight: {
-		inherit: true,
-		onHit(pokemon) {
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-				this.heal(pokemon.maxhp * 2 / 3);
-			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'snowstorm'])) {
-				this.heal(pokemon.baseMaxhp / 4);
-			} else {
-				this.heal(pokemon.baseMaxhp / 2);
-			}
-		},
-	},
-	morningsun: {
-		inherit: true,
-		onHit(pokemon) {
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-				this.heal(pokemon.maxhp * 2 / 3);
-			} else if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'snowstorm'])) {
-				this.heal(pokemon.baseMaxhp / 4);
-			} else {
-				this.heal(pokemon.baseMaxhp / 2);
-			}
-		},
-	},
 	mudsport: {
 		inherit: true,
 		condition: {

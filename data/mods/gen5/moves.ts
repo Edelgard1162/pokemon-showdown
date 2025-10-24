@@ -97,10 +97,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			this.add('-start', target, 'typechange', 'Ground');
 		},
 	},
-	charm: {
-		inherit: true,
-		type: "Normal",
-	},
 	chatter: {
 		inherit: true,
 		basePower: 60,
@@ -297,10 +293,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			this.add('-start', source, 'move: Future Sight');
 			return null;
 		},
-	},
-	gigadrain: {
-		inherit: true,
-		flags: { protect: 1, mirror: 1, metronome: 1 },
 	},
 	glare: {
 		inherit: true,
@@ -594,10 +586,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				}
 			},
 		},
-	},
-	moonlight: {
-		inherit: true,
-		type: "Normal",
 	},
 	mudsport: {
 		inherit: true,
@@ -947,10 +935,6 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	surf: {
 		inherit: true,
 		basePower: 95,
-	},
-	sweetkiss: {
-		inherit: true,
-		type: "Normal",
 	},
 	sweetscent: {
 		inherit: true,

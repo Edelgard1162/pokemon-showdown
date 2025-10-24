@@ -5299,7 +5299,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	ralts: {
 		num: 280,
 		name: "Ralts",
-		types: ["Psychic", "Fairy"],
+		types: ["Psychic"],
 		baseStats: { hp: 30, atk: 25, def: 25, spa: 45, spd: 35, spe: 50 },
 		abilities: { 0: "Magic Guard", 1: "Trace", H: "Telepathy" },
 		heightm: 0.4,
@@ -5325,7 +5325,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	gardevoir: {
 		num: 282,
 		name: "Gardevoir",
-		types: ["Psychic"],
+		types: ["Psychic", "Fairy"],
 		baseStats: { hp: 70, atk: 65, def: 65, spa: 125, spd: 115, spe: 90 },
 		abilities: { 0: "Magic Guard", 1: "Trace", H: "Telepathy" },
 		heightm: 1.6,

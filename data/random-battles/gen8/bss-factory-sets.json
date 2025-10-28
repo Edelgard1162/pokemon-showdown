@@ -9,7 +9,7 @@
         "ability": ["Libero"],
         "evs": {"atk": 252, "spd": 4, "spe": 252},
         "nature": "Jolly",
-        "moves": [["Pyro Ball"], ["High Jump Kick", "Counter"], ["Bounce", "Surprise Attack"], ["Iron Head", "Gunk Shot", "Zen Headbutt"]]
+        "moves": [["Pyro Ball"], ["High Jump Kick", "Counter"], ["Bounce", "Sucker Punch"], ["Iron Head", "Gunk Shot", "Zen Headbutt"]]
       },
       {
         "species": "Cinderace",
@@ -319,7 +319,7 @@
         "ability": ["Unseen Fist"],
         "evs": {"hp": 4, "atk": 252, "spe": 252},
         "nature": "Jolly",
-        "moves": [["Wicked Blow"], ["Close Combat"], ["Counter"], ["Surprise Attack"]]
+        "moves": [["Wicked Blow"], ["Close Combat"], ["Counter"], ["Sucker Punch"]]
       },
       {
         "species": "Urshifu",
@@ -328,7 +328,7 @@
         "ability": ["Unseen Fist"],
         "evs": {"hp": 4, "atk": 252, "spe": 252},
         "nature": "Jolly",
-        "moves": [["Wicked Blow"], ["Close Combat"], ["Surprise Attack"], ["Poison Jab", "Thunder Punch", "Aerial Ace"]]
+        "moves": [["Wicked Blow"], ["Close Combat"], ["Sucker Punch"], ["Poison Jab", "Thunder Punch", "Aerial Ace"]]
       }
     ]
   },
@@ -543,7 +543,7 @@
         "evs": {"spa": 252, "spd": 4, "spe": 252},
         "nature": "Timid",
         "ivs": {"atk": 0},
-        "moves": [["Fiery Wrath"], ["Hurricane"], ["Taunt", "Surprise Attack"], ["Nasty Plot"]]
+        "moves": [["Fiery Wrath"], ["Hurricane"], ["Taunt", "Sucker Punch"], ["Nasty Plot"]]
       },
       {
         "species": "Moltres-Galar",
@@ -987,7 +987,7 @@
         "ability": ["Prankster"],
         "evs": {"hp": 252, "atk": 252, "spd": 4},
         "nature": "Adamant",
-        "moves": [["Trick"], ["Spirit Break"], ["Surprise Attack"], ["Light Screen", "Reflect"]]
+        "moves": [["Trick"], ["Spirit Break"], ["Sucker Punch"], ["Light Screen", "Reflect"]]
       },
       {
         "species": "Grimmsnarl",
@@ -996,7 +996,7 @@
         "ability": ["Prankster"],
         "evs": {"hp": 252, "atk": 4, "spd": 252},
         "nature": "Careful",
-        "moves": [["Surprise Attack", "Darkest Lariat"], ["Spirit Break", "Play Rough", "Drain Punch"], ["Bulk Up"], ["Substitute", "Thunder Wave"]]
+        "moves": [["Sucker Punch", "Darkest Lariat"], ["Spirit Break", "Play Rough", "Drain Punch"], ["Bulk Up"], ["Substitute", "Thunder Wave"]]
       }
     ]
   },
@@ -2196,7 +2196,7 @@
         "ability": ["Sheer Force"],
         "evs": {"def": 4, "spa": 252, "spe": 252},
         "nature": "Timid",
-        "moves": [["Sludge Wave"], ["Earth Power"], ["Ice Beam"], ["Flamethrower", "Thunderbolt", "Surprise Attack"]]
+        "moves": [["Sludge Wave"], ["Earth Power"], ["Ice Beam"], ["Flamethrower", "Thunderbolt", "Sucker Punch"]]
       },
       {
         "species": "Nidoking",

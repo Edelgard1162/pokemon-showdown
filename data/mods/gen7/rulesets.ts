@@ -11,8 +11,8 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
 		inherit: true,
 		banlist: [
 			// Leaf Blade: Gen 6+ Nuzleaf level-up
-			// Surprise Attack: Gen 4 Shiftry tutor
-			'Shiftry + Leaf Blade + Surprise Attack',
+			// Sucker Punch: Gen 4 Shiftry tutor
+			'Shiftry + Leaf Blade + Sucker Punch',
 
 			// Aura Break Zygarde can't be changed to 10% forme in gen 7
 			// making moves only obtainable from gen 6 illegal

@@ -1334,7 +1334,7 @@ export class RandomGen8Teams {
 			// Special cases for Blastoise and Regice; Blastoise wants Shell Smash, and Regice wants Thunderbolt
 			return { cull: movePool.includes('shellsmash') || hasRestTalk };
 		case 'hammerarm':
-			// Special case for Kangaskhan, which always wants Surprise Attack
+			// Special case for Kangaskhan, which always wants Sucker Punch
 			return { cull: moves.has('fakeout') };
 		case 'stormthrow':
 			// Part of a special case for Throh to pick one specific Fighting move depending on its set
@@ -1420,12 +1420,12 @@ export class RandomGen8Teams {
 			const pulseIncompatible = ['foulplay', 'knockoff'].some(m => moves.has(m)) || (
 				species.id === 'shiftry' && (moves.has('defog') || moves.has('surpriseattack'))
 			);
-			// Special clause to prevent bugged Shiftry sets with Surprise Attack + Nasty Plot
+			// Special clause to prevent bugged Shiftry sets with Sucker Punch + Nasty Plot
 			const shiftryCase = movePool.includes('nastyplot') && !moves.has('defog');
 			return { cull: pulseIncompatible && !shiftryCase && counter.setupType !== 'Special' };
 		case 'surpriseattack':
 			return { cull:
-				// Shiftry in No Dynamax would otherwise get Choice Scarf Surprise Attack sometimes.
+				// Shiftry in No Dynamax would otherwise get Choice Scarf Sucker Punch sometimes.
 				(isNoDynamax && species.id === 'shiftry' && moves.has('defog')) ||
 				moves.has('rest') ||
 				counter.damagingMoves.size < 2 ||

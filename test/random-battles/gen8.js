@@ -51,7 +51,7 @@ describe('[Gen 8] Random Battle (slow)', () => {
 		testNotBothMoves('solgaleo', options, 'flamecharge', 'flareblitz');
 	});
 
-	it('should not generate Knock Off + Surprise Attack Toxicroak', () => {
+	it('should not generate Knock Off + Sucker Punch Toxicroak', () => {
 		testNotBothMoves('toxicroak', options, 'knockoff', 'surpriseattack');
 	});
 

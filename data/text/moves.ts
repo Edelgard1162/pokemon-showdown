@@ -6588,8 +6588,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		shortDesc: "Always results in a critical hit. Hits 3 times.",
 		
 	},
-	surpriseattack: {
-		name: "Surprise Attack",
+	suckerpunch: {
+		name: "Sucker Punch",
 		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
 		shortDesc: "Usually goes first. Fails if target is not attacking.",
 		gen4: {

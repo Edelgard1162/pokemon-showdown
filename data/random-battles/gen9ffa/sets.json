@@ -1191,7 +1191,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["Knock Off", "Megahorn", "Poison Jab", "Protect", "Sticky Web", "Surprise Attack"],
+                "movepool": ["Knock Off", "Megahorn", "Poison Jab", "Protect", "Sticky Web", "Sucker Punch"],
                 "abilities": ["Swarm"],
                 "teraTypes": ["Dark", "Water"]
             }
@@ -1264,7 +1264,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Head Smash", "Protect", "Spikes", "Stealth Rock", "Surprise Attack", "Wood Hammer"],
+                "movepool": ["Head Smash", "Protect", "Spikes", "Stealth Rock", "Sucker Punch", "Wood Hammer"],
                 "abilities": ["Rock Head"],
                 "teraTypes": ["Grass"]
             },
@@ -1827,13 +1827,13 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Crunch", "Play Rough", "Protect", "Surprise Attack", "Super Fang", "Taunt", "Throat Chop"],
+                "movepool": ["Crunch", "Play Rough", "Protect", "Sucker Punch", "Super Fang", "Taunt", "Throat Chop"],
                 "abilities": ["Intimidate"],
                 "teraTypes": ["Fairy"]
             },
             {
                 "role": "AV Pivot",
-                "movepool": ["Crunch", "Play Rough", "Surprise Attack", "Super Fang", "Throat Chop"],
+                "movepool": ["Crunch", "Play Rough", "Sucker Punch", "Super Fang", "Throat Chop"],
                 "abilities": ["Intimidate"],
                 "teraTypes": ["Fairy"]
             }
@@ -2184,7 +2184,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Knock Off", "Leaf Storm", "Spiky Shield", "Surprise Attack"],
+                "movepool": ["Knock Off", "Leaf Storm", "Spiky Shield", "Sucker Punch"],
                 "abilities": ["Water Absorb"],
                 "teraTypes": ["Dark", "Poison"]
             }
@@ -2838,7 +2838,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Brave Bird", "Lash Out", "Protect", "Surprise Attack", "Thunder Wave"],
+                "movepool": ["Brave Bird", "Lash Out", "Protect", "Sucker Punch", "Thunder Wave"],
                 "abilities": ["Moxie"],
                 "teraTypes": ["Dark", "Flying"]
             }
@@ -2849,7 +2849,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Fire Blast", "Gunk Shot", "Knock Off", "Poison Gas", "Protect", "Surprise Attack", "Taunt"],
+                "movepool": ["Fire Blast", "Gunk Shot", "Knock Off", "Poison Gas", "Protect", "Sucker Punch", "Taunt"],
                 "abilities": ["Aftermath"],
                 "teraTypes": ["Dark", "Flying"]
             }
@@ -3854,7 +3854,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Aqua Jet", "Ceaseless Edge", "Protect", "Razor Shell", "Sacred Sword", "Surprise Attack"],
+                "movepool": ["Aqua Jet", "Ceaseless Edge", "Protect", "Razor Shell", "Sacred Sword", "Sucker Punch"],
                 "abilities": ["Sharpness"],
                 "teraTypes": ["Dark", "Fighting", "Poison", "Water"]
             }
@@ -5650,7 +5650,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Court Change", "Low Kick", "Protect", "Pyro Ball", "Surprise Attack", "Super Fang", "U-turn", "Will-O-Wisp"],
+                "movepool": ["Court Change", "Low Kick", "Protect", "Pyro Ball", "Sucker Punch", "Super Fang", "U-turn", "Will-O-Wisp"],
                 "abilities": ["Blaze"],
                 "teraTypes": ["Grass", "Water"]
             },
@@ -5876,7 +5876,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["Light Screen", "Parting Shot", "Reflect", "Spirit Break", "Surprise Attack", "Taunt", "Thunder Wave"],
+                "movepool": ["Light Screen", "Parting Shot", "Reflect", "Spirit Break", "Sucker Punch", "Taunt", "Thunder Wave"],
                 "abilities": ["Prankster"],
                 "teraTypes": ["Poison", "Steel"]
             },
@@ -6175,7 +6175,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Close Combat", "Poison Jab", "Protect", "Surprise Attack", "Wicked Blow"],
+                "movepool": ["Close Combat", "Poison Jab", "Protect", "Sucker Punch", "Wicked Blow"],
                 "abilities": ["Unseen Fist"],
                 "teraTypes": ["Dark", "Poison"]
             }
@@ -6825,7 +6825,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Brave Bird", "Knock Off", "Parting Shot", "Protect", "Roost", "Stealth Rock", "Surprise Attack"],
+                "movepool": ["Brave Bird", "Knock Off", "Parting Shot", "Protect", "Roost", "Stealth Rock", "Sucker Punch"],
                 "abilities": ["Big Pecks"],
                 "teraTypes": ["Steel"]
             },
@@ -7087,7 +7087,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Iron Head", "Kowtow Cleave", "Protect", "Surprise Attack", "Swords Dance"],
+                "movepool": ["Iron Head", "Kowtow Cleave", "Protect", "Sucker Punch", "Swords Dance"],
                 "abilities": ["Defiant", "Supreme Overlord"],
                 "teraTypes": ["Flying", "Ghost"]
             }
@@ -7115,7 +7115,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["Close Combat", "Crunch", "Protect", "Seed Bomb", "Stun Spore", "Surprise Attack", "Synthesis"],
+                "movepool": ["Close Combat", "Crunch", "Protect", "Seed Bomb", "Stun Spore", "Sucker Punch", "Synthesis"],
                 "abilities": ["Protosynthesis"],
                 "teraTypes": ["Fighting", "Ghost", "Poison"]
             }
@@ -7375,7 +7375,7 @@
             },
             {
                 "role": "Fast Attacker",
-                "movepool": ["Crunch", "Icicle Crash", "Protect", "Recover", "Surprise Attack", "Swords Dance"],
+                "movepool": ["Crunch", "Icicle Crash", "Protect", "Recover", "Sucker Punch", "Swords Dance"],
                 "abilities": ["Sword of Ruin"],
                 "teraTypes": ["Dark", "Ghost", "Ice"]
             }

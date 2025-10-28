@@ -33,7 +33,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		},
 	},
 
-	// Modify Surprise Attack to check if both moves in a link are status
+	// Modify Sucker Punch to check if both moves in a link are status
 	surpriseattack: {
 		inherit: true,
 		onTry(source, target) {
@@ -44,8 +44,8 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 				return null;
 			}
 			if (target.volatiles.mustrecharge && target.volatiles.mustrecharge.duration! < 2) {
-				// Duration may not be lower than 2 if Surprise Attack is used as a low-priority move
-				// i.e. if Surprise Attack is linked with a negative priority move
+				// Duration may not be lower than 2 if Sucker Punch is used as a low-priority move
+				// i.e. if Sucker Punch is linked with a negative priority move
 				this.attrLastMove('[still]');
 				this.add('-fail', source);
 				return null;

@@ -50,7 +50,7 @@ describe('Protean', () => {
 		assert(kecleon.hasType('Normal'), `Protean changed typing when Fling was used with no item.`);
 
 		battle.makeChoices('move surpriseattack', 'auto');
-		assert(kecleon.hasType('Normal'), `Protean changed typing when Surprise Attack was used into a status move.`);
+		assert(kecleon.hasType('Normal'), `Protean changed typing when Sucker Punch was used into a status move.`);
 
 		battle.makeChoices('move steelroller', 'auto');
 		assert(kecleon.hasType('Normal'), `Protean changed typing when Steel Roller was used with no Terrain active.`);

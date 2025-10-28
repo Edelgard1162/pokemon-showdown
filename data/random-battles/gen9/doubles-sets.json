@@ -228,7 +228,7 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Helping Hand", "Protect", "Rock Slide", "Stomping Tantrum", "Surprise Attack"],
+                "movepool": ["Helping Hand", "Protect", "Rock Slide", "Stomping Tantrum", "Sucker Punch"],
                 "abilities": ["Arena Trap"],
                 "teraTypes": ["Fire", "Ghost", "Ground"]
             }
@@ -239,7 +239,7 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Iron Head", "Protect", "Rock Slide", "Stomping Tantrum", "Surprise Attack"],
+                "movepool": ["Iron Head", "Protect", "Rock Slide", "Stomping Tantrum", "Sucker Punch"],
                 "abilities": ["Sand Force", "Tangling Hair"],
                 "teraTypes": ["Fire", "Steel", "Water"]
             }
@@ -339,7 +339,7 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Knock Off", "Power Whip", "Protect", "Sludge Bomb", "Surprise Attack"],
+                "movepool": ["Knock Off", "Power Whip", "Protect", "Sludge Bomb", "Sucker Punch"],
                 "abilities": ["Chlorophyll"],
                 "teraTypes": ["Dark", "Grass"]
             }
@@ -1105,7 +1105,7 @@
         "sets": [
             {
                 "role": "Doubles Wallbreaker",
-                "movepool": ["Head Smash", "High Horsepower", "Protect", "Surprise Attack", "Wood Hammer"],
+                "movepool": ["Head Smash", "High Horsepower", "Protect", "Sucker Punch", "Wood Hammer"],
                 "abilities": ["Rock Head"],
                 "teraTypes": ["Grass"]
             }
@@ -1384,7 +1384,7 @@
         "sets": [
             {
                 "role": "Doubles Fast Attacker",
-                "movepool": ["Dark Pulse", "Heat Wave", "Nasty Plot", "Protect", "Surprise Attack"],
+                "movepool": ["Dark Pulse", "Heat Wave", "Nasty Plot", "Protect", "Sucker Punch"],
                 "abilities": ["Flash Fire", "Unnerve"],
                 "teraTypes": ["Dark", "Fire", "Ghost", "Grass"]
             }
@@ -1463,7 +1463,7 @@
         "sets": [
             {
                 "role": "Doubles Support",
-                "movepool": ["Close Combat", "Coaching", "Fake Out", "Helping Hand", "Surprise Attack", "Triple Axel", "Wide Guard"],
+                "movepool": ["Close Combat", "Coaching", "Fake Out", "Helping Hand", "Sucker Punch", "Triple Axel", "Wide Guard"],
                 "abilities": ["Intimidate"],
                 "teraTypes": ["Steel"]
             }
@@ -1614,7 +1614,7 @@
         "sets": [
             {
                 "role": "Doubles Setup Sweeper",
-                "movepool": ["Crunch", "Howl", "Play Rough", "Surprise Attack", "Throat Chop"],
+                "movepool": ["Crunch", "Howl", "Play Rough", "Sucker Punch", "Throat Chop"],
                 "abilities": ["Intimidate"],
                 "teraTypes": ["Dark", "Fairy"]
             }
@@ -1899,7 +1899,7 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Knock Off", "Leaf Storm", "Spiky Shield", "Surprise Attack"],
+                "movepool": ["Knock Off", "Leaf Storm", "Spiky Shield", "Sucker Punch"],
                 "abilities": ["Water Absorb"],
                 "teraTypes": ["Dark", "Poison"]
             }
@@ -2451,7 +2451,7 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Brave Bird", "Heat Wave", "Protect", "Surprise Attack", "Tailwind"],
+                "movepool": ["Brave Bird", "Heat Wave", "Protect", "Sucker Punch", "Tailwind"],
                 "abilities": ["Moxie"],
                 "teraTypes": ["Dark", "Fire", "Flying"]
             }
@@ -2462,7 +2462,7 @@
         "sets": [
             {
                 "role": "Doubles Fast Attacker",
-                "movepool": ["Fire Blast", "Gunk Shot", "Knock Off", "Poison Gas", "Protect", "Surprise Attack", "Taunt", "Toxic Spikes"],
+                "movepool": ["Fire Blast", "Gunk Shot", "Knock Off", "Poison Gas", "Protect", "Sucker Punch", "Taunt", "Toxic Spikes"],
                 "abilities": ["Aftermath"],
                 "teraTypes": ["Dark", "Flying"]
             }
@@ -2546,7 +2546,7 @@
         "sets": [
             {
                 "role": "Doubles Fast Attacker",
-                "movepool": ["Close Combat", "Fake Out", "Gunk Shot", "Protect", "Surprise Attack", "Swords Dance"],
+                "movepool": ["Close Combat", "Fake Out", "Gunk Shot", "Protect", "Sucker Punch", "Swords Dance"],
                 "abilities": ["Dry Skin"],
                 "teraTypes": ["Dark", "Fighting", "Poison"]
             }
@@ -3377,13 +3377,13 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Aqua Jet", "Ceaseless Edge", "Protect", "Razor Shell", "Sacred Sword", "Surprise Attack"],
+                "movepool": ["Aqua Jet", "Ceaseless Edge", "Protect", "Razor Shell", "Sacred Sword", "Sucker Punch"],
                 "abilities": ["Sharpness"],
                 "teraTypes": ["Dark", "Fire", "Water"]
             },
             {
                 "role": "Choice Item user",
-                "movepool": ["Ceaseless Edge", "Flip Turn", "Razor Shell", "Sacred Sword", "Surprise Attack"],
+                "movepool": ["Ceaseless Edge", "Flip Turn", "Razor Shell", "Sacred Sword", "Sucker Punch"],
                 "abilities": ["Sharpness"],
                 "teraTypes": ["Dark", "Fire", "Water"]
             }
@@ -4825,7 +4825,7 @@
         "sets": [
             {
                 "role": "Doubles Bulky Attacker",
-                "movepool": ["Double-Edge", "Knock Off", "Rapid Spin", "Surprise Attack", "Superpower", "U-turn", "Wood Hammer"],
+                "movepool": ["Double-Edge", "Knock Off", "Rapid Spin", "Sucker Punch", "Superpower", "U-turn", "Wood Hammer"],
                 "abilities": ["Comatose"],
                 "teraTypes": ["Fighting", "Grass"]
             }
@@ -5024,7 +5024,7 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Court Change", "Gunk Shot", "High Jump Kick", "Protect", "Pyro Ball", "Surprise Attack", "U-turn"],
+                "movepool": ["Court Change", "Gunk Shot", "High Jump Kick", "Protect", "Pyro Ball", "Sucker Punch", "U-turn"],
                 "abilities": ["Blaze"],
                 "teraTypes": ["Fighting"]
             }
@@ -5102,7 +5102,7 @@
         "sets": [
             {
                 "role": "Doubles Bulky Attacker",
-                "movepool": ["Dragon Dance", "Dragon Dive", "Grav Apple", "Protect", "Surprise Attack"],
+                "movepool": ["Dragon Dance", "Dragon Dive", "Grav Apple", "Protect", "Sucker Punch"],
                 "abilities": ["Ripen"],
                 "teraTypes": ["Fire", "Grass", "Steel"]
             },
@@ -5237,7 +5237,7 @@
             },
             {
                 "role": "Doubles Support",
-                "movepool": ["Fake Out", "Parting Shot", "Spirit Break", "Surprise Attack", "Taunt", "Thunder Wave"],
+                "movepool": ["Fake Out", "Parting Shot", "Spirit Break", "Sucker Punch", "Taunt", "Thunder Wave"],
                 "abilities": ["Prankster"],
                 "teraTypes": ["Steel"]
             }
@@ -5518,7 +5518,7 @@
         "sets": [
             {
                 "role": "Doubles Wallbreaker",
-                "movepool": ["Close Combat", "Poison Jab", "Protect", "Surprise Attack", "Wicked Blow"],
+                "movepool": ["Close Combat", "Poison Jab", "Protect", "Sucker Punch", "Wicked Blow"],
                 "abilities": ["Unseen Fist"],
                 "teraTypes": ["Dark", "Poison"]
             }
@@ -5730,13 +5730,13 @@
         "sets": [
             {
                 "role": "Choice Item user",
-                "movepool": ["Flower Trick", "Knock Off", "Surprise Attack", "Triple Axel", "U-turn"],
+                "movepool": ["Flower Trick", "Knock Off", "Sucker Punch", "Triple Axel", "U-turn"],
                 "abilities": ["Protean"],
                 "teraTypes": ["Dark", "Grass"]
             },
             {
                 "role": "Offensive Protect",
-                "movepool": ["Flower Trick", "Knock Off", "Protect", "Surprise Attack", "Taunt"],
+                "movepool": ["Flower Trick", "Knock Off", "Protect", "Sucker Punch", "Taunt"],
                 "abilities": ["Overgrow"],
                 "teraTypes": ["Poison"]
             }
@@ -5814,13 +5814,13 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["First Impression", "Protect", "Surprise Attack", "U-turn"],
+                "movepool": ["First Impression", "Protect", "Sucker Punch", "U-turn"],
                 "abilities": ["Tinted Lens"],
                 "teraTypes": ["Bug"]
             },
             {
                 "role": "Doubles Fast Attacker",
-                "movepool": ["First Impression", "Leech Life", "Protect", "Surprise Attack"],
+                "movepool": ["First Impression", "Leech Life", "Protect", "Sucker Punch"],
                 "abilities": ["Tinted Lens"],
                 "teraTypes": ["Bug"]
             }
@@ -6132,7 +6132,7 @@
         "sets": [
             {
                 "role": "Choice Item user",
-                "movepool": ["Brave Bird", "Knock Off", "Rock Slide", "Surprise Attack"],
+                "movepool": ["Brave Bird", "Knock Off", "Rock Slide", "Sucker Punch"],
                 "abilities": ["Rocky Payload"],
                 "teraTypes": ["Rock"]
             },
@@ -6340,19 +6340,19 @@
         "sets": [
             {
                 "role": "Doubles Bulky Setup",
-                "movepool": ["Iron Head", "Protect", "Surprise Attack", "Swords Dance"],
+                "movepool": ["Iron Head", "Protect", "Sucker Punch", "Swords Dance"],
                 "abilities": ["Defiant"],
                 "teraTypes": ["Dark", "Fire", "Flying"]
             },
             {
                 "role": "Bulky Protect",
-                "movepool": ["Iron Head", "Kowtow Cleave", "Protect", "Surprise Attack"],
+                "movepool": ["Iron Head", "Kowtow Cleave", "Protect", "Sucker Punch"],
                 "abilities": ["Defiant"],
                 "teraTypes": ["Dark", "Fire", "Flying"]
             },
             {
                 "role": "Tera Blast user",
-                "movepool": ["Iron Head", "Kowtow Cleave", "Surprise Attack", "Tera Blast"],
+                "movepool": ["Iron Head", "Kowtow Cleave", "Sucker Punch", "Tera Blast"],
                 "abilities": ["Defiant"],
                 "teraTypes": ["Fairy", "Fire", "Flying"]
             }
@@ -6374,7 +6374,7 @@
         "sets": [
             {
                 "role": "Doubles Bulky Attacker",
-                "movepool": ["Close Combat", "Crunch", "Protect", "Rage Powder", "Seed Bomb", "Spore", "Surprise Attack"],
+                "movepool": ["Close Combat", "Crunch", "Protect", "Rage Powder", "Seed Bomb", "Spore", "Sucker Punch"],
                 "abilities": ["Protosynthesis"],
                 "teraTypes": ["Dark", "Poison"]
             }
@@ -6604,13 +6604,13 @@
         "sets": [
             {
                 "role": "Offensive Protect",
-                "movepool": ["Icicle Crash", "Lash Out", "Protect", "Surprise Attack", "Throat Chop"],
+                "movepool": ["Icicle Crash", "Lash Out", "Protect", "Sucker Punch", "Throat Chop"],
                 "abilities": ["Sword of Ruin"],
                 "teraTypes": ["Dark", "Ghost"]
             },
             {
                 "role": "Doubles Wallbreaker",
-                "movepool": ["Icicle Crash", "Protect", "Sacred Sword", "Surprise Attack"],
+                "movepool": ["Icicle Crash", "Protect", "Sacred Sword", "Sucker Punch"],
                 "abilities": ["Sword of Ruin"],
                 "teraTypes": ["Fighting", "Ghost"]
             }

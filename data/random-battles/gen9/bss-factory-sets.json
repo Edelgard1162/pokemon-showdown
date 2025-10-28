@@ -7,7 +7,7 @@
               "weight": 35,
               "moves": [
                   ["Icicle Crash"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Sacred Sword"],
                   ["Crunch", "Sheer Cold"]
               ],
@@ -22,7 +22,7 @@
               "weight": 15,
               "moves": [
                   ["Icicle Crash"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Sacred Sword"],
                   ["Tera Blast"]
               ],
@@ -40,7 +40,7 @@
                   ["Tera Blast"],
                   ["Sacred Sword", "Sheer Cold"],
                   ["Icicle Crash"],
-                  ["Surprise Attack"]
+                  ["Sucker Punch"]
               ],
               "item": ["Assault Vest"],
               "nature": "Adamant",
@@ -71,7 +71,7 @@
               "moves": [
                   ["Ice Spinner", "Icicle Crash"],
                   ["Crunch", "Throat Chop"],
-                  ["Ice Shard", "Surprise Attack"],
+                  ["Ice Shard", "Sucker Punch"],
                   ["Sacred Sword"]
               ],
               "item": ["Choice Band"],
@@ -86,7 +86,7 @@
               "moves": [
                   ["Ice Spinner", "Icicle Crash"],
                   ["Tera Blast"],
-                  ["Ice Shard", "Surprise Attack"],
+                  ["Ice Shard", "Sucker Punch"],
                   ["Sacred Sword"]
               ],
               "item": ["Choice Band"],
@@ -102,7 +102,7 @@
               "moves": [
                   ["Icicle Crash"],
                   ["Recover"],
-                  ["Ice Shard", "Surprise Attack"],
+                  ["Ice Shard", "Sucker Punch"],
                   ["Sacred Sword"]
               ],
               "item": ["Rocky Helmet"],
@@ -119,7 +119,7 @@
                   ["Swords Dance"],
                   ["Icicle Crash"],
                   ["Tera Blast"],
-                  ["Ice Shard", "Surprise Attack"]
+                  ["Ice Shard", "Sucker Punch"]
               ],
               "item": ["Lum Berry"],
               "nature": "Jolly",
@@ -662,7 +662,7 @@
                   ["Swords Dance"],
                   ["Wicked Blow"],
                   ["Close Combat", "Drain Punch"],
-                  ["Surprise Attack"]
+                  ["Sucker Punch"]
               ],
               "item": ["Focus Sash"],
               "nature": "Jolly",
@@ -677,7 +677,7 @@
                   ["Swords Dance"],
                   ["Wicked Blow"],
                   ["Close Combat", "Drain Punch"],
-                  ["Surprise Attack"]
+                  ["Sucker Punch"]
               ],
               "item": ["Black Glasses"],
               "nature": "Jolly",
@@ -692,7 +692,7 @@
                   ["Counter"],
                   ["Wicked Blow"],
                   ["Close Combat", "Drain Punch"],
-                  ["Surprise Attack"]
+                  ["Sucker Punch"]
               ],
               "item": ["Focus Sash"],
               "nature": "Jolly",
@@ -706,7 +706,7 @@
               "moves": [
                   ["Wicked Blow"],
                   ["Close Combat", "Drain Punch"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["U-turn"]
               ],
               "item": ["Choice Band"],
@@ -721,7 +721,7 @@
               "moves": [
                   ["Wicked Blow"],
                   ["Close Combat", "Drain Punch"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Iron Head"]
               ],
               "item": ["Choice Band"],
@@ -737,7 +737,7 @@
               "moves": [
                   ["Wicked Blow"],
                   ["Close Combat"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["U-turn"]
               ],
               "item": ["Choice Scarf"],
@@ -1554,7 +1554,7 @@
               "moves": [
                   ["Dragon Darts"],
                   ["U-turn"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Phantom Force"]
               ],
               "item": ["Choice Band"],
@@ -1569,7 +1569,7 @@
               "moves": [
                   ["Dragon Darts"],
                   ["U-turn"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Tera Blast"]
               ],
               "item": ["Choice Band"],
@@ -3059,7 +3059,7 @@
                   ["Flower Trick"],
                   ["Knock Off"],
                   ["Trick", "U-turn"],
-                  ["Low Kick", "Play Rough", "Surprise Attack"]
+                  ["Low Kick", "Play Rough", "Sucker Punch"]
               ],
               "item": ["Choice Scarf"],
               "nature": "Jolly",
@@ -3089,7 +3089,7 @@
               "moves": [
                   ["Flower Trick"],
                   ["Knock Off"],
-                  ["Surprise Attack", "Taunt"],
+                  ["Sucker Punch", "Taunt"],
                   ["Toxic Spikes"]
               ],
               "item": ["Focus Sash"],
@@ -3105,7 +3105,7 @@
                   ["Flower Trick"],
                   ["Knock Off"],
                   ["Tera Blast"],
-                  ["Surprise Attack", "Toxic Spikes"]
+                  ["Sucker Punch", "Toxic Spikes"]
               ],
               "item": ["Focus Sash"],
               "nature": "Jolly",
@@ -3121,7 +3121,7 @@
                   ["Flower Trick"],
                   ["Knock Off"],
                   ["Trick", "U-turn"],
-                  ["Surprise Attack"]
+                  ["Sucker Punch"]
               ],
               "item": ["Choice Band"],
               "nature": "Jolly",
@@ -3135,7 +3135,7 @@
               "moves": [
                   ["Flower Trick"],
                   ["Knock Off"],
-                  ["Surprise Attack", "Trick", "U-turn"],
+                  ["Sucker Punch", "Trick", "U-turn"],
                   ["Tera Blast"]
               ],
               "item": ["Choice Band"],
@@ -3317,7 +3317,7 @@
               "weight": 25,
               "moves": [
                   ["Kowtow Cleave"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Iron Head"],
                   ["Guillotine"]
               ],
@@ -3332,7 +3332,7 @@
               "weight": 20,
               "moves": [
                   ["Kowtow Cleave"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Iron Head"],
                   ["Guillotine"]
               ],
@@ -3347,7 +3347,7 @@
               "weight": 10,
               "moves": [
                   ["Kowtow Cleave"],
-                  ["Guillotine", "Surprise Attack"],
+                  ["Guillotine", "Sucker Punch"],
                   ["Iron Head"],
                   ["Tera Blast"]
               ],
@@ -3363,7 +3363,7 @@
               "weight": 10,
               "moves": [
                   ["Kowtow Cleave"],
-                  ["Guillotine", "Surprise Attack"],
+                  ["Guillotine", "Sucker Punch"],
                   ["Iron Head"],
                   ["Tera Blast"]
               ],
@@ -3379,7 +3379,7 @@
               "weight": 15,
               "moves": [
                   ["Kowtow Cleave"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Iron Head"],
                   ["Swords Dance"]
               ],
@@ -3394,7 +3394,7 @@
               "weight": 10,
               "moves": [
                   ["Kowtow Cleave"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Iron Head"],
                   ["Swords Dance"]
               ],
@@ -3411,7 +3411,7 @@
                   ["Stealth Rock"],
                   ["Kowtow Cleave"],
                   ["Guillotine", "Iron Head"],
-                  ["Surprise Attack", "Thunder Wave"]
+                  ["Sucker Punch", "Thunder Wave"]
               ],
               "item": ["Focus Sash"],
               "nature": "Adamant",
@@ -3426,7 +3426,7 @@
                   ["Stealth Rock"],
                   ["Kowtow Cleave"],
                   ["Guillotine", "Iron Head"],
-                  ["Surprise Attack", "Thunder Wave"]
+                  ["Sucker Punch", "Thunder Wave"]
               ],
               "item": ["Sitrus Berry"],
               "nature": "Adamant",
@@ -3969,7 +3969,7 @@
               "weight": 10,
               "moves": [
                   ["Play Rough", "Spirit Break"],
-                  ["Crunch", "Surprise Attack"],
+                  ["Crunch", "Sucker Punch"],
                   ["Hammer Arm", "Low Kick", "Taunt"],
                   ["Thunder Wave"]
               ],
@@ -5818,7 +5818,7 @@
               "weight": 15,
               "moves": [
                   ["Spore"],
-                  ["Surprise Attack"],
+                  ["Sucker Punch"],
                   ["Bullet Seed"],
                   ["Substitute", "Tera Blast"]
               ],
@@ -5840,7 +5840,7 @@
               "moves": [
                   ["Ceaseless Edge"],
                   ["Aqua Cutter", "Razor Shell"],
-                  ["Aqua Jet", "Surprise Attack"],
+                  ["Aqua Jet", "Sucker Punch"],
                   ["Encore", "Sacred Sword"]
               ],
               "item": ["Focus Sash"],
@@ -5855,7 +5855,7 @@
               "moves": [
                   ["Ceaseless Edge"],
                   ["Aqua Cutter", "Razor Shell"],
-                  ["Aqua Jet", "Surprise Attack"],
+                  ["Aqua Jet", "Sucker Punch"],
                   ["Sacred Sword"]
               ],
               "item": ["Assault Vest"],
@@ -5870,7 +5870,7 @@
               "moves": [
                   ["Ceaseless Edge"],
                   ["Aqua Cutter", "Razor Shell"],
-                  ["Aqua Jet", "Surprise Attack"],
+                  ["Aqua Jet", "Sucker Punch"],
                   ["Tera Blast"]
               ],
               "item": ["Assault Vest"],

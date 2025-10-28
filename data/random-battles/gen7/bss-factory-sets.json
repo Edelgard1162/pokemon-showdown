@@ -1079,14 +1079,14 @@
 			"ability": "Emergency Exit",
 			"evs": {"hp": 244, "atk": 244, "def": 20},
 			"nature": "Adamant",
-			"moves": [["First Impression"], ["Liquidation"], ["Aqua Jet"], ["Leech Life", "Surprise Attack", "Rock Tomb"]]
+			"moves": [["First Impression"], ["Liquidation"], ["Aqua Jet"], ["Leech Life", "Sucker Punch", "Rock Tomb"]]
 		}, {
 			"species": "Golisopod",
 			"item": "Sitrus Berry",
 			"ability": "Emergency Exit",
 			"evs": {"hp": 236, "atk": 252, "def": 20},
 			"nature": "Adamant",
-			"moves": [["First Impression"], ["Liquidation"], ["Aqua Jet"], ["Leech Life", "Surprise Attack", "Rock Tomb"]]
+			"moves": [["First Impression"], ["Liquidation"], ["Aqua Jet"], ["Leech Life", "Sucker Punch", "Rock Tomb"]]
 		}, {
 			"species": "Golisopod",
 			"item": "Choice Band",
@@ -1366,14 +1366,14 @@
 			"ability": "Scrappy",
 			"evs": {"hp": 4, "atk": 252, "spe": 252},
 			"nature": "Adamant",
-			"moves": [["Return", "Double-Edge", "Facade", "Crush Claw"], ["Power-Up Punch", "Fake Out"], ["Earthquake", "Fire Punch", "Drain Punch"], ["Surprise Attack", "Ice Punch", "Rock Tomb"]]
+			"moves": [["Return", "Double-Edge", "Facade", "Crush Claw"], ["Power-Up Punch", "Fake Out"], ["Earthquake", "Fire Punch", "Drain Punch"], ["Sucker Punch", "Ice Punch", "Rock Tomb"]]
 		}, {
 			"species": "Kangaskhan",
 			"item": "Kangaskhanite",
 			"ability": "Scrappy",
 			"evs": {"hp": 212, "atk": 252, "def": 12, "spd": 12, "spe": 20},
 			"nature": "Adamant",
-			"moves": [["Secret Power"], ["Power-Up Punch"], ["Substitute", "Surprise Attack"], ["Rock Slide", "Rock Tomb", "Drain Punch"]]
+			"moves": [["Secret Power"], ["Power-Up Punch"], ["Substitute", "Sucker Punch"], ["Rock Slide", "Rock Tomb", "Drain Punch"]]
 		}, {
 			"species": "Kangaskhan",
 			"item": "Kangaskhanite",
@@ -1839,14 +1839,14 @@
 			"ability": "Intimidate",
 			"evs": {"hp": 252, "atk": 252, "def": 4},
 			"nature": "Adamant",
-			"moves": [["Iron Head", "Fire Fang", "Knock Off"], ["Play Rough"], ["Surprise Attack"], ["Swords Dance"]]
+			"moves": [["Iron Head", "Fire Fang", "Knock Off"], ["Play Rough"], ["Sucker Punch"], ["Swords Dance"]]
 		}, {
 			"species": "Mawile",
 			"item": "Mawilite",
 			"ability": "Intimidate",
 			"evs": {"hp": 252, "atk": 4, "spd": 252},
 			"nature": "Careful",
-			"moves": [["Knock Off", "Iron Head", "Fire Fang"], ["Play Rough"], ["Surprise Attack"], ["Swords Dance"]]
+			"moves": [["Knock Off", "Iron Head", "Fire Fang"], ["Play Rough"], ["Sucker Punch"], ["Swords Dance"]]
 		}, {
 			"species": "Mawile",
 			"item": "Mawilite",
@@ -1854,7 +1854,7 @@
 			"evs": {"hp": 252, "atk": 252, "def": 4},
 			"ivs": {"atk": 19},
 			"nature": "Adamant",
-			"moves": [["Substitute"], ["Play Rough"], ["Surprise Attack"], ["Focus Punch"]]
+			"moves": [["Substitute"], ["Play Rough"], ["Sucker Punch"], ["Focus Punch"]]
 		}]
 	},
 	"medicham": {
@@ -2027,7 +2027,7 @@
 			"evs": {"spa": 252, "spd": 4, "spe": 252},
 			"ivs": {"atk": 0},
 			"nature": "Modest",
-			"moves": [["Earth Power"], ["Sludge Wave"], ["Ice Beam"], ["Flamethrower", "Fire Blast", "Surprise Attack"]]
+			"moves": [["Earth Power"], ["Sludge Wave"], ["Ice Beam"], ["Flamethrower", "Fire Blast", "Sucker Punch"]]
 		}, {
 			"species": "Nidoking",
 			"item": "Life Orb",

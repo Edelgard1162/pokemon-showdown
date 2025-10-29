@@ -52,7 +52,7 @@ describe('[Gen 8] Random Battle (slow)', () => {
 	});
 
 	it('should not generate Knock Off + Sucker Punch Toxicroak', () => {
-		testNotBothMoves('toxicroak', options, 'knockoff', 'surpriseattack');
+		testNotBothMoves('toxicroak', options, 'knockoff', 'suckerpunch');
 	});
 
 	it('should not generate Swords Dance + Fire Blast Garchomp', () => {

@@ -37,7 +37,7 @@ describe('Protean', () => {
 
 	it(`should not change the user's type when using moves that fail earlier than Protean will activate`, () => {
 		battle = common.createBattle([[
-			{ species: 'Kecleon', ability: 'protean', moves: ['fling', 'surpriseattack', 'steelroller', 'aurawheel'] },
+			{ species: 'Kecleon', ability: 'protean', moves: ['fling', 'suckerpunch', 'steelroller', 'aurawheel'] },
 			{ species: 'Kecleon', ability: 'protean', moves: ['counter', 'metalburst'] },
 			{ species: 'Kecleon', ability: 'protean', moves: ['magnetrise', 'ingrain', 'burnup', 'auroraveil'] },
 		], [
@@ -49,7 +49,7 @@ describe('Protean', () => {
 		battle.makeChoices('move fling', 'auto');
 		assert(kecleon.hasType('Normal'), `Protean changed typing when Fling was used with no item.`);
 
-		battle.makeChoices('move surpriseattack', 'auto');
+		battle.makeChoices('move suckerpunch', 'auto');
 		assert(kecleon.hasType('Normal'), `Protean changed typing when Sucker Punch was used into a status move.`);
 
 		battle.makeChoices('move steelroller', 'auto');

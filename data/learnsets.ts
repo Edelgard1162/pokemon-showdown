@@ -90624,6 +90624,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			solarbeam: ["9M"],
 			solarblade: ["9M"],
 			spite: ["9M", "9L1"],
+			strengthsap: ["9L1"],
 			stunspore: ["9L15"],
 			substitute: ["9M"],
 			sunnyday: ["9M"],

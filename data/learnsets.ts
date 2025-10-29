@@ -42533,6 +42533,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			endure: ["8M", "4M", "3T"],
 			facade: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			falseswipe: ["8M", "7M", "6M", "5M", "4M"],
+			firstimpression: ["8L1", "7L1"],
 			flashcannon: ["8M", "7M", "6M", "5M", "4M"],
 			flipturn: ["9M", "8T"],
 			frustration: ["7M", "6M", "5M", "4M", "3M"],

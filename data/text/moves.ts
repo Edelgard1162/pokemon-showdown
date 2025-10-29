@@ -6528,6 +6528,14 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Subzero Slammer",
 		shortDesc: "Power is equal to the base move's Z-Power.",
 	},
+	suckerpunch: {
+		name: "Sucker Punch",
+		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
+		shortDesc: "Usually goes first. Fails if target is not attacking.",
+		gen4: {
+			desc: "Fails if the target did not select a physical or special attack for use this turn, or if the target moves before the user.",
+		},
+	},
 	sunnyday: {
 		name: "Sunny Day",
 		desc: "For 5 turns, the weather becomes Sunny Day. The damage of Fire-type attacks is multiplied by 1.5 and the damage of Water-type attacks is multiplied by 0.66 during the effect. Lasts for 8 turns if the user is holding Heat Rock. Fails if the current weather is Sunny Day.",
@@ -6586,15 +6594,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Surging Strikes",
 		desc: "Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
 		shortDesc: "Always results in a critical hit. Hits 3 times.",
-		
-	},
-	suckerpunch: {
-		name: "Sucker Punch",
-		desc: "Fails if the target did not select a physical attack, special attack, or Me First for use this turn, or if the target moves before the user.",
-		shortDesc: "Usually goes first. Fails if target is not attacking.",
-		gen4: {
-			desc: "Fails if the target did not select a physical or special attack for use this turn, or if the target moves before the user.",
-		},
 	},
 	swagger: {
 		name: "Swagger",

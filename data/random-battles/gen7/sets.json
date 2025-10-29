@@ -156,7 +156,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["crunch", "facade", "protect", "stompingtantrum", "surpriseattack", "swordsdance", "uturn"],
+                "movepool": ["crunch", "facade", "protect", "stompingtantrum", "suckerpunch", "swordsdance", "uturn"],
                 "abilities": ["Guts"],
                 "preferredTypes": ["Dark"]
             }
@@ -167,12 +167,12 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["doubleedge", "knockoff", "pursuit", "return", "surpriseattack", "swordsdance"],
+                "movepool": ["doubleedge", "knockoff", "pursuit", "return", "suckerpunch", "swordsdance"],
                 "abilities": ["Hustle"]
             },
             {
                 "role": "Z-Move user",
-                "movepool": ["doubleedge", "knockoff", "surpriseattack", "swordsdance"],
+                "movepool": ["doubleedge", "knockoff", "suckerpunch", "swordsdance"],
                 "abilities": ["Hustle"],
                 "preferredTypes": ["Normal"]
             }
@@ -198,7 +198,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["aquatail", "coil", "earthquake", "gunkshot", "surpriseattack"],
+                "movepool": ["aquatail", "coil", "earthquake", "gunkshot", "suckerpunch"],
                 "abilities": ["Intimidate"],
                 "preferredTypes": ["Ground"]
             },
@@ -393,12 +393,12 @@
         "sets": [
             {
                 "role": "Fast Support",
-                "movepool": ["earthquake", "honeclaws", "stealthrock", "stoneedge", "surpriseattack"],
+                "movepool": ["earthquake", "honeclaws", "stealthrock", "stoneedge", "suckerpunch"],
                 "abilities": ["Arena Trap"]
             },
             {
                 "role": "Wallbreaker",
-                "movepool": ["doubleedge", "earthquake", "stoneedge", "surpriseattack"],
+                "movepool": ["doubleedge", "earthquake", "stoneedge", "suckerpunch"],
                 "abilities": ["Arena Trap"]
             }
         ]
@@ -408,7 +408,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["earthquake", "ironhead", "stealthrock", "stoneedge", "surpriseattack", "toxic"],
+                "movepool": ["earthquake", "ironhead", "stealthrock", "stoneedge", "suckerpunch", "toxic"],
                 "abilities": ["Sand Force", "Tangling Hair"]
             }
         ]
@@ -561,12 +561,12 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["poisonjab", "powerwhip", "surpriseattack", "swordsdance"],
+                "movepool": ["poisonjab", "powerwhip", "suckerpunch", "swordsdance"],
                 "abilities": ["Chlorophyll"]
             },
             {
                 "role": "Wallbreaker",
-                "movepool": ["hiddenpowerground", "knockoff", "powerwhip", "sleeppowder", "sludgebomb", "strengthsap", "surpriseattack"],
+                "movepool": ["hiddenpowerground", "knockoff", "powerwhip", "sleeppowder", "sludgebomb", "strengthsap", "suckerpunch"],
                 "abilities": ["Chlorophyll"]
             },
             {
@@ -591,12 +591,12 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["earthquake", "explosion", "stealthrock", "stoneedge", "surpriseattack", "toxic"],
+                "movepool": ["earthquake", "explosion", "stealthrock", "stoneedge", "suckerpunch", "toxic"],
                 "abilities": ["Sturdy"]
             },
             {
                 "role": "Bulky Setup",
-                "movepool": ["earthquake", "explosion", "rockpolish", "stoneedge", "surpriseattack"],
+                "movepool": ["earthquake", "explosion", "rockpolish", "stoneedge", "suckerpunch"],
                 "abilities": ["Sturdy"]
             }
         ]
@@ -906,12 +906,12 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["doubleedge", "drainpunch", "earthquake", "fakeout", "return", "surpriseattack"],
+                "movepool": ["doubleedge", "drainpunch", "earthquake", "fakeout", "return", "suckerpunch"],
                 "abilities": ["Scrappy"]
             },
             {
                 "role": "AV Pivot",
-                "movepool": ["drainpunch", "earthquake", "fakeout", "return", "surpriseattack"],
+                "movepool": ["drainpunch", "earthquake", "fakeout", "return", "suckerpunch"],
                 "abilities": ["Scrappy"]
             }
         ]
@@ -921,12 +921,12 @@
         "sets": [
             {
                 "role": "Fast Support",
-                "movepool": ["bodyslam", "crunch", "fakeout", "seismictoss", "surpriseattack"],
+                "movepool": ["bodyslam", "crunch", "fakeout", "seismictoss", "suckerpunch"],
                 "abilities": ["Scrappy"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["bodyslam", "crunch", "earthquake", "poweruppunch", "return", "surpriseattack"],
+                "movepool": ["bodyslam", "crunch", "earthquake", "poweruppunch", "return", "suckerpunch"],
                 "abilities": ["Scrappy"],
                 "preferredTypes": ["Ground"]
             }
@@ -1386,7 +1386,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["megahorn", "poisonjab", "stickyweb", "surpriseattack", "toxicspikes"],
+                "movepool": ["megahorn", "poisonjab", "stickyweb", "suckerpunch", "toxicspikes"],
                 "abilities": ["Insomnia", "Swarm"]
             }
         ]
@@ -1487,7 +1487,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["earthquake", "headsmash", "stealthrock", "surpriseattack", "toxic", "woodhammer"],
+                "movepool": ["earthquake", "headsmash", "stealthrock", "suckerpunch", "toxic", "woodhammer"],
                 "abilities": ["Rock Head"],
                 "preferredTypes": ["Grass"]
             }
@@ -1882,7 +1882,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["darkpulse", "fireblast", "nastyplot", "sludgebomb", "surpriseattack"],
+                "movepool": ["darkpulse", "fireblast", "nastyplot", "sludgebomb", "suckerpunch"],
                 "abilities": ["Flash Fire"]
             }
         ]
@@ -1937,7 +1937,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["doubleedge", "earthquake", "jumpkick", "megahorn", "surpriseattack", "throatchop", "thunderwave"],
+                "movepool": ["doubleedge", "earthquake", "jumpkick", "megahorn", "suckerpunch", "throatchop", "thunderwave"],
                 "abilities": ["Intimidate"],
                 "preferredTypes": ["Ground"]
             }
@@ -1958,7 +1958,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["closecombat", "earthquake", "rapidspin", "stoneedge", "surpriseattack", "toxic"],
+                "movepool": ["closecombat", "earthquake", "rapidspin", "stoneedge", "suckerpunch", "toxic"],
                 "abilities": ["Intimidate"]
             }
         ]
@@ -2186,7 +2186,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["crunch", "irontail", "playrough", "surpriseattack", "toxic"],
+                "movepool": ["crunch", "irontail", "playrough", "suckerpunch", "toxic"],
                 "abilities": ["Intimidate"],
                 "preferredTypes": ["Fairy"]
             }
@@ -2253,12 +2253,12 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["defog", "knockoff", "leafstorm", "lowkick", "surpriseattack"],
+                "movepool": ["defog", "knockoff", "leafstorm", "lowkick", "suckerpunch"],
                 "abilities": ["Chlorophyll", "Pickpocket"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["knockoff", "leafblade", "lowkick", "surpriseattack", "swordsdance"],
+                "movepool": ["knockoff", "leafblade", "lowkick", "suckerpunch", "swordsdance"],
                 "abilities": ["Chlorophyll", "Pickpocket"]
             }
         ]
@@ -2463,7 +2463,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["ironhead", "knockoff", "playrough", "stealthrock", "surpriseattack", "swordsdance"],
+                "movepool": ["ironhead", "knockoff", "playrough", "stealthrock", "suckerpunch", "swordsdance"],
                 "abilities": ["Intimidate", "Sheer Force"]
             }
         ]
@@ -2473,7 +2473,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["ironhead", "knockoff", "playrough", "surpriseattack", "swordsdance"],
+                "movepool": ["ironhead", "knockoff", "playrough", "suckerpunch", "swordsdance"],
                 "abilities": ["Intimidate"]
             }
         ]
@@ -2698,7 +2698,7 @@
         "sets": [
             {
                 "role": "Staller",
-                "movepool": ["rest", "return", "sleeptalk", "surpriseattack", "superpower", "thief"],
+                "movepool": ["rest", "return", "sleeptalk", "suckerpunch", "superpower", "thief"],
                 "abilities": ["Contrary"],
                 "preferredTypes": ["Fighting"]
             }
@@ -2730,12 +2730,12 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["darkpulse", "gigadrain", "spikes", "surpriseattack", "superpower"],
+                "movepool": ["darkpulse", "gigadrain", "spikes", "suckerpunch", "superpower"],
                 "abilities": ["Water Absorb"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["drainpunch", "seedbomb", "surpriseattack", "swordsdance"],
+                "movepool": ["drainpunch", "seedbomb", "suckerpunch", "swordsdance"],
                 "abilities": ["Water Absorb"]
             }
         ]
@@ -2776,13 +2776,13 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["earthquake", "flamethrower", "gigadrain", "glare", "knockoff", "sludgewave", "surpriseattack", "switcheroo"],
+                "movepool": ["earthquake", "flamethrower", "gigadrain", "glare", "knockoff", "sludgewave", "suckerpunch", "switcheroo"],
                 "abilities": ["Infiltrator"],
                 "preferredTypes": ["Ground"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["earthquake", "poisonjab", "surpriseattack", "swordsdance"],
+                "movepool": ["earthquake", "poisonjab", "suckerpunch", "swordsdance"],
                 "abilities": ["Infiltrator"]
             }
         ]
@@ -2905,7 +2905,7 @@
         "sets": [
             {
                 "role": "Fast Support",
-                "movepool": ["drainpunch", "fakeout", "knockoff", "recover", "shadowsneak", "stealthrock", "surpriseattack"],
+                "movepool": ["drainpunch", "fakeout", "knockoff", "recover", "shadowsneak", "stealthrock", "suckerpunch"],
                 "abilities": ["Protean"],
                 "preferredTypes": ["Fighting"]
             },
@@ -2966,7 +2966,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["knockoff", "playrough", "pursuit", "surpriseattack", "superpower", "swordsdance"],
+                "movepool": ["knockoff", "playrough", "pursuit", "suckerpunch", "superpower", "swordsdance"],
                 "abilities": ["Justified"],
                 "preferredTypes": ["Fairy"]
             }
@@ -2977,13 +2977,13 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["knockoff", "playrough", "surpriseattack", "superpower", "swordsdance"],
+                "movepool": ["knockoff", "playrough", "suckerpunch", "superpower", "swordsdance"],
                 "abilities": ["Justified"],
                 "preferredTypes": ["Fairy"]
             },
             {
                 "role": "Fast Attacker",
-                "movepool": ["irontail", "knockoff", "playrough", "pursuit", "surpriseattack", "superpower"],
+                "movepool": ["irontail", "knockoff", "playrough", "pursuit", "suckerpunch", "superpower"],
                 "abilities": ["Justified"],
                 "preferredTypes": ["Fairy"]
             }
@@ -3030,7 +3030,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["icebeam", "return", "shellsmash", "surpriseattack", "waterfall"],
+                "movepool": ["icebeam", "return", "shellsmash", "suckerpunch", "waterfall"],
                 "abilities": ["Swift Swim", "Water Veil"],
                 "preferredTypes": ["Ice"]
             }
@@ -3744,7 +3744,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["bravebird", "heatwave", "pursuit", "roost", "surpriseattack", "superpower"],
+                "movepool": ["bravebird", "heatwave", "pursuit", "roost", "suckerpunch", "superpower"],
                 "abilities": ["Moxie"]
             }
         ]
@@ -3765,7 +3765,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["crunch", "defog", "fireblast", "poisonjab", "pursuit", "surpriseattack", "taunt"],
+                "movepool": ["crunch", "defog", "fireblast", "poisonjab", "pursuit", "suckerpunch", "taunt"],
                 "abilities": ["Aftermath"]
             }
         ]
@@ -3812,7 +3812,7 @@
             },
             {
                 "role": "Bulky Attacker",
-                "movepool": ["foulplay", "painsplit", "pursuit", "surpriseattack", "toxic", "willowisp"],
+                "movepool": ["foulplay", "painsplit", "pursuit", "suckerpunch", "toxic", "willowisp"],
                 "abilities": ["Infiltrator"]
             }
         ]
@@ -3915,7 +3915,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["drainpunch", "earthquake", "gunkshot", "knockoff", "substitute", "surpriseattack", "swordsdance"],
+                "movepool": ["drainpunch", "earthquake", "gunkshot", "knockoff", "substitute", "suckerpunch", "swordsdance"],
                 "abilities": ["Dry Skin"]
             }
         ]
@@ -4806,12 +4806,12 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["flareblitz", "headsmash", "surpriseattack", "superpower", "wildcharge"],
+                "movepool": ["flareblitz", "headsmash", "suckerpunch", "superpower", "wildcharge"],
                 "abilities": ["Reckless"]
             },
             {
                 "role": "AV Pivot",
-                "movepool": ["flareblitz", "grassknot", "surpriseattack", "superpower", "wildcharge"],
+                "movepool": ["flareblitz", "grassknot", "suckerpunch", "superpower", "wildcharge"],
                 "abilities": ["Reckless"]
             }
         ]
@@ -5577,13 +5577,13 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["firepunch", "glare", "gunkshot", "outrage", "surpriseattack"],
+                "movepool": ["firepunch", "glare", "gunkshot", "outrage", "suckerpunch"],
                 "abilities": ["Sheer Force"],
                 "preferredTypes": ["Poison"]
             },
             {
                 "role": "Bulky Support",
-                "movepool": ["dragontail", "earthquake", "glare", "gunkshot", "outrage", "stealthrock", "surpriseattack"],
+                "movepool": ["dragontail", "earthquake", "glare", "gunkshot", "outrage", "stealthrock", "suckerpunch"],
                 "abilities": ["Rough Skin"]
             }
         ]
@@ -5609,7 +5609,7 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["ironhead", "knockoff", "pursuit", "surpriseattack", "swordsdance"],
+                "movepool": ["ironhead", "knockoff", "pursuit", "suckerpunch", "swordsdance"],
                 "abilities": ["Defiant"]
             }
         ]
@@ -5659,7 +5659,7 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["fireblast", "firelash", "gigadrain", "knockoff", "surpriseattack", "superpower"],
+                "movepool": ["fireblast", "firelash", "gigadrain", "knockoff", "suckerpunch", "superpower"],
                 "abilities": ["Flash Fire"]
             }
         ]
@@ -6512,7 +6512,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["knockoff", "oblivionwing", "roost", "surpriseattack", "taunt", "toxic", "uturn"],
+                "movepool": ["knockoff", "oblivionwing", "roost", "suckerpunch", "taunt", "toxic", "uturn"],
                 "abilities": ["Dark Aura"]
             }
         ]
@@ -6783,12 +6783,12 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["stealthrock", "stompingtantrum", "stoneedge", "surpriseattack", "swordsdance"],
+                "movepool": ["stealthrock", "stompingtantrum", "stoneedge", "suckerpunch", "swordsdance"],
                 "abilities": ["No Guard"]
             },
             {
                 "role": "Z-Move user",
-                "movepool": ["stompingtantrum", "stoneedge", "surpriseattack", "swordsdance"],
+                "movepool": ["stompingtantrum", "stoneedge", "suckerpunch", "swordsdance"],
                 "abilities": ["No Guard"]
             }
         ]
@@ -7246,7 +7246,7 @@
         "sets": [
             {
                 "role": "Bulky Attacker",
-                "movepool": ["earthquake", "knockoff", "rapidspin", "return", "surpriseattack", "superpower", "uturn", "woodhammer"],
+                "movepool": ["earthquake", "knockoff", "rapidspin", "return", "suckerpunch", "superpower", "uturn", "woodhammer"],
                 "abilities": ["Comatose"],
                 "preferredTypes": ["Dark"]
             }

@@ -63,7 +63,7 @@ const NO_STAB = [
 	'accelerock', 'aquajet', 'bulletpunch', 'clearsmog', 'dragontail', 'eruption', 'explosion',
 	'fakeout', 'firstimpression', 'flamecharge', 'futuresight', 'iceshard', 'icywind', 'incinerate', 'infestation', 'machpunch',
 	'nuzzle', 'pluck', 'poweruppunch', 'pursuit', 'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak',
-	'skyattack', 'skydrop', 'snarl', 'surpriseattack', 'uturn', 'watershuriken', 'vacuumwave', 'voltswitch', 'waterspout',
+	'skyattack', 'skydrop', 'snarl', 'suckerpunch', 'uturn', 'watershuriken', 'vacuumwave', 'voltswitch', 'waterspout',
 ];
 // Hazard-setting moves
 const HAZARDS = [
@@ -364,7 +364,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 			// Liepard
 			['copycat', 'uturn'],
 			// Seviper
-			['switcheroo', 'surpriseattack'],
+			['switcheroo', 'suckerpunch'],
 			// Jirachi
 			['bodyslam', 'healingwish'],
 		];
@@ -372,7 +372,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 		for (const pair of incompatiblePairs) this.incompatibleMoves(moves, movePool, pair[0], pair[1]);
 
 		if (!types.includes('Dark') && preferredType !== 'Dark') {
-			this.incompatibleMoves(moves, movePool, 'knockoff', ['pursuit', 'surpriseattack']);
+			this.incompatibleMoves(moves, movePool, 'knockoff', ['pursuit', 'suckerpunch']);
 		}
 
 		const statusInflictingMoves = ['thunderwave', 'toxic', 'willowisp', 'yawn'];
@@ -913,7 +913,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 		);
 
 		if (
-			moves.has('pursuit') && moves.has('surpriseattack') && counter.get('Dark') && !this.priorityPokemon.includes(species.id)
+			moves.has('pursuit') && moves.has('suckerpunch') && counter.get('Dark') && !this.priorityPokemon.includes(species.id)
 		) return 'Black Glasses';
 		if (counter.get('Special') === 4) {
 			return (

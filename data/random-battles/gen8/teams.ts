@@ -82,7 +82,7 @@ const SPEED_SETUP = [
 const NO_STAB = [
 	'accelerock', 'aquajet', 'beakblast', 'bounce', 'breakingswipe', 'chatter', 'clearsmog', 'dragontail', 'eruption', 'explosion',
 	'fakeout', 'firstimpression', 'flamecharge', 'flipturn', 'iceshard', 'icywind', 'incinerate', 'machpunch',
-	'meteorbeam', 'pluck', 'pursuit', 'quickattack', 'reversal', 'selfdestruct', 'skydrop', 'snarl', 'surpriseattack', 'uturn', 'watershuriken',
+	'meteorbeam', 'pluck', 'pursuit', 'quickattack', 'reversal', 'selfdestruct', 'skydrop', 'snarl', 'suckerpunch', 'uturn', 'watershuriken',
 	'vacuumwave', 'voltswitch', 'waterspout',
 ];
 // Hazard-setting moves
@@ -172,7 +172,7 @@ export class RandomGen8Teams {
 			Bug: movePool => movePool.includes('megahorn'),
 			Dark: (movePool, moves, abilities, types, counter) => {
 				if (!counter.get('Dark')) return true;
-				return moves.has('surpriseattack') && (movePool.includes('knockoff') || movePool.includes('wickedblow'));
+				return moves.has('suckerpunch') && (movePool.includes('knockoff') || movePool.includes('wickedblow'));
 			},
 			Dragon: (movePool, moves, abilities, types, counter) => (
 				!counter.get('Dragon') &&
@@ -1418,12 +1418,12 @@ export class RandomGen8Teams {
 			return { cull: moves.has('dracometeor') && counter.get('Special') < 4 };
 		case 'darkpulse':
 			const pulseIncompatible = ['foulplay', 'knockoff'].some(m => moves.has(m)) || (
-				species.id === 'shiftry' && (moves.has('defog') || moves.has('surpriseattack'))
+				species.id === 'shiftry' && (moves.has('defog') || moves.has('suckerpunch'))
 			);
 			// Special clause to prevent bugged Shiftry sets with Sucker Punch + Nasty Plot
 			const shiftryCase = movePool.includes('nastyplot') && !moves.has('defog');
 			return { cull: pulseIncompatible && !shiftryCase && counter.setupType !== 'Special' };
-		case 'surpriseattack':
+		case 'suckerpunch':
 			return { cull:
 				// Shiftry in No Dynamax would otherwise get Choice Scarf Sucker Punch sometimes.
 				(isNoDynamax && species.id === 'shiftry' && moves.has('defog')) ||
@@ -1898,7 +1898,7 @@ export class RandomGen8Teams {
 		) return 'Choice Scarf';
 		if (moves.has('blizzard') && ability !== 'Snow Warning' && !teamDetails.snowstorm) return 'Blunder Policy';
 		if (this.dex.getEffectiveness('Rock', species) >= 2 && !types.has('Flying')) return 'Heavy-Duty Boots';
-		if (counter.get('Physical') >= 4 && ['fakeout', 'feint', 'rapidspin', 'surpriseattack'].every(m => !moves.has(m)) && (
+		if (counter.get('Physical') >= 4 && ['fakeout', 'feint', 'rapidspin', 'suckerpunch'].every(m => !moves.has(m)) && (
 			types.has('Dragon') || types.has('Fighting') || types.has('Rock') ||
 			moves.has('flipturn') || moves.has('uturn')
 		)) {

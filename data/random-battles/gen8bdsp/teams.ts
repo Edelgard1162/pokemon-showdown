@@ -468,12 +468,12 @@ export class RandomBDSPTeams extends RandomGen8Teams {
 			return { cull: moves.has('dracometeor') && counter.get('Special') < 4 };
 		case 'darkpulse':
 			const pulseIncompatible = ['foulplay', 'knockoff'].some(m => moves.has(m)) || (
-				species.id === 'shiftry' && (moves.has('defog') || moves.has('surpriseattack'))
+				species.id === 'shiftry' && (moves.has('defog') || moves.has('suckerpunch'))
 			);
 			// Special clause to prevent bugged Shiftry sets with Sucker Punch + Nasty Plot
 			const shiftryCase = movePool.includes('nastyplot') && !moves.has('defog');
 			return { cull: pulseIncompatible && !shiftryCase && counter.setupType !== 'Special' };
-		case 'surpriseattack':
+		case 'suckerpunch':
 			return { cull:
 				moves.has('rest') ||
 				counter.damagingMoves.size < 2 ||

@@ -34,7 +34,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	},
 
 	// Modify Sucker Punch to check if both moves in a link are status
-	surpriseattack: {
+	suckerpunch: {
 		inherit: true,
 		onTry(source, target) {
 			const action = this.queue.willMove(target);

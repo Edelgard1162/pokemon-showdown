@@ -125,15 +125,15 @@
     },
     "dugtrio": {
         "level": 81,
-        "moves": ["earthquake", "memento", "stoneedge", "surpriseattack"],
+        "moves": ["earthquake", "memento", "stoneedge", "suckerpunch"],
         "doublesLevel": 88,
-        "doublesMoves": ["highhorsepower", "memento", "protect", "rockslide", "surpriseattack"]
+        "doublesMoves": ["highhorsepower", "memento", "protect", "rockslide", "suckerpunch"]
     },
     "dugtrioalola": {
         "level": 82,
-        "moves": ["earthquake", "ironhead", "stealthrock", "stoneedge", "surpriseattack"],
+        "moves": ["earthquake", "ironhead", "stealthrock", "stoneedge", "suckerpunch"],
         "doublesLevel": 88,
-        "doublesMoves": ["highhorsepower", "ironhead", "memento", "protect", "rockslide", "surpriseattack"]
+        "doublesMoves": ["highhorsepower", "ironhead", "memento", "protect", "rockslide", "suckerpunch"]
     },
     "persian": {
         "level": 89,
@@ -296,9 +296,9 @@
     },
     "kangaskhan": {
         "level": 84,
-        "moves": ["doubleedge", "earthquake", "fakeout", "hammerarm", "surpriseattack"],
+        "moves": ["doubleedge", "earthquake", "fakeout", "hammerarm", "suckerpunch"],
         "doublesLevel": 88,
-        "doublesMoves": ["doubleedge", "drainpunch", "fakeout", "protect", "rockslide", "surpriseattack"]
+        "doublesMoves": ["doubleedge", "drainpunch", "fakeout", "protect", "rockslide", "suckerpunch"]
     },
     "seaking": {
         "level": 90,
@@ -508,9 +508,9 @@
     },
     "sudowoodo": {
         "level": 89,
-        "moves": ["earthquake", "headsmash", "stealthrock", "surpriseattack", "woodhammer"],
+        "moves": ["earthquake", "headsmash", "stealthrock", "suckerpunch", "woodhammer"],
         "doublesLevel": 90,
-        "doublesMoves": ["bodypress", "firepunch", "headsmash", "protect", "surpriseattack", "woodhammer"]
+        "doublesMoves": ["bodypress", "firepunch", "headsmash", "protect", "suckerpunch", "woodhammer"]
     },
     "politoed": {
         "level": 87,
@@ -642,9 +642,9 @@
     },
     "hitmontop": {
         "level": 86,
-        "moves": ["closecombat", "earthquake", "rapidspin", "surpriseattack", "toxic", "tripleaxel"],
+        "moves": ["closecombat", "earthquake", "rapidspin", "suckerpunch", "toxic", "tripleaxel"],
         "doublesLevel": 88,
-        "doublesMoves": ["closecombat", "coaching", "fakeout", "helpinghand", "rapidspin", "surpriseattack", "tripleaxel"]
+        "doublesMoves": ["closecombat", "coaching", "fakeout", "helpinghand", "rapidspin", "suckerpunch", "tripleaxel"]
     },
     "miltank": {
         "level": 83,
@@ -733,10 +733,10 @@
     },
     "shiftry": {
         "level": 87,
-        "moves": ["darkpulse", "defog", "heatwave", "leafstorm", "nastyplot", "surpriseattack"],
+        "moves": ["darkpulse", "defog", "heatwave", "leafstorm", "nastyplot", "suckerpunch"],
         "doublesLevel": 88,
-        "doublesMoves": ["defog", "fakeout", "knockoff", "leafblade", "surpriseattack", "tailwind"],
-        "noDynamaxMoves": ["defog", "knockoff", "leafblade", "lowkick", "rockslide", "surpriseattack", "swordsdance"]
+        "doublesMoves": ["defog", "fakeout", "knockoff", "leafblade", "suckerpunch", "tailwind"],
+        "noDynamaxMoves": ["defog", "knockoff", "leafblade", "lowkick", "rockslide", "suckerpunch", "swordsdance"]
     },
     "pelipper": {
         "level": 87,
@@ -777,9 +777,9 @@
     },
     "mawile": {
         "level": 89,
-        "moves": ["ironhead", "playrough", "stealthrock", "surpriseattack", "swordsdance"],
+        "moves": ["ironhead", "playrough", "stealthrock", "suckerpunch", "swordsdance"],
         "doublesLevel": 88,
-        "doublesMoves": ["firefang", "ironhead", "playrough", "protect", "surpriseattack", "swordsdance"]
+        "doublesMoves": ["firefang", "ironhead", "playrough", "protect", "suckerpunch", "swordsdance"]
     },
     "aggron": {
         "level": 86,
@@ -874,9 +874,9 @@
     },
     "absol": {
         "level": 84,
-        "moves": ["closecombat", "knockoff", "playrough", "surpriseattack", "swordsdance"],
+        "moves": ["closecombat", "knockoff", "playrough", "suckerpunch", "swordsdance"],
         "doublesLevel": 88,
-        "doublesMoves": ["closecombat", "knockoff", "protect", "surpriseattack", "swordsdance"]
+        "doublesMoves": ["closecombat", "knockoff", "protect", "suckerpunch", "swordsdance"]
     },
     "glalie": {
         "level": 96,
@@ -1012,9 +1012,9 @@
     },
     "skuntank": {
         "level": 84,
-        "moves": ["crunch", "defog", "fireblast", "poisonjab", "surpriseattack", "taunt", "toxic"],
+        "moves": ["crunch", "defog", "fireblast", "poisonjab", "suckerpunch", "taunt", "toxic"],
         "doublesLevel": 88,
-        "doublesMoves": ["crunch", "defog", "fireblast", "poisonjab", "surpriseattack", "taunt"]
+        "doublesMoves": ["crunch", "defog", "fireblast", "poisonjab", "suckerpunch", "taunt"]
     },
     "bronzong": {
         "level": 84,
@@ -1024,9 +1024,9 @@
     },
     "spiritomb": {
         "level": 88,
-        "moves": ["foulplay", "poltergeist", "shadowsneak", "surpriseattack", "trick"],
+        "moves": ["foulplay", "poltergeist", "shadowsneak", "suckerpunch", "trick"],
         "doublesLevel": 88,
-        "doublesMoves": ["foulplay", "poltergeist", "protect", "snarl", "surpriseattack", "willowisp"]
+        "doublesMoves": ["foulplay", "poltergeist", "protect", "snarl", "suckerpunch", "willowisp"]
     },
     "garchomp": {
         "level": 73,
@@ -1054,9 +1054,9 @@
     },
     "toxicroak": {
         "level": 84,
-        "moves": ["drainpunch", "gunkshot", "icepunch", "knockoff", "substitute", "surpriseattack", "swordsdance"],
+        "moves": ["drainpunch", "gunkshot", "icepunch", "knockoff", "substitute", "suckerpunch", "swordsdance"],
         "doublesLevel": 86,
-        "doublesMoves": ["drainpunch", "fakeout", "gunkshot", "protect", "surpriseattack", "swordsdance", "taunt"]
+        "doublesMoves": ["drainpunch", "fakeout", "gunkshot", "protect", "suckerpunch", "swordsdance", "taunt"]
     },
     "abomasnow": {
         "level": 85,
@@ -1558,9 +1558,9 @@
     },
     "druddigon": {
         "level": 86,
-        "moves": ["earthquake", "glare", "gunkshot", "outrage", "stealthrock", "surpriseattack", "superpower"],
+        "moves": ["earthquake", "glare", "gunkshot", "outrage", "stealthrock", "suckerpunch", "superpower"],
         "doublesLevel": 87,
-        "doublesMoves": ["dragonclaw", "firepunch", "glare", "gunkshot", "protect", "surpriseattack"]
+        "doublesMoves": ["dragonclaw", "firepunch", "glare", "gunkshot", "protect", "suckerpunch"]
     },
     "golurk": {
         "level": 82,
@@ -1570,9 +1570,9 @@
     },
     "bisharp": {
         "level": 80,
-        "moves": ["ironhead", "knockoff", "stealthrock", "surpriseattack", "swordsdance"],
+        "moves": ["ironhead", "knockoff", "stealthrock", "suckerpunch", "swordsdance"],
         "doublesLevel": 84,
-        "doublesMoves": ["ironhead", "knockoff", "protect", "surpriseattack", "swordsdance"]
+        "doublesMoves": ["ironhead", "knockoff", "protect", "suckerpunch", "swordsdance"]
     },
     "bouffalant": {
         "level": 85,
@@ -1594,9 +1594,9 @@
     },
     "heatmor": {
         "level": 92,
-        "moves": ["firelash", "gigadrain", "knockoff", "substitute", "surpriseattack", "superpower"],
+        "moves": ["firelash", "gigadrain", "knockoff", "substitute", "suckerpunch", "superpower"],
         "doublesLevel": 88,
-        "doublesMoves": ["firelash", "gigadrain", "incinerate", "protect", "surpriseattack", "superpower"]
+        "doublesMoves": ["firelash", "gigadrain", "incinerate", "protect", "suckerpunch", "superpower"]
     },
     "durant": {
         "level": 78,
@@ -1904,9 +1904,9 @@
     },
     "yveltal": {
         "level": 68,
-        "moves": ["defog", "heatwave", "knockoff", "oblivionwing", "roost", "surpriseattack", "taunt"],
+        "moves": ["defog", "heatwave", "knockoff", "oblivionwing", "roost", "suckerpunch", "taunt"],
         "doublesLevel": 71,
-        "doublesMoves": ["darkpulse", "heatwave", "knockoff", "oblivionwing", "roost", "surpriseattack", "tailwind"]
+        "doublesMoves": ["darkpulse", "heatwave", "knockoff", "oblivionwing", "roost", "suckerpunch", "tailwind"]
     },
     "zygarde": {
         "level": 70,
@@ -1971,9 +1971,9 @@
     },
     "lycanrocmidnight": {
         "level": 83,
-        "moves": ["closecombat", "irontail", "stealthrock", "stoneedge", "surpriseattack", "swordsdance"],
+        "moves": ["closecombat", "irontail", "stealthrock", "stoneedge", "suckerpunch", "swordsdance"],
         "doublesLevel": 88,
-        "doublesMoves": ["closecombat", "irontail", "protect", "stoneedge", "surpriseattack", "swordsdance"]
+        "doublesMoves": ["closecombat", "irontail", "protect", "stoneedge", "suckerpunch", "swordsdance"]
     },
     "lycanrocdusk": {
         "level": 79,
@@ -2374,11 +2374,11 @@
         "level": 73,
         "moves": ["courtchange", "gunkshot", "highjumpkick", "pyroball", "uturn", "zenheadbutt"],
         "doublesLevel": 80,
-        "doublesMoves": ["courtchange", "gunkshot", "highjumpkick", "protect", "pyroball", "surpriseattack", "uturn"]
+        "doublesMoves": ["courtchange", "gunkshot", "highjumpkick", "protect", "pyroball", "suckerpunch", "uturn"]
     },
     "cinderacegmax": {
         "level": 73,
-        "moves": ["bulkup", "highjumpkick", "pyroball", "surpriseattack"]
+        "moves": ["bulkup", "highjumpkick", "pyroball", "suckerpunch"]
     },
     "inteleon": {
         "level": 80,
@@ -2451,7 +2451,7 @@
     },
     "flapple": {
         "level": 84,
-        "moves": ["dragondance", "gravapple", "outrage", "surpriseattack", "uturn"],
+        "moves": ["dragondance", "gravapple", "outrage", "suckerpunch", "uturn"],
         "doublesLevel": 89,
         "doublesMoves": ["acrobatics", "dragondance", "dragondive", "gravapple", "protect"]
     },
@@ -2513,7 +2513,7 @@
     },
     "grapploct": {
         "level": 88,
-        "moves": ["brutalswing", "bulkup", "drainpunch", "icepunch", "surpriseattack"],
+        "moves": ["brutalswing", "bulkup", "drainpunch", "icepunch", "suckerpunch"],
         "doublesLevel": 88,
         "doublesMoves": ["closecombat", "coaching", "drainpunch", "icepunch", "octolock", "protect"]
     },
@@ -2535,7 +2535,7 @@
     },
     "grimmsnarlgmax": {
         "level": 83,
-        "moves": ["bulkup", "darkestlariat", "playrough", "rest", "surpriseattack", "trick"],
+        "moves": ["bulkup", "darkestlariat", "playrough", "rest", "suckerpunch", "trick"],
         "doublesLevel": 84,
         "doublesMoves": ["darkestlariat", "fakeout", "lightscreen", "reflect", "spiritbreak", "taunt", "thunderwave"]
     },
@@ -2590,9 +2590,9 @@
     },
     "pincurchin": {
         "level": 90,
-        "moves": ["risingvoltage", "scald", "spikes", "surpriseattack", "toxicspikes"],
+        "moves": ["risingvoltage", "scald", "spikes", "suckerpunch", "toxicspikes"],
         "doublesLevel": 90,
-        "doublesMoves": ["acupressure", "protect", "risingvoltage", "scald", "surpriseattack"]
+        "doublesMoves": ["acupressure", "protect", "risingvoltage", "scald", "suckerpunch"]
     },
     "frosmoth": {
         "level": 82,
@@ -2709,9 +2709,9 @@
     },
     "urshifu": {
         "level": 74,
-        "moves": ["closecombat", "ironhead", "surpriseattack", "uturn", "wickedblow"],
+        "moves": ["closecombat", "ironhead", "suckerpunch", "uturn", "wickedblow"],
         "doublesLevel": 76,
-        "doublesMoves": ["closecombat", "ironhead", "protect", "surpriseattack", "wickedblow"]
+        "doublesMoves": ["closecombat", "ironhead", "protect", "suckerpunch", "wickedblow"]
     },
     "urshifurapidstrike": {
         "level": 76,

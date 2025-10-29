@@ -25,7 +25,7 @@ const SETUP = [
 const NO_STAB = [
 	'aquajet', 'bulletpunch', 'chatter', 'clearsmog', 'dragontail', 'eruption', 'explosion', 'fakeout', 'flamecharge',
 	'futuresight', 'iceshard', 'icywind', 'incinerate', 'knockoff', 'machpunch', 'pluck', 'pursuit', 'quickattack',
-	'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skyattack', 'skydrop', 'snarl', 'surpriseattack',
+	'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skyattack', 'skydrop', 'snarl', 'suckerpunch',
 	'uturn', 'vacuumwave', 'voltswitch', 'waterspout',
 ];
 // Hazard-setting moves
@@ -219,7 +219,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 			// Smeargle
 			['memento', 'whirlwind'],
 			// Seviper
-			['switcheroo', 'surpriseattack'],
+			['switcheroo', 'suckerpunch'],
 			// Jirachi
 			['bodyslam', 'healingwish'],
 		];
@@ -242,7 +242,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 				if (moves.size + movePool.length <= this.maxMoveCount) return;
 			}
 			if (species.baseSpecies === 'Wormadam' && role === 'Staller') {
-				if (movePool.includes('surpriseattack')) this.fastPop(movePool, movePool.indexOf('surpriseattack'));
+				if (movePool.includes('suckerpunch')) this.fastPop(movePool, movePool.indexOf('suckerpunch'));
 				if (moves.size + movePool.length <= this.maxMoveCount) return;
 			}
 		}
@@ -635,7 +635,7 @@ export class RandomGen5Teams extends RandomGen6Teams {
 		);
 
 		if (
-			moves.has('pursuit') && moves.has('surpriseattack') && counter.get('Dark') &&
+			moves.has('pursuit') && moves.has('suckerpunch') && counter.get('Dark') &&
 			(!this.priorityPokemon.includes(species.id) || counter.get('Dark') >= 2)
 		) return 'Black Glasses';
 		if (counter.get('Special') === 4) {

@@ -18,13 +18,13 @@
         "moves": ["bravebird", "defog", "quickattack", "roost", "steelwing", "uturn"]
     },
     "raticate": {
-        "moves": ["crunch", "facade", "flamewheel", "protect", "surpriseattack", "swordsdance"]
+        "moves": ["crunch", "facade", "flamewheel", "protect", "suckerpunch", "swordsdance"]
     },
     "fearow": {
         "moves": ["drillpeck", "drillrun", "gigaimpact", "uturn"]
     },
     "arbok": {
-        "moves": ["earthquake", "glare", "gunkshot", "surpriseattack"]
+        "moves": ["earthquake", "glare", "gunkshot", "suckerpunch"]
     },
     "pikachu": {
         "moves": ["grassknot", "surf", "voltswitch", "volttackle"]
@@ -60,7 +60,7 @@
         "moves": ["bugbuzz", "quiverdance", "sleeppowder", "sludgebomb", "substitute"]
     },
     "dugtrio": {
-        "moves": ["aerialace", "earthquake", "stoneedge", "surpriseattack"]
+        "moves": ["aerialace", "earthquake", "stoneedge", "suckerpunch"]
     },
     "persian": {
         "moves": ["aerialace", "bite", "fakeout", "covet", "uturn"]
@@ -222,7 +222,7 @@
         "moves": ["aquajet", "crunch", "dragondance", "icepunch", "waterfall"]
     },
     "furret": {
-        "moves": ["doubleedge", "shadowclaw", "surpriseattack", "uturn"]
+        "moves": ["doubleedge", "shadowclaw", "suckerpunch", "uturn"]
     },
     "noctowl": {
         "moves": ["hurricane", "hypnosis", "nastyplot", "roost", "shadowball", "defog"]
@@ -252,7 +252,7 @@
         "moves": ["aquajet", "bellydrum", "playrough", "superpower", "waterfall"]
     },
     "sudowoodo": {
-        "moves": ["earthquake", "headsmash", "explosion", "stealthrock", "surpriseattack"]
+        "moves": ["earthquake", "headsmash", "explosion", "stealthrock", "suckerpunch"]
     },
     "politoed": {
         "moves": ["encore", "hypnosis", "icebeam", "rest", "scald"]
@@ -330,7 +330,7 @@
         "moves": ["bravebird", "roost", "spikes", "stealthrock", "whirlwind", "defog"]
     },
     "houndoom": {
-        "moves": ["darkpulse", "fireblast", "nastyplot", "surpriseattack"]
+        "moves": ["darkpulse", "fireblast", "nastyplot", "suckerpunch"]
     },
     "kingdra": {
         "moves": ["dracometeor", "hydropump", "icebeam", "raindance"]
@@ -345,7 +345,7 @@
         "moves": ["spikes", "spore", "stealthrock", "stickyweb", "toxicspikes", "whirlwind"]
     },
     "hitmontop": {
-        "moves": ["closecombat", "machpunch", "rapidspin", "stoneedge", "surpriseattack"]
+        "moves": ["closecombat", "machpunch", "rapidspin", "stoneedge", "suckerpunch"]
     },
     "miltank": {
         "moves": ["bodyslam", "curse", "earthquake", "milkdrink", "stealthrock"]
@@ -384,7 +384,7 @@
         "moves": ["earthquake", "icebeam", "scald", "stealthrock", "stoneedge"]
     },
     "mightyena": {
-        "moves": ["crunch", "firefang", "irontail", "playrough", "surpriseattack"]
+        "moves": ["crunch", "firefang", "irontail", "playrough", "suckerpunch"]
     },
     "linoone": {
         "moves": ["bellydrum", "extremespeed", "irontail", "shadowclaw"]
@@ -399,7 +399,7 @@
         "moves": ["gigadrain", "hydropump", "icebeam", "raindance", "scald"]
     },
     "shiftry": {
-        "moves": ["brickbreak", "fakeout", "leafblade", "nightslash", "surpriseattack", "swordsdance"]
+        "moves": ["brickbreak", "fakeout", "leafblade", "nightslash", "suckerpunch", "swordsdance"]
     },
     "swellow": {
         "moves": ["bravebird", "facade", "quickattack", "roost", "steelwing", "uturn"]
@@ -420,7 +420,7 @@
         "moves": ["bodyslam", "bulkup", "earthquake", "playrough", "shadowclaw", "slackoff"]
     },
     "slaking": {
-        "moves": ["bodyslam", "earthquake", "gigaimpact", "hammerarm", "playrough", "surpriseattack"]
+        "moves": ["bodyslam", "earthquake", "gigaimpact", "hammerarm", "playrough", "suckerpunch"]
     },
     "ninjask": {
         "moves": ["aerialace", "finalgambit", "swordsdance", "uturn", "xscissor"]
@@ -435,13 +435,13 @@
         "moves": ["bulkup", "bulletpunch", "closecombat", "knockoff", "poisonjab", "stoneedge"]
     },
     "delcatty": {
-        "moves": ["doubleedge", "fakeout", "healbell", "surpriseattack", "thunderwave"]
+        "moves": ["doubleedge", "fakeout", "healbell", "suckerpunch", "thunderwave"]
     },
     "sableye": {
         "moves": ["foulplay", "knockoff", "recover", "taunt", "willowisp"]
     },
     "mawile": {
-        "moves": ["ironhead", "playrough", "stealthrock", "surpriseattack", "swordsdance"]
+        "moves": ["ironhead", "playrough", "stealthrock", "suckerpunch", "swordsdance"]
     },
     "aggron": {
         "moves": ["earthquake", "headsmash", "heavyslam", "rockpolish", "superpower"]
@@ -483,13 +483,13 @@
         "moves": ["focusblast", "nastyplot", "psyshock", "shadowball"]
     },
     "spinda": {
-        "moves": ["bodyslam", "encore", "fakeout", "rapidspin", "surpriseattack"]
+        "moves": ["bodyslam", "encore", "fakeout", "rapidspin", "suckerpunch"]
     },
     "flygon": {
         "moves": ["defog", "dragondance", "earthquake", "outrage", "superpower", "uturn", "roost"]
     },
     "cacturne": {
-        "moves": ["drainpunch", "poisonjab", "seedbomb", "surpriseattack", "swordsdance"]
+        "moves": ["drainpunch", "poisonjab", "seedbomb", "suckerpunch", "swordsdance"]
     },
     "altaria": {
         "moves": ["dracometeor", "fireblast", "haze", "hurricane", "roost"]
@@ -540,7 +540,7 @@
         "moves": ["healingwish", "lightscreen", "psychic", "recover", "reflect", "thunderwave"]
     },
     "absol": {
-        "moves": ["knockoff", "playrough", "surpriseattack", "swordsdance"]
+        "moves": ["knockoff", "playrough", "suckerpunch", "swordsdance"]
     },
     "glalie": {
         "moves": ["disable", "earthquake", "freezedry", "protect", "substitute"]
@@ -675,13 +675,13 @@
         "moves": ["dazzlinggleam", "destinybond", "nastyplot", "painsplit", "shadowball", "substitute", "thunderbolt", "willowisp"]
     },
     "honchkrow": {
-        "moves": ["bravebird", "roost", "surpriseattack", "taunt"]
+        "moves": ["bravebird", "roost", "suckerpunch", "taunt"]
     },
     "purugly": {
-        "moves": ["bodyslam", "fakeout", "quickattack", "surpriseattack", "uturn"]
+        "moves": ["bodyslam", "fakeout", "quickattack", "suckerpunch", "uturn"]
     },
     "skuntank": {
-        "moves": ["crunch", "defog", "fireblast", "poisonjab", "surpriseattack", "taunt"]
+        "moves": ["crunch", "defog", "fireblast", "poisonjab", "suckerpunch", "taunt"]
     },
     "bronzong": {
         "moves": ["earthquake", "gyroball", "psychic", "stealthrock"]
@@ -705,7 +705,7 @@
         "moves": ["earthquake", "knockoff", "poisonjab", "swordsdance", "taunt", "toxicspikes", "whirlwind"]
     },
     "toxicroak": {
-        "moves": ["drainpunch", "poisonjab", "substitute", "surpriseattack", "swordsdance"]
+        "moves": ["drainpunch", "poisonjab", "substitute", "suckerpunch", "swordsdance"]
     },
     "carnivine": {
         "moves": ["crunch", "powerwhip", "sleeppowder", "substitute", "swordsdance"]

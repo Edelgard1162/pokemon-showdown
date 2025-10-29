@@ -410,6 +410,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('atk', false, true) > pokemon.getStat('spa', false, true)) move.category = 'Physical';
+		},
 		secondary: {
 			chance: 10,
 			self: {
@@ -1494,8 +1497,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	blazekick: {
 		num: 299,
-		accuracy: 100,
-		basePower: 90,
+		accuracy: 90,
+		basePower: 85,
 		category: "Physical",
 		name: "Blaze Kick",
 		pp: 10,
@@ -1503,12 +1506,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		critRatio: 2,
 		secondary: {
-			chance: 100,
-			self: {
-				boosts: {
-					spe: 1,
-				},
-			},
+			chance: 10,
+			status: 'brn',
 		},
 		target: "normal",
 		type: "Fire",
@@ -5968,7 +5967,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	flipturn: {
 		num: 812,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
 		name: "Flip Turn",
 		pp: 20,

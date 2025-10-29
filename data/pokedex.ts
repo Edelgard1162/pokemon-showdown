@@ -6233,9 +6233,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	anorith: {
 		num: 347,
 		name: "Anorith",
-		types: ["Rock", "Bug"],
+		types: ["Water", "Bug"],
 		baseStats: { hp: 45, atk: 95, def: 60, spa: 40, spd: 60, spe: 75 },
-		abilities: { 0: "Battle Armor", 1: "Tough Claws",H: "Swift Swim" },
+		abilities: { 0: "Battle Armor", 1: "Tough Claws", H: "Swift Swim" },
 		heightm: 0.7,
 		weightkg: 12.5,
 		color: "Gray",
@@ -6245,9 +6245,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	armaldo: {
 		num: 348,
 		name: "Armaldo",
-		types: ["Rock", "Bug"],
+		types: ["Water", "Bug"],
 		baseStats: { hp: 75, atk: 125, def: 100, spa: 50, spd: 100, spe: 55 },
-		abilities: { 0: "Battle Armor", 1: "Tough Claws",H: "Swift Swim" },
+		abilities: { 0: "Battle Armor", 1: "Tough Claws", H: "Swift Swim" },
 		heightm: 1.5,
 		weightkg: 68.2,
 		color: "Gray",

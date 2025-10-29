@@ -6246,7 +6246,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: 348,
 		name: "Armaldo",
 		types: ["Water", "Bug"],
-		baseStats: { hp: 75, atk: 125, def: 100, spa: 50, spd: 100, spe: 55 },
+		baseStats: { hp: 75, atk: 125, def: 100, spa: 60, spd: 100, spe: 65 },
 		abilities: { 0: "Battle Armor", 1: "Tough Claws", H: "Swift Swim" },
 		heightm: 1.5,
 		weightkg: 68.2,

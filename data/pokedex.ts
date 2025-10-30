@@ -999,7 +999,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Pink",
 		eggGroups: ["Field"],
 		requiredItem: "Clefablite",
-		gen: 9,
 	},
 	vulpix: {
 		num: 37,
@@ -1683,7 +1682,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Grass"],
 		requiredItem: "Victreebelite",
-		gen: 9,
 	},
 	tentacool: {
 		num: 72,
@@ -2698,7 +2696,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Purple",
 		eggGroups: ["Water 3"],
 		requiredItem: "Starminite",
-		gen: 9,
 	},
 	mrmime: {
 		num: 122,
@@ -3298,7 +3295,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Brown",
 		eggGroups: ["Water 1", "Dragon"],
 		requiredItem: "Dragoninite",
-		gen: 9,
 	},
 	mewtwo: {
 		num: 150,
@@ -3413,7 +3409,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Monster", "Grass"],
 		requiredItem: "Meganiumite",
-		gen: 9,
 	},
 	cyndaquil: {
 		num: 155,
@@ -3526,7 +3521,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Monster", "Water 1"],
 		requiredItem: "Feraligite",
-		gen: 9,
 	},
 	sentret: {
 		num: 161,
@@ -4568,7 +4562,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		eggGroups: ["Flying"],
 		requiredItem: "Skarmorite",
-		gen: 9,
 	},
 	houndour: {
 		num: 228,
@@ -8522,7 +8515,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		eggGroups: ["Fairy", "Mineral"],
 		requiredItem: "Froslassite",
-		gen: 9,
 	},
 	rotom: {
 		num: 479,
@@ -9255,7 +9247,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Field"],
 		requiredItem: "Emboarite",
-		gen: 9,
 	},
 	oshawott: {
 		num: 501,
@@ -9674,7 +9665,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		eggGroups: ["Field"],
 		requiredItem: "Excadrite",
-		gen: 9,
 	},
 	audino: {
 		num: 531,
@@ -9901,7 +9891,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Bug"],
 		requiredItem: "Scolipite",
-		gen: 9,
 	},
 	cottonee: {
 		num: 546,
@@ -10223,7 +10212,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Field", "Dragon"],
 		requiredItem: "Scraftinite",
-		gen: 9,
 	},
 	sigilyph: {
 		num: 561,
@@ -10895,7 +10883,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Amorphous"],
 		requiredItem: "Eelektrossite",
-		gen: 9,
 	},
 	elgyem: {
 		num: 605,
@@ -10977,7 +10964,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		eggGroups: ["Amorphous"],
 		requiredItem: "Chandelurite",
-		gen: 9,
 	},
 	axew: {
 		num: 610,
@@ -11762,7 +11748,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Field"],
 		requiredItem: "Chesnaughtite",
-		gen: 9,
 	},
 	fennekin: {
 		num: 653,
@@ -11819,7 +11804,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Field"],
 		requiredItem: "Delphoxite",
-		gen: 9,
 	},
 	froakie: {
 		num: 656,
@@ -11908,7 +11892,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Water 1"],
 		requiredItem: "Greninjite",
-		gen: 9,
 	},
 	bunnelby: {
 		num: 659,
@@ -12230,7 +12213,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Brown",
 		eggGroups: ["Field"],
 		requiredItem: "Pyroarite",
-		gen: 9,
 	},
 	flabebe: {
 		num: 669,
@@ -12296,7 +12278,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Floettite",
 		battleOnly: "Floette-Eternal",
-		gen: 9,
 	},
 	florges: {
 		num: 671,
@@ -12588,7 +12569,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Water 1", "Water 2"],
 		requiredItem: "Malamarite",
-		gen: 9,
 	},
 	binacle: {
 		num: 688,
@@ -12630,7 +12610,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Brown",
 		eggGroups: ["Water 3"],
 		requiredItem: "Barbaracite",
-		gen: 9,
 	},
 	skrelp: {
 		num: 690,
@@ -12672,7 +12651,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Brown",
 		eggGroups: ["Water 1", "Dragon"],
 		requiredItem: "Dragalgite",
-		gen: 9,
 	},
 	clauncher: {
 		num: 692,
@@ -12817,7 +12795,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Flying", "Human-Like"],
 		requiredItem: "Hawluchanite",
-		gen: 9,
 	},
 	dedenne: {
 		num: 702,
@@ -13247,7 +13224,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Zygardite",
 		battleOnly: ["Zygarde", "Zygarde-10%"],
-		gen: 9,
 	},
 	diancie: {
 		num: 719,
@@ -14714,7 +14690,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		eggGroups: ["Monster", "Dragon"],
 		requiredItem: "Drampanite",
-		gen: 9,
 	},
 	dhelmise: {
 		num: 781,
@@ -16395,7 +16370,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Yellow",
 		eggGroups: ["Fairy", "Mineral"],
 		requiredItem: "Falinksite",
-		gen: 9,
 	},
 	pincurchin: {
 		num: 871,
@@ -17047,7 +17021,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 333,
 		color: "Brown",
 		eggGroups: ["Field"],
-		gen: 9,
 	},
 	basculegion: {
 		num: 902,
@@ -20030,7 +20003,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evos: ["Scattervein"],
 		eggGroups: ["Undiscovered"],
 		canHatch: true,
-		gen: 9,
 	},
 	scattervein: {
 		num: -70,
@@ -20047,7 +20019,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evos: ["Hemogoblin"],
 		eggGroups: ["Monster", "Fairy"],
 		canHatch: true,
-		gen: 9,
 	},
 	hemogoblin: {
 		num: -71,
@@ -20063,7 +20034,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoType: "useItem",
 		evoItem: "Fire Stone",
 		eggGroups: ["Monster", "Fairy"],
-		gen: 9,
 	},
 	cresceidon: {
 		num: -72,
@@ -20075,7 +20045,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 999.9,
 		color: "Blue",
 		eggGroups: ["Amorphous", "Water 3"],
-		gen: 9,
 	},
 	chuggon: {
 		num: -73,
@@ -20088,7 +20057,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		evos: ["Draggalong"],
 		eggGroups: ["Dragon", "Mineral"],
-		gen: 9,
 	},
 	draggalong: {
 		num: -74,
@@ -20103,7 +20071,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 36,
 		evos: ["Chuggalong"],
 		eggGroups: ["Dragon", "Mineral"],
-		gen: 9,
 	},
 	chuggalong: {
 		num: -75,
@@ -20117,7 +20084,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Draggalong",
 		evoLevel: 46,
 		eggGroups: ["Dragon", "Mineral"],
-		gen: 9,
 	},
 	shox: {
 		num: -77,
@@ -20129,7 +20095,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 99.9,
 		color: "Brown",
 		eggGroups: ["Field"],
-		gen: 9,
 	},
 	ramnarok: {
 		num: -78,
@@ -20146,7 +20111,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		tags: ["Mythical"],
 		otherFormes: ["Ramnarok-Radiant"],
 		formeOrder: ["Ramnarok", "Ramnarok-Radiant"],
-		gen: 9,
 	},
 	ramnarokradiant: {
 		num: -78,
@@ -20163,7 +20127,6 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 		requiredMove: "Polar Flare",
 		battleOnly: "Ramnarok",
-		gen: 9,
 	},
 	// NOTE: PokeStar "formes" are not actually formes and thus do not have a formeOrder
 	pokestarsmeargle: {

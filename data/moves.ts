@@ -20776,7 +20776,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	uturn: {
 		num: 369,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
 		name: "U-turn",
 		pp: 20,

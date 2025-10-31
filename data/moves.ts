@@ -6481,8 +6481,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	furyattack: {
 		num: 31,
-		accuracy: 85,
-		basePower: 15,
+		accuracy: 100,
+		basePower: 25,
 		category: "Physical",
 		name: "Fury Attack",
 		pp: 20,
@@ -6491,7 +6491,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		multihit: [2, 5],
 		secondary: null,
 		target: "normal",
-		type: "Normal",
+		type: "Flying",
 		contestType: "Cool",
 	},
 	furycutter: {

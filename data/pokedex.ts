@@ -4087,7 +4087,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Slowking",
 		forme: "Galar",
 		types: ["Poison", "Psychic"],
-		baseStats: { hp: 95, atk: 65, def: 90, spa: 120, spd: 110, spe: 30 },
+		baseStats: { hp: 95, atk: 65, def: 80, spa: 120, spd: 110, spe: 30 },
 		abilities: { 0: "Curious Medicine", 1: "Own Tempo", H: "Regenerator" },
 		heightm: 1.8,
 		weightkg: 79.5,

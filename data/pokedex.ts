@@ -1905,7 +1905,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Slowbro",
 		forme: "Mega",
 		types: ["Water", "Psychic"],
-		baseStats: { hp: 95, atk: 75, def: 180, spa: 130, spd: 80, spe: 30 },
+		baseStats: { hp: 95, atk: 65, def: 180, spa: 140, spd: 90, spe: 30 },
 		abilities: { 0: "Shell Armor" },
 		heightm: 2,
 		weightkg: 120,

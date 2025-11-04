@@ -9234,7 +9234,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	tentacool: {
 		learnset: {
 			acid: ["8L4", "8V", "7L10", "7V", "6L10", "5L12", "4L12", "3L19"],
-			acidarmor: ["8L32"],
+			acidarmour: ["8L32"],
 			acidspray: ["7L22", "6L22", "5L26"],
 			acupressure: ["8L1", "7L1", "6L1", "5L1", "5D", "4L1"],
 			aquaring: ["8L1", "7L1", "6L1", "5L1"],
@@ -9324,7 +9324,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	tentacruel: {
 		learnset: {
 			acid: ["8L1", "8V", "7L1", "7V", "6L1", "5L12", "4L12", "3L19"],
-			acidarmor: ["8L34"],
+			acidarmour: ["8L34"],
 			acidspray: ["7L22", "6L22", "5L26"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
 			barrier: ["8V", "7L28", "7V", "6L28", "5L29", "4L26", "3L38"],
@@ -11488,7 +11488,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	grimer: {
 		learnset: {
-			acidarmor: ["8V", "7L43", "7V", "6L40", "5L39", "4L39", "3L34"],
+			acidarmour: ["8V", "7L43", "7V", "6L40", "5L39", "4L39", "3L34"],
 			acidspray: ["7L1", "6L1", "5L1"],
 			attract: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			belch: ["7L46", "6L46"],
@@ -11582,7 +11582,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	grimeralola: {
 		learnset: {
-			acidarmor: ["8V", "7L43"],
+			acidarmour: ["8V", "7L43"],
 			acidspray: ["7L15"],
 			assurance: ["7L1"],
 			attract: ["7M"],
@@ -11668,7 +11668,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	muk: {
 		learnset: {
-			acidarmor: ["8V", "7L46", "7V", "6L43", "5L42", "4L44", "3L34"],
+			acidarmour: ["8V", "7L46", "7V", "6L43", "5L42", "4L44", "3L34"],
 			attract: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			belch: ["7L52", "6L52"],
 			bide: ["7V"],
@@ -11765,7 +11765,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	mukalola: {
 		learnset: {
-			acidarmor: ["8V", "7L46"],
+			acidarmour: ["8V", "7L46"],
 			acidspray: ["7L15"],
 			attract: ["7M"],
 			belch: ["7L52"],
@@ -11918,9 +11918,9 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			withdraw: ["8L4", "8V", "7L4", "7V", "6L4", "5L4", "5D", "4L4", "3L1", "3S0", "3S1"],
 		},
 		eventData: [
-			{generation: 3, level: 24, gender: "F", nature: "Brave", ivs: {hp: 5, atk: 19, def: 18, spa: 5, spd: 11, spe: 13}, abilities: ["shellarmor"], moves: ["withdraw", "iciclespear", "supersonic", "aurorabeam"], pokeball: "pokeball"},
-			{generation: 3, level: 10, gender: "M", abilities: ["shellarmor"], moves: ["tackle", "withdraw", "iciclespear"], pokeball: "pokeball"},
-			{generation: 3, level: 29, abilities: ["shellarmor"], moves: ["refresh", "takedown", "surf", "aurorabeam"]},
+			{generation: 3, level: 24, gender: "F", nature: "Brave", ivs: {hp: 5, atk: 19, def: 18, spa: 5, spd: 11, spe: 13}, abilities: ["shellarmour"], moves: ["withdraw", "iciclespear", "supersonic", "aurorabeam"], pokeball: "pokeball"},
+			{generation: 3, level: 10, gender: "M", abilities: ["shellarmour"], moves: ["tackle", "withdraw", "iciclespear"], pokeball: "pokeball"},
+			{generation: 3, level: 29, abilities: ["shellarmour"], moves: ["refresh", "takedown", "surf", "aurorabeam"]},
 		],
 		encounters: [
 			{generation: 1, level: 10},
@@ -18136,7 +18136,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vaporeon: {
 		learnset: {
-			acidarmor: ["8L45", "8V", "7L29", "7V", "6L29", "5L64", "4L64", "3L47"],
+			acidarmour: ["8L45", "8V", "7L29", "7V", "6L29", "5L64", "4L64", "3L47"],
 			aquaring: ["8L35", "7L25", "6L25", "5L43", "4L43"],
 			aquatail: ["7T", "6T", "5T", "4T"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -19317,7 +19317,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			wringout: ["7L50", "6L50", "5L51", "4L51"],
 		},
 		eventData: [
-			{generation: 5, level: 15, gender: "M", abilities: ["battlearmor"], moves: ["confuseray", "dig", "scratch", "harden"], pokeball: "cherishball"},
+			{generation: 5, level: 15, gender: "M", abilities: ["battlearmour"], moves: ["confuseray", "dig", "scratch", "harden"], pokeball: "cherishball"},
 		],
 		encounters: [
 			{generation: 1, level: 30},
@@ -26413,7 +26413,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	slugma: {
 		learnset: {
-			acidarmor: ["7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
+			acidarmour: ["7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
 			afteryou: ["7T", "6T", "5T"],
 			amnesia: ["7L36", "7V", "6L32", "5L32", "4L31", "3L29"],
 			ancientpower: ["7L22", "6L22", "5L28", "4T", "4L26"],
@@ -34870,7 +34870,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	gulpin: {
 		learnset: {
-			acidarmor: ["7L1", "6L1", "5L1", "5D", "4L1", "3L1"],
+			acidarmour: ["7L1", "6L1", "5L1", "5D", "4L1", "3L1"],
 			acidspray: ["7L17", "6L17", "5L34"],
 			amnesia: ["7L12", "6L12", "5L17", "4L17", "3L17"],
 			attract: ["7M", "6M", "5M", "4M", "3M"],
@@ -43556,7 +43556,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	shellos: {
 		learnset: {
-			acidarmor: ["8L1", "7L1", "6L1"],
+			acidarmour: ["8L1", "7L1", "6L1"],
 			amnesia: ["8M", "7L1", "6L1", "5L1", "4L1"],
 			ancientpower: ["8L20", "4T"],
 			attract: ["8M", "7M", "6M", "5M", "4M"],
@@ -46966,7 +46966,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	phione: {
 		learnset: {
-			acidarmor: ["7L31", "6L31", "5L31", "4L31"],
+			acidarmour: ["7L31", "6L31", "5L31", "4L31"],
 			ancientpower: ["4T"],
 			aquaring: ["7L54", "6L54", "5L54", "4L54"],
 			blizzard: ["7M", "6M", "5M", "4M"],
@@ -47027,7 +47027,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	manaphy: {
 		learnset: {
-			acidarmor: ["7L31", "6L31", "5L31", "4L31", "4S2"],
+			acidarmour: ["7L31", "6L31", "5L31", "4L31", "4S2"],
 			ancientpower: ["4T"],
 			aquaring: ["7L54", "7S6", "6L54", "5L54", "4L54", "4S3"],
 			blizzard: ["7M", "6M", "5M", "4M"],
@@ -47097,7 +47097,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		eventData: [
 			{generation: 4, level: 5, moves: ["tailglow", "bubble", "watersport"]},
 			{generation: 4, level: 1, shiny: 1, moves: ["tailglow", "bubble", "watersport"], pokeball: "pokeball"},
-			{generation: 4, level: 50, moves: ["heartswap", "waterpulse", "whirlpool", "acidarmor"], pokeball: "cherishball"},
+			{generation: 4, level: 50, moves: ["heartswap", "waterpulse", "whirlpool", "acidarmour"], pokeball: "cherishball"},
 			{generation: 4, level: 50, nature: "Impish", moves: ["aquaring", "waterpulse", "watersport", "heartswap"], pokeball: "cherishball"},
 			{generation: 6, level: 1, moves: ["tailglow", "bubble", "watersport", "heartswap"], pokeball: "cherishball"},
 			{generation: 6, level: 100, moves: ["tailglow", "bubble", "watersport"], pokeball: "cherishball"},
@@ -53816,7 +53816,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	solosis: {
 		learnset: {
-			acidarmor: ["8L1", "7L1", "6L1", "5L1"],
+			acidarmour: ["8L1", "7L1", "6L1", "5L1"],
 			afteryou: ["7T", "6T", "5T"],
 			allyswitch: ["8M", "8L28", "7T"],
 			astonish: ["8L1", "7L1", "6L1", "5L1"],
@@ -54181,7 +54181,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vanillite: {
 		learnset: {
-			acidarmor: ["8L32", "7L31", "6L31", "5L31"],
+			acidarmour: ["8L32", "7L31", "6L31", "5L31"],
 			allyswitch: ["8M", "7T"],
 			astonish: ["8L1", "7L7", "6L7", "5L7"],
 			attract: ["8M", "7M", "6M", "5M"],
@@ -54237,7 +54237,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vanillish: {
 		learnset: {
-			acidarmor: ["8L32", "7L31", "6L31", "5L31"],
+			acidarmour: ["8L32", "7L31", "6L31", "5L31"],
 			allyswitch: ["8M", "7T"],
 			astonish: ["8L1", "7L1", "6L1", "5L1"],
 			attract: ["8M", "7M", "6M", "5M"],
@@ -54288,7 +54288,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vanilluxe: {
 		learnset: {
-			acidarmor: ["8L32", "7L31", "6L31", "5L31"],
+			acidarmour: ["8L32", "7L31", "6L31", "5L31"],
 			allyswitch: ["8M", "7T"],
 			astonish: ["8L1", "7L1", "6L1", "5L1"],
 			attract: ["8M", "7M", "6M", "5M"],
@@ -54794,7 +54794,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	frillish: {
 		learnset: {
 			absorb: ["8L1", "7L5", "6L5", "5L5"],
-			acidarmor: ["8L1", "7L1", "6L1", "5L1"],
+			acidarmour: ["8L1", "7L1", "6L1", "5L1"],
 			attract: ["8M", "7M", "6M", "5M"],
 			bind: ["7T", "6T", "5T"],
 			blizzard: ["8M", "7M", "6M", "5M"],
@@ -54869,7 +54869,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	jellicent: {
 		learnset: {
 			absorb: ["8L1", "7L1", "6L1", "5L1"],
-			acidarmor: ["8L1"],
+			acidarmour: ["8L1"],
 			attract: ["8M", "7M", "6M", "5M"],
 			bind: ["7T", "6T", "5T"],
 			blizzard: ["8M", "7M", "6M", "5M"],
@@ -55787,7 +55787,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	litwick: {
 		learnset: {
 			acid: ["7L1", "6L1", "5L1"],
-			acidarmor: ["8L1", "7L1", "6L1", "5L1"],
+			acidarmour: ["8L1", "7L1", "6L1", "5L1"],
 			allyswitch: ["8M", "7T"],
 			astonish: ["8L1", "7L1", "6L1", "5L1"],
 			attract: ["8M", "7M", "6M", "5M"],
@@ -56392,7 +56392,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	cryogonal: {
 		learnset: {
-			acidarmor: ["7L17", "6L29", "5L29"],
+			acidarmour: ["7L17", "6L29", "5L29"],
 			acrobatics: ["7M", "6M", "5M"],
 			ancientpower: ["7L21"],
 			attract: ["7M", "6M", "5M"],
@@ -56451,7 +56451,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			absorb: ["8L1", "7L1"],
 			acid: ["8L4", "7L4", "6L4", "5L4", "5D"],
-			acidarmor: ["8L24", "7L32", "6L32", "5L32"],
+			acidarmour: ["8L24", "7L32", "6L32", "5L32"],
 			attract: ["8M", "7M", "6M", "5M"],
 			batonpass: ["8M", "7L1", "6L1", "5L1", "5D"],
 			bide: ["7L8", "6L8", "5L8"],
@@ -56511,7 +56511,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			absorb: ["8L1", "7L1"],
 			acid: ["8L1"],
-			acidarmor: ["8L1"],
+			acidarmour: ["8L1"],
 			acidspray: ["8L1", "7L1", "6L1", "5L1"],
 			agility: ["8M", "8L24", "7L32", "6L32", "5L32"],
 			attract: ["8M", "7M", "6M", "5M"],
@@ -62628,7 +62628,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	skrelp: {
 		learnset: {
 			acid: ["8L5", "7L15", "6L15"],
-			acidarmor: ["8L1", "7L1", "6L1"],
+			acidarmour: ["8L1", "7L1", "6L1"],
 			aquatail: ["8L45", "7T", "7L35", "6T", "6L35"],
 			attract: ["8M", "7M", "6M"],
 			bounce: ["8M", "7T", "6T"],
@@ -63630,7 +63630,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	goomy: {
 		learnset: {
 			absorb: ["8L1", "7L5", "6L5"],
-			acidarmor: ["7L1", "6L1"],
+			acidarmour: ["7L1", "6L1"],
 			attract: ["8M", "7M", "6M"],
 			bide: ["7L13", "6L13"],
 			bodyslam: ["8M", "8L45", "7L32", "7S0", "6L32"],
@@ -71736,7 +71736,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	meltan: {
 		learnset: {
-			acidarmor: ["8L32", "8V", "7L36"],
+			acidarmour: ["8L32", "8V", "7L36"],
 			endure: ["8M"],
 			facade: ["8M"],
 			flashcannon: ["8M", "8L40", "8V", "7M", "7L45"],
@@ -71760,7 +71760,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	melmetal: {
 		learnset: {
-			acidarmor: ["8L32", "8V", "7L36"],
+			acidarmour: ["8L32", "8V", "7L36"],
 			bodypress: ["8M"],
 			bodyslam: ["8M"],
 			brickbreak: ["8M", "8V", "7M"],
@@ -74321,7 +74321,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	milcery: {
 		learnset: {
-			acidarmor: ["8L30"],
+			acidarmour: ["8L30"],
 			aromatherapy: ["8L20"],
 			aromaticmist: ["8L1"],
 			attract: ["8M", "8L25"],
@@ -74351,7 +74351,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	alcremie: {
 		learnset: {
-			acidarmor: ["8L30"],
+			acidarmour: ["8L30"],
 			aromatherapy: ["8L20"],
 			aromaticmist: ["8L1"],
 			attract: ["8M", "8L25"],

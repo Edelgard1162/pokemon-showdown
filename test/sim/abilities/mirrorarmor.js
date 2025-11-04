@@ -5,7 +5,7 @@ const common = require('./../../common');
 
 let battle;
 
-describe("Mirror Armor", () => {
+describe("Mirror Armour", () => {
 	afterEach(() => {
 		battle.destroy();
 	});
@@ -13,7 +13,7 @@ describe("Mirror Armor", () => {
 	it("should bounce boosts back to the source", () => {
 		battle = common.createBattle();
 		battle.setPlayer('p1', { team: [
-			{ species: 'Corviknight', ability: 'mirrorarmor', moves: ['endure'] },
+			{ species: 'Corviknight', ability: 'mirrorarmour', moves: ['endure'] },
 		] });
 		battle.setPlayer('p2', { team: [
 			{ species: 'Machop', ability: 'noguard', moves: ['rocktomb', 'leer'] },
@@ -30,7 +30,7 @@ describe("Mirror Armor", () => {
 
 	it("should reflect Parting Shot's stat drops, then the Parting Shot user should switch", () => {
 		battle = common.createBattle([[
-			{ species: 'Corviknight', ability: 'mirrorarmor', moves: ['sleeptalk'] },
+			{ species: 'Corviknight', ability: 'mirrorarmour', moves: ['sleeptalk'] },
 		], [
 			{ species: 'Drapion', moves: ['partingshot'] },
 			{ species: 'Pangoro', moves: ['sleeptalk'] },
@@ -47,7 +47,7 @@ describe("Mirror Armor", () => {
 
 	it("should activate, but silently, if the source has fainted", () => {
 		battle = common.createBattle([[
-			{ species: 'corviknight', ability: 'mirrorarmor', moves: ['bravebird'] },
+			{ species: 'corviknight', ability: 'mirrorarmour', moves: ['bravebird'] },
 		], [
 			{ species: 'gossifleur', ability: 'cottondown', moves: ['sleeptalk'] },
 			{ species: 'wynaut', ability: 'shadowtag', moves: ['sleeptalk'] },
@@ -55,7 +55,7 @@ describe("Mirror Armor", () => {
 		battle.makeChoices();
 		assert.statStage(battle.p1.active[0], 'spe', 0);
 		for (const line of battle.log) {
-			assert.false(line.includes("Mirror Armor"), `Expected no Mirror Armor message, but got the following message:\n${line}`);
+			assert.false(line.includes("Mirror Armour"), `Expected no Mirror Armour message, but got the following message:\n${line}`);
 		}
 	});
 });

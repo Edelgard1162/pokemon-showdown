@@ -2358,7 +2358,7 @@
         "level": 73,
         "moves": ["doubleironbash", "earthquake", "superpower", "thunderpunch", "thunderwave"],
         "doublesLevel": 76,
-        "doublesMoves": ["acidarmor", "bodypress", "doubleironbash", "protect", "thunderpunch", "thunderwave"]
+        "doublesMoves": ["acidarmour", "bodypress", "doubleironbash", "protect", "thunderpunch", "thunderwave"]
     },
     "rillaboom": {
         "level": 75,

@@ -42,8 +42,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "10% chance to lower the target's Defense by 1.",
 		},
 	},
-	acidarmor: {
-		name: "Acid Armor",
+	acidarmour: {
+		name: "Acid Armour",
 		desc: "Raises the user's Defense by 2 stages.",
 		shortDesc: "Raises the user's Defense by 2.",
 	},
@@ -141,7 +141,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	ancientpower: {
 		name: "Ancient Power",
 		desc: "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
-		shortDesc: "10% chance to raise all stats by 1 (not acc/eva).",
+		shortDesc: "10% chance to raise all stats by 1. Physical if user's Atk > Sp. Atk.",
 	},
 	appleacid: {
 		name: "Apple Acid",
@@ -175,8 +175,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Aqua Tail",
 		shortDesc: "No additional effect.",
 	},
-	armorcannon: {
-		name: "Armor Cannon",
+	armourcannon: {
+		name: "Armour Cannon",
 		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
 		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
 	},
@@ -421,14 +421,14 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	behemothbash: {
 		name: "Behemoth Bash",
-		shortDesc: "No additional effect.",
+		shortDesc: "Uses user's Def stat as Atk in damage calculation.",
 		gen8: {
 			shortDesc: "Damage doubles if the target is Dynamaxed.",
 		},
 	},
 	behemothblade: {
 		name: "Behemoth Blade",
-		shortDesc: "No additional effect.",
+		shortDesc: "Has a higher chance for a critical hit.",
 		gen8: {
 			shortDesc: "Damage doubles if the target is Dynamaxed.",
 		},
@@ -1638,7 +1638,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	drillpeck: {
 		name: "Drill Peck",
-		shortDesc: "No additional effect.",
+		desc: "Has a higher chance for a critical hit.",
+		shortDesc: "High critical hit ratio.",
 	},
 	drillrun: {
 		name: "Drill Run",
@@ -1648,7 +1649,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	drumbeating: {
 		name: "Drum Beating",
 		desc: "Has a 100% chance to lower the target's Speed by 1 stage.",
-		shortDesc: "100% chance to lower the target's Speed by 1.",
+		shortDesc: "100% chance to lower the foe(s) Speed by 1.",
 	},
 	dualchop: {
 		name: "Dual Chop",
@@ -2201,7 +2202,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	flowertrick: {
 		name: "Flower Trick",
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities. This move does not check accuracy.",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities. This move does not check accuracy.",
 		shortDesc: "Always results in a critical hit; no accuracy check.",
 	},
 	fly: {
@@ -2341,7 +2342,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	frostbreath: {
 		name: "Frost Breath",
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities.",
 		shortDesc: "Always results in a critical hit.",
 	},
 	frustration: {
@@ -4081,7 +4082,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	metronome: {
 		name: "Metronome",
-		desc: "A random move is selected for use, other than After You, Apple Acid, Armor Cannon, Assist, Astral Barrage, Aura Wheel, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Blazing Torque, Body Press, Branch Poke, Breaking Swipe, Celebrate, Chatter, Chilling Water, Chilly Reception, Clangorous Soul, Collision Course, Combat Torque, Comeuppance, Copycat, Counter, Covet, Crafty Shield, Decorate, Destiny Bond, Detect, Diamond Storm, Doodle, Double Iron Bash, Double Shock, Dragon Ascent, Dragon Energy, Drum Beating, Dynamax Cannon, Electro Drift, Endure, Eternabeam, False Surrender, Feint, Fiery Wrath, Fillet Away, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Freezing Glare, Glacial Lance, Grav Apple, Helping Hand, Hold Hands, Hyper Drill, Hyperspace Fury, Hyperspace Hole, Ice Burn, Instruct, Jet Punch, Jungle Healing, King's Shield, Life Dew, Light of Ruin, Magical Torque, Make It Rain, Mat Block, Me First, Meteor Assault, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Moongeist Beam, Nature Power, Nature's Madness, Noxious Torque, Obstruct, Order Up, Origin Pulse, Overdrive, Photon Geyser, Plasma Fists, Population Bomb, Pounce, Power Shift, Precipice Blades, Protect, Pyro Ball, Quash, Quick Guard, Rage Fist, Rage Powder, Raging Bull, Raging Fury, Relic Song, Revival Blessing, Ruination, Salt Cure, Secret Sword, Shed Tail, Shell Trap, Silk Trap, Sketch, Sleep Talk, Snap Trap, Snarl, Snatch, Snore, Snowscape, Spectral Thief, Spicy Extract, Spiky Shield, Spirit Break, Spotlight, Springtide Storm, Steam Eruption, Steel Beam, Strange Steam, Struggle, Sunsteel Strike, Surging Strikes, Switcheroo, Techno Blast, Tera Starstorm, Thief, Thousand Arrows, Thousand Waves, Thunder Cage, Thunderous Kick, Tidy Up, Trailblaze, Transform, Trick, Twin Beam, V-create, Wicked Blow, Wicked Torque, or Wide Guard.",
+		desc: "A random move is selected for use, other than After You, Apple Acid, Armour Cannon, Assist, Astral Barrage, Aura Wheel, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Blazing Torque, Body Press, Branch Poke, Breaking Swipe, Celebrate, Chatter, Chilling Water, Chilly Reception, Clangorous Soul, Collision Course, Combat Torque, Comeuppance, Copycat, Counter, Covet, Crafty Shield, Decorate, Destiny Bond, Detect, Diamond Storm, Doodle, Double Iron Bash, Double Shock, Dragon Ascent, Dragon Energy, Drum Beating, Dynamax Cannon, Electro Drift, Endure, Eternabeam, False Surrender, Feint, Fiery Wrath, Fillet Away, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Freezing Glare, Glacial Lance, Grav Apple, Helping Hand, Hold Hands, Hyper Drill, Hyperspace Fury, Hyperspace Hole, Ice Burn, Instruct, Jet Punch, Jungle Healing, King's Shield, Life Dew, Light of Ruin, Magical Torque, Make It Rain, Mat Block, Me First, Meteor Assault, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Moongeist Beam, Nature Power, Nature's Madness, Noxious Torque, Obstruct, Order Up, Origin Pulse, Overdrive, Photon Geyser, Plasma Fists, Population Bomb, Pounce, Power Shift, Precipice Blades, Protect, Pyro Ball, Quash, Quick Guard, Rage Fist, Rage Powder, Raging Bull, Raging Fury, Relic Song, Revival Blessing, Ruination, Salt Cure, Secret Sword, Shed Tail, Shell Trap, Silk Trap, Sketch, Sleep Talk, Snap Trap, Snarl, Snatch, Snore, Snowscape, Spectral Thief, Spicy Extract, Spiky Shield, Spirit Break, Spotlight, Springtide Storm, Steam Eruption, Steel Beam, Strange Steam, Struggle, Sunsteel Strike, Surging Strikes, Switcheroo, Techno Blast, Tera Starstorm, Thief, Thousand Arrows, Thousand Waves, Thunder Cage, Thunderous Kick, Tidy Up, Trailblaze, Transform, Trick, Twin Beam, V-create, Wicked Blow, Wicked Torque, or Wide Guard.",
 		shortDesc: "Picks a random move.",
 		gen8: {
 			desc: "A random move is selected for use, other than After You, Apple Acid, Assist, Astral Barrage, Aura Wheel, Baneful Bunker, Beak Blast, Behemoth Bash, Behemoth Blade, Belch, Bestow, Body Press, Branch Poke, Breaking Swipe, Celebrate, Chatter, Clangorous Soul, Copycat, Counter, Covet, Crafty Shield, Decorate, Destiny Bond, Detect, Diamond Storm, Double Iron Bash, Dragon Ascent, Dragon Energy, Dragon Hammer, Drum Beating, Dynamax Cannon, Endure, Eternabeam, False Surrender, Feint, Fiery Wrath, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Freezing Glare, Glacial Lance, Grav Apple, Helping Hand, Hold Hands, Hyperspace Fury, Hyperspace Hole, Ice Burn, Instruct, Jungle Healing, King's Shield, Life Dew, Light of Ruin, Mat Block, Me First, Meteor Assault, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Moongeist Beam, Nature Power, Nature's Madness, Obstruct, Origin Pulse, Overdrive, Photon Geyser, Plasma Fists, Precipice Blades, Protect, Pyro Ball, Quash, Quick Guard, Rage Powder, Relic Song, Secret Sword, Shell Trap, Sketch, Sleep Talk, Snap Trap, Snarl, Snatch, Snore, Spectral Thief, Spiky Shield, Spirit Break, Spotlight, Steam Eruption, Steel Beam, Strange Steam, Struggle, Sunsteel Strike, Surging Strikes, Switcheroo, Techno Blast, Thief, Thousand Arrows, Thousand Waves, Thunder Cage, Thunderous Kick, Transform, Trick, V-create, Wicked Blow, or Wide Guard.",
@@ -5223,7 +5224,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		gen1: {
 			desc: "While the user remains active, its Defense is doubled when taking damage. Critical hits ignore this protection. This effect can be removed by Haze.",
 			shortDesc: "While active, the user's Defense is doubled.",
-			start: "  [POKEMON] gained armor!",
+			start: "  [POKEMON] gained armour!",
 		},
 
 		start: "  Reflect made [TEAM] stronger against physical moves!",
@@ -6417,7 +6418,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	stormthrow: {
 		name: "Storm Throw",
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities.",
 		shortDesc: "Always results in a critical hit.",
 	},
 	strangesteam: {
@@ -6592,7 +6593,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	surgingstrikes: {
 		name: "Surging Strikes",
-		desc: "Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		desc: "Hits three times. This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities.",
 		shortDesc: "Always results in a critical hit. Hits 3 times.",
 	},
 	swagger: {
@@ -7438,7 +7439,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	wickedblow: {
 		name: "Wicked Blow",
-		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities.",
+		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities.",
 		shortDesc: "Always results in a critical hit.",
 	},
 	wickedtorque: {

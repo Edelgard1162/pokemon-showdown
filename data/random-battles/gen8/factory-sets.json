@@ -121,35 +121,35 @@
 			"sets": [{
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Leftovers"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 252, "spd": 136, "spe": 120},
 				"nature": "Careful",
 				"moves": [["Iron Head"], ["Moonlight"], ["Stealth Rock", "Knock Off"], ["Thunder Wave", "Toxic"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Leftovers"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 136, "atk": 252, "spe": 120},
 				"nature": "Adamant",
 				"moves": [["Iron Head", "Sunsteel Strike"], ["Knock Off", "Stone Edge"], ["Swords Dance", "Dragon Dance"], ["Moonlight"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Weakness Policy", "Lum Berry"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 80, "atk": 252, "spe": 176},
 				"nature": "Adamant",
 				"moves": [["Sunsteel Strike"], ["Stone Edge"], ["Earthquake"], ["Dragon Dance"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Rocky Helmet", "Leftovers"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 252, "def": 136, "spe": 120},
 				"nature": "Impish",
 				"moves": [["Sunsteel Strike", "Iron Head"], ["Stealth Rock"], ["Earthquake"], ["Moonlight"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Choice Band"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 136, "atk": 252, "spe": 120},
 				"nature": "Adamant",
 				"moves": [["Sunsteel Strike"], ["Knock Off"], ["Photon Geyser"], ["Stone Edge", "Moonlight"]]
@@ -2147,14 +2147,14 @@
 			"sets": [{
 				"species": "Necrozma",
 				"item": ["Lum Berry", "Weakness Policy"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"atk": 252, "spa": 4, "spe": 252},
 				"nature": "Naughty",
 				"moves": [["Photon Geyser"], ["Heat Wave"], ["Dragon Dance"], ["X-Scissor"]]
 			}, {
 				"species": "Necrozma",
 				"item": ["Power Herb"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 4, "spa": 252, "spe": 252},
 				"ivs": {"atk": 0},
 				"nature": "Modest",
@@ -2162,7 +2162,7 @@
 			}, {
 				"species": "Necrozma",
 				"item": ["Colbur Berry"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 252, "def": 72, "spa": 156, "spe": 28},
 				"ivs": {"atk": 0},
 				"nature": "Bold",
@@ -3074,7 +3074,7 @@
 			"sets": [{
 				"species": "Escavalier",
 				"item": ["Leftovers"],
-				"ability": ["Shell Armor", "Overcoat"],
+				"ability": ["Shell Armour", "Overcoat"],
 				"evs": {"hp": 248, "atk": 16, "spd": 160, "spe": 84},
 				"nature": "Careful",
 				"moves": [["Iron Head"], ["Megahorn", "Close Combat"], ["Knock Off"], ["Swords Dance"]]
@@ -3448,7 +3448,7 @@
 			"sets": [{
 				"species": "Escavalier",
 				"item": ["Leftovers"],
-				"ability": ["Shell Armor", "Overcoat"],
+				"ability": ["Shell Armour", "Overcoat"],
 				"evs": {"hp": 252, "atk": 4, "spd": 252},
 				"nature": "Careful",
 				"moves": [["Iron Head"], ["Toxic"], ["Knock Off"], ["Protect"]]
@@ -3550,7 +3550,7 @@
 			"sets": [{
 				"species": "Drapion",
 				"item": ["Shuca Berry", "Black Sludge"],
-				"ability": ["Battle Armor"],
+				"ability": ["Battle Armour"],
 				"evs": {"atk": 252, "spd": 4, "spe": 252},
 				"nature": "Jolly",
 				"moves": [["Knock Off"], ["Poison Jab"], ["Swords Dance"], ["Aqua Tail", "Earthquake"]]
@@ -5335,14 +5335,14 @@
 			"sets": [{
 				"species": "Anorith",
 				"item": ["Eviolite"],
-				"ability": ["Battle Armor"],
+				"ability": ["Battle Armour"],
 				"evs": {"atk": 76, "def": 196, "spe": 236},
 				"nature": "Jolly",
 				"moves": [["Rapid Spin"], ["Knock Off"], ["X-Scissor"], ["Brick Break"]]
 			}, {
 				"species": "Anorith",
 				"item": ["Eviolite"],
-				"ability": ["Battle Armor"],
+				"ability": ["Battle Armour"],
 				"evs": {"atk": 76, "def": 196, "spe": 236},
 				"nature": "Jolly",
 				"moves": [["Rapid Spin"], ["Knock Off"], ["X-Scissor", "Brick Break"], ["Stealth Rock"]]
@@ -5430,7 +5430,7 @@
 			"sets": [{
 				"species": "Omanyte",
 				"item": ["Eviolite"],
-				"ability": ["Shell Armor"],
+				"ability": ["Shell Armour"],
 				"evs": {"hp": 76, "spa": 196, "spe": 236},
 				"ivs": {"atk": 0},
 				"nature": "Modest",

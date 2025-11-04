@@ -1265,7 +1265,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	grimer: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["3L34"],
+			acidarmour: ["3L34"],
 			attract: ["3M"],
 			curse: ["3L1"],
 			dig: ["3M"],
@@ -1309,7 +1309,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	muk: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["3L34"],
+			acidarmour: ["3L34"],
 			attract: ["3M"],
 			brickbreak: ["3M"],
 			dig: ["3M"],
@@ -2306,7 +2306,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	slugma: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["3L1"],
+			acidarmour: ["3L1"],
 			amnesia: ["3L29"],
 			attract: ["3M"],
 			bodyslam: ["3L50"],
@@ -4973,7 +4973,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	gulpin: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["3L1"],
+			acidarmour: ["3L1"],
 			amnesia: ["3L17"],
 			attract: ["3M"],
 			bulletseed: ["3M"],

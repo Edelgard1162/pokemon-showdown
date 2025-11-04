@@ -1056,21 +1056,21 @@
 			"sets": [{
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Solganium Z"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 4, "atk": 252, "spe": 252},
 				"nature": "Adamant",
 				"moves": [["Rock Polish"], ["Swords Dance"], ["Earthquake"], ["Sunsteel Strike"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Leftovers"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 252, "def": 4, "spd": 252},
 				"nature": "Careful",
 				"moves": [["Stealth Rock"], ["Toxic"], ["Moonlight"], ["Sunsteel Strike"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Solganium Z"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 252, "atk": 252, "spd": 4},
 				"ivs": {"spe": 0},
 				"nature": "Brave",
@@ -1078,21 +1078,21 @@
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Life Orb"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 108, "atk": 252, "spe": 148},
 				"nature": "Adamant",
 				"moves": [["Swords Dance"], ["Morning Sun"], ["Sunsteel Strike"], ["Earthquake", "Photon Geyser"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Ultranecrozium Z"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"atk": 252, "def": 4, "spe": 252},
 				"nature": "Jolly",
 				"moves": [["Swords Dance"], ["Photon Geyser"], ["Earthquake"], ["Stone Edge", "Sunsteel Strike"]]
 			}, {
 				"species": "Necrozma-Dusk-Mane",
 				"item": ["Ultranecrozium Z"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"def": 4, "spa": 252, "spe": 252},
 				"nature": "Timid",
 				"moves": [["Calm Mind"], ["Photon Geyser"], ["Heat Wave"], ["Power Gem", "Dragon Pulse"]]
@@ -1115,7 +1115,7 @@
 			"sets": [{
 				"species": "Necrozma-Dawn-Wings",
 				"item": ["Ultranecrozium Z"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"atk": 252, "def": 32, "spe": 224},
 				"nature": "Jolly",
 				"moves": [["Swords Dance"], ["Photon Geyser"], ["Earthquake"], ["Stone Edge"]]
@@ -2300,7 +2300,7 @@
 			"sets": [{
 				"species": "Camerupt",
 				"item": ["Cameruptite"],
-				"ability": ["Magma Armor"],
+				"ability": ["Magma Armour"],
 				"evs": {"hp": 128, "spa": 252, "spe": 128},
 				"nature": "Modest",
 				"moves": [["Fire Blast"], ["Earth Power"], ["Toxic"], ["Rock Slide", "Stealth Rock"]]
@@ -2585,7 +2585,7 @@
 				"ability": ["Magic Guard"],
 				"evs": {"hp": 252, "def": 212, "spe": 44},
 				"nature": "Bold",
-				"moves": [["Calm Mind"], ["Psyshock"], ["Acid Armor"], ["Recover"]]
+				"moves": [["Calm Mind"], ["Psyshock"], ["Acid Armour"], ["Recover"]]
 			}]
 		},
 		"suicune": {
@@ -4011,7 +4011,7 @@
 			"sets": [{
 				"species": "Necrozma",
 				"item": ["Iapapa Berry", "Metronome"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"hp": 112, "spa": 252, "spe": 144},
 				"ivs": {"atk": 0},
 				"nature": "Modest",
@@ -4019,7 +4019,7 @@
 			}, {
 				"species": "Necrozma",
 				"item": ["Choice Specs"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"spa": 252, "spd": 4, "spe": 252},
 				"ivs": {"atk": 0},
 				"nature": "Modest",
@@ -4923,7 +4923,7 @@
 			"sets": [{
 				"species": "Necrozma",
 				"item": ["Twisted Spoon"],
-				"ability": ["Prism Armor"],
+				"ability": ["Prism Armour"],
 				"evs": {"spa": 252, "spd": 4, "spe": 252},
 				"nature": "Timid",
 				"moves": [["Stealth Rock"], ["Photon Geyser"], ["Moonlight"], ["Earth Power"]]
@@ -6605,7 +6605,7 @@
 			"sets": [{
 				"species": "Type: Null",
 				"item": ["Eviolite"],
-				"ability": ["Battle Armor"],
+				"ability": ["Battle Armour"],
 				"evs": {"hp": 248, "def": 80, "spd": 180},
 				"nature": "Careful",
 				"moves": [["Swords Dance", "Toxic", "U-turn"], ["Rest"], ["Sleep Talk"], ["Return"]]
@@ -7149,7 +7149,7 @@
 			"sets": [{
 				"species": "Turtonator",
 				"item": ["Dragonium Z", "White Herb"],
-				"ability": ["Shell Armor"],
+				"ability": ["Shell Armour"],
 				"evs": {"spa": 252, "spd": 4, "spe": 252},
 				"nature": "Timid",
 				"moves": [["Shell Smash"], ["Fire Blast"], ["Draco Meteor"], ["Dragon Pulse", "Earthquake"]]
@@ -7374,7 +7374,7 @@
 			"sets": [{
 				"species": "Omastar",
 				"item": ["White Herb", "Waterium Z"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"spa": 252, "spd": 4, "spe": 252},
 				"ivs": {"atk": 0},
 				"nature": "Timid",
@@ -7578,14 +7578,14 @@
 			}, {
 				"species": "Vullaby",
 				"item": ["Eviolite", "Berry Juice"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 116, "spa": 240, "spe": 116},
 				"nature": "Modest",
 				"moves": [["Nasty Plot"], ["Air Slash"], ["Heat Wave"], ["Dark Pulse", "Hidden Power Grass"]]
 			}, {
 				"species": "Vullaby",
 				"item": ["Berry Juice"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 36, "atk": 160, "spa": 80, "spd": 76, "spe": 116},
 				"nature": "Serious",
 				"moves": [["Brave Bird"], ["Knock Off"], ["Heat Wave"], ["Hidden Power Grass"]]
@@ -7599,7 +7599,7 @@
 			}, {
 				"species": "Vullaby",
 				"item": ["Flyinium Z"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 116, "atk": 236, "spe": 116},
 				"nature": "Adamant",
 				"moves": [["Mirror Move"], ["Brave Bird"], ["Knock Off"], ["Roost"]]
@@ -7756,7 +7756,7 @@
 			}, {
 				"species": "Onix",
 				"item": ["Eviolite"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 76, "atk": 236, "spe": 196},
 				"nature": "Jolly",
 				"moves": [["Stealth Rock"], ["Earthquake"], ["Rock Blast"], ["Explosion"]]
@@ -8168,14 +8168,14 @@
 			"sets": [{
 				"species": "Dwebble",
 				"item": ["Eviolite"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 116, "atk": 76, "def": 156, "spe": 156},
 				"nature": "Impish",
 				"moves": [["Stealth Rock"], ["Counter"], ["Rock Blast"], ["Knock Off"]]
 			}, {
 				"species": "Dwebble",
 				"item": ["Eviolite"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 116, "atk": 76, "def": 156, "spe": 156},
 				"nature": "Impish",
 				"moves": [["Stealth Rock"], ["Spikes"], ["Rock Blast"], ["Knock Off"]]
@@ -8408,14 +8408,14 @@
 			"sets": [{
 				"species": "Kabuto",
 				"item": ["Eviolite"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 116, "atk": 36, "def": 36, "spd": 156, "spe": 156},
 				"nature": "Careful",
 				"moves": [["Stealth Rock"], ["Rock Slide"], ["Aqua Jet", "Knock Off"], ["Rapid Spin"]]
 			}, {
 				"species": "Kabuto",
 				"item": ["Eviolite"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 116, "atk": 36, "def": 36, "spd": 156, "spe": 156},
 				"nature": "Careful",
 				"moves": [["Stealth Rock"], ["Waterfall"], ["Knock Off"], ["Rapid Spin"]]
@@ -8451,14 +8451,14 @@
 			"sets": [{
 				"species": "Omanyte",
 				"item": ["Eviolite"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"hp": 76, "def": 36, "spa": 196, "spe": 156},
 				"nature": "Timid",
 				"moves": [["Spikes"], ["Stealth Rock", "Toxic Spikes"], ["Hydro Pump"], ["Knock Off"]]
 			}, {
 				"species": "Omanyte",
 				"item": ["Eviolite"],
-				"ability": ["Shell Armor"],
+				"ability": ["Shell Armour"],
 				"evs": {"def": 36, "spa": 200, "spe": 236},
 				"nature": "Modest",
 				"moves": [["Shell Smash"], ["Hydro Pump"], ["Ice Beam"], ["Earth Power", "Hidden Power Grass"]]
@@ -8766,7 +8766,7 @@
 			"sets": [{
 				"species": "Clamperl",
 				"item": ["Deep Sea Tooth"],
-				"ability": ["Shell Armor"],
+				"ability": ["Shell Armour"],
 				"evs": {"spa": 248, "spd": 76, "spe": 184},
 				"nature": "Timid",
 				"moves": [["Shell Smash"], ["Surf"], ["Ice Beam"], ["Hidden Power Grass", "Hidden Power Electric"]]
@@ -8937,21 +8937,21 @@
 			"sets": [{
 				"species": "Armaldo",
 				"item": ["Leftovers"],
-				"ability": ["Battle Armor"],
+				"ability": ["Battle Armour"],
 				"evs": {"hp": 248, "atk": 8, "spd": 252},
 				"nature": "Careful",
 				"moves": [["Stealth Rock"], ["Stone Edge"], ["Knock Off"], ["Rapid Spin"]]
 			}, {
 				"species": "Armaldo",
 				"item": ["Leftovers"],
-				"ability": ["Battle Armor"],
+				"ability": ["Battle Armour"],
 				"evs": {"hp": 248, "atk": 252, "spd": 8},
 				"nature": "Adamant",
 				"moves": [["Stealth Rock"], ["Stone Edge"], ["Earthquake"], ["Rapid Spin"]]
 			}, {
 				"species": "Armaldo",
 				"item": ["Assault Vest"],
-				"ability": ["Battle Armor"],
+				"ability": ["Battle Armour"],
 				"evs": {"hp": 248, "def": 8, "spd": 252},
 				"nature": "Careful",
 				"moves": [["Stone Edge"], ["X-Scissor"], ["Earthquake"], ["Rapid Spin"]]
@@ -12737,7 +12737,7 @@
 				"ability": ["Water Absorb"],
 				"evs": {"hp": 248, "spd": 252, "spe": 8},
 				"nature": "Calm",
-				"moves": [["Toxic"], ["Scald"], ["Acid Armor"], ["Recover"]]
+				"moves": [["Toxic"], ["Scald"], ["Acid Armour"], ["Recover"]]
 			}, {
 				"species": "Jellicent",
 				"item": ["Leftovers"],
@@ -14687,14 +14687,14 @@
 			"sets": [{
 				"species": "Omastar",
 				"item": ["Air Balloon"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"def": 4, "spa": 252, "spe": 252},
 				"nature": "Timid",
 				"moves": [["Shell Smash"], ["Surf", "Hydro Pump"], ["Ice Beam"], ["Hidden Power Grass"]]
 			}, {
 				"species": "Omastar",
 				"item": ["Air Balloon"],
-				"ability": ["Weak Armor"],
+				"ability": ["Weak Armour"],
 				"evs": {"def": 4, "spa": 252, "spe": 252},
 				"nature": "Timid",
 				"moves": [["Shell Smash"], ["Surf", "Hydro Pump"], ["Ice Beam"], ["Hidden Power Electric"]]

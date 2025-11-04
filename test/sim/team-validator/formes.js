@@ -7,7 +7,7 @@ let team;
 describe('Team Validator', () => {
 	it("should validate Necrozma formes correctly", () => {
 		team = [
-			{ species: 'necrozmadawnwings', ability: 'prismarmor', shiny: true, moves: ['moongeistbeam', 'metalclaw'], evs: { hp: 1 } },
+			{ species: 'necrozmadawnwings', ability: 'prismarmour', shiny: true, moves: ['moongeistbeam', 'metalclaw'], evs: { hp: 1 } },
 		];
 		assert.legalTeam(team, 'gen7anythinggoes');
 	});

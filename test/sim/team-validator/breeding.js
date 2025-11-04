@@ -73,7 +73,7 @@ describe('Team Validator', () => {
 		assert.false.legalTeam(team, 'gen3ou');
 
 		team = [
-			{ species: 'armaldo', ability: 'battlearmor', moves: ['knockoff', 'rapidspin'], evs: { hp: 1 } },
+			{ species: 'armaldo', ability: 'battlearmour', moves: ['knockoff', 'rapidspin'], evs: { hp: 1 } },
 		];
 		assert.false.legalTeam(team, 'gen3ou');
 	});

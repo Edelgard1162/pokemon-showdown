@@ -52,7 +52,7 @@ describe('Neutralizing Gas', () => {
 	it(`should negate abilities that activate on switch-out`, () => {
 		battle = common.createBattle([
 			[{ species: "Weezing", ability: 'neutralizinggas', moves: ['toxic'] },
-				{ species: "Type: Null", ability: 'battlearmor', moves: ['facade'] }],
+				{ species: "Type: Null", ability: 'battlearmour', moves: ['facade'] }],
 			[{ species: "Corsola", ability: 'naturalcure', moves: ['uturn'] },
 				{ species: "Magikarp", ability: 'rattled', moves: ['splash'] }],
 		]);

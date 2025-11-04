@@ -14,7 +14,7 @@ describe('Charge', () => {
 		battle = common.createBattle([[
 			{ species: 'Kilowattrel', moves: ['charge', 'thunderbolt'] },
 		], [
-			{ species: 'Dondozo', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'Dondozo', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 
 		battle.makeChoices();

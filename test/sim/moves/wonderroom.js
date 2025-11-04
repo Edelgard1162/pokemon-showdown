@@ -14,8 +14,8 @@ describe('Wonder Room', () => {
 		battle = common.createBattle([[
 			{ species: 'Wynaut', moves: ['brickbreak'] },
 		], [
-			{ species: 'Blissey', ability: 'shellarmor', moves: ['wonderroom', 'defensecurl', 'roost'] },
-			{ species: 'Chansey', ability: 'shellarmor', item: 'assaultvest', moves: ['sleeptalk'] },
+			{ species: 'Blissey', ability: 'shellarmour', moves: ['wonderroom', 'defensecurl', 'roost'] },
+			{ species: 'Chansey', ability: 'shellarmour', item: 'assaultvest', moves: ['sleeptalk'] },
 		]]);
 
 		battle.makeChoices();
@@ -38,7 +38,7 @@ describe('Wonder Room', () => {
 		battle = common.createBattle([[
 			{ species: 'Wynaut', moves: ['amnesia', 'bodypress'] },
 		], [
-			{ species: 'Blissey', ability: 'shellarmor', moves: ['wonderroom', 'sleeptalk'] },
+			{ species: 'Blissey', ability: 'shellarmour', moves: ['wonderroom', 'sleeptalk'] },
 		]]);
 
 		battle.makeChoices();

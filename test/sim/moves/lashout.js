@@ -38,7 +38,7 @@ describe('Lash Out', () => {
 
 	it(`should double in base power if the user's stats were lowered at the start of the match`, () => {
 		battle = common.createBattle([[
-			{ species: 'Wynaut', ability: 'shellarmor', moves: ['lashout'] },
+			{ species: 'Wynaut', ability: 'shellarmour', moves: ['lashout'] },
 		], [
 			{ species: 'Blissey', ability: 'intimidate', moves: ['skillswap'] },
 		]]);
@@ -50,7 +50,7 @@ describe('Lash Out', () => {
 
 	it(`should not double in base power if the user's stats were lowered at a switch after a KO`, () => {
 		battle = common.createBattle([[
-			{ species: 'Wynaut', ability: 'shellarmor', moves: ['lashout'] },
+			{ species: 'Wynaut', ability: 'shellarmour', moves: ['lashout'] },
 		], [
 			{ species: 'Shedinja', moves: ['sleeptalk'] },
 			{ species: 'Blissey', ability: 'intimidate', moves: ['skillswap'] },

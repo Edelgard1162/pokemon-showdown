@@ -76,7 +76,7 @@ describe(`Pursuit`, () => {
 		battle = common.createBattle({ gameType: 'doubles' }, [[
 			{ species: "Beedrill", item: 'beedrillite', moves: ['pursuit'] },
 			{ species: "Clefable", moves: ['calmmind'] },
-			{ species: "Furret", ability: 'shellarmor', moves: ['uturn'] },
+			{ species: "Furret", ability: 'shellarmour', moves: ['uturn'] },
 		], [
 			{ species: "Clefable", moves: ['calmmind'] },
 			{ species: "Alakazam", moves: ['calmmind'] },

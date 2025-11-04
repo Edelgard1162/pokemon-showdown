@@ -621,7 +621,7 @@ export class RandomBDSPTeams extends RandomGen8Teams {
 			return (moves.has('earthquake') && species.id === 'miltank');
 		case 'Sheer Force':
 			return (!counter.get('sheerforce') || abilities.includes('Guts'));
-		case 'Shell Armor':
+		case 'Shell Armour':
 			return (species.id === 'omastar' && (moves.has('spikes') || moves.has('stealthrock')));
 		case 'Sniper':
 			return counter.get('Water') > 1 && !moves.has('focusenergy');
@@ -638,7 +638,7 @@ export class RandomBDSPTeams extends RandomGen8Teams {
 				'Intimidate', 'Rock Head', 'Water Absorb',
 			].some(m => abilities.includes(m));
 			const noSwimIfNoRain = !moves.has('raindance') && [
-				'Cloud Nine', 'Lightning Rod', 'Intimidate', 'Rock Head', 'Sturdy', 'Water Absorb', 'Water Veil', 'Weak Armor',
+				'Cloud Nine', 'Lightning Rod', 'Intimidate', 'Rock Head', 'Sturdy', 'Water Absorb', 'Water Veil', 'Weak Armour',
 			].some(m => abilities.includes(m));
 			return teamDetails.rain ? neverWantsSwim : noSwimIfNoRain;
 		case 'Synchronize':
@@ -673,7 +673,7 @@ export class RandomBDSPTeams extends RandomGen8Teams {
 				moves.has('raindance') ||
 				['Drizzle', 'Strong Jaw', 'Unaware', 'Volt Absorb'].some(abil => abilities.includes(abil))
 			);
-		case 'Weak Armor':
+		case 'Weak Armour':
 			return (
 				species.id === 'skarmory' ||
 				moves.has('shellsmash') || moves.has('rapidspin')

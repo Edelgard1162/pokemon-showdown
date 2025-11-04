@@ -629,7 +629,7 @@
     "vaporeon": {
         "level": 74,
         "moves": ["blizzard", "rest", "surf"],
-        "exclusiveMoves": ["acidarmor", "bodyslam", "bodyslam", "bodyslam", "hydropump", "mimic"]
+        "exclusiveMoves": ["acidarmour", "bodyslam", "bodyslam", "bodyslam", "hydropump", "mimic"]
     },
     "jolteon": {
         "level": 69,

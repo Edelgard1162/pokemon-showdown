@@ -13,7 +13,7 @@ describe(`Parting Shot`, () => {
 	it(`should not switch the user out if the target's stats are not changed`, () => {
 		battle = common.createBattle([[
 			{ species: 'Silvally', ability: 'prankster', moves: ['partingshot', 'splash'] },
-			{ species: 'Type: Null', ability: 'battlearmor', moves: ['return'] },
+			{ species: 'Type: Null', ability: 'battlearmour', moves: ['return'] },
 		], [
 			{ species: 'Registeel', ability: 'clearbody', moves: ['splash'] },
 			{ species: 'Solgaleo', ability: 'fullmetalbody', moves: ['splash'] },

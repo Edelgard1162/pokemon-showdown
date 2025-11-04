@@ -1765,7 +1765,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Acid Armor", "Dazzling Gleam", "Draining Kiss", "Recover", "Stored Power"],
+                "movepool": ["Acid Armour", "Dazzling Gleam", "Draining Kiss", "Recover", "Stored Power"],
                 "abilities": ["Aroma Veil"],
                 "teraTypes": ["Poison", "Steel"]
             }

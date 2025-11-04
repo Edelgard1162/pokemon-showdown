@@ -33,7 +33,7 @@ describe(`Slow Start`, () => {
 		battle = common.gen(7).createBattle([[
 			{ species: 'regigigas', ability: 'slowstart', item: 'normaliumz', moves: ['hyperbeam'] },
 		], [
-			{ species: 'wynaut', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'wynaut', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 		battle.makeChoices('move hyperbeam zmove', 'auto');
 		const wynaut = battle.p2.active[0];
@@ -47,7 +47,7 @@ describe(`Slow Start`, () => {
 			{ species: 'regigigas', ability: 'slowstart', moves: ['assist'] },
 			{ species: 'necrozma', moves: ['photongeyser'] },
 		], [
-			{ species: 'wynaut', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'wynaut', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 		battle.makeChoices();
 		const wynaut = battle.p2.active[0];

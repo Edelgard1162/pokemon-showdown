@@ -38,7 +38,7 @@ describe('Mummy', () => {
 			{ species: 'Golisopod', ability: 'emergencyexit', moves: ['sleeptalk'] },
 		], [
 			{ species: 'Cofagrigus', ability: 'mummy', moves: ['sleeptalk'] },
-			{ species: 'Hoopa', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'Hoopa', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 
 		const hoopa = battle.p2.active[1];

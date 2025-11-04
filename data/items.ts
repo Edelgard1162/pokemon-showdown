@@ -281,8 +281,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 205,
 		gen: 3,
 	},
-	armorfossil: {
-		name: "Armor Fossil",
+	armourfossil: {
+		name: "Armour Fossil",
 		spritenum: 12,
 		fling: {
 			basePower: 100,
@@ -347,8 +347,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	auspiciousarmor: {
-		name: "Auspicious Armor",
+	auspiciousarmour: {
+		name: "Auspicious Armour",
 		spritenum: 753,
 		fling: {
 			basePower: 30,
@@ -487,7 +487,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		onTryHeal(damage, target, source, effect) {
 			const heals = ['drain', 'leechseed', 'ingrain', 'aquaring', 'strengthsap'];
 			if (heals.includes(effect.id)) {
-				return this.chainModify([5324, 4096]);
+				return this.chainModify([5461, 4096]);
 			}
 		},
 		num: 296,
@@ -3292,10 +3292,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 				return critRatio + 2;
 			}
 		},
+		onBasePower(basePower, user, target, move) {
+		    if (["farfetchd", "sirfetchd"].includes(this.toID(user.baseSpecies.baseSpecies)) && move.type === 'Grass') {
+			    return this.chainModify(1.5);
+		    }
+	    } ,
 		itemUser: ["Farfetch\u2019d", "Farfetch\u2019d-Galar", "Sirfetch\u2019d"],
 		num: 259,
 		gen: 8,
-		isNonstandard: "Past",
 	},
 	leftovers: {
 		name: "Leftovers",
@@ -3703,8 +3707,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 9,
 		isNonstandard: "Future",
 	},
-	maliciousarmor: {
-		name: "Malicious Armor",
+	maliciousarmour: {
+		name: "Malicious Armour",
 		spritenum: 744,
 		fling: {
 			basePower: 30,
@@ -5685,7 +5689,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 158,
 		gen: 3,
 	},
-	skarmorite: {
+	skarmourite: {
 		name: "Skarmorite",
 		spritenum: 550,
 		megaStone: "Skarmory-Mega",

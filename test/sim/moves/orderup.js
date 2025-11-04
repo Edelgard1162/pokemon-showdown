@@ -13,7 +13,7 @@ describe('Order Up', () => {
 	it.skip(`should boost Dondozo's stat even if Sheer Force-boosted`, () => {
 		battle = common.createBattle({ gameType: 'doubles' }, [[
 			{ species: 'wynaut', moves: ['sleeptalk'] },
-			{ species: 'mew', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'mew', ability: 'shellarmour', moves: ['sleeptalk'] },
 		], [
 			{ species: 'tatsugiristretchy', ability: 'commander', moves: ['sleeptalk'] },
 			{ species: 'dondozo', ability: 'sheerforce', moves: ['orderup'] },

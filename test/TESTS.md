@@ -47,7 +47,7 @@ it(`should restore 1/3 HP to the user after eating a Berry`, function () {
 it(`should boost Dondozo's stat even if Sheer Force-boosted`, function () {
 	battle = common.createBattle({gameType: 'doubles'}, [[
 		{species: 'wynaut', moves: ['sleeptalk']},
-		{species: 'mew', ability: 'shellarmor', moves: ['sleeptalk']},
+		{species: 'mew', ability: 'shellarmour', moves: ['sleeptalk']},
 	], [
 		{species: 'tatsugiristretchy', ability: 'commander', moves: ['sleeptalk']},
 		{species: 'dondozo', ability: 'sheerforce', moves: ['orderup']},
@@ -62,7 +62,7 @@ it(`should boost Dondozo's stat even if Sheer Force-boosted`, function () {
 Tests ideally should be:
 - Specific. Don't cram too much into one unit test. Don't include Abilities/moves/items that aren't necessary for the test.
 - Readable. If a test fails from some regression, it should not take very long to identify what the test was doing. Making liberal use of comments and assert() descriptions is great!
-- RNG-independent (where possible). Use 100% accurate moves (or No Guard), use Shell Armor or Lucky Chant, don't use Pokemon that Speed tie, things like that.
+- RNG-independent (where possible). Use 100% accurate moves (or No Guard), use Shell Armour or Lucky Chant, don't use Pokemon that Speed tie, things like that.
 
 You may see tests not in the preferred style, or that aren't ideal in other ways. Pokemon Showdown has thousands of unit tests, and it's unfortunately pretty time-consuming to convert them all. Please be sure to follow the preferred style!
 

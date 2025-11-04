@@ -44,7 +44,7 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["Iron Defense", "Body Press", "Tachyon Cutter", "Rest", "Stealth Rock"],
-                "abilities": ["Battle Armor"],
+                "abilities": ["Battle Armour"],
                 "teraTypes": ["Fighting"]
             }
         ]
@@ -66,7 +66,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Bitter Blade", "Close Combat", "Poltergeist", "Shadow Sneak", "Swords Dance"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Fighting", "Fire", "Ghost"]
             }
         ]
@@ -344,13 +344,13 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["Swords Dance", "Close Combat", "Icicle Crash", "High Horsepower", "Heavy Slam"],
-                "abilities": ["Frozen Armor"],
+                "abilities": ["Frozen Armour"],
                 "teraTypes": ["Water"]
             },
             {
                 "role": "AV Pivot",
                 "movepool": ["Close Combat", "Icicle Crash", "High Horsepower", "Heavy Slam"],
-                "abilities": ["Frozen Armor"],
+                "abilities": ["Frozen Armour"],
                 "teraTypes": ["Water"]
             }
         ]
@@ -1070,7 +1070,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["Fling", "Scavenge", "Bonemerang", "Roost"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Poison"]
             }
         ]

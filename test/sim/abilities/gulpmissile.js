@@ -46,7 +46,7 @@ describe('Gulp Missile', () => {
 		battle = common.createBattle([[
 			{ species: 'cramorant', ability: 'gulpmissile', moves: ['surf'] },
 		], [
-			{ species: 'sceptile', ability: 'shellarmor', moves: ['magicpowder'] },
+			{ species: 'sceptile', ability: 'shellarmour', moves: ['magicpowder'] },
 		]]);
 		battle.makeChoices();
 		const sceptile = battle.p2.active[0];

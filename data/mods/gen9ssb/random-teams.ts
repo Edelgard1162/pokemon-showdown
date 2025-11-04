@@ -1065,7 +1065,7 @@ export const ssbSets: SSBSets = {
 	},
 	Zarel: {
 		species: 'Meloetta', ability: 'Tempo Change', item: 'Leftovers', gender: 'M',
-		moves: ['Psystrike', 'Armor Cannon', 'Obstruct'],
+		moves: ['Psystrike', 'Armour Cannon', 'Obstruct'],
 		signatureMove: '@ts-ignore',
 		evs: { def: 4, spa: 252, spe: 252 }, nature: 'Timid', teraType: 'Stellar',
 	},

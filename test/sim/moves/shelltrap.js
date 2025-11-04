@@ -13,11 +13,11 @@ describe('Shell Trap', () => {
 	it('should deduct PP regardless if it was successful', () => {
 		battle = common.createBattle({ gameType: 'doubles' }, [
 			[
-				{ species: 'Turtonator', ability: 'shellarmor', moves: ['shelltrap'] },
+				{ species: 'Turtonator', ability: 'shellarmour', moves: ['shelltrap'] },
 				{ species: 'Magikarp', ability: 'swiftswim', moves: ['splash'] },
 			],
 			[
-				{ species: 'Turtonator', ability: 'shellarmor', moves: ['tackle', 'irondefense'] },
+				{ species: 'Turtonator', ability: 'shellarmour', moves: ['tackle', 'irondefense'] },
 				{ species: 'Magikarp', ability: 'swiftswim', moves: ['splash'] },
 			],
 		]);

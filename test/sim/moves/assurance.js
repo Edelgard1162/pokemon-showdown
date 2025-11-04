@@ -14,7 +14,7 @@ describe('Assurance', () => {
 		battle = common.createBattle([[
 			{ species: 'Sneasel', ability: 'sturdy', moves: ['assurance'] },
 		], [
-			{ species: 'Regieleki', ability: 'shellarmor', moves: ['wildcharge'] },
+			{ species: 'Regieleki', ability: 'shellarmour', moves: ['wildcharge'] },
 		]]);
 		const sneasel = battle.p1.active[0];
 		const regi = battle.p2.active[0];

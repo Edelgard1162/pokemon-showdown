@@ -169,7 +169,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 			const foe = source.foes()[0];
 			if (!foe) return;
 			const success = this.boost({ atk: -1, spa: -1 }, foe, source);
-			if (!success && !foe.hasAbility('mirrorarmor')) {
+			if (!success && !foe.hasAbility('mirrorarmour')) {
 				delete move.selfSwitch;
 			}
 		},
@@ -2642,7 +2642,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		category: "Physical",
 		name: "10-20-40",
 		shortDesc: "Hits 3 times, 3rd hit crits. sets Safeguard.",
-		desc: "Hits three times. Power increases to 20 for the second hit and 40 for the third. The third hit is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities. If this move deals damage, it applies the effect of Safeguard for 5 turns, protecting the user's team from confusion and non-volatile status conditions.",
+		desc: "Hits three times. Power increases to 20 for the second hit and 40 for the third. The third hit is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities. If this move deals damage, it applies the effect of Safeguard for 5 turns, protecting the user's team from confusion and non-volatile status conditions.",
 		pp: 5,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
@@ -2998,7 +2998,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		basePower: 19,
 		category: "Physical",
 		shortDesc: "3 hits. Third hit crits. 3.5% chance to curse.",
-		desc: "Hits three times. The third hit is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armor or Shell Armor Abilities. Each hit has a 3.5% chance to apply the Curse effect to the target, causing them to take damage equal to 25% of their maximum HP at the end of each turn until they switch out.",
+		desc: "Hits three times. The third hit is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities. Each hit has a 3.5% chance to apply the Curse effect to the target, causing them to take damage equal to 25% of their maximum HP at the end of each turn until they switch out.",
 		name: "Hat-Trick",
 		gen: 9,
 		pp: 10,

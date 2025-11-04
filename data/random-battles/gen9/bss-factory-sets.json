@@ -2510,7 +2510,7 @@
               "nature": "Impish",
               "evs": {"hp": 252, "def": 252, "spd": 4},
               "teraType": ["Dragon", "Fighting", "Water"],
-              "ability": ["Mirror Armor"]
+              "ability": ["Mirror Armour"]
           },
           {
               "species": "Corviknight",
@@ -2525,7 +2525,7 @@
               "nature": "Impish",
               "evs": {"hp": 252, "def": 252, "spd": 4},
               "teraType": ["Dragon", "Fighting", "Water"],
-              "ability": ["Mirror Armor"]
+              "ability": ["Mirror Armour"]
           },
           {
               "species": "Corviknight",
@@ -2540,7 +2540,7 @@
               "nature": "Impish",
               "evs": {"hp": 252, "def": 252, "spd": 4},
               "teraType": ["Dragon", "Water"],
-              "ability": ["Mirror Armor"]
+              "ability": ["Mirror Armour"]
           }
       ]
   },
@@ -2672,7 +2672,7 @@
               "species": "Goodra-Hisui",
               "weight": 40,
               "moves": [
-                  ["Acid Armor"],
+                  ["Acid Armour"],
                   ["Body Press"],
                   ["Heavy Slam"],
                   ["Draco Meteor", "Ice Beam", "Protect"]
@@ -2681,7 +2681,7 @@
               "nature": "Careful",
               "evs": {"hp": 252, "def": 4, "spd": 252},
               "teraType": ["Fairy", "Flying"],
-              "ability": ["Shell Armor"]
+              "ability": ["Shell Armour"]
           }
       ]
   },
@@ -3806,7 +3806,7 @@
               "nature": "Adamant",
               "evs": {"atk": 252, "spd": 4, "spe": 252},
               "teraType": ["Fighting", "Fire", "Normal"],
-              "ability": ["Weak Armor"]
+              "ability": ["Weak Armour"]
           },
           {
               "species": "Ceruledge",
@@ -3822,7 +3822,7 @@
               "evs": {"hp": 100, "atk": 252, "def": 156},
               "teraType": ["Fairy"],
               "wantsTera": true,
-              "ability": ["Weak Armor"]
+              "ability": ["Weak Armour"]
           }
       ]
   },
@@ -6102,7 +6102,7 @@
               "ivs": {"atk": 0},
               "teraType": ["Fighting", "Water"],
               "wantsTera": true,
-              "ability": ["Weak Armor"]
+              "ability": ["Weak Armour"]
           },
           {
               "species": "Polteageist",

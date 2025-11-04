@@ -97,7 +97,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: 0,
 	},
-	battlearmor: {
+	battlearmour: {
 		inherit: true,
 		rating: 1,
 	},
@@ -601,7 +601,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: 1.5,
 	},
-	magmaarmor: {
+	magmaarmour: {
 		inherit: true,
 		rating: 1,
 	},
@@ -629,7 +629,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: 0,
 	},
-	mirrorarmor: {
+	mirrorarmour: {
 		inherit: true,
 		rating: 2.5,
 	},
@@ -765,7 +765,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: 4.5,
 	},
-	prismarmor: {
+	prismarmour: {
 		inherit: true,
 		rating: 3,
 	},
@@ -913,7 +913,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: 3.5,
 	},
-	shellarmor: {
+	shellarmour: {
 		inherit: true,
 		rating: 1,
 	},
@@ -1188,7 +1188,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: 2,
 	},
-	weakarmor: {
+	weakarmour: {
 		inherit: true,
 		rating: 1,
 	},

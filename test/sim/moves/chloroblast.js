@@ -45,7 +45,7 @@ describe('Chloroblast', () => {
 		battle = common.createBattle([[
 			{ species: "Electrode-Hisui", ability: 'reckless', item: 'widelens', moves: ['chloroblast'] },
 		], [
-			{ species: "Blissey", ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: "Blissey", ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 		battle.makeChoices();
 		const damage = battle.p2.active[0].maxhp - battle.p2.active[0].hp;

@@ -28,7 +28,7 @@ describe('Unaware', () => {
 		battle = common.createBattle([[
 			{ species: 'Clefable', ability: 'unaware', moves: ['moonblast', 'nastyplot'] },
 		], [
-			{ species: 'Registeel', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'Registeel', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 
 		battle.makeChoices('move nastyplot', 'auto');
@@ -42,7 +42,7 @@ describe('Unaware', () => {
 		battle = common.createBattle([[
 			{ species: 'Clefable', ability: 'unaware', item: 'laggingtail', moves: ['moonblast'] },
 		], [
-			{ species: 'Registeel', ability: 'shellarmor', moves: ['amnesia'] },
+			{ species: 'Registeel', ability: 'shellarmour', moves: ['amnesia'] },
 		]]);
 
 		battle.makeChoices();

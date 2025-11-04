@@ -17,8 +17,8 @@ describe('Z-Moves', () => {
 			{ species: 'Pachirisu', ability: 'voltabsorb', moves: ['protect'] },
 		] });
 		battle.setPlayer('p2', { team: [
-			{ species: 'Turtonator', ability: 'shellarmor', moves: ['protect'] },
-			{ species: 'Turtonator', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'Turtonator', ability: 'shellarmour', moves: ['protect'] },
+			{ species: 'Turtonator', ability: 'shellarmour', moves: ['sleeptalk'] },
 		] });
 		battle.makeChoices("move clangingscales zmove, move protect", "move protect, move sleeptalk");
 		assert.false.fullHP(battle.p2.active[0]);

@@ -1556,7 +1556,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Earth Power", "Fire Blast", "Power Gem", "Shell Smash"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Dragon", "Grass"]
             },
             {
@@ -5589,13 +5589,13 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Dragon Dance", "Earthquake", "Knock Off", "Photon Geyser", "Swords Dance"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Ground", "Steel"]
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["Calm Mind", "Earth Power", "Heat Wave", "Moonlight", "Photon Geyser"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Fairy", "Ground", "Steel"]
             }
         ]
@@ -5606,13 +5606,13 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["Dragon Dance", "Earthquake", "Morning Sun", "Sunsteel Strike"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Ground", "Steel", "Water"]
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Dragon Dance", "Earthquake", "Photon Geyser", "Sunsteel Strike"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Ground", "Steel", "Water"]
             }
         ]
@@ -5623,13 +5623,13 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["Calm Mind", "Moongeist Beam", "Moonlight", "Photon Geyser"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Fairy"]
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Brick Break", "Dragon Dance", "Moongeist Beam", "Photon Geyser"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Fighting"]
             }
         ]
@@ -5731,7 +5731,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["Body Press", "Brave Bird", "Defog", "Roost", "U-turn"],
-                "abilities": ["Mirror Armor", "Pressure"],
+                "abilities": ["Mirror Armour", "Pressure"],
                 "teraTypes": ["Dragon"]
             }
         ]
@@ -5748,7 +5748,7 @@
             {
                 "role": "Fast Bulky Setup",
                 "movepool": ["Earthquake", "Liquidation", "Shell Smash", "Stone Edge"],
-                "abilities": ["Shell Armor", "Swift Swim"],
+                "abilities": ["Shell Armour", "Swift Swim"],
                 "teraTypes": ["Ground", "Water"]
             }
         ]
@@ -5927,7 +5927,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Acid Armor", "Alluring Voice", "Calm Mind", "Dazzling Gleam", "Recover"],
+                "movepool": ["Acid Armour", "Alluring Voice", "Calm Mind", "Dazzling Gleam", "Recover"],
                 "abilities": ["Aroma Veil"],
                 "teraTypes": ["Poison", "Steel"]
             }
@@ -6640,14 +6640,14 @@
         "sets": [
             {
                 "role": "Wallbreaker",
-                "movepool": ["Armor Cannon", "Aura Sphere", "Energy Ball", "Focus Blast", "Psyshock"],
-                "abilities": ["Weak Armor"],
+                "movepool": ["Armour Cannon", "Aura Sphere", "Energy Ball", "Focus Blast", "Psyshock"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Fighting", "Fire", "Grass", "Psychic"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Armor Cannon", "Energy Ball", "Meteor Beam", "Psyshock"],
-                "abilities": ["Weak Armor"],
+                "movepool": ["Armour Cannon", "Energy Ball", "Meteor Beam", "Psyshock"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Fire", "Grass"]
             }
         ]
@@ -6658,7 +6658,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Bitter Blade", "Close Combat", "Poltergeist", "Shadow Sneak", "Swords Dance"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Fighting", "Fire", "Ghost"]
             }
         ]

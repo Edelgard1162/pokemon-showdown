@@ -3461,7 +3461,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	tentacool: {
 		learnset: {
 			acid: ["8L4"],
-			acidarmor: ["8L32"],
+			acidarmour: ["8L32"],
 			acupressure: ["8L1"],
 			aquaring: ["8L1"],
 			attract: ["8M"],
@@ -3513,7 +3513,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	tentacruel: {
 		learnset: {
 			acid: ["8L1"],
-			acidarmor: ["8L34"],
+			acidarmour: ["8L34"],
 			attract: ["8M"],
 			blizzard: ["8M"],
 			brine: ["8M"],
@@ -4214,7 +4214,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	grimer: {
 		learnset: {
-			acidarmor: ["8L43"],
+			acidarmour: ["8L43"],
 			acidspray: ["8L1"],
 			attract: ["8M"],
 			belch: ["8L46"],
@@ -4275,7 +4275,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	muk: {
 		learnset: {
-			acidarmor: ["8L46"],
+			acidarmour: ["8L46"],
 			attract: ["8M"],
 			belch: ["8L52"],
 			brickbreak: ["8M"],
@@ -6547,7 +6547,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vaporeon: {
 		learnset: {
-			acidarmor: ["8L45"],
+			acidarmour: ["8L45"],
 			aquaring: ["8L35"],
 			attract: ["8M"],
 			aurorabeam: ["8L30"],
@@ -10991,7 +10991,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	slugma: {
 		learnset: {
-			acidarmor: ["8L1"],
+			acidarmour: ["8L1"],
 			amnesia: ["8L36"],
 			ancientpower: ["8L22"],
 			attract: ["8M"],
@@ -15908,7 +15908,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	gulpin: {
 		learnset: {
-			acidarmor: ["8L1"],
+			acidarmour: ["8L1"],
 			acidspray: ["8L17"],
 			amnesia: ["8L12"],
 			attract: ["8M"],
@@ -21232,7 +21232,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	shellos: {
 		learnset: {
-			acidarmor: ["8L1"],
+			acidarmour: ["8L1"],
 			amnesia: ["8L1"],
 			ancientpower: ["8L20"],
 			attract: ["8M"],
@@ -24895,7 +24895,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	phione: {
 		learnset: {
-			acidarmor: ["8L31"],
+			acidarmour: ["8L31"],
 			aquaring: ["8L54"],
 			blizzard: ["8M"],
 			brine: ["8M"],
@@ -24931,7 +24931,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	manaphy: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["8L31"],
+			acidarmour: ["8L31"],
 			aquaring: ["8L54"],
 			blizzard: ["8M"],
 			brine: ["8M"],

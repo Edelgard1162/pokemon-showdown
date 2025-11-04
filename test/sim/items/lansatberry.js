@@ -23,7 +23,7 @@ describe('Lansat Berry', () => {
 	it('should start to apply the effect even in middle of an attack', () => {
 		battle = common.createBattle([
 			[{ species: 'Makuhita', ability: 'guts', item: 'lansatberry', moves: ['triplekick'] }],
-			[{ species: 'Muk', ability: 'noguard', item: 'rockyhelmet', moves: ['acidarmor'] }],
+			[{ species: 'Muk', ability: 'noguard', item: 'rockyhelmet', moves: ['acidarmour'] }],
 		]);
 		const holder = battle.p1.active[0];
 
@@ -33,8 +33,8 @@ describe('Lansat Berry', () => {
 			assert.equal(critRatio, expectedRatio[i++]);
 		});
 
-		battle.makeChoices('move triplekick', 'move acidarmor');
-		battle.makeChoices('move triplekick', 'move acidarmor');
+		battle.makeChoices('move triplekick', 'move acidarmour');
+		battle.makeChoices('move triplekick', 'move acidarmour');
 
 		assert.false.holdsItem(holder);
 		assert.equal(holder.hp, 3);

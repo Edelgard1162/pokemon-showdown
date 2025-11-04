@@ -63,7 +63,7 @@ describe('Future Sight', () => {
 		battle = common.createBattle([[
 			{ species: 'Wynaut', moves: ['futuresight', 'stompingtantrum'] },
 		], [
-			{ species: 'Scizor', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'Scizor', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 
 		battle.makeChoices();
@@ -188,7 +188,7 @@ describe('Future Sight', () => {
 
 	it(`should be boosted by Terrain only if Terrain is active on the damaging turn`, () => {
 		battle = common.createBattle([[
-			{ species: 'Blissey', ability: 'shellarmor', moves: ['softboiled'] },
+			{ species: 'Blissey', ability: 'shellarmour', moves: ['softboiled'] },
 		], [
 			{ species: 'Wynaut', ability: 'psychicsurge', moves: ['sleeptalk', 'futuresight'] },
 		]]);
@@ -209,7 +209,7 @@ describe('Future Sight', () => {
 
 	it(`should be boosted by Terrain even if the user is not on the field, as long as the user is not Flying-type`, () => {
 		battle = common.createBattle([[
-			{ species: 'Blissey', ability: 'shellarmor', moves: ['softboiled'] },
+			{ species: 'Blissey', ability: 'shellarmour', moves: ['softboiled'] },
 		], [
 			{ species: 'cresselia', ability: 'levitate', moves: ['sleeptalk', 'futuresight'] },
 			{ species: 'deino', ability: 'psychicsurge', moves: ['sleeptalk'] },
@@ -235,7 +235,7 @@ describe('Future Sight', () => {
 
 	it(`should not ignore the target's screens, even when the user is not active on the field`, () => {
 		battle = common.createBattle([[
-			{ species: 'Blissey', ability: 'shellarmor', item: 'lightclay', moves: ['softboiled', 'lightscreen'] },
+			{ species: 'Blissey', ability: 'shellarmour', item: 'lightclay', moves: ['softboiled', 'lightscreen'] },
 		], [
 			{ species: 'Wynaut', moves: ['sleeptalk', 'futuresight'] },
 			{ species: 'deino', moves: ['sleeptalk'] },
@@ -257,7 +257,7 @@ describe('Future Sight', () => {
 
 	it(`should not consider the user's item or Ability when the user is not active`, () => {
 		battle = common.createBattle([[
-			{ species: 'Blissey', ability: 'shellarmor', moves: ['softboiled'] },
+			{ species: 'Blissey', ability: 'shellarmour', moves: ['softboiled'] },
 		], [
 			{ species: 'Wynaut', ability: 'adaptability', item: 'choicespecs', moves: ['futuresight'] },
 			{ species: 'Deino', ability: 'powerspot', moves: ['sleeptalk'] },
@@ -295,7 +295,7 @@ describe('Future Sight', () => {
 		battle = common.createBattle([[
 			{ species: 'Aegislash', ability: 'stancechange', moves: ['futuresight', 'kingsshield'] },
 		], [
-			{ species: 'Ho-Oh', ability: 'shellarmor', moves: ['recover'] },
+			{ species: 'Ho-Oh', ability: 'shellarmour', moves: ['recover'] },
 		]]);
 
 		for (let i = 0; i < 3; i++) battle.makeChoices();
@@ -315,7 +315,7 @@ describe('Future Sight', () => {
 			{ species: 'Aegislash', ability: 'stancechange', moves: ['futuresight', 'kingsshield'] },
 			{ species: 'Wynaut', moves: ['sleeptalk'] },
 		], [
-			{ species: 'Ho-Oh', ability: 'shellarmor', moves: ['recover', 'flareblitz'] },
+			{ species: 'Ho-Oh', ability: 'shellarmour', moves: ['recover', 'flareblitz'] },
 		]]);
 
 		battle.makeChoices();
@@ -339,7 +339,7 @@ describe('Future Sight', () => {
 			{ species: 'Flapple', moves: ['futuresight', 'nastyplot', 'sleeptalk'] },
 			{ species: 'Wynaut', moves: ['sleeptalk'] },
 		], [
-			{ species: 'Ho-Oh', ability: 'shellarmor', moves: ['recover'] },
+			{ species: 'Ho-Oh', ability: 'shellarmour', moves: ['recover'] },
 		]]);
 
 		battle.makeChoices();

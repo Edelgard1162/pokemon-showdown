@@ -54,7 +54,7 @@ describe('Fusion Bolt + Fusion Flare', () => {
 			{ species: 'Zekrom', moves: ['fusionbolt'] },
 			{ species: 'Reshiram', item: 'laggingtail', moves: ['fusionflare'] },
 		], [
-			{ species: 'Dragonite', ability: 'shellarmor', moves: ['roost'] },
+			{ species: 'Dragonite', ability: 'shellarmour', moves: ['roost'] },
 			{ species: 'Lugia', moves: ['roost'] },
 		]]);
 

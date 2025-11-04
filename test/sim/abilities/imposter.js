@@ -21,7 +21,7 @@ describe('Imposter', () => {
 
 	it('should be blocked by substitutes', () => {
 		battle = common.createBattle([[
-			{ species: "Escavalier", ability: 'shellarmor', moves: ['substitute'] },
+			{ species: "Escavalier", ability: 'shellarmour', moves: ['substitute'] },
 		], [
 			{ species: "Shuckle", ability: 'sturdy', moves: ['uturn'] },
 			{ species: "Ditto", ability: 'imposter', moves: ['sleeptalk'] },

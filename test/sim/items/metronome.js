@@ -14,7 +14,7 @@ describe('Metronome (item)', () => {
 		battle = common.createBattle([[
 			{ species: 'wynaut', item: 'metronome', moves: ['psystrike'] },
 		], [
-			{ species: 'cleffa', evs: { hp: 252 }, ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'cleffa', evs: { hp: 252 }, ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 		battle.makeChoices();
 		const cleffa = battle.p2.active[0];
@@ -28,7 +28,7 @@ describe('Metronome (item)', () => {
 		battle = common.createBattle([[
 			{ species: 'wynaut', item: 'metronome', moves: ['psystrike', 'sleeptalk'] },
 		], [
-			{ species: 'cleffa', evs: { hp: 252 }, ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'cleffa', evs: { hp: 252 }, ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 		battle.makeChoices();
 		const cleffa = battle.p2.active[0];
@@ -43,7 +43,7 @@ describe('Metronome (item)', () => {
 		battle = common.createBattle([[
 			{ species: 'wynaut', item: 'metronome', moves: ['psystrike'] },
 		], [
-			{ species: 'cleffa', evs: { hp: 252 }, ability: 'shellarmor', moves: ['sleeptalk', 'protect'] },
+			{ species: 'cleffa', evs: { hp: 252 }, ability: 'shellarmour', moves: ['sleeptalk', 'protect'] },
 		]]);
 		battle.makeChoices();
 		const cleffa = battle.p2.active[0];
@@ -58,7 +58,7 @@ describe('Metronome (item)', () => {
 		battle = common.createBattle([[
 			{ species: 'dusknoir', item: 'metronome', moves: ['dig'] },
 		], [
-			{ species: 'blissey', ability: 'shellarmor', moves: ['softboiled'] },
+			{ species: 'blissey', ability: 'shellarmour', moves: ['softboiled'] },
 		]]);
 		battle.makeChoices();
 		battle.makeChoices();
@@ -82,7 +82,7 @@ describe('Metronome (item)', () => {
 		battle = common.createBattle([[
 			{ species: 'slowbro', item: 'metronome', moves: ['solarbeam'] },
 		], [
-			{ species: 'blissey', ability: 'shellarmor', moves: ['sunnyday'] },
+			{ species: 'blissey', ability: 'shellarmour', moves: ['sunnyday'] },
 			{ species: 'blissey', ability: 'cloudnine', moves: ['luckychant'] },
 		]]);
 		battle.makeChoices();
@@ -101,7 +101,7 @@ describe('Metronome (item)', () => {
 		battle = common.createBattle([[
 			{ species: 'goomy', item: 'metronome', moves: ['copycat', 'surf'] },
 		], [
-			{ species: 'clefable', evs: { hp: 252 }, ability: 'shellarmor', moves: ['softboiled', 'surf'] },
+			{ species: 'clefable', evs: { hp: 252 }, ability: 'shellarmour', moves: ['softboiled', 'surf'] },
 		]]);
 		battle.makeChoices('move copycat', 'move surf');
 		const clefable = battle.p2.active[0];

@@ -1606,7 +1606,7 @@ export class RandomGen8Teams {
 			return moves.has('dragondance');
 		case 'Sheer Force':
 			return (!counter.get('sheerforce') || abilities.includes('Guts') || (species.id === 'druddigon' && !isDoubles));
-		case 'Shell Armor':
+		case 'Shell Armour':
 			return (species.id === 'omastar' && (moves.has('spikes') || moves.has('stealthrock')));
 		case 'Slush Rush':
 			return (!teamDetails.snowstorm && !abilities.includes('Swift Swim'));
@@ -1631,7 +1631,7 @@ export class RandomGen8Teams {
 					'Intimidate', 'Rock Head', 'Water Absorb',
 				].some(m => abilities.includes(m));
 				const noSwimIfNoRain = !moves.has('raindance') && [
-					'Cloud Nine', 'Lightning Rod', 'Intimidate', 'Rock Head', 'Sturdy', 'Water Absorb', 'Weak Armor',
+					'Cloud Nine', 'Lightning Rod', 'Intimidate', 'Rock Head', 'Sturdy', 'Water Absorb', 'Weak Armour',
 				].some(m => abilities.includes(m));
 				return teamDetails.rain ? neverWantsSwim : noSwimIfNoRain;
 			}
@@ -1675,7 +1675,7 @@ export class RandomGen8Teams {
 				moves.has('raindance') ||
 				['Drizzle', 'Strong Jaw', 'Unaware', 'Volt Absorb'].some(abil => abilities.includes(abil))
 			);
-		case 'Weak Armor':
+		case 'Weak Armour':
 			// The Speed less than 50 case is intended for Cursola, but could apply to any slow Pokémon.
 			return (
 				(!isNoDynamax && species.baseStats.spe > 50) ||

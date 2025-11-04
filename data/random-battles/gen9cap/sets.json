@@ -225,7 +225,7 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["Bug Buzz", "Focus Blast", "Psyshock", "Tail Glow"],
-                "abilities": ["No Guard", "Weak Armor"],
+                "abilities": ["No Guard", "Weak Armour"],
                 "teraTypes": ["Fighting"]
             },
             {
@@ -581,7 +581,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Clanging Scales", "Clangorous Soul",  "Sludge Wave", "Surf"],
-                "abilities": ["Armor Tail"],
+                "abilities": ["Armour Tail"],
                 "teraTypes": ["Water"]
             }
         ]

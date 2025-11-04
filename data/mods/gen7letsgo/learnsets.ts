@@ -3053,7 +3053,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	grimer: {
 		learnset: {
-			acidarmor: ["7L42"],
+			acidarmour: ["7L42"],
 			dig: ["7M"],
 			disable: ["7L18"],
 			facade: ["7M"],
@@ -3087,7 +3087,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	grimeralola: {
 		learnset: {
-			acidarmor: ["7L42"],
+			acidarmour: ["7L42"],
 			bite: ["7L24"],
 			crunch: ["7L36"],
 			dig: ["7M"],
@@ -3120,7 +3120,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	muk: {
 		learnset: {
-			acidarmor: ["7L48"],
+			acidarmour: ["7L48"],
 			brickbreak: ["7M"],
 			darkpulse: ["7M"],
 			dig: ["7M"],
@@ -3159,7 +3159,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	mukalola: {
 		learnset: {
-			acidarmor: ["7L48"],
+			acidarmour: ["7L48"],
 			bite: ["7L24"],
 			brickbreak: ["7M"],
 			crunch: ["7L36"],
@@ -4686,7 +4686,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vaporeon: {
 		learnset: {
-			acidarmor: ["7L24"],
+			acidarmour: ["7L24"],
 			aurorabeam: ["7L17"],
 			blizzard: ["7M"],
 			dig: ["7M"],
@@ -5353,7 +5353,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	meltan: {
 		learnset: {
-			acidarmor: ["7L36"],
+			acidarmour: ["7L36"],
 			flashcannon: ["7M", "7L45"],
 			harden: ["7L1"],
 			headbutt: ["7M", "7L1"],
@@ -5369,7 +5369,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	melmetal: {
 		learnset: {
-			acidarmor: ["7L36"],
+			acidarmour: ["7L36"],
 			brickbreak: ["7M"],
 			doubleironbash: ["7L72"],
 			earthquake: ["7M"],

@@ -1067,7 +1067,7 @@
         "species": "Lapras",
         "gigantamax": true,
         "item": ["Weakness Policy"],
-        "ability": ["Shell Armor"],
+        "ability": ["Shell Armour"],
         "evs": {"hp": 252, "def": 4, "spa": 252},
         "nature": "Quiet",
         "moves": [["Freeze-Dry"], ["Ice Shard"], ["Thunder", "Thunderbolt"], ["Sparkling Aria", "Hydro Pump"]]
@@ -1725,7 +1725,7 @@
       {
         "species": "Corviknight",
         "item": ["Rocky Helmet"],
-        "ability": ["Mirror Armor"],
+        "ability": ["Mirror Armour"],
         "evs": {"hp": 252, "def": 252, "spd": 4},
         "nature": "Impish",
         "moves": [["Brave Bird"], ["Body Press"], ["Iron Defense"], ["Roost"]]
@@ -1733,7 +1733,7 @@
       {
         "species": "Corviknight",
         "item": ["Weakness Policy"],
-        "ability": ["Mirror Armor"],
+        "ability": ["Mirror Armour"],
         "evs": {"hp": 252, "atk": 4, "spe": 252},
         "nature": "Jolly",
         "moves": [["Brave Bird"], ["Iron Head"], ["Bulk Up"], ["Roost"]]

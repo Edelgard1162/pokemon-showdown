@@ -159,7 +159,7 @@ describe('Team Validator', () => {
 		assert.legalTeam(team, 'gen4ou');
 
 		team = [
-			{ species: 'mandibuzz', level: 25, ability: 'weakarmor', moves: ['pluck'], evs: { hp: 1 } },
+			{ species: 'mandibuzz', level: 25, ability: 'weakarmour', moves: ['pluck'], evs: { hp: 1 } },
 			{ species: 'volcarona', level: 35, ability: 'flamebody', moves: ['leechlife'], evs: { hp: 1 } },
 		];
 		assert.legalTeam(team, 'gen5ou');

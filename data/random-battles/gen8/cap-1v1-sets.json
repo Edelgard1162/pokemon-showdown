@@ -218,7 +218,7 @@
 		"evs": {"hp": 252, "def": 148, "spd": 108},
 		"nature": "Bold",
 		"ivs": {"atk": 0},
-		"moves": ["Acid Armor", "Calm Mind", "Recover", "Lava Plume"]
+		"moves": ["Acid Armour", "Calm Mind", "Recover", "Lava Plume"]
 	}, {
 		"item": "Choice Scarf",
 		"ability": "Dry Skin",
@@ -284,7 +284,7 @@
 		"moves": ["Overheat", "Giga Drain", "Earth Power", "Fire Blast"]
 	}, {
 		"item": "Sitrus Berry",
-		"ability": "Battle Armor",
+		"ability": "Battle Armour",
 		"evs": {"hp": 248, "def": 8, "spd": 252},
 		"nature": "Calm",
 		"ivs": {"atk": 0},

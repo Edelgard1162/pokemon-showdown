@@ -21,7 +21,7 @@ describe('Intimidate', () => {
 
 	it('should be blocked by Substitute', () => {
 		battle = common.createBattle([[
-			{ species: "Escavalier", item: 'leftovers', ability: 'shellarmor', moves: ['substitute'] },
+			{ species: "Escavalier", item: 'leftovers', ability: 'shellarmour', moves: ['substitute'] },
 		], [
 			{ species: "Greninja", item: 'laggingtail', ability: 'protean', moves: ['uturn'] },
 			{ species: "Gyarados", item: 'leftovers', ability: 'intimidate', moves: ['splash'] },

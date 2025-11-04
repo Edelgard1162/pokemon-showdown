@@ -41,7 +41,7 @@ describe('Partners in Crime', () => {
 			{ species: 'Pincurchin', ability: 'electricsurge', moves: ['sleeptalk'] },
 			{ species: 'Incineroar', ability: 'intimidate', moves: ['sleeptalk'] },
 		], [
-			{ species: 'Corviknight', ability: 'mirrorarmor', moves: ['sleeptalk'] },
+			{ species: 'Corviknight', ability: 'mirrorarmour', moves: ['sleeptalk'] },
 			{ species: 'Iron Valiant', ability: 'quarkdrive', moves: ['sleeptalk'] },
 		]]);
 		// team preview
@@ -49,7 +49,7 @@ describe('Partners in Crime', () => {
 		// swap Pyukumuku for Incineroar
 		battle.makeChoices('switch 3, move sleeptalk', 'auto');
 		const pincurchin = battle.p1.active[1];
-		assert.statStage(pincurchin, 'atk', -2, 'Pincurchin should have had its innate Intimidate activate, triggering Mirror Armor');
+		assert.statStage(pincurchin, 'atk', -2, 'Pincurchin should have had its innate Intimidate activate, triggering Mirror Armour');
 	});
 
 	it('should not activate ally\'s innates if the partner faints on switch-in', () => {

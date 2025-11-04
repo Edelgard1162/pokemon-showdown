@@ -5,14 +5,14 @@ const common = require('./../../common');
 
 let battle;
 
-describe('Shell Armor', () => {
+describe('Shell Armour', () => {
 	afterEach(() => {
 		battle.destroy();
 	});
 
 	it('should prevent moves from dealing critical hits', () => {
 		battle = common.createBattle([
-			[{ species: 'Slowbro', ability: 'shellarmor', moves: ['quickattack'] }],
+			[{ species: 'Slowbro', ability: 'shellarmour', moves: ['quickattack'] }],
 			[{ species: 'Cryogonal', ability: 'noguard', moves: ['frostbreath'] }],
 		]);
 		let successfulEvent = false;
@@ -28,7 +28,7 @@ describe('Shell Armor', () => {
 
 	it('should be suppressed by Mold Breaker', () => {
 		battle = common.createBattle([
-			[{ species: 'Slowbro', ability: 'shellarmor', moves: ['quickattack'] }],
+			[{ species: 'Slowbro', ability: 'shellarmour', moves: ['quickattack'] }],
 			[{ species: 'Cryogonal', ability: 'moldbreaker', item: 'zoomlens', moves: ['frostbreath'] }],
 		]);
 		let successfulEvent = false;

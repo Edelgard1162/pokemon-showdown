@@ -12,7 +12,7 @@ describe('Eviolite', () => {
 
 	it(`should multiply the defenses of a Pokemon that can evolve by 1.5`, () => {
 		battle = common.createBattle([[
-			{ species: 'Omanyte', ability: 'shellarmor', item: 'eviolite', moves: ['rest'] },
+			{ species: 'Omanyte', ability: 'shellarmour', item: 'eviolite', moves: ['rest'] },
 		], [
 			{ species: 'Cherrim', moves: ['seedbomb', 'megadrain'] },
 		]]);
@@ -24,8 +24,8 @@ describe('Eviolite', () => {
 
 	it(`should not multiply the defenses of a Pokemon that cannot evolve by 1.5`, () => {
 		battle = common.createBattle([[
-			{ species: 'Omastar', ability: 'shellarmor', item: 'eviolite', moves: ['rest'] },
-			{ species: 'Omastar', ability: 'shellarmor', item: 'eviolite', moves: ['rest'] },
+			{ species: 'Omastar', ability: 'shellarmour', item: 'eviolite', moves: ['rest'] },
+			{ species: 'Omastar', ability: 'shellarmour', item: 'eviolite', moves: ['rest'] },
 		], [
 			{ species: 'Sceptile', item: 'meadowplate', moves: ['leafblade', 'megadrain'] },
 		]]);
@@ -38,7 +38,7 @@ describe('Eviolite', () => {
 
 	it(`should multiply the defenses of a National Dex Pokemon that can evolve by 1.5`, () => {
 		battle = common.createBattle([[
-			{ species: 'Geodude', ability: 'shellarmor', item: 'eviolite', moves: ['rest'] },
+			{ species: 'Geodude', ability: 'shellarmour', item: 'eviolite', moves: ['rest'] },
 		], [
 			{ species: 'Roserade', moves: ['seedbomb', 'absorb'] },
 		]]);

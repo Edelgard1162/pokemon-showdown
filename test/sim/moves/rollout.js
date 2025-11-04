@@ -136,8 +136,8 @@ for (const move of moves) {
 					{ species: 'wynaut', ability: 'compoundeyes', ivs: { atk: '0' }, nature: 'bold', moves: [id, 'watergun'] },
 				], [
 					{ species: 'mimikyu', ability: 'disguise', evs: { hp: '252', def: '252' }, nature: 'bold', moves: ['gravity'] },
-					{ species: 'snorlax', ability: 'battlearmor', moves: ['sleeptalk'] },
-					{ species: 'wigglytuff', ability: 'battlearmor', moves: ['rest'] },
+					{ species: 'snorlax', ability: 'battlearmour', moves: ['sleeptalk'] },
+					{ species: 'wigglytuff', ability: 'battlearmour', moves: ['rest'] },
 				]]);
 
 				for (let i = 0; i < 5; i++) { battle.makeChoices(); }
@@ -157,7 +157,7 @@ for (const move of moves) {
 				], [
 					{ species: 'mimikyu', ability: 'disguise', evs: { hp: '252', def: '252' }, nature: 'bold', moves: ['gravity'] },
 					{ species: 'mimikyu', ability: 'disguise', evs: { hp: '252', def: '252' }, nature: 'bold', moves: ['gravity'] },
-					{ species: 'snorlax', ability: 'battlearmor', moves: ['sleeptalk'] },
+					{ species: 'snorlax', ability: 'battlearmour', moves: ['sleeptalk'] },
 				]]);
 
 				battle.makeChoices();
@@ -174,7 +174,7 @@ for (const move of moves) {
 					{ species: 'wynaut', ability: 'compoundeyes', ivs: { atk: '0' }, nature: 'bold', moves: [id, 'grassknot'] },
 				], [
 					{ species: 'mimikyu', ability: 'disguise', evs: { hp: '252', def: '252' }, nature: 'bold', moves: ['gravity'] },
-					{ species: 'snorlax', ability: 'battlearmor', moves: ['sleeptalk'] },
+					{ species: 'snorlax', ability: 'battlearmour', moves: ['sleeptalk'] },
 				]]);
 
 				for (let i = 0; i < 5; i++) { battle.makeChoices(); }
@@ -189,8 +189,8 @@ for (const move of moves) {
 					{ species: 'mimikyu', ability: 'disguise', evs: { hp: '252', def: '252' }, nature: 'bold', moves: ['gravity'] },
 					{ species: 'wynaut', ability: 'compoundeyes', ivs: { atk: '0' }, nature: 'bold', moves: [id, 'snarl'] },
 				], [
-					{ species: 'snorlax', ability: 'battlearmor', moves: ['sleeptalk'] },
-					{ species: 'hydreigon', ability: 'battlearmor', moves: ['sleeptalk'] },
+					{ species: 'snorlax', ability: 'battlearmour', moves: ['sleeptalk'] },
+					{ species: 'hydreigon', ability: 'battlearmour', moves: ['sleeptalk'] },
 				]]);
 
 				battle.makeChoices('move gravity, move ' + id + ' -1', 'auto');

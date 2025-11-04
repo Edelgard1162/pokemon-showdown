@@ -50,7 +50,7 @@ describe('Flower Veil', () => {
 	it(`should not block self-inflicted stat drops`, () => {
 		battle = common.createBattle({ gameType: 'doubles' }, [[
 			{ species: 'Sceptile', ability: 'flowerveil', moves: ['superpower'] },
-			{ species: 'Lilligant', ability: 'weakarmor', moves: ['sleeptalk'] },
+			{ species: 'Lilligant', ability: 'weakarmour', moves: ['sleeptalk'] },
 		], [
 			{ species: 'Shuckle', moves: ['tackle'] },
 			{ species: 'Raticate', moves: ['sleeptalk'] },

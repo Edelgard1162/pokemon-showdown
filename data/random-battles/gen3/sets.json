@@ -561,12 +561,12 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["explosion", "icebeam", "rapidspin", "spikes", "surf", "toxic"],
-                "abilities": ["Shell Armor"]
+                "abilities": ["Shell Armour"]
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["explosion", "rapidspin", "spikes", "surf", "toxic"],
-                "abilities": ["Shell Armor"]
+                "abilities": ["Shell Armour"]
             }
         ]
     },
@@ -958,7 +958,7 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["hiddenpowergrass", "hydropump", "icebeam", "spikes", "surf"],
-                "abilities": ["Shell Armor", "Swift Swim"]
+                "abilities": ["Shell Armour", "Swift Swim"]
             },
             {
                 "role": "Setup Sweeper",
@@ -973,7 +973,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["brickbreak", "hiddenpowerflying", "rockslide", "surf", "swordsdance"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             }
         ]
     },
@@ -2552,7 +2552,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["earthquake", "explosion", "fireblast", "rest", "rockslide", "sleeptalk", "toxic"],
-                "abilities": ["Magma Armor"]
+                "abilities": ["Magma Armour"]
             }
         ]
     },
@@ -2755,7 +2755,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["doubleedge", "earthquake", "hiddenpowerbug", "rapidspin", "rockslide", "swordsdance"],
-                "abilities": ["Battle Armor"],
+                "abilities": ["Battle Armour"],
                 "preferredTypes": ["Ground"]
             }
         ]

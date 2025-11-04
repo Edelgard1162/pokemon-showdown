@@ -597,7 +597,7 @@ const OFFICIAL_AVATARS_KYLEDOVE = new Set([
 	'ultraforestkartenvoy', 'veteran-gen7', 'veteranf-gen7', 'worker-gen7',
 	'anthea', 'beni', 'beni-ninja', 'birch', 'blaine-lgpe', 'blue-lgpe', 'brigette', 'brock-lgpe', 'caraliss', 'cedricjuniper',
 	'celio', 'charon', 'clover', 'colza', 'concordia', 'cyllene', 'dawn-contest', 'elm', 'erika-lgpe', 'fennel', 'gaeric',
-	'ginter', 'giovanni-lgpe', 'grant', 'ingo-hisui', 'iscan', 'kamado', 'kamado-armor', 'kurt', 'lance-lgpe', 'lanette',
+	'ginter', 'giovanni-lgpe', 'grant', 'ingo-hisui', 'iscan', 'kamado', 'kamado-armour', 'kurt', 'lance-lgpe', 'lanette',
 	'laventon', 'lucas-contest', 'lucy', 'lysandre', 'melli', 'misty-lgpe', 'noland', 'palina', 'plumeria-league', 'rowan',
 	'roxanne-gen6', 'rye', 'sabrina-lgpe', 'scott', 'securitycorps', 'securitycorpsf', 'serena', 'sycamore', 'taohua', 'vessa',
 	'anthe', 'anvin', 'burglar-lgpe', 'channeler-lgpe', 'choy', 'cynthia-anime', 'dagero', 'gentleman-lgpe', 'grace',

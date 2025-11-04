@@ -17,7 +17,7 @@ describe("Heavy Duty Boots", () => {
 			{ species: 'Magikarp', ability: 'swiftswim', item: 'heavydutyboots', moves: ['splash'] },
 		] });
 		battle.setPlayer('p2', { team: [
-			{ species: 'Cloyster', ability: 'shellarmor', moves: ['spikes', 'toxicspikes'] },
+			{ species: 'Cloyster', ability: 'shellarmour', moves: ['spikes', 'toxicspikes'] },
 		] });
 		battle.makeChoices('auto', 'move spikes');
 		battle.makeChoices('auto', 'move toxicspikes');

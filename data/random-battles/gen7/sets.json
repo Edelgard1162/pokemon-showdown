@@ -829,7 +829,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["doubleedge", "earthquake", "knockoff", "stealthrock", "stoneedge", "swordsdance"],
-                "abilities": ["Battle Armor", "Rock Head"],
+                "abilities": ["Battle Armour", "Rock Head"],
                 "preferredTypes": ["Rock"]
             }
         ]
@@ -1139,7 +1139,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["hiddenpowergrass", "hydropump", "icebeam", "shellsmash"],
-                "abilities": ["Shell Armor", "Swift Swim"]
+                "abilities": ["Shell Armour", "Swift Swim"]
             }
         ]
     },
@@ -1149,17 +1149,17 @@
             {
                 "role": "Fast Support",
                 "movepool": ["aquajet", "knockoff", "liquidation", "rapidspin", "stoneedge"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["aquajet", "knockoff", "liquidation", "stoneedge", "swordsdance"],
-                "abilities": ["Weak Armor"]
+                "abilities": ["Weak Armour"]
             },
             {
                 "role": "Z-Move user",
                 "movepool": ["aquajet", "knockoff", "liquidation", "stoneedge", "swordsdance"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "preferredTypes": ["Rock"]
             }
         ]
@@ -1812,7 +1812,7 @@
             {
                 "role": "Z-Move user",
                 "movepool": ["ancientpower", "earthpower", "fireblast", "shellsmash"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "preferredTypes": ["Fire", "Rock"]
             }
         ]
@@ -2870,12 +2870,12 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "knockoff", "rapidspin", "stealthrock", "stoneedge", "toxic", "xscissor"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["aquajet", "earthquake", "knockoff", "liquidation", "stoneedge", "swordsdance", "xscissor"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             }
         ]
     },
@@ -3900,13 +3900,13 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["aquatail", "earthquake", "knockoff", "poisonjab", "pursuit", "swordsdance"],
-                "abilities": ["Battle Armor"],
+                "abilities": ["Battle Armour"],
                 "preferredTypes": ["Ground"]
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "knockoff", "poisonjab", "taunt", "toxicspikes", "whirlwind"],
-                "abilities": ["Battle Armor"]
+                "abilities": ["Battle Armour"]
             }
         ]
     },
@@ -7023,7 +7023,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["payback", "rest", "return", "sleeptalk", "swordsdance"],
-                "abilities": ["Battle Armor"]
+                "abilities": ["Battle Armour"]
             }
         ]
     },
@@ -7258,12 +7258,12 @@
             {
                 "role": "AV Pivot",
                 "movepool": ["dracometeor", "dragontail", "earthquake", "explosion", "fireblast"],
-                "abilities": ["Shell Armor"]
+                "abilities": ["Shell Armour"]
             },
             {
                 "role": "Setup Sweeper",
                 "movepool": ["dracometeor", "dragonpulse", "earthquake", "fireblast", "shellsmash"],
-                "abilities": ["Shell Armor"]
+                "abilities": ["Shell Armour"]
             }
         ]
     },
@@ -7561,18 +7561,18 @@
             {
                 "role": "Bulky Attacker",
                 "movepool": ["calmmind", "heatwave", "moonlight", "photongeyser", "stealthrock"],
-                "abilities": ["Prism Armor"]
+                "abilities": ["Prism Armour"]
             },
             {
                 "role": "Z-Move user",
                 "movepool": ["calmmind", "heatwave", "moonlight", "photongeyser"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "preferredTypes": ["Psychic"]
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["earthquake", "knockoff", "photongeyser", "swordsdance"],
-                "abilities": ["Prism Armor"]
+                "abilities": ["Prism Armour"]
             }
         ]
     },
@@ -7582,13 +7582,13 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["autotomize", "earthquake", "knockoff", "photongeyser", "sunsteelstrike", "swordsdance"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "preferredTypes": ["Ground"]
             },
             {
                 "role": "Z-Move user",
                 "movepool": ["autotomize", "earthquake", "knockoff", "photongeyser", "sunsteelstrike", "swordsdance"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "preferredTypes": ["Psychic"]
             }
         ]
@@ -7599,12 +7599,12 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["autotomize", "calmmind", "heatwave", "moongeistbeam", "photongeyser", "signalbeam"],
-                "abilities": ["Prism Armor"]
+                "abilities": ["Prism Armour"]
             },
             {
                 "role": "Z-Move user",
                 "movepool": ["autotomize", "calmmind", "heatwave", "moongeistbeam", "photongeyser", "signalbeam"],
-                "abilities": ["Prism Armor"]
+                "abilities": ["Prism Armour"]
             }
         ]
     },

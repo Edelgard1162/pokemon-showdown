@@ -59,7 +59,7 @@ const supportedDexsearchRules: { [k: string]: string[] } = Object.assign(Object.
 	statmodification: ['350cupmod', 'flippedmod', 'scalemonsmod', 'badnboostedmod', 'reevolutionmod'],
 	banlist: [
 		'hoennpokedex', 'sinnohpokedex', 'oldunovapokedex', 'newunovapokedex', 'kalospokedex', 'oldalolapokedex',
-		'newalolapokedex', 'galarpokedex', 'isleofarmorpokedex', 'crowntundrapokedex', 'galarexpansionpokedex',
+		'newalolapokedex', 'galarpokedex', 'isleofarmourpokedex', 'crowntundrapokedex', 'galarexpansionpokedex',
 		'paldeapokedex', 'kitakamipokedex', 'blueberrypokedex',
 	],
 });

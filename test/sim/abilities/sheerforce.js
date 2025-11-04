@@ -13,7 +13,7 @@ describe('Sheer Force', () => {
 	it('should not eliminate Life Orb recoil in a move with no secondary effects', () => {
 		battle = common.createBattle();
 		battle.setPlayer('p1', { team: [{ species: 'Tauros', ability: 'sheerforce', item: 'lifeorb', moves: ['earthquake'] }] });
-		battle.setPlayer('p2', { team: [{ species: 'Lapras', ability: 'shellarmor', item: 'laggingtail', moves: ['rest'] }] });
+		battle.setPlayer('p2', { team: [{ species: 'Lapras', ability: 'shellarmour', item: 'laggingtail', moves: ['rest'] }] });
 		battle.makeChoices('move earthquake', 'move rest');
 		assert.equal(battle.p1.active[0].hp, 262);
 	});
@@ -39,7 +39,7 @@ describe('Sheer Force', () => {
 	it('should eliminate Life Orb recoil in a move with secondary effects', () => {
 		battle = common.createBattle();
 		battle.setPlayer('p1', { team: [{ species: 'Tauros', ability: 'sheerforce', item: 'lifeorb', moves: ['bodyslam'] }] });
-		battle.setPlayer('p2', { team: [{ species: 'Lapras', ability: 'shellarmor', item: 'laggingtail', moves: ['rest'] }] });
+		battle.setPlayer('p2', { team: [{ species: 'Lapras', ability: 'shellarmour', item: 'laggingtail', moves: ['rest'] }] });
 		battle.makeChoices('move bodyslam', 'move rest');
 		assert.equal(battle.p1.active[0].hp, battle.p1.active[0].maxhp);
 	});

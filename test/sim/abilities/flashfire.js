@@ -47,7 +47,7 @@ describe('Flash Fire', () => {
 		battle = common.createBattle([[
 			{ species: 'Heatran', ability: 'flashfire', moves: ['sleeptalk', 'incinerate'] },
 		], [
-			{ species: 'Talonflame', ability: 'shellarmor', moves: ['flamethrower', 'worryseed'] },
+			{ species: 'Talonflame', ability: 'shellarmour', moves: ['flamethrower', 'worryseed'] },
 		]]);
 		battle.makeChoices('move sleeptalk', 'move flamethrower');
 		battle.makeChoices('move incinerate', 'move worryseed');

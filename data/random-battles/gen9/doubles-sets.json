@@ -1346,7 +1346,7 @@
             {
                 "role": "Doubles Setup Sweeper",
                 "movepool": ["Heat Wave", "Power Gem", "Protect", "Shell Smash"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Fairy", "Fire", "Grass"]
             }
         ]
@@ -4364,7 +4364,7 @@
             },
             {
                 "role": "Doubles Bulky Setup",
-                "movepool": ["Acid Armor", "Body Press", "Heavy Slam", "Life Dew", "Protect"],
+                "movepool": ["Acid Armour", "Body Press", "Heavy Slam", "Life Dew", "Protect"],
                 "abilities": ["Sap Sipper"],
                 "teraTypes": ["Fighting"]
             }
@@ -4905,19 +4905,19 @@
             {
                 "role": "Doubles Setup Sweeper",
                 "movepool": ["Brick Break", "Dragon Dance", "Knock Off", "Photon Geyser"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Fighting"]
             },
             {
                 "role": "Offensive Protect",
                 "movepool": ["Earth Power", "Meteor Beam", "Photon Geyser", "Protect"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Steel"]
             },
             {
                 "role": "Bulky Protect",
                 "movepool": ["Calm Mind", "Earth Power", "Photon Geyser", "Protect"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Steel"]
             }
         ]
@@ -4928,13 +4928,13 @@
             {
                 "role": "Doubles Setup Sweeper",
                 "movepool": ["Dragon Dance", "Earthquake", "Photon Geyser", "Protect", "Sunsteel Strike"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Steel", "Water"]
             },
             {
                 "role": "Doubles Wallbreaker",
                 "movepool": ["Earthquake", "Photon Geyser", "Protect", "Sunsteel Strike", "Trick Room"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Steel", "Water"]
             }
         ]
@@ -4945,19 +4945,19 @@
             {
                 "role": "Doubles Setup Sweeper",
                 "movepool": ["Meteor Beam", "Moongeist Beam", "Photon Geyser", "Trick Room"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark"]
             },
             {
                 "role": "Doubles Wallbreaker",
                 "movepool": ["Moongeist Beam", "Photon Geyser", "Protect", "Trick Room"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark"]
             },
             {
                 "role": "Tera Blast user",
                 "movepool": ["Moongeist Beam", "Photon Geyser", "Tera Blast", "Trick Room"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Fairy", "Fighting"]
             }
         ]
@@ -5058,13 +5058,13 @@
             {
                 "role": "Doubles Support",
                 "movepool": ["Brave Bird", "Iron Head", "Roost", "Tailwind"],
-                "abilities": ["Mirror Armor"],
+                "abilities": ["Mirror Armour"],
                 "teraTypes": ["Dragon"]
             },
             {
                 "role": "Doubles Bulky Setup",
                 "movepool": ["Body Press", "Brave Bird", "Iron Defense", "Roost", "Tailwind"],
-                "abilities": ["Mirror Armor"],
+                "abilities": ["Mirror Armour"],
                 "teraTypes": ["Fighting"]
             }
         ]
@@ -5081,7 +5081,7 @@
             {
                 "role": "Doubles Bulky Setup",
                 "movepool": ["Liquidation", "Protect", "Rock Slide", "Shell Smash"],
-                "abilities": ["Shell Armor", "Swift Swim"],
+                "abilities": ["Shell Armour", "Swift Swim"],
                 "teraTypes": ["Water"]
             }
         ]
@@ -5936,7 +5936,7 @@
         "sets": [
             {
                 "role": "Doubles Wallbreaker",
-                "movepool": ["Armor Cannon", "Aura Sphere", "Energy Ball", "Heat Wave", "Psychic"],
+                "movepool": ["Armour Cannon", "Aura Sphere", "Energy Ball", "Heat Wave", "Psychic"],
                 "abilities": ["Flash Fire"],
                 "teraTypes": ["Fighting", "Fire", "Grass"]
             },
@@ -5949,7 +5949,7 @@
             {
                 "role": "Doubles Setup Sweeper",
                 "movepool": ["Heat Wave", "Meteor Beam", "Protect", "Psychic"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Dark", "Grass"]
             }
         ]
@@ -5960,7 +5960,7 @@
             {
                 "role": "Doubles Setup Sweeper",
                 "movepool": ["Bitter Blade", "Poltergeist", "Protect", "Shadow Sneak", "Swords Dance"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Fire", "Ghost", "Grass"]
             }
         ]
@@ -6313,7 +6313,7 @@
             {
                 "role": "Doubles Wallbreaker",
                 "movepool": ["Hyper Voice", "Nasty Plot", "Protect", "Psychic", "Trick Room"],
-                "abilities": ["Armor Tail"],
+                "abilities": ["Armour Tail"],
                 "teraTypes": ["Fairy"]
             }
         ]

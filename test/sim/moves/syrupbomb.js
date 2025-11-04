@@ -40,11 +40,11 @@ describe('Syrup Bomb', () => {
 		assert.statStage(battle.p2.active[0], 'spe', -1);
 	});
 
-	it(`the stat changes should be reflected by Mirror Armor`, () => {
+	it(`the stat changes should be reflected by Mirror Armour`, () => {
 		battle = common.createBattle([[
 			{ species: 'Dipplin', ability: 'noguard', moves: ['syrupbomb'] },
 		], [
-			{ species: 'Corviknight', ability: 'mirrorarmor', moves: ['sleeptalk'] },
+			{ species: 'Corviknight', ability: 'mirrorarmour', moves: ['sleeptalk'] },
 		]]);
 
 		battle.makeChoices();

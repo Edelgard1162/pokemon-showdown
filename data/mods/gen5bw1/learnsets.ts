@@ -6809,7 +6809,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	grimer: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L39", "4L39", "3L34"],
+			acidarmour: ["5L39", "4L39", "3L34"],
 			acidspray: ["5L1"],
 			attract: ["5M", "4M", "3M"],
 			bodyslam: ["3T"],
@@ -6889,7 +6889,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	muk: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L42", "4L44", "3L34"],
+			acidarmour: ["5L42", "4L44", "3L34"],
 			attract: ["5M", "4M", "3M"],
 			block: ["4T"],
 			bodyslam: ["3T"],
@@ -11401,7 +11401,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	vaporeon: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L64", "4L64", "3L47"],
+			acidarmour: ["5L64", "4L64", "3L47"],
 			aquaring: ["5L43", "4L43"],
 			aquatail: ["4T"],
 			attract: ["5M", "4M", "3M"],
@@ -18122,7 +18122,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	slugma: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L1", "4L1", "3L1"],
+			acidarmour: ["5L1", "4L1", "3L1"],
 			amnesia: ["5L32", "4L31", "3L29"],
 			ancientpower: ["5L28", "4T", "4L26"],
 			attract: ["5M", "4M", "3M"],
@@ -25114,7 +25114,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	gulpin: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L1", "4L1", "3L1"],
+			acidarmour: ["5L1", "4L1", "3L1"],
 			acidspray: ["5L34"],
 			amnesia: ["5L17", "4L17", "3L17"],
 			attract: ["5M", "4M", "3M"],
@@ -35653,7 +35653,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	phione: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L31", "4L31"],
+			acidarmour: ["5L31", "4L31"],
 			ancientpower: ["4T"],
 			aquaring: ["5L54", "4L54"],
 			blizzard: ["5M", "4M"],
@@ -35708,7 +35708,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	manaphy: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L31", "4L31", "4S2"],
+			acidarmour: ["5L31", "4L31", "4S2"],
 			ancientpower: ["4T"],
 			aquaring: ["5L54", "4L54", "4S3"],
 			blizzard: ["5M", "4M"],
@@ -40345,7 +40345,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	solosis: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L1"],
+			acidarmour: ["5L1"],
 			astonish: ["5L1"],
 			attract: ["5M"],
 			calmmind: ["5M"],
@@ -40597,7 +40597,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	vanillite: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L31"],
+			acidarmour: ["5L31"],
 			astonish: ["5L7"],
 			attract: ["5M"],
 			autotomize: ["5L1"],
@@ -40642,7 +40642,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	vanillish: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L31"],
+			acidarmour: ["5L31"],
 			astonish: ["5L1"],
 			attract: ["5M"],
 			avalanche: ["5L19"],
@@ -40679,7 +40679,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	vanilluxe: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L31"],
+			acidarmour: ["5L31"],
 			astonish: ["5L1"],
 			attract: ["5M"],
 			avalanche: ["5L19"],
@@ -41049,7 +41049,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		inherit: true,
 		learnset: {
 			absorb: ["5L5"],
-			acidarmor: ["5L1"],
+			acidarmour: ["5L1"],
 			attract: ["5M"],
 			blizzard: ["5M"],
 			brine: ["5L32"],
@@ -41745,7 +41745,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		inherit: true,
 		learnset: {
 			acid: ["5L1"],
-			acidarmor: ["5L1"],
+			acidarmour: ["5L1"],
 			astonish: ["5L1"],
 			attract: ["5M"],
 			calmmind: ["5M"],
@@ -42184,7 +42184,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	cryogonal: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["5L29"],
+			acidarmour: ["5L29"],
 			acrobatics: ["5M"],
 			attract: ["5M"],
 			aurorabeam: ["5L25"],
@@ -42229,7 +42229,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		inherit: true,
 		learnset: {
 			acid: ["5L4"],
-			acidarmor: ["5L32"],
+			acidarmour: ["5L32"],
 			attract: ["5M"],
 			batonpass: ["5L1"],
 			bide: ["5L8"],

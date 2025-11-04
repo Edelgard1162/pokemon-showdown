@@ -14,7 +14,7 @@ describe('Rage Fist', () => {
 		battle = common.createBattle([[
 			{ species: 'Primeape', moves: ['ragefist'] },
 		], [
-			{ species: 'Umbreon', ability: 'shellarmor', moves: ['tackle'] },
+			{ species: 'Umbreon', ability: 'shellarmour', moves: ['tackle'] },
 		]]);
 		battle.makeChoices();
 		const umbreon = battle.p2.active[0];
@@ -30,7 +30,7 @@ describe('Rage Fist', () => {
 		battle = common.createBattle([[
 			{ species: 'Primeape', moves: ['ragefist'] },
 		], [
-			{ species: 'Umbreon', ability: 'shellarmor', moves: ['taunt'] },
+			{ species: 'Umbreon', ability: 'shellarmour', moves: ['taunt'] },
 		]]);
 
 		battle.makeChoices();
@@ -47,7 +47,7 @@ describe('Rage Fist', () => {
 		battle = common.createBattle([[
 			{ species: 'Primeape', ability: 'noguard', moves: ['sleeptalk', 'ragefist'] },
 		], [
-			{ species: 'Umbreon', ability: 'shellarmor', moves: ['doublehit', 'sleeptalk'] },
+			{ species: 'Umbreon', ability: 'shellarmour', moves: ['doublehit', 'sleeptalk'] },
 		]]);
 
 		battle.makeChoices();
@@ -60,7 +60,7 @@ describe('Rage Fist', () => {
 		battle = common.createBattle([[
 			{ species: 'Primeape', moves: ['ragefist'] },
 		], [
-			{ species: 'Umbreon', ability: 'shellarmor', moves: ['copycat'] },
+			{ species: 'Umbreon', ability: 'shellarmour', moves: ['copycat'] },
 		]]);
 
 		battle.makeChoices();
@@ -72,7 +72,7 @@ describe('Rage Fist', () => {
 		battle = common.createBattle([[
 			{ species: 'Primeape', moves: ['substitute', 'ragefist'] },
 		], [
-			{ species: 'Umbreon', ability: 'shellarmor', moves: ['dragonrage', 'sleeptalk'] },
+			{ species: 'Umbreon', ability: 'shellarmour', moves: ['dragonrage', 'sleeptalk'] },
 		]]);
 
 		battle.makeChoices();

@@ -486,7 +486,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["explosion", "iceshard", "rapidspin", "rockblast", "spikes", "surf", "toxicspikes"],
-                "abilities": ["Shell Armor", "Skill Link"]
+                "abilities": ["Shell Armour", "Skill Link"]
             }
         ]
     },
@@ -814,7 +814,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthpower", "icebeam", "spikes", "stealthrock", "surf", "toxicspikes"],
-                "abilities": ["Shell Armor", "Swift Swim"],
+                "abilities": ["Shell Armour", "Swift Swim"],
                 "preferredTypes": ["Ice"]
             }
         ]
@@ -825,12 +825,12 @@
             {
                 "role": "Spinner",
                 "movepool": ["aquajet", "rapidspin", "stealthrock", "stoneedge", "superpower", "waterfall"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["aquajet", "stealthrock", "stoneedge", "superpower", "swordsdance", "waterfall"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             }
         ]
     },
@@ -2308,12 +2308,12 @@
             {
                 "role": "Spinner",
                 "movepool": ["earthquake", "rapidspin", "stealthrock", "stoneedge", "toxic", "xscissor"],
-                "abilities": ["Battle Armor"]
+                "abilities": ["Battle Armour"]
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["aquatail", "earthquake", "rockpolish", "stealthrock", "stoneedge", "swordsdance", "xscissor"],
-                "abilities": ["Battle Armor"]
+                "abilities": ["Battle Armour"]
             }
         ]
     },
@@ -3130,13 +3130,13 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["aquatail", "crunch", "earthquake", "poisonjab", "pursuit", "swordsdance"],
-                "abilities": ["Battle Armor"],
+                "abilities": ["Battle Armour"],
                 "preferredTypes": ["Ground"]
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["crunch", "earthquake", "poisonjab", "taunt", "toxicspikes", "whirlwind"],
-                "abilities": ["Battle Armor"]
+                "abilities": ["Battle Armour"]
             }
         ]
     },

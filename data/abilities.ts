@@ -217,22 +217,22 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 5,
 		num: 71,
 	},
-	armortail: {
+	armourtail: {
 		onFoeTryMove(target, source, move) {
 			const targetAllExceptions = ['perishsong', 'flowershield', 'rototiller'];
 			if (move.target === 'foeSide' || (move.target === 'all' && !targetAllExceptions.includes(move.id))) {
 				return;
 			}
 
-			const armorTailHolder = this.effectState.target;
-			if ((source.isAlly(armorTailHolder) || move.target === 'all') && move.priority > 0.1) {
+			const armourTailHolder = this.effectState.target;
+			if ((source.isAlly(armourTailHolder) || move.target === 'all') && move.priority > 0.1) {
 				this.attrLastMove('[still]');
-				this.add('cant', armorTailHolder, 'ability: Armor Tail', move, `[of] ${target}`);
+				this.add('cant', armourTailHolder, 'ability: Armour Tail', move, `[of] ${target}`);
 				return false;
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Armor Tail",
+		name: "Armour Tail",
 		rating: 2.5,
 		num: 296,
 	},
@@ -347,10 +347,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 0,
 		num: 217,
 	},
-	battlearmor: {
+	battlearmour: {
 		onCriticalHit: false,
 		flags: { breakable: 1 },
-		name: "Battle Armor",
+		name: "Battle Armour",
 		rating: 1,
 		num: 4,
 	},
@@ -1513,6 +1513,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				this.add("-fail", target, "unboost", "[from] ability: Full Metal Body", `[of] ${target}`);
 			}
 		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Full Metal Body neutralize');
+				return this.chainModify(0.75);
+			}
+		},
 		flags: {},
 		name: "Full Metal Body",
 		rating: 2,
@@ -2461,7 +2467,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 1,
 		num: 170,
 	},
-	magmaarmor: {
+	magmaarmour: {
 		onSourceModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Water') {
 				return this.chainModify(0.5);
@@ -2497,7 +2503,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			return false;
 		},
 		flags: { breakable: 1 },
-		name: "Magma Armor",
+		name: "Magma Armour",
 		rating: 0.5,
 		num: 40,
 	},
@@ -2628,10 +2634,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 0,
 		num: 58,
 	},
-	mirrorarmor: {
+	mirrorarmour: {
 		onTryBoost(boost, target, source, effect) {
 			// Don't bounce self stat changes, or boosts that have already bounced
-			if (!source || target === source || !boost || effect.name === 'Mirror Armor') return;
+			if (!source || target === source || !boost || effect.name === 'Mirror Armour') return;
 			let b: BoostID;
 			for (b in boost) {
 				if (boost[b]! < 0) {
@@ -2640,14 +2646,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 					negativeBoost[b] = boost[b];
 					delete boost[b];
 					if (source.hp) {
-						this.add('-ability', target, 'Mirror Armor');
+						this.add('-ability', target, 'Mirror Armour');
 						this.boost(negativeBoost, source, target, null, true);
 					}
 				}
 			}
 		},
 		flags: { breakable: 1 },
-		name: "Mirror Armor",
+		name: "Mirror Armour",
 		rating: 2,
 		num: 240,
 	},
@@ -3424,15 +3430,60 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4.5,
 		num: 189,
 	},
-	prismarmor: {
+	prismarmour: {
+		onCriticalHit: false,
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.getMoveHitData(move).typeMod > 0) {
-				this.debug('Prism Armor neutralize');
+				this.debug('Prism Armour neutralize');
 				return this.chainModify(0.75);
 			}
 		},
 		flags: {},
-		name: "Prism Armor",
+		name: "Prism Armour",
+		rating: 3,
+		num: 232,
+	},
+	prismarmourduskmane: {
+		onCriticalHit: false,
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Prism Armour neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Prism Armour (Dusk Mane)", `[of] ${target}`);
+			}
+		},
+		flags: {},
+		name: "Prism Armour (Dusk Mane)",
+		rating: 3,
+		num: 232,
+	},
+	prismarmourdawnwings: {
+		onCriticalHit: false,
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Prism Armour neutralize');
+				return this.chainModify(0.75);
+			}
+			if (target.hp >= target.maxhp) {
+				this.debug('Prism Armour (Dawn Wings) weaken');
+				return this.chainModify(0.5);
+			}
+		},
+		flags: {},
+		name: "Prism Armour (Dawn Wings)",
 		rating: 3,
 		num: 232,
 	},
@@ -4098,6 +4149,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 32,
 	},
 	shadowshield: {
+		onTryBoost(boost, target, source, effect) {
+			if (source && target === source) return;
+			let showMsg = false;
+			let i: BoostID;
+			for (i in boost) {
+				if (boost[i]! < 0) {
+					delete boost[i];
+					showMsg = true;
+				}
+			}
+			if (showMsg && !(effect as ActiveMove).secondaries && effect.id !== 'octolock') {
+				this.add("-fail", target, "unboost", "[from] ability: Shadow Shield", `[of] ${target}`);
+			}
+		},
 		onSourceModifyDamage(damage, source, target, move) {
 			if (target.hp >= target.maxhp) {
 				this.debug('Shadow Shield weaken');
@@ -4175,10 +4240,10 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: 125,
 	},
-	shellarmor: {
+	shellarmour: {
 		onCriticalHit: false,
 		flags: { breakable: 1 },
-		name: "Shell Armor",
+		name: "Shell Armour",
 		rating: 1,
 		num: 75,
 	},
@@ -4656,10 +4721,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	supersweetsyrup: {
 		onStart(pokemon) {
-			if (pokemon.syrupTriggered) return;
-			pokemon.syrupTriggered = true;
-			this.add('-ability', pokemon, 'Supersweet Syrup');
+			let activated = false;
 			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Supersweet Syrup', 'boost');
+					activated = true;
+				}
 				if (target.volatiles['substitute']) {
 					this.add('-immune', target);
 				} else {
@@ -5419,14 +5486,14 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: 41,
 	},
-	weakarmor: {
+	weakarmour: {
 		onDamagingHit(damage, target, source, move) {
 			if (move.category === 'Physical') {
 				this.boost({ def: -1, spe: 2 }, target, target);
 			}
 		},
 		flags: {},
-		name: "Weak Armor",
+		name: "Weak Armour",
 		rating: 1,
 		num: 133,
 	},

@@ -598,7 +598,7 @@
             {
                 "role": "Wallbreaker",
                 "movepool": ["doubleedge", "earthquake", "firepunch", "stealthrock", "stoneedge", "swordsdance"],
-                "abilities": ["Battle Armor", "Rock Head"],
+                "abilities": ["Battle Armour", "Rock Head"],
                 "preferredTypes": ["Rock"]
             }
         ]
@@ -857,7 +857,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["hiddenpowergrass", "hydropump", "icebeam", "shellsmash", "surf"],
-                "abilities": ["Shell Armor", "Swift Swim"]
+                "abilities": ["Shell Armour", "Swift Swim"]
             }
         ]
     },
@@ -867,12 +867,12 @@
             {
                 "role": "Spinner",
                 "movepool": ["aquajet", "rapidspin", "stealthrock", "stoneedge", "superpower", "waterfall"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             },
             {
                 "role": "Fast Attacker",
                 "movepool": ["aquajet", "stealthrock", "stoneedge", "superpower", "swordsdance", "waterfall"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             }
         ]
     },
@@ -2177,7 +2177,7 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["earthquake", "lavaplume", "rapidspin", "stealthrock", "yawn"],
-                "abilities": ["Shell Armor"]
+                "abilities": ["Shell Armour"]
             }
         ]
     },
@@ -2363,12 +2363,12 @@
             {
                 "role": "Spinner",
                 "movepool": ["earthquake", "rapidspin", "stealthrock", "stoneedge", "toxic", "xscissor"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             },
             {
                 "role": "Bulky Attacker",
                 "movepool": ["aquatail", "earthquake", "stealthrock", "stoneedge", "swordsdance", "xscissor"],
-                "abilities": ["Battle Armor", "Swift Swim"]
+                "abilities": ["Battle Armour", "Swift Swim"]
             }
         ]
     },
@@ -3187,13 +3187,13 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["aquatail", "crunch", "earthquake", "poisonjab", "pursuit", "swordsdance"],
-                "abilities": ["Battle Armor"],
+                "abilities": ["Battle Armour"],
                 "preferredTypes": ["Ground"]
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["crunch", "earthquake", "poisonjab", "taunt", "toxicspikes", "whirlwind"],
-                "abilities": ["Battle Armor"]
+                "abilities": ["Battle Armour"]
             }
         ]
     },
@@ -4483,7 +4483,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["autotomize", "explosion", "flashcannon", "hiddenpowerground", "icebeam"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "preferredTypes": ["Ground"]
             }
         ]

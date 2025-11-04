@@ -162,10 +162,10 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		num: -103,
 		shortDesc: "Starts Rain Dance when hit by an attack.",
 	},
-	frozenarmor: {
+	frozenarmour: {
 		onTryHit(target, source, move) {
 			if (move.category !== 'Status') {
-				this.add('-ability', target, 'Frozen Armor');
+				this.add('-ability', target, 'Frozen Armour');
 				// reduces base power of incoming moves by 20 (math.max prevents base power from reducing below 0)
 				move.basePower = Math.max(move.basePower - 20, 0);
 			}
@@ -175,9 +175,9 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			// checks if Glastrier is below 50% HP, if so transforms into Caly-Ice and sets ability to As One
 			if (pokemon.species.id !== 'glastrier' || !pokemon.hp) return;
 			if (pokemon.hp < pokemon.maxhp / 2) {
-				if (pokemon.species.id !== 'calyrexice' && pokemon.ability === 'frozenarmor') {
+				if (pokemon.species.id !== 'calyrexice' && pokemon.ability === 'frozenarmour') {
 					pokemon.formeChange('Calyrex-Ice', null, true);
-					this.add('-message', `Glastrier's Frozen Armor has shattered!`);
+					this.add('-message', `Glastrier's Frozen Armour has shattered!`);
 					// pokemon.setAbility('As One (Glastrier)');
 					pokemon.baseAbility = pokemon.ability;
 					// this.add('-ability', pokemon, 'As One');
@@ -185,7 +185,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 			}
 		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1 },
-		name: "Frozen Armor",
+		name: "Frozen Armour",
 		rating: 5,
 		num: -105,
 		shortDesc: "-20 BP on attacks targeting Glastrier, at 50% HP become Calyrex-Ice.",
@@ -494,7 +494,7 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	},
 	asoneglastrier: {
 		inherit: true,
-		// removing these flags allows Frozen Armor to correctly set Caly-Ice ability as As One
+		// removing these flags allows Frozen Armour to correctly set Caly-Ice ability as As One
 		flags: {},
 	},
 	protean: {

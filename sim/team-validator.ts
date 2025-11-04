@@ -1574,10 +1574,10 @@ export class TeamValidator {
 				problems.push(`Necrozma-Ultra must start the battle holding Ultranecrozium Z.`);
 			} else if (whichMoves === 1) {
 				set.species = 'Necrozma-Dusk-Mane';
-				set.ability = 'Prism Armor';
+				set.ability = 'Prism Armour';
 			} else if (whichMoves === 2) {
 				set.species = 'Necrozma-Dawn-Wings';
-				set.ability = 'Prism Armor';
+				set.ability = 'Prism Armour';
 			} else {
 				problems.push(`Necrozma-Ultra must start the battle as Necrozma-Dusk-Mane or Necrozma-Dawn-Wings holding Ultranecrozium Z. Please specify which Necrozma it should start as.`);
 			}

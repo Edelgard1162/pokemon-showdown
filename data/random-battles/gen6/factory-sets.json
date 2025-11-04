@@ -5671,7 +5671,7 @@
         {
           "species": "Omastar",
           "item": "Focus Sash",
-          "ability": "Weak Armor",
+          "ability": "Weak Armour",
           "evs": {"hp": 0, "atk": 0, "def": 4, "spa": 252, "spd": 0, "spe": 252},
           "nature": "Timid",
           "moves": [["Stealth Rock"], ["Spikes"], ["Scald"], ["Ice Beam"]]
@@ -5924,7 +5924,7 @@
         {
           "species": "Drapion",
           "item": "Black Sludge",
-          "ability": "Battle Armor",
+          "ability": "Battle Armour",
           "evs": {"hp": 248, "atk": 0, "def": 0, "spa": 0, "spd": 216, "spe": 44},
           "nature": "Careful",
           "moves": [["Knock Off"], ["Taunt"], ["Toxic Spikes"], ["Poison Jab"]]
@@ -5932,7 +5932,7 @@
         {
           "species": "Drapion",
           "item": "Shuca Berry",
-          "ability": "Battle Armor",
+          "ability": "Battle Armour",
           "evs": {"hp": 0, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 252},
           "nature": "Jolly",
           "moves": [["Swords Dance"], ["Knock Off"], ["Pursuit"], ["Poison Jab"]]
@@ -5940,7 +5940,7 @@
         {
           "species": "Drapion",
           "item": "Shuca Berry",
-          "ability": "Battle Armor",
+          "ability": "Battle Armour",
           "evs": {"hp": 0, "atk": 252, "def": 4, "spa": 0, "spd": 0, "spe": 252},
           "nature": "Adamant",
           "moves": [["Swords Dance"], ["Knock Off"], ["Aqua Tail"], ["Poison Jab"]]
@@ -6611,7 +6611,7 @@
         {
           "species": "Samurott",
           "item": "Lum Berry",
-          "ability": "Shell Armor",
+          "ability": "Shell Armour",
           "evs": {"hp": 0, "atk": 252, "def": 0, "spa": 0, "spd": 4, "spe": 252},
           "nature": "Adamant",
           "moves": [["Swords Dance"], ["Waterfall"], ["Megahorn"], ["Aqua Jet"]]
@@ -8318,7 +8318,7 @@
         {
           "species": "Omastar",
           "item": "Leftovers",
-          "ability": "Shell Armor",
+          "ability": "Shell Armour",
           "evs": {"hp": 252, "atk": 0, "def": 252, "spa": 0, "spd": 4, "spe": 0},
           "nature": "Bold",
           "moves": [["Spikes"], ["Stealth Rock"], ["Scald"], ["Icy Wind"]]
@@ -8326,7 +8326,7 @@
         {
           "species": "Omastar",
           "item": "Leftovers",
-          "ability": "Shell Armor",
+          "ability": "Shell Armour",
           "evs": {"hp": 252, "atk": 0, "def": 252, "spa": 0, "spd": 4, "spe": 0},
           "nature": "Bold",
           "moves": [["Spikes"], ["Stealth Rock"], ["Scald"], ["Hidden Power Electric"]]
@@ -8334,7 +8334,7 @@
         {
           "species": "Omastar",
           "item": "Focus Sash",
-          "ability": "Weak Armor",
+          "ability": "Weak Armour",
           "evs": {"hp": 0, "atk": 0, "def": 0, "spa": 252, "spd": 4, "spe": 252},
           "nature": "Timid",
           "moves": [["Stealth Rock"], ["Spikes"], ["Scald"], ["Ice Beam"]]
@@ -9560,7 +9560,7 @@
           "ability": "Magic Guard",
           "evs": {"hp": 252, "atk": 0, "def": 252, "spa": 0, "spd": 4, "spe": 0},
           "nature": "Impish",
-          "moves": [["Calm Mind"], ["Recover"], ["Psyshock", "Psychic"], ["Acid Armor", "Signal Beam"]]
+          "moves": [["Calm Mind"], ["Recover"], ["Psyshock", "Psychic"], ["Acid Armour", "Signal Beam"]]
         }
       ]
     },
@@ -10093,7 +10093,7 @@
         {
           "species": "Armaldo",
           "item": "Leftovers",
-          "ability": "Battle Armor",
+          "ability": "Battle Armour",
           "evs": {"hp": 248, "atk": 0, "def": 252, "spa": 0, "spd": 8, "spe": 0},
           "nature": "Impish",
           "moves": [["Rapid Spin"], ["Knock Off"], ["Stone Edge"], ["Toxic"]]
@@ -10101,7 +10101,7 @@
         {
           "species": "Armaldo",
           "item": "Leftovers",
-          "ability": "Battle Armor",
+          "ability": "Battle Armour",
           "evs": {"hp": 248, "atk": 0, "def": 252, "spa": 0, "spd": 8, "spe": 0},
           "nature": "Impish",
           "moves": [["Rapid Spin"], ["Knock Off"], ["Stone Edge"], ["Stealth Rock"]]
@@ -10109,7 +10109,7 @@
         {
           "species": "Armaldo",
           "item": "Leftovers",
-          "ability": "Battle Armor",
+          "ability": "Battle Armour",
           "evs": {"hp": 248, "atk": 252, "def": 8, "spa": 0, "spd": 0, "spe": 0},
           "nature": "Adamant",
           "moves": [["Stone Edge"], ["Knock Off"], ["Rapid Spin"], ["Earthquake"]]

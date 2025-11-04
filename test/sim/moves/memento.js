@@ -32,12 +32,12 @@ describe(`Memento`, () => {
 		assert.equal(battle.requestState, 'move');
 	});
 
-	it(`should cause the user to faint after stat drops from Mirror Armor`, () => {
+	it(`should cause the user to faint after stat drops from Mirror Armour`, () => {
 		battle = common.createBattle([[
 			{ species: 'whimsicott', moves: ['memento'] },
 			{ species: 'landorus', moves: ['sleeptalk'] },
 		], [
-			{ species: 'corviknight', ability: 'mirrorarmor', moves: ['sleeptalk'] },
+			{ species: 'corviknight', ability: 'mirrorarmour', moves: ['sleeptalk'] },
 		]]);
 		battle.makeChoices();
 		const atkDrop = battle.log.includes('|-unboost|p1a: Whimsicott|atk|2');

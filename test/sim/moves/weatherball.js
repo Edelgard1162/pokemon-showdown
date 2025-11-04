@@ -40,7 +40,7 @@ describe('Weather Ball', () => {
 		battle = common.gen(8).createBattle([[
 			{ species: 'Aurorus', ability: 'refrigerate', moves: ['weatherball'] },
 		], [
-			{ species: 'Cofagrigus', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'Cofagrigus', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 		assert.hurts(battle.p2.active[0], () => battle.makeChoices('move weatherball dynamax', 'move sleeptalk'));
 		assert(battle.getDebugLog().includes('Max Hailstorm'));

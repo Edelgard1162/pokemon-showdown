@@ -1529,7 +1529,7 @@
             {
                 "role": "Setup Sweeper",
                 "movepool": ["Lava Plume", "Power Gem", "Protect", "Shell Smash"],
-                "abilities": ["Weak Armor"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Dragon", "Grass"]
             },
             {
@@ -2099,7 +2099,7 @@
             },
             {
                 "role": "Bulky Setup",
-                "movepool": ["Acid Armor", "Body Press", "Poison Gas", "Sludge Bomb"],
+                "movepool": ["Acid Armour", "Body Press", "Poison Gas", "Sludge Bomb"],
                 "abilities": ["Liquid Ooze", "Sticky Hold"],
                 "teraTypes": ["Fighting", "Grass"]
             }
@@ -4258,7 +4258,7 @@
         "sets": [
             {
                 "role": "Bulky Support",
-                "movepool": ["Acid Armor", "Flash Cannon", "Freeze-Dry", "Haze", "Protect", "Rapid Spin", "Recover"],
+                "movepool": ["Acid Armour", "Flash Cannon", "Freeze-Dry", "Haze", "Protect", "Rapid Spin", "Recover"],
                 "abilities": ["Levitate"],
                 "teraTypes": ["Poison", "Steel", "Water"]
             }
@@ -4912,7 +4912,7 @@
             },
             {
                 "role": "Bulky Setup",
-                "movepool": ["Acid Armor", "Body Press", "Heavy Slam", "Life Dew", "Protect"],
+                "movepool": ["Acid Armour", "Body Press", "Heavy Slam", "Life Dew", "Protect"],
                 "abilities": ["Sap Sipper"],
                 "teraTypes": ["Fighting"]
             }
@@ -5537,19 +5537,19 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["Calm Mind", "Earth Power", "Heat Wave", "Moonlight", "Morning Sun", "Photon Geyser", "Protect"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Fairy", "Fire", "Ground"]
             },
             {
                 "role": "Bulky Support",
                 "movepool": ["Earth Power", "Knock Off", "Moonlight", "Morning Sun", "Photon Geyser", "Protect", "Stealth Rock"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Fairy", "Psychic", "Steel"]
             },
             {
                 "role": "Imprisoner",
                 "movepool": ["Imprison", "Knock Off", "Moonlight", "Morning Sun", "Photon Geyser", "Protect"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Fairy"]
             }
         ]
@@ -5560,13 +5560,13 @@
             {
                 "role": "Bulky Setup",
                 "movepool": ["Dragon Dance", "Earthquake", "Photon Geyser", "Protect", "Sunsteel Strike"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Steel", "Ground"]
             },
             {
                 "role": "Imprisoner",
                 "movepool": ["Imprison", "Knock Off", "Moonlight", "Morning Sun", "Photon Geyser", "Protect"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Fairy"]
             }
         ]
@@ -5577,13 +5577,13 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["Calm Mind", "Earth Power", "Future Sight", "Moongeist Beam", "Moonlight", "Morning Sun", "Photon Geyser", "Stealth Rock", "Trick Room"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Dark", "Ghost"]
             },
             {
                 "role": "Tera Blast user",
                 "movepool": ["Calm Mind", "Moongeist Beam", "Protect", "Tera Blast"],
-                "abilities": ["Prism Armor"],
+                "abilities": ["Prism Armour"],
                 "teraTypes": ["Fairy", "Fighting"]
             }
         ]
@@ -5702,13 +5702,13 @@
             {
                 "role": "Bulky Support",
                 "movepool": ["Body Press", "Brave Bird", "Defog", "Protect", "Roost", "Taunt", "U-turn"],
-                "abilities": ["Mirror Armor"],
+                "abilities": ["Mirror Armour"],
                 "teraTypes": ["Dragon"]
             },
             {
                 "role": "Bulky Setup",
                 "movepool": ["Body Press", "Brave Bird", "Bulk Up", "Iron Defense", "Roost"],
-                "abilities": ["Mirror Armor"],
+                "abilities": ["Mirror Armour"],
                 "teraTypes": ["Dragon", "Fighting"]
             }
         ]
@@ -5904,7 +5904,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Acid Armor", "Alluring Voice", "Calm Mind", "Recover"],
+                "movepool": ["Acid Armour", "Alluring Voice", "Calm Mind", "Recover"],
                 "abilities": ["Aroma Veil"],
                 "teraTypes": ["Steel"]
             }
@@ -6611,13 +6611,13 @@
         "sets": [
             {
                 "role": "Fast Attacker",
-                "movepool": ["Armor Cannon", "Aura Sphere", "Energy Ball", "Heat Wave", "Meteor Beam", "Protect", "Psychic"],
-                "abilities": ["Weak Armor"],
+                "movepool": ["Armour Cannon", "Aura Sphere", "Energy Ball", "Heat Wave", "Meteor Beam", "Protect", "Psychic"],
+                "abilities": ["Weak Armour"],
                 "teraTypes": ["Fairy", "Fighting", "Fire", "Grass"]
             },
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Armor Cannon", "Protect", "Psychic", "Trick Room"],
+                "movepool": ["Armour Cannon", "Protect", "Psychic", "Trick Room"],
                 "abilities": ["Flash Fire"],
                 "teraTypes": ["Fire"]
             }
@@ -6629,7 +6629,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["Bitter Blade", "Close Combat", "Poltergeist", "Protect", "Shadow Sneak", "Swords Dance"],
-                "abilities": ["Flash Fire", "Weak Armor"],
+                "abilities": ["Flash Fire", "Weak Armour"],
                 "teraTypes": ["Fighting", "Fire", "Ghost", "Grass"]
             }
         ]
@@ -7042,7 +7042,7 @@
             {
                 "role": "Fast Attacker",
                 "movepool": ["Hyper Voice", "High Horsepower", "Psychic", "Trick Room"],
-                "abilities": ["Armor Tail", "Cud Chew", "Sap Sipper"],
+                "abilities": ["Armour Tail", "Cud Chew", "Sap Sipper"],
                 "teraTypes": ["Normal", "Fairy", "Ground"]
             },
             {

@@ -12,7 +12,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	ironcrown: {
 		inherit: true,
-		abilities: { 0: "Queenly Majesty", H: "Battle Armor" },
+		abilities: { 0: "Queenly Majesty", H: "Battle Armour" },
 	},
 	mamoswine: {
 		inherit: true,
@@ -121,7 +121,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	glastrier: {
 		inherit: true,
-		abilities: { 0: "Frozen Armor" },
+		abilities: { 0: "Frozen Armour" },
 	},
 	calyrexice: {
 		inherit: true,
@@ -440,7 +440,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	mandibuzz: {
 		inherit: true,
-		abilities: { 0: "Weak Armor" },
+		abilities: { 0: "Weak Armour" },
 		types: ["Dark", "Ground"],
 	},
 };

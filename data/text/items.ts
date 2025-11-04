@@ -74,8 +74,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Apicot Berry",
 		shortDesc: "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
 	},
-	armorfossil: {
-		name: "Armor Fossil",
+	armourfossil: {
+		name: "Armour Fossil",
 		shortDesc: "Can be revived into Shieldon.",
 	},
 	aspearberry: {
@@ -90,8 +90,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Audinite",
 		shortDesc: "If held by an Audino, this item allows it to Mega Evolve in battle.",
 	},
-	auspiciousarmor: {
-		name: "Auspicious Armor",
+	auspiciousarmour: {
+		name: "Auspicious Armour",
 		shortDesc: "Evolves Charcadet into Armarouge when used.",
 	},
 	babiriberry: {
@@ -1151,8 +1151,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Malamarite",
 		shortDesc: "If held by a Malamar, this item allows it to Mega Evolve in battle.",
 	},
-	maliciousarmor: {
-		name: "Malicious Armor",
+	maliciousarmour: {
+		name: "Malicious Armour",
 		shortDesc: "Evolves Charcadet into Ceruledge when used.",
 	},
 	manectite: {
@@ -1755,7 +1755,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 			shortDesc: "Restores 30 HP when at 1/2 max HP or less. Single use.",
 		},
 	},
-	skarmorite: {
+	skarmourite: {
 		name: "Skarmorite",
 		shortDesc: "If held by a Skarmory, this item allows it to Mega Evolve in battle.",
 	},

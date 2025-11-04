@@ -35,9 +35,9 @@ describe("Terastallization", () => {
 
 	it('should give STAB correctly to the user\'s old types', () => {
 		battle = common.gen(9).createBattle([[
-			{ species: 'Ampharos', ability: 'shellarmor', moves: ['shockwave', 'swift'], teraType: 'Electric' },
+			{ species: 'Ampharos', ability: 'shellarmour', moves: ['shockwave', 'swift'], teraType: 'Electric' },
 		], [
-			{ species: 'Ampharos', ability: 'shellarmor', moves: ['shockwave', 'swift'], teraType: 'Normal' },
+			{ species: 'Ampharos', ability: 'shellarmour', moves: ['shockwave', 'swift'], teraType: 'Normal' },
 		]]);
 		battle.makeChoices('move shockwave terastallize', 'move shockwave terastallize');
 		const teraDamage = battle.p2.active[0].maxhp - battle.p2.active[0].hp;
@@ -52,7 +52,7 @@ describe("Terastallization", () => {
 		battle = common.gen(9).createBattle([[
 			{ species: 'Mimikyu', ability: 'disguise', item: 'laggingtail', moves: ['shadowclaw', 'waterfall', 'sleeptalk'], teraType: 'Water' },
 		], [
-			{ species: 'Alomomola', ability: 'battlearmor', moves: ['soak'], teraType: 'Normal' },
+			{ species: 'Alomomola', ability: 'battlearmour', moves: ['soak'], teraType: 'Normal' },
 		]]);
 		// Mimikyu is made water type before terastallizing
 		battle.makeChoices('move sleeptalk', 'auto');
@@ -76,7 +76,7 @@ describe("Terastallization", () => {
 		battle = common.gen(9).createBattle([[
 			{ species: 'Mimikyu', ability: 'disguise', item: 'laggingtail', moves: ['shadowclaw', 'waterfall', 'sleeptalk'], teraType: 'Water' },
 		], [
-			{ species: 'Alomomola', ability: 'battlearmor', moves: ['watergun', 'soak'], teraType: 'Normal' },
+			{ species: 'Alomomola', ability: 'battlearmour', moves: ['watergun', 'soak'], teraType: 'Normal' },
 		]]);
 		// Mimikyu is made water type before terastallizing
 		battle.makeChoices('move sleeptalk', 'move soak');
@@ -102,7 +102,7 @@ describe("Terastallization", () => {
 			battle = common.gen(9).createBattle([[
 				{ species: 'magnemite', moves: ['nuzzle'] },
 			], [
-				{ species: 'mew', ability: 'shellarmor', moves: ['sleeptalk'] },
+				{ species: 'mew', ability: 'shellarmour', moves: ['sleeptalk'] },
 			]]);
 
 			battle.makeChoices('move nuzzle terastallize', 'auto');
@@ -115,7 +115,7 @@ describe("Terastallization", () => {
 			battle = common.gen(9).createBattle([[
 				{ species: 'phione', ability: 'technician', moves: ['watergun'] },
 			], [
-				{ species: 'mew', ability: 'shellarmor', moves: ['sleeptalk'] },
+				{ species: 'mew', ability: 'shellarmour', moves: ['sleeptalk'] },
 			]]);
 
 			battle.makeChoices('move watergun terastallize', 'auto');
@@ -128,7 +128,7 @@ describe("Terastallization", () => {
 			battle = common.gen(9).createBattle([[
 				{ species: 'cufant', moves: ['bulletpunch'] },
 			], [
-				{ species: 'mew', ability: 'shellarmor', moves: ['sleeptalk'] },
+				{ species: 'mew', ability: 'shellarmour', moves: ['sleeptalk'] },
 			]]);
 
 			battle.makeChoices('move bulletpunch terastallize', 'auto');
@@ -141,7 +141,7 @@ describe("Terastallization", () => {
 			battle = common.gen(9).createBattle([[
 				{ species: 'wiglett', ivs: { hp: 0 }, moves: ['waterspout'] },
 			], [
-				{ species: 'mew', ability: 'shellarmor', moves: ['seismictoss'] },
+				{ species: 'mew', ability: 'shellarmour', moves: ['seismictoss'] },
 			]]);
 
 			battle.makeChoices('move waterspout terastallize', 'auto');
@@ -154,7 +154,7 @@ describe("Terastallization", () => {
 			battle = common.gen(9).createBattle([[
 				{ species: 'espathra', evs: { atk: 252 }, moves: ['peck', 'aerialace'], teraType: 'Flying' },
 			], [
-				{ species: 'arceus', ability: 'shellarmor', moves: ['haze'] },
+				{ species: 'arceus', ability: 'shellarmour', moves: ['haze'] },
 			]]);
 
 			battle.makeChoices('move peck', 'auto');
@@ -169,7 +169,7 @@ describe("Terastallization", () => {
 			battle = common.gen(9).createBattle([[
 				{ species: 'palafinhero', moves: ['leafage'], teraType: 'Electric' },
 			], [
-				{ species: 'arceus', ability: 'shellarmor', moves: ['haze'] },
+				{ species: 'arceus', ability: 'shellarmour', moves: ['haze'] },
 			]]);
 
 			battle.makeChoices('move leafage', 'auto');

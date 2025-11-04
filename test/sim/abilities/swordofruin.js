@@ -12,7 +12,7 @@ describe(`Sword of Ruin`, () => {
 
 	it(`should lower the Defense of all other Pokemon`, () => {
 		battle = common.createBattle([[
-			{ species: 'wynaut', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'wynaut', ability: 'shellarmour', moves: ['sleeptalk'] },
 		], [
 			{ species: 'chienpao', ability: 'swordofruin', moves: ['aerialace'] },
 		]]);

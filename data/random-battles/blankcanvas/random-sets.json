@@ -73,7 +73,7 @@
 			{
 				"role": "Fast Bulky Setup",
 				"movepool": ["Blood Moon", "Moonblast", "Moongeist Beam", "Moonlight", "Stuff Cheeks"],
-				"abilities": ["Trace", "Prism Armor"],
+				"abilities": ["Trace", "Prism Armour"],
 				"teraTypes": ["Normal"]
 			}
 		]

@@ -8,7 +8,7 @@ const RECOVERY_MOVES = [
 ];
 // Conglomerate for ease of access
 const SETUP = [
-	'acidarmor', 'agility', 'bellydrum', 'bulkup', 'calmmind', 'curse', 'dragondance', 'growth', 'howl', 'irondefense',
+	'acidarmour', 'agility', 'bellydrum', 'bulkup', 'calmmind', 'curse', 'dragondance', 'growth', 'howl', 'irondefense',
 	'meditate', 'raindance', 'sunnyday', 'swordsdance', 'tailglow',
 ];
 // Moves that shouldn't be the only STAB moves:

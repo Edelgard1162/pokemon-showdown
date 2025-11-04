@@ -3,7 +3,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		inherit: true,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 	},
-	acidarmor: {
+	acidarmour: {
 		inherit: true,
 		pp: 40,
 	},

@@ -6,7 +6,7 @@ import { Utils } from '../../../lib';
 
 // Moves that drop stats:
 const CONTRARY_MOVES = [
-	'armorcannon', 'closecombat', 'leafstorm', 'makeitrain', 'overheat', 'spinout', 'superpower', 'vcreate',
+	'armourcannon', 'closecombat', 'leafstorm', 'makeitrain', 'overheat', 'spinout', 'superpower', 'vcreate',
 ];
 
 // Hazard-setting moves
@@ -31,7 +31,7 @@ const RECOVERY_MOVES = [
 
 // Setup (stat-boosting) moves
 const SETUP = [
-	'acidarmor', 'agility', 'autotomize', 'bellydrum', 'bulkup', 'calmmind', 'clangoroussoul', 'coil', 'cosmicpower', 'curse',
+	'acidarmour', 'agility', 'autotomize', 'bellydrum', 'bulkup', 'calmmind', 'clangoroussoul', 'coil', 'cosmicpower', 'curse',
 	'dragondance', 'flamecharge', 'growth', 'honeclaws', 'howl', 'irondefense', 'meditate', 'nastyplot', 'noretreat', 'poweruppunch',
 	'quiverdance', 'raindance', 'rockpolish', 'shellsmash', 'shiftgear', 'snowscape', 'sunnyday', 'swordsdance', 'tailglow', 'tidyup',
 	'trailblaze', 'workup', 'victorydance',

@@ -4907,7 +4907,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	grimer: {
 		learnset: {
-			acidarmor: ["2L40", "1L55"],
+			acidarmour: ["2L40", "1L55"],
 			attract: ["2M"],
 			bide: ["1M"],
 			bodyslam: ["1M"],
@@ -4960,7 +4960,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	muk: {
 		learnset: {
-			acidarmor: ["2L45", "1L60"],
+			acidarmour: ["2L45", "1L60"],
 			attract: ["2M"],
 			bide: ["1M"],
 			bodyslam: ["1M"],
@@ -7794,7 +7794,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vaporeon: {
 		learnset: {
-			acidarmor: ["2L47", "1L47", "1L42"],
+			acidarmour: ["2L47", "1L47", "1L42"],
 			attract: ["2M"],
 			aurorabeam: ["2L36", "1L36"],
 			bide: ["1M"],
@@ -11552,7 +11552,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	slugma: {
 		learnset: {
-			acidarmor: ["2L1"],
+			acidarmour: ["2L1"],
 			amnesia: ["2L29"],
 			attract: ["2M"],
 			bodyslam: ["2L50"],

@@ -39,8 +39,8 @@ describe('Iron Ball', () => {
 		battle = common.createBattle();
 		battle.setPlayer('p1', { team: [{ species: "Smeargle", ability: 'owntempo', item: 'laggingtail', moves: ['earthquake', 'gravity'] }] });
 		battle.setPlayer('p2', { team: [
-			{ species: "Aerodactyl", ability: 'shellarmor', item: 'ironball', moves: ['stealthrock'] },
-			{ species: "Tropius", ability: 'shellarmor', item: 'ironball', moves: ['leechseed'] },
+			{ species: "Aerodactyl", ability: 'shellarmour', item: 'ironball', moves: ['stealthrock'] },
+			{ species: "Tropius", ability: 'shellarmour', item: 'ironball', moves: ['leechseed'] },
 		] });
 		// Set up Gravity
 		battle.makeChoices('move gravity', 'move stealthrock');

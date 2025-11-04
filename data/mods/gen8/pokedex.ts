@@ -41,7 +41,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	samurotthisui: {
 		inherit: true,
-		abilities: { 0: "Torrent", H: "Shell Armor" },
+		abilities: { 0: "Torrent", H: "Shell Armour" },
 	},
 	braviaryhisui: {
 		inherit: true,

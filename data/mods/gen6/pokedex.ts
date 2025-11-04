@@ -110,7 +110,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	torkoal: {
 		inherit: true,
-		abilities: { 0: "White Smoke", H: "Shell Armor" },
+		abilities: { 0: "White Smoke", H: "Shell Armour" },
 	},
 	lunatone: {
 		inherit: true,
@@ -299,15 +299,15 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	vanillite: {
 		inherit: true,
-		abilities: { 0: "Ice Body", H: "Weak Armor" },
+		abilities: { 0: "Ice Body", H: "Weak Armour" },
 	},
 	vanillish: {
 		inherit: true,
-		abilities: { 0: "Ice Body", H: "Weak Armor" },
+		abilities: { 0: "Ice Body", H: "Weak Armour" },
 	},
 	vanilluxe: {
 		inherit: true,
-		abilities: { 0: "Ice Body", H: "Weak Armor" },
+		abilities: { 0: "Ice Body", H: "Weak Armour" },
 	},
 	deerling: {
 		inherit: true,
@@ -456,7 +456,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	pyroak: {
 		inherit: true,
-		abilities: { 0: "Rock Head", 1: "Battle Armor" },
+		abilities: { 0: "Rock Head", 1: "Battle Armour" },
 	},
 	fidgit: {
 		inherit: true,

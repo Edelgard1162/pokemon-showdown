@@ -14,7 +14,7 @@ describe("Tera Stellar", () => {
 		battle = common.gen(9).createBattle([[
 			{ species: 'Wynaut', ability: 'noguard', moves: ['surf', 'hydropump', 'extrasensory', 'hyperspacehole'], teraType: 'Stellar' },
 		], [
-			{ species: 'Happiny', ability: 'shellarmor', moves: ['softboiled'] },
+			{ species: 'Happiny', ability: 'shellarmour', moves: ['softboiled'] },
 		]]);
 
 		const happiny = battle.p2.active[0];
@@ -48,7 +48,7 @@ describe("Tera Stellar", () => {
 		battle = common.gen(9).createBattle([[
 			{ species: 'Terapagos', ability: 'terashift', moves: ['surf', 'hypervoice'], item: 'laggingtail', teraType: 'Stellar' },
 		], [
-			{ species: 'Chansey', ability: 'shellarmor', moves: ['softboiled'] },
+			{ species: 'Chansey', ability: 'shellarmour', moves: ['softboiled'] },
 		]]);
 
 		const chansey = battle.p2.active[0];
@@ -107,7 +107,7 @@ describe("Tera Stellar", () => {
 		battle = common.gen(9).createBattle([[
 			{ species: 'Wynaut', ability: 'adaptability', moves: ['hyperspacehole', 'terablast'], teraType: 'Stellar' },
 		], [
-			{ species: 'Happiny', ability: 'shellarmor', moves: ['softboiled'] },
+			{ species: 'Happiny', ability: 'shellarmour', moves: ['softboiled'] },
 		]]);
 
 		const happiny = battle.p2.active[0];
@@ -151,7 +151,7 @@ describe("Tera Stellar", () => {
 		battle = common.gen(9).createBattle([[
 			{ species: 'Comfey', moves: ['drainingkiss', 'absorb'], teraType: 'Stellar' },
 		], [
-			{ species: 'Chansey', ability: 'shellarmor', moves: ['sleeptalk'] },
+			{ species: 'Chansey', ability: 'shellarmour', moves: ['sleeptalk'] },
 		]]);
 
 		const chansey = battle.p2.active[0];

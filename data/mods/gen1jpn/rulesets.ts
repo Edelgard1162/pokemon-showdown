@@ -57,7 +57,7 @@ export const Rulesets: import('../../../sim/dex-formats').ModdedFormatDataTable 
 				magikarp: { dragonrage: 'illegal' },
 				eevee: { quickattack: 27, tailwhip: 31, bite: 37, growl: 'illegal', focusenergy: 'illegal' },
 				vaporeon: {
-					quickattack: 27, tailwhip: 31, watergun: 31, bite: 37, acidarmor: 42, haze: 44, mist: 48, hydropump: 54,
+					quickattack: 27, tailwhip: 31, watergun: 31, bite: 37, acidarmour: 42, haze: 44, mist: 48, hydropump: 54,
 					growl: 'illegal', focusenergy: 'illegal', aurorabeam: 'illegal',
 				},
 				jolteon: {

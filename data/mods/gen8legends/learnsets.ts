@@ -519,7 +519,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	tentacool: {
 		learnset: {
-			acidarmor: ["8L34"],
+			acidarmour: ["8L34"],
 			bubble: ["8L6"],
 			dazzlinggleam: ["8T"],
 			hex: ["8L18"],
@@ -535,7 +535,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	tentacruel: {
 		learnset: {
-			acidarmor: ["8L34"],
+			acidarmour: ["8L34"],
 			bubble: ["8L6"],
 			dazzlinggleam: ["8T"],
 			gigaimpact: ["8T"],
@@ -4773,7 +4773,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	phione: {
 		learnset: {
-			acidarmor: ["8L19"],
+			acidarmour: ["8L19"],
 			bubble: ["8L1"],
 			calmmind: ["8T"],
 			confusion: ["8L6"],
@@ -4792,7 +4792,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	manaphy: {
 		inherit: true,
 		learnset: {
-			acidarmor: ["8L19"],
+			acidarmour: ["8L19"],
 			bubble: ["8L1", "8S8"],
 			calmmind: ["8T"],
 			confusion: ["8L6"],
@@ -5238,7 +5238,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	goomy: {
 		learnset: {
-			acidarmor: ["8L11"],
+			acidarmour: ["8L11"],
 			acidspray: ["8L6"],
 			bubble: ["8L1"],
 			dracometeor: ["8T"],
@@ -5256,7 +5256,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	sliggoohisui: {
 		learnset: {
-			acidarmor: ["8L11"],
+			acidarmour: ["8L11"],
 			acidspray: ["8L6"],
 			bubble: ["8L1"],
 			dracometeor: ["8T"],
@@ -5277,7 +5277,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	goodrahisui: {
 		learnset: {
-			acidarmor: ["8L11"],
+			acidarmour: ["8L11"],
 			acidspray: ["8L6"],
 			bubble: ["8L1"],
 			bulldoze: ["8T"],

@@ -204,7 +204,7 @@ describe("Dynamax", () => {
 			battle = common.gen(8).createBattle([[
 				{ species: 'wynaut', moves: ['maxflare', 'maxairstream'] },
 			], [
-				{ species: 'shuckle', ability: 'shellarmor', moves: ['sleeptalk'] },
+				{ species: 'shuckle', ability: 'shellarmour', moves: ['sleeptalk'] },
 			]]);
 			battle.makeChoices('move maxflare', 'auto');
 			battle.makeChoices('move maxairstream', 'auto');

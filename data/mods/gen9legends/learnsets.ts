@@ -1644,7 +1644,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vaporeon: {
 		learnset: {
-			acidarmor: ["9L45"],
+			acidarmour: ["9L45"],
 			aquaring: ["9L35"],
 			bite: ["9L1"],
 			blizzard: ["9M"],
@@ -5733,7 +5733,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vanillite: {
 		learnset: {
-			acidarmor: ["9L32"],
+			acidarmour: ["9L32"],
 			blizzard: ["9M", "9L58"],
 			endure: ["9M"],
 			explosion: ["9L46"],
@@ -5755,7 +5755,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vanillish: {
 		learnset: {
-			acidarmor: ["9L32"],
+			acidarmour: ["9L32"],
 			blizzard: ["9M", "9L58"],
 			endure: ["9M"],
 			explosion: ["9L46"],
@@ -5777,7 +5777,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	vanilluxe: {
 		learnset: {
-			acidarmor: ["9L32"],
+			acidarmour: ["9L32"],
 			blizzard: ["9M", "9L58"],
 			endure: ["9M"],
 			explosion: ["9L46"],
@@ -5917,7 +5917,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	litwick: {
 		learnset: {
-			acidarmor: ["9L16"],
+			acidarmour: ["9L16"],
 			calmmind: ["9M"],
 			confuseray: ["9L12"],
 			curse: ["9M", "9L44"],
@@ -5947,7 +5947,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	lampent: {
 		learnset: {
-			acidarmor: ["9L16"],
+			acidarmour: ["9L16"],
 			calmmind: ["9M"],
 			confuseray: ["9L12"],
 			curse: ["9M", "9L44"],
@@ -5977,7 +5977,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	chandelure: {
 		learnset: {
-			acidarmor: ["9L16"],
+			acidarmour: ["9L16"],
 			calmmind: ["9M"],
 			confuseray: ["9L12"],
 			curse: ["9M", "9L44"],
@@ -8019,7 +8019,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	sliggoo: {
 		learnset: {
 			absorb: ["9L1"],
-			acidarmor: ["9L1"],
+			acidarmour: ["9L1"],
 			blizzard: ["9M"],
 			bodyslam: ["9M", "9L45"],
 			charm: ["9L8"],
@@ -8048,7 +8048,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	sliggoohisui: {
 		learnset: {
 			absorb: ["9L1"],
-			acidarmor: ["9L1"],
+			acidarmour: ["9L1"],
 			blizzard: ["9M"],
 			bodyslam: ["9M", "9L45"],
 			charm: ["9L8"],
@@ -8080,7 +8080,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	goodra: {
 		learnset: {
 			absorb: ["9L1"],
-			acidarmor: ["9L1"],
+			acidarmour: ["9L1"],
 			blizzard: ["9M"],
 			bodyslam: ["9M", "9L45"],
 			breakingswipe: ["9L1"],
@@ -8124,7 +8124,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	goodrahisui: {
 		learnset: {
 			absorb: ["9L1"],
-			acidarmor: ["9L1"],
+			acidarmour: ["9L1"],
 			blizzard: ["9M"],
 			bodyslam: ["9M", "9L45"],
 			breakingswipe: ["9L0"],

@@ -69,7 +69,7 @@ describe('Electric Terrain', () => {
 
 	it('should cause Rest to fail on grounded Pokemon', () => {
 		battle = common.createBattle();
-		battle.setPlayer('p1', { team: [{ species: "Jolteon", ability: 'shellarmor', moves: ['electricterrain', 'rest'] }] });
+		battle.setPlayer('p1', { team: [{ species: "Jolteon", ability: 'shellarmour', moves: ['electricterrain', 'rest'] }] });
 		battle.setPlayer('p2', { team: [{ species: "Pidgeot", ability: 'keeneye', moves: ['doubleedge', 'rest'] }] });
 		battle.makeChoices('move electricterrain', 'move doubleedge');
 		battle.makeChoices('move rest', 'move rest');

@@ -71,6 +71,7 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		types: ["Normal"],
 		baseStats: { hp: 95, atk: 70, def: 73, spa: 85, spd: 90, spe: 60 },
+		abilities: { 0: "Cute Charm", H: "Friend Guard" },
 	},
 	jigglypuff: {
 		inherit: true,

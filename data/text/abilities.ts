@@ -495,7 +495,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	galewings: {
 		name: "Gale Wings",
-		shortDesc: "If this Pokemon is at more than 1/2 HP, its Flying-type moves have their priority increased by 1.",
+		desc: "When this Pokemon has 1/2 or more of its maximum HP, rounded down, its Flying-type moves have their priority increased by 1.",
+		shortDesc: "At 1/2 or more of its max HP, its Flying-type moves have their priority increased by 1.",
 	},
 	galvanize: {
 		name: "Galvanize",
@@ -1008,8 +1009,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	perishbody: {
 		name: "Perish Body",
-		desc: "Making contact with this Pokemon starts the Perish Song effect for it and the attacker. This effect does not happen for this Pokemon if the attacker already has a perish count.",
-		shortDesc: "Making contact with this Pokemon starts the Perish Song effect for it and the attacker.",
+		desc: "Attacking this Pokemon starts the Perish Song effect for it and the attacker. This effect does not happen for this Pokemon if the attacker already has a perish count.",
+		shortDesc: "Attacking this Pokemon starts the Perish Song effect for it and the attacker.",
 
 		start: "  Both Pok\u00E9mon will faint in three turns!",
 	},
@@ -1858,8 +1859,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	windpower: {
 		name: "Wind Power",
 		desc: "This Pokemon gains the Charge effect when it takes a hit from a wind move or when Tailwind begins on this Pokemon's side.",
-		shortDesc: "This Pokemon gains the Charge effect when hit by a wind move or Tailwind begins.",
-
+		shortDesc: "This Pokemon gains the Charge effect when if hit by a wind move or Tailwind begins. Wind move immunity.",
 		start: "#electromorphosis",
 	},
 	windrider: {

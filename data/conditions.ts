@@ -14,7 +14,7 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 				target.formeChange('Shaymin', this.effect, true);
 			}
 		},
-		// Damage reduction is handled directly in the sim/battle.js damage function
+		// Damage reduction is handled directly in the sim/battle-actions.ts damage function
 		onResidualOrder: 10,
 		onResidual(pokemon) {
 			this.damage(pokemon.baseMaxhp / 16);

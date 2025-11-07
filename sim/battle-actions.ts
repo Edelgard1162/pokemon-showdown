@@ -1811,12 +1811,18 @@ export class BattleActions {
 
 		if (isCrit && !suppressMessages) this.battle.add('-crit', target);
 
-		if (pokemon.status === 'brn' && move.category === 'Physical' && !pokemon.hasAbility('guts')) {
-			if (this.battle.gen < 1 || move.id !== 'facade') {
+		// Burn physical damage halving 
+        if (pokemon.status === 'brn' && move.category === 'Physical' && !pokemon.hasAbility(['guts', 'marvelscale'])) {
+			if (this.battle.gen < 4 || move.id !== 'facade'){
 				baseDamage = this.battle.modify(baseDamage, 0.5);
 			}
 		}
 
+		// Frostbite special damage halving
+	    if (pokemon.status === 'frz' && move.category === 'Special' && !pokemon.hasAbility(['guts', 'marvelscale'])) {
+		    baseDamage = this.battle.modify(baseDamage, 0.5);
+		}
+        
 		// Generation 5, but nothing later, sets damage to 1 before the final damage modifiers
 		if (this.battle.gen === 5 && !baseDamage) baseDamage = 1;
 

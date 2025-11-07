@@ -33567,7 +33567,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		learnset: {
 			acrobatics: ["9M", "8M", "7M", "6M", "5M"],
 			aerialace: ["9M", "9L20", "8L20", "7M", "6M", "5M", "4M", "3M"],
-			agility: ["9M", "8M"],
+			agility: ["9M", "8M", "7L1", "6L1", "5L1", "4L1", "3L1"],
 			assurance: ["8M"],
 			attract: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			aurasphere: ["9M", "8M"],
@@ -42526,7 +42526,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			mudsport: ["7L1", "6L1", "5L1", "4L1", "3L1"],
 			naturalgift: ["4M"],
 			protect: ["8M", "8L43", "7M", "7L53", "6M", "6L25", "5M", "5L25", "4M", "4L25", "3M", "3L31"],
-			rapidspin: ["8L1", "7L1", "6L1", "5L1", "4L1", "3L1"],
+			rapidspin: ["8L1", "7L1", "6L1", "5L1", "4L1"],
 			rest: ["8M", "7M", "6M", "5M", "4M", "3M"],
 			return: ["7M", "6M", "5M", "4M", "3M"],
 			rockblast: ["8M", "8L36", "7L61", "6L55", "5L55", "4L55", "3L64"],

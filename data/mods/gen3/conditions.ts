@@ -1,4 +1,10 @@
 export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDataTable = {
+	brn: {
+		inherit: true,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 8);
+		},
+	},
 	slp: {
 		name: 'slp',
 		effectType: 'Status',
@@ -9,7 +15,7 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 				this.add('-status', target, 'slp');
 			}
 			// 1-4 turns
-			this.effectState.time = this.random(2, 6);
+			this.effectState.time = this.random(2, 5);
 			// Turns spent using Sleep Talk/Snore immediately before switching out while asleep
 			this.effectState.skippedTime = 0;
 

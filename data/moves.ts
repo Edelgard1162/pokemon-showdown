@@ -172,7 +172,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	aerialace: {
 		num: 332,
 		accuracy: true,
-		basePower: 60,
+		basePower: 70,
 		category: "Physical",
 		name: "Aerial Ace",
 		pp: 20,
@@ -4234,6 +4234,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		critRatio: 2,
 		secondary: null,
 		target: "normal",
 		type: "Dragon",
@@ -4309,7 +4310,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	dragonpulse: {
 		num: 406,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 90,
 		category: "Special",
 		name: "Dragon Pulse",
 		pp: 10,
@@ -5507,7 +5508,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 30,
 			status: 'brn',
 		},
 		target: "normal",
@@ -10045,7 +10046,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	irontail: {
 		num: 231,
-		accuracy: 75,
+		accuracy: 80,
 		basePower: 100,
 		category: "Physical",
 		name: "Iron Tail",

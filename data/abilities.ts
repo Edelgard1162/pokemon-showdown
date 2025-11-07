@@ -1780,23 +1780,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 131,
 	},
 	heatproof: {
-		onSourceModifyAtkPriority: 6,
-		onSourceModifyAtk(atk, attacker, defender, move) {
+		onSourceBasePowerPriority: 1,
+		onSourceBasePower(basePower, attacker, defender, move) {
 			if (move.type === 'Fire') {
-				this.debug('Heatproof Atk weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		onSourceModifySpAPriority: 5,
-		onSourceModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Fire') {
-				this.debug('Heatproof SpA weaken');
 				return this.chainModify(0.5);
 			}
 		},
 		onDamage(damage, target, source, effect) {
 			if (effect && effect.id === 'brn') {
-				return damage / 0;
+				return 0;
 			}
 		},
 		flags: { breakable: 1 },
@@ -3202,7 +3194,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 	},
 	perishbody: {
 		onDamagingHit(damage, target, source, move) {
-			if (!this.checkMoveMakesContact(move, source, target) || source.volatiles['perishsong']) return;
+			if (source.volatiles['perishsong']) return;
 			this.add('-ability', target, 'Perish Body');
 			source.addVolatile('perishsong');
 			target.addVolatile('perishsong');
@@ -5548,10 +5540,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 193,
 	},
 	windpower: {
-		onDamagingHitOrder: 1,
-		onDamagingHit(damage, target, source, move) {
-			if (move.flags['wind']) {
-				target.addVolatile('charge');
+		onStart(pokemon) {
+			if (pokemon.side.sideConditions['tailwind']) {
+				pokemon.addVolatile('charge');
+			}
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.flags['wind']) {
+				if (!target.volatiles['charge']) {
+					target.addVolatile('charge');
+				} else {
+					this.add('-immune', target, '[from] ability: Wind Power');
+				}
+				return null;
 			}
 		},
 		onSideConditionStart(side, source, sideCondition) {

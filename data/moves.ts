@@ -2020,7 +2020,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
 		secondary: {
-			chance: 10,
+			chance: 20,
 			boosts: {
 				spd: -1,
 			},
@@ -3491,7 +3491,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Clever",
 	},
 	dazzlinggleam: {
-		num: 605,
+		num: 236,
 		accuracy: 100,
 		basePower: 80,
 		category: "Special",
@@ -12561,7 +12561,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Beautiful",
 	},
 	moonblast: {
-		num: 585,
+		num: 236,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
@@ -13802,7 +13802,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cute",
 	},
 	playrough: {
-		num: 583,
+		num: 236,
 		accuracy: 100,
 		basePower: 90,
 		category: "Physical",

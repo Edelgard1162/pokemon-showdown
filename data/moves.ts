@@ -1549,10 +1549,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		secondary: {
-			chance: 30,
-			boosts: {
-				spe: -1,
-			},
+			chance: 20,
+			status: 'frz',
 		},
 		target: "allAdjacentFoes",
 		type: "Flying",
@@ -1857,7 +1855,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, distance: 1, metronome: 1 },
-		recoil: [33, 100],
+		recoil: [1, 3],
 		secondary: null,
 		target: "any",
 		type: "Flying",
@@ -2664,7 +2662,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	closecombat: {
 		num: 370,
 		accuracy: 100,
-		basePower: 120,
+		basePower: 100,
 		category: "Physical",
 		name: "Close Combat",
 		pp: 5,
@@ -3235,7 +3233,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	crabhammer: {
 		num: 152,
-		accuracy: 90,
+		accuracy: 85,
 		basePower: 100,
 		category: "Physical",
 		name: "Crabhammer",
@@ -3281,11 +3279,11 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	crosschop: {
 		num: 238,
-		accuracy: 80,
+		accuracy: 85,
 		basePower: 100,
 		category: "Physical",
 		name: "Cross Chop",
-		pp: 5,
+		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		critRatio: 2,
@@ -4020,7 +4018,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [33, 100],
+		recoil: [1, 3],
 		secondary: null,
 		target: "normal",
 		type: "Normal",
@@ -4338,18 +4336,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	dragondive: {
 		num: 916,
-		accuracy: 95,
+		accuracy: 85,
 		basePower: 100,
 		category: "Physical",
 		name: "Dragon Dive",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		hasCrashDamage: true,
-		onMoveFail(target, source, move) {
-			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Dragon Dive'));
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
 		},
-		secondary: null,
 		target: "normal",
 		type: "Dragon",
 	},
@@ -5828,7 +5825,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, defrost: 1, metronome: 1 },
-		recoil: [33, 100],
+		recoil: [1, 3],
 		secondary: {
 			chance: 10,
 			status: 'brn',
@@ -6461,6 +6458,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "normal",
 		type: "Ice",
+		contestType: "Beautiful",
+	},
+	frostbite: {
+		num: 261,
+		accuracy: 85,
+		basePower: 0,
+		category: "Status",
+		name: "Frostbite",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		status: 'frz',
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+		zMove: { boost: { atk: 1 } },
 		contestType: "Beautiful",
 	},
 	frustration: {
@@ -8340,25 +8353,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		maxMove: { basePower: 130 },
 		contestType: "Cool",
 	},
-	snowstorm: {
-		num: 258,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Snowstorm.",
-		pp: 10,
-		priority: 0,
-		flags: { metronome: 1 },
-		weather: 'snowstorm',
-		secondary: null,
-		target: "all",
-		type: "Ice",
-		zMove: { boost: { spe: 1 } },
-		contestType: "Beautiful",
-	},
 	hammerarm: {
 		num: 359,
-		accuracy: 90,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		name: "Hammer Arm",
@@ -9190,7 +9187,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, gravity: 1, metronome: 1 },
 		hasCrashDamage: true,
 		onMoveFail(target, source, move) {
-			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('High Jump Kick'));
+			this.damage(source.baseMaxhp / 4, source, source, this.dex.conditions.get('High Jump Kick'));
 		},
 		secondary: null,
 		target: "normal",
@@ -10037,7 +10034,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 30,
+			chance: 20,
 			volatileStatus: 'flinch',
 		},
 		target: "normal",
@@ -10046,7 +10043,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	irontail: {
 		num: 231,
-		accuracy: 80,
+		accuracy: 85,
 		basePower: 100,
 		category: "Physical",
 		name: "Iron Tail",
@@ -11926,7 +11923,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	megakick: {
 		num: 25,
-		accuracy: 75,
+		accuracy: 80,
 		basePower: 120,
 		category: "Physical",
 		name: "Mega Kick",
@@ -12721,16 +12718,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	mountaingale: {
 		num: 836,
-		accuracy: 85,
+		accuracy: 100,
 		basePower: 100,
 		category: "Physical",
 		name: "Mountain Gale",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
-		secondary: {
-			chance: 30,
-			volatileStatus: 'flinch',
+		self: {
+			boosts: {
+				spe: -1,
+			},
 		},
 		target: "normal",
 		type: "Ice",
@@ -15352,7 +15350,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { snatch: 1, metronome: 1 },
 		onHit(pokemon) {
-			if (['', 'slp', 'frz'].includes(pokemon.status)) return false;
+			if (['', 'slp'].includes(pokemon.status)) return false;
 			pokemon.cureStatus();
 		},
 		secondary: null,
@@ -17661,6 +17659,22 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		secondary: null,
 		target: "all",
 		type: "Ice",
+	},	
+	snowstorm: {
+		num: 258,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		name: "Snowstorm",
+		pp: 10,
+		priority: 0,
+		flags: { metronome: 1 },
+		weather: 'snowstorm',
+		secondary: null,
+		target: "all",
+		type: "Ice",
+		zMove: { boost: { spe: 1 } },
+		contestType: "Beautiful",
 	},
 	soak: {
 		num: 487,
@@ -17847,25 +17861,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
-		secondary: {
-			chance: 100,
-			volatileStatus: 'sparklingaria',
-		},
-		onAfterMove(source, target, move) {
-			if (source.fainted || !move.hitTargets || move.hasSheerForce) {
-				// make sure the volatiles are cleared
-				for (const pokemon of this.getAllActive()) delete pokemon.volatiles['sparklingaria'];
-				return;
-			}
-			const numberTargets = move.hitTargets.length;
-			for (const pokemon of move.hitTargets) {
-				// bypasses Shield Dust when hitting multiple targets
-				if (pokemon !== source && pokemon.isActive && (pokemon.removeVolatile('sparklingaria') || numberTargets > 1) &&
-					pokemon.status === 'brn') {
-					pokemon.cureStatus();
-				}
-			}
-		},
+        onTryHit(target, source, move) {
+            if (source.isAlly(target)) {
+                move.basePower = 0;
+                move.infiltrates = true;
+            }
+        },
+        onHit(target, source) {
+            if (target.status) target.cureStatus();
+        },
+        onAfterMoveSecondarySelf(source) {
+            if (source.status) source.cureStatus();
+        },
+		secondary: null,
 		target: "allAdjacent",
 		type: "Water",
 		contestType: "Tough",
@@ -18318,10 +18326,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			}
 		},
 		secondary: {
-			chance: 30,
-			boosts: {
-				atk: -1,
-			},
+			chance: 20,
+			volatileStatus: 'confusion',
 		},
 		target: "allAdjacentFoes",
 		type: "Fairy",
@@ -18623,7 +18629,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	stoneedge: {
 		num: 444,
-		accuracy: 80,
+		accuracy: 85,
 		basePower: 100,
 		category: "Physical",
 		name: "Stone Edge",
@@ -18984,18 +18990,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	thunderdive: {
 		num: 916,
-		accuracy: 95,
+		accuracy: 85,
 		basePower: 100,
 		category: "Physical",
 		name: "Thunder Dive",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		hasCrashDamage: true,
-		onMoveFail(target, source, move) {
-			this.damage(source.baseMaxhp / 2, source, source, this.dex.conditions.get('Thunder Dive'));
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
 		},
-		secondary: null,
 		target: "normal",
 		type: "Electric",
 	},
@@ -20434,7 +20439,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
 		secondary: {
-			chance: 20,
+			chance: 30,
 			onHit(target, source) {
 				const result = this.random(3);
 				if (result === 0) {
@@ -21053,7 +21058,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [33, 100],
+		recoil: [1, 4],
 		secondary: {
 			chance: 10,
 			status: 'par',
@@ -21290,7 +21295,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [33, 100],
+		recoil: [1, 3],
 		secondary: null,
 		target: "normal",
 		type: "Water",
@@ -21488,14 +21493,17 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	wildcharge: {
 		num: 528,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 120,
 		category: "Physical",
 		name: "Wild Charge",
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [1, 4],
-		secondary: null,
+		recoil: [1, 3],
+		secondary: {
+			chance: 10,
+			status: 'par',
+		},
 		target: "normal",
 		type: "Electric",
 		contestType: "Tough",
@@ -21645,7 +21653,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
-		recoil: [33, 100],
+		recoil: [1, 3],
 		secondary: null,
 		target: "normal",
 		type: "Grass",

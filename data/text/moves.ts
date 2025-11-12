@@ -527,8 +527,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bittermalice: {
 		name: "Bitter Malice",
-		desc: "Has a 100% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "100% chance to lower the target's Attack by 1.",
+		desc: "Has a 30% chance to frostbite the target. Power doubles if the target has a non-volatile status condition.",
+		shortDesc: "30% frostbite. 2x power if target is already statused.",
 	},
 	blackholeeclipse: {
 		name: "Black Hole Eclipse",
@@ -552,22 +552,14 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	bleakwindstorm: {
 		name: "Bleakwind Storm",
 		desc: "Has a 30% chance to lower the target's Speed by 1 stage. If the weather is Snow, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "30% to lower foe(s) Speed by 1. Snow: can not miss.",
+		shortDesc: "20% to frostbite foe(s). Snow: can't miss.",
 	},
 	blizzard: {
 		name: "Blizzard",
-		desc: "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
-		shortDesc: "10% chance to freeze foe(s). Snow: can not miss.",
-		gen8: {
-			desc: "Has a 10% chance to freeze the target. If the weather is Snow, this move does not check accuracy.",
-			shortDesc: "10% chance to freeze foe(s). Can't miss in Snow.",
-		},
-		gen3: {
-			desc: "Has a 10% chance to freeze the target.",
-			shortDesc: "10% chance to freeze foe(s).",
-		},
+		desc: "Has a 10% chance to frostbite the target. If the weather is Snow, this move does not check accuracy.",
+		shortDesc: "10% chance to frostbite foe(s). Snow: can't miss.",
 		gen2: {
-			shortDesc: "10% chance to freeze the target.",
+			shortDesc: "10% chance to frostbite the target.",
 		},
 	},
 	block: {
@@ -609,9 +601,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Body Slam",
 		desc: "Has a 30% chance to paralyze the target. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
 		shortDesc: "30% chance to paralyze the target.",
-		gen5: {
-			desc: "Has a 30% chance to paralyze the target.",
-		},
 	},
 	boltbeak: {
 		name: "Bolt Beak",
@@ -689,12 +678,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bravebird: {
 		name: "Brave Bird",
-		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil.",
-		gen4: {
-			desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
-			shortDesc: "Has 1/3 recoil.",
-		},
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
+		shortDesc: "Has 1/3 recoil.",
 	},
 	breakingswipe: {
 		name: "Breaking Swipe",
@@ -1475,12 +1460,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	doubleedge: {
 		name: "Double-Edge",
-		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil.",
-		gen4: {
-			desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
-			shortDesc: "Has 1/3 recoil.",
-		},
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
+		shortDesc: "Has 1/3 recoil.",
 		gen2: {
 			desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move hits a substitute, the recoil damage is always 1 HP.",
 			shortDesc: "Has 1/4 recoil.",
@@ -1583,10 +1564,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	dragondive: {
 		name: "Dragon Dive",
-		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "User is hurt by 50% of its max HP if it misses.",
-
-		damage: "#crash",
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
 	},
 	dragonenergy: {
 		name: "Dragon Energy",
@@ -2142,12 +2121,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	flareblitz: {
 		name: "Flare Blitz",
-		desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil. 10% chance to burn. Thaws user.",
-		gen4: {
-			desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
-			shortDesc: "Has 1/3 recoil. 10% chance to burn. Thaws user.",
-		},
+		desc: "Has a 10% chance to burn the target. If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
+		shortDesc: "Has 1/3 recoil. 10% chance to burn. Thaws user.",
 	},
 	flash: {
 		name: "Flash",
@@ -2328,8 +2303,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	freezingglare: {
 		name: "Freezing Glare",
-		desc: "Has a 10% chance to freeze the target.",
-		shortDesc: "10% chance to freeze the target.",
+		desc: "Has a 10% chance to frostbite the target.",
+		shortDesc: "10% chance to frostbite the target.",
 	},
 	freezyfrost: {
 		name: "Freezy Frost",
@@ -2345,6 +2320,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Frost Breath",
 		desc: "This move is always a critical hit unless the target is under the effect of Lucky Chant or has the Battle Armour or Shell Armour Abilities.",
 		shortDesc: "Always results in a critical hit.",
+	},
+	frostbite: {
+		name: "Frostbite",
+		desc: "Frostbites the target.",
+		shortDesc: "Frostbites the target.",
 	},
 	frustration: {
 		name: "Frustration",
@@ -3243,8 +3223,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	icebeam: {
 		name: "Ice Beam",
-		desc: "Has a 10% chance to freeze the target.",
-		shortDesc: "10% chance to freeze the target.",
+		desc: "Has a 10% chance to frostbite the target.",
+		shortDesc: "10% chance to frostbite the target.",
 	},
 	iceburn: {
 		name: "Ice Burn",
@@ -3255,8 +3235,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	icefang: {
 		name: "Ice Fang",
-		desc: "Has a 10% chance to freeze the target and a 10% chance to make it flinch.",
-		shortDesc: "10% chance to freeze. 10% chance to flinch.",
+		desc: "Has a 10% chance to frostbite the target and a 10% chance to make it flinch.",
+		shortDesc: "10% chance to frostbite. 10% chance to flinch.",
 	},
 	icehammer: {
 		name: "Ice Hammer",
@@ -3265,8 +3245,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	icepunch: {
 		name: "Ice Punch",
-		desc: "Has a 10% chance to freeze the target.",
-		shortDesc: "10% chance to freeze the target.",
+		desc: "Has a 10% chance to frostbite the target.",
+		shortDesc: "10% chance to frostbite the target.",
 	},
 	iceshard: {
 		name: "Ice Shard",
@@ -3440,7 +3420,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	jumpkick: {
 		name: "Jump Kick",
 		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
-		shortDesc: "User is hurt by 50% of its max HP if it misses.",
+		shortDesc: "User is hurt by 25% of its max HP if it misses.",
 		gen4: {
 			desc: "If this attack is not successful, the user loses HP equal to half the target's maximum HP if the target was immune, rounded down, otherwise half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage.",
 			shortDesc: "If miss, user takes 1/2 damage it would've dealt.",
@@ -4345,8 +4325,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	mountaingale: {
 		name: "Mountain Gale",
-		desc: "Has a 30% chance to make the target flinch.",
-		shortDesc: "30% chance to make the target flinch.",
+		desc: "Lowers the user's Speed by 1 stage.",
+		shortDesc: "Lowers the user's Speed by 1.",
 	},
 	mudbomb: {
 		name: "Mud Bomb",
@@ -4769,7 +4749,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	polarflare: {
 		name: "Polar Flare",
-		desc: "Has a 10% chance to freeze the target. This move cannot thaw a frozen target. If this move is successful on at least one target and the user is a Ramnarok, it changes to Radiant Forme if it is currently in Dormant Forme, or changes to Dormant Forme if it is currently in Radiant Forme. This forme change does not happen if the Ramnarok has the Sheer Force Ability. The Radiant Forme reverts to Dormant Forme when Ramnarok is not active.",
+		desc: "Has a 10% chance to frostbite the target. This move cannot thaw a frozen target. If this move is successful on at least one target and the user is a Ramnarok, it changes to Radiant Forme if it is currently in Dormant Forme, or changes to Dormant Forme if it is currently in Radiant Forme. This forme change does not happen if the Ramnarok has the Sheer Force Ability. The Radiant Forme reverts to Dormant Forme when Ramnarok is not active.",
 		shortDesc: "10% chance to frz foe(s). Ramnarok transforms.",
 	},
 	pollenpuff: {
@@ -4810,10 +4790,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	powdersnow: {
 		name: "Powder Snow",
-		desc: "Has a 10% chance to freeze the target.",
-		shortDesc: "10% chance to freeze the foe(s).",
+		desc: "Has a 10% chance to frostbite the target.",
+		shortDesc: "10% chance to frostbite the foe(s).",
 		gen2: {
-			shortDesc: "10% chance to freeze the target.",
+			shortDesc: "10% chance to frostbite the target.",
 		},
 	},
 	powergem: {
@@ -5503,7 +5483,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	sandsearstorm: {
 		name: "Sandsear Storm",
 		desc: "Has a 20% chance to burn the target. If the weather is Sandstorm, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "20% chance to burn foe(s). Sand: can not miss.",
+		shortDesc: "20% chance to burn foe(s). Sand: can't miss.",
 	},
 	sandstorm: {
 		name: "Sandstorm",
@@ -6097,7 +6077,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	solarblade: {
 		name: "Solar Blade",
 		desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Snow, Primordial Sea, Rain Dance, or Sandstorm and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
-		shortDesc: "Charges turn 1. Hits turn 2. No charge in sunlight.",
+		shortDesc: "Charges turn 1. Hits turn 2. Sun: no charge.",
 		gen8: {
 			desc: "This attack charges on the first turn and executes on the second. Power is halved if the weather is Primordial Sea, Rain Dance, Sandstorm, or Snow and the user is not holding Utility Umbrella. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn. If the user is holding Utility Umbrella and the weather is Desolate Land or Sunny Day, the move still requires a turn to charge.",
 		},
@@ -6131,8 +6111,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	sparklingaria: {
 		name: "Sparkling Aria",
-		desc: "If the user has not fainted, the target is cured of its burn.",
-		shortDesc: "The target is cured of its burn.",
+		desc: "The user, allies, and foe(s) are cured of its non-volatile status condition. Allies do not take damage from this move.",
+        shortDesc: "Cures status for user, allies, and foe(s).",
 	},
 	sparklyswirl: {
 		name: "Sparkly Swirl",
@@ -6300,8 +6280,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	springtidestorm: {
 		name: "Springtide Storm",
-		desc: "Has a 30% chance to lower the foe(s) Attack by 1. If the weather is Sunny Day or Desolate Land, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "30% chance to lower the foe(s) Attack by 1. Sun: can not miss.",
+		desc: "Has a 20% chance to confuse the targer. If the weather is Sunny Day or Desolate Land, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
+		shortDesc: "20% chance to confuse foe(s). Sun: can't miss.",
 	},
 	stealthrock: {
 		name: "Stealth Rock",
@@ -6972,10 +6952,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	thunderdive: {
 		name: "Thunder Dive",
-		desc: "If this attack is not successful, the user loses half of its maximum HP, rounded down, as crash damage. Pokemon with the Magic Guard Ability are unaffected by crash damage. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
-		shortDesc: "User is hurt by 50% of its max HP if it misses.",
-
-		damage: "#crash",
+		desc: "Has a 30% chance to make the target flinch.",
+		shortDesc: "30% chance to make the target flinch.",
 	},
 	thunderfang: {
 		name: "Thunder Fang",
@@ -7036,10 +7014,6 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		name: "Toxic",
 		desc: "Badly poisons the target. If a Poison-type Pokemon uses this move, the target cannot avoid the attack, even if the target is in the middle of a two-turn move.",
 		shortDesc: "Badly poisons the target. Poison types can't miss.",
-		gen5: {
-			desc: "Badly poisons the target.",
-			shortDesc: "Badly poisons the target.",
-		},
 	},
 	toxicspikes: {
 		name: "Toxic Spikes",
@@ -7087,10 +7061,10 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	triattack: {
 		name: "Tri Attack",
-		desc: "Has a 20% chance to either burn, freeze, or paralyze the target.",
-		shortDesc: "20% chance to paralyze or burn or freeze target.",
+		desc: "Has a 20% chance to either burn, frostbite, or paralyze the target.",
+		shortDesc: "20% chance to paralyze or burn or frostbite target.",
 		gen2: {
-			desc: "This move selects burn, freeze, or paralysis at random, and has a 20% chance to inflict the target with that status. If the target is frozen and burn was selected, it thaws out.",
+			desc: "This move selects burn, frostbite, or paralysis at random, and has a 20% chance to inflict the target with that status. If the target is frozen and burn was selected, it thaws out.",
 		},
 		gen1: {
 			desc: "No additional effect.",
@@ -7303,15 +7277,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	volttackle: {
 		name: "Volt Tackle",
-		desc: "Has a 10% chance to paralyze the target. If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil. 10% chance to paralyze target.",
-		gen4: {
-			desc: "Has a 10% chance to paralyze the target. If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
-			shortDesc: "Has 1/3 recoil. 10% chance to paralyze target.",
-		},
+		desc: "Has a 10% chance to paralyze the target. If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
+		shortDesc: "Has 1/4 recoil. 10% chance to paralyze target.",
 		gen3: {
 			desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
-			shortDesc: "Has 1/3 recoil.",
+			shortDesc: "Has 1/4 recoil.",
 		},
 	},
 	wakeupslap: {
@@ -7380,8 +7350,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	wavecrash: {
 		name: "Wave Crash",
-		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil.",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 1/3 recoil.",
 	},
 	weatherball: {
 		name: "Weather Ball",
@@ -7472,12 +7442,12 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	wildboltstorm: {
 		name: "Wildbolt Storm",
 		desc: "Has a 20% chance to paralyze the target. If the weather is Primordial Sea or Rain Dance, this move does not check accuracy. If this move is used against a Pokemon holding Utility Umbrella, this move's accuracy remains at 80%.",
-		shortDesc: "20% chance to paralyze foe(s). Rain: can not miss.",
+		shortDesc: "20% chance to paralyze foe(s). Rain: can't miss.",
 	},
 	wildcharge: {
 		name: "Wild Charge",
-		desc: "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 1/4 recoil.",
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 1/3 recoil.",
 	},
 	willowisp: {
 		name: "Will-O-Wisp",
@@ -7511,12 +7481,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	woodhammer: {
 		name: "Wood Hammer",
-		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
-		shortDesc: "Has 33% recoil.",
-		gen4: {
-			desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
-			shortDesc: "Has 1/3 recoil.",
-		},
+		desc: "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
+		shortDesc: "Has 1/3 recoil.",
 	},
 	workup: {
 		name: "Work Up",

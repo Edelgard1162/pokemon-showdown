@@ -750,8 +750,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	bugbuzz: {
 		name: "Bug Buzz",
-		desc: "Has a 10% chance to lower the target's Special Defense by 1 stage.",
-		shortDesc: "10% chance to lower the target's Sp. Def by 1.",
+		desc: "Has a 20% chance to lower the target's Special Defense by 1 stage.",
+		shortDesc: "20% chance to lower the target's Sp. Def by 1.",
 	},
 	bulkup: {
 		name: "Bulk Up",
@@ -4693,8 +4693,8 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	playrough: {
 		name: "Play Rough",
-		desc: "Has a 10% chance to lower the target's Attack by 1 stage.",
-		shortDesc: "10% chance to lower the target's Attack by 1.",
+		desc: "Has a 30% chance to lower the target's Attack by 1 stage.",
+		shortDesc: "30% chance to lower the target's Attack by 1.",
 	},
 	pluck: {
 		name: "Pluck",

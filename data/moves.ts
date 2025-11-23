@@ -259,7 +259,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	airslash: {
 		num: 403,
 		accuracy: 95,
-		basePower: 75,
+		basePower: 80,
 		category: "Special",
 		name: "Air Slash",
 		pp: 15,
@@ -1181,7 +1181,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	beakblast: {
 		num: 690,
 		accuracy: 100,
-		basePower: 120,
+		basePower: 125,
 		category: "Physical",
 		name: "Beak Blast",
 		pp: 15,
@@ -3821,14 +3821,19 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	disarmingvoice: {
 		num: 574,
-		accuracy: true,
-		basePower: 40,
+		accuracy: 95,
+		basePower: 55,
 		category: "Special",
 		name: "Disarming Voice",
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, sound: 1, bypasssub: 1, metronome: 1 },
-		secondary: null,
+		secondary: {
+			chance: 100,
+			boosts: {
+				atk: -1,
+			},
+		},		
 		target: "allAdjacentFoes",
 		type: "Fairy",
 		contestType: "Cute",
@@ -5440,8 +5445,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
 		secondary: {
-			chance: 20,
-			volatileStatus: 'flinch',
+			chance: 10,
+			status: 'brn',
 		},
 		target: "allAdjacentFoes",
 		type: "Dark",
@@ -9734,8 +9739,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	iciclecrash: {
 		num: 556,
-		accuracy: 90,
-		basePower: 85,
+		accuracy: 95,
+		basePower: 80,
 		category: "Physical",
 		name: "Icicle Crash",
 		pp: 10,
@@ -17756,7 +17761,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	solarblade: {
 		num: 669,
 		accuracy: 100,
-		basePower: 125,
+		basePower: 120,
 		category: "Physical",
 		name: "Solar Blade",
 		pp: 10,
@@ -20122,10 +20127,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		priority: 0,
 		flags: { contact: 1, protect: 1, mirror: 1 },
 		secondary: {
-			chance: 100,
-			boosts: {
-				def: -1,
-			},
+			chance: 10,
+			status: 'par',
 		},
 		target: "normal",
 		type: "Fighting",
@@ -21037,7 +21040,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	voltswitch: {
 		num: 521,
 		accuracy: 100,
-		basePower: 60,
+		basePower: 70,
 		category: "Special",
 		name: "Volt Switch",
 		pp: 20,

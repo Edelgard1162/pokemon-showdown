@@ -4475,6 +4475,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 4.5,
 		num: 3,
 	},
+	spikydebris: {
+		onDamagingHit(damage, target, source, move) {
+			const side = source.isAlly(target) ? source.side.foe : source.side;
+			const spikes = side.sideConditions['toxicspikes'];
+			if (move.category === 'Physical' && (!spikes || spikes.layers < 2)) {
+				this.add('-activate', target, 'ability: Toxic Debris');
+				side.addSideCondition('spikes', target);
+			}
+		},
+		flags: {},
+		name: "Spiny Shell",
+		rating: 3.5,
+		num: 295,
+	},
 	stakeout: {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender) {

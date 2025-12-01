@@ -20638,7 +20638,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 90,
 		basePower: 10,
 		basePowerCallback(pokemon, target, move) {
-			return 10 * move.hit;
+			return 20 * move.hit;
 		},
 		category: "Physical",
 		name: "Triple Kick",
@@ -20721,13 +20721,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	twinbeam: {
 		num: 888,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 50,
 		category: "Special",
 		name: "Twin Beam",
 		pp: 10,
 		priority: 0,
-		flags: { protect: 1, mirror: 1 },
+		flags: { protect: 1, mirror: 1, metronome: 1, noparentalbond: 1 },
 		multihit: 2,
+		smartTarget: true,
 		secondary: null,
 		target: "normal",
 		type: "Psychic",

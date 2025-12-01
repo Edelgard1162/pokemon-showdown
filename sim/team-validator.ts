@@ -2263,7 +2263,7 @@ export class TeamValidator {
 
 		if (setSources.isHidden) {
 			setSources.sources = setSources.sources.filter(
-				source => parseInt(source.charAt(0)) >= 5
+				source => parseInt(source.charAt(0)) >= 4
 			);
 			if (setSources.sourcesBefore < 4) setSources.sourcesBefore = 0;
 			const canUseAbilityPatch = dex.gen >= 8 && this.format.mod !== 'gen8dlc1';

@@ -1031,7 +1031,7 @@ export class TeamValidator {
 			}
 			const canUseAbilityPatch = dex.gen >= 8 && format.mod !== 'gen8dlc1';
 			if (setSources.isHidden && !canUseAbilityPatch && setSources.maxSourceGen() < 4) {
-				problems.push(`${name} has a Hidden Ability - it can't use moves from before Gen 5.`);
+				problems.push(`${name} has a Hidden Ability - it can't use moves from before Gen 4.`);
 			}
 			if (
 				species.maleOnlyHidden && setSources.isHidden && setSources.sourcesBefore < 4 &&

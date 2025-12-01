@@ -2265,10 +2265,10 @@ export class TeamValidator {
 			setSources.sources = setSources.sources.filter(
 				source => parseInt(source.charAt(0)) >= 5
 			);
-			if (setSources.sourcesBefore < 5) setSources.sourcesBefore = 0;
+			if (setSources.sourcesBefore < 4) setSources.sourcesBefore = 0;
 			const canUseAbilityPatch = dex.gen >= 8 && this.format.mod !== 'gen8dlc1';
 			if (!setSources.size() && !canUseAbilityPatch) {
-				problems.push(`${name} has a hidden ability - it can't have moves only learned before gen 5.`);
+				problems.push(`${name} has a hidden ability - it can't have moves only learned before Gen 4.`);
 				return problems;
 			}
 		}

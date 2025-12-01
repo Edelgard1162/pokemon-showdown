@@ -339,7 +339,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "LC",
 	},
 	cloyster: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	gastly: {
@@ -996,7 +996,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	blaziken: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	mudkip: {
@@ -1798,7 +1798,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	manaphy: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	darkrai: {
@@ -1810,7 +1810,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	shayminsky: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	arceus: {
@@ -2375,11 +2375,11 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	tornadustherian: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DUU",
 	},
 	thundurus: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	thundurustherian: {
@@ -2407,7 +2407,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		doublesTier: "DUU",
 	},
 	kyuremblack: {
-		tier: "OU",
+		tier: "Uber",
 		doublesTier: "DOU",
 	},
 	kyuremwhite: {
@@ -2429,23 +2429,23 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	meloettapirouette: {
 	},
 	genesect: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "DOU",
 	},
 	genesectburn: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "(DOU)",
 	},
 	genesectchill: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "(DOU)",
 	},
 	genesectdouse: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "(DOU)",
 	},
 	genesectshock: {
-		tier: "Uber",
+		tier: "OU",
 		doublesTier: "(DOU)",
 	},
 	pokestarsmeargle: {

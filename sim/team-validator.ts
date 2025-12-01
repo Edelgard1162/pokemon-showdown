@@ -1030,11 +1030,11 @@ export class TeamValidator {
 				problems.push(`${name} has a Gen 4 ability and isn't evolved - it can't use moves from Gen 3.`);
 			}
 			const canUseAbilityPatch = dex.gen >= 8 && format.mod !== 'gen8dlc1';
-			if (setSources.isHidden && !canUseAbilityPatch && setSources.maxSourceGen() < 5) {
+			if (setSources.isHidden && !canUseAbilityPatch && setSources.maxSourceGen() < 4) {
 				problems.push(`${name} has a Hidden Ability - it can't use moves from before Gen 5.`);
 			}
 			if (
-				species.maleOnlyHidden && setSources.isHidden && setSources.sourcesBefore < 5 &&
+				species.maleOnlyHidden && setSources.isHidden && setSources.sourcesBefore < 4 &&
 				setSources.sources.every(source => source.charAt(1) === 'E')
 			) {
 				problems.push(`${name} has an unbreedable Hidden Ability - it can't use egg moves.`);

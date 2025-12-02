@@ -343,9 +343,9 @@ export class Species extends BasicEffect implements Readonly<BasicEffect & Speci
 		if (!this.gen && this.num >= 1) {
 			if (this.num >= 906 || this.forme.includes('Paldea')) {
 				this.gen = 9;
-			} else if (this.num >= 810 || ['Gmax'].includes(this.forme)) {
+			} else if (this.num >= 810 || ['Gmax', 'Galar', 'Galar-Zen', 'Hisui'].includes(this.forme)) {
 				this.gen = 8;
-			} else if (this.num >= 722) {
+			} else if (this.num >= 722 || this.forme.startsWith('Alola') || this.forme === 'Starter') {
 				this.gen = 7;
 			} else if (this.num >= 650 || this.isMega || this.isPrimal) {
 				this.gen = 6;

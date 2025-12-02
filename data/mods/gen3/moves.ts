@@ -443,6 +443,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 	hiddenpower: {
 		inherit: true,
 		category: "Physical",
+		isNonstandard: null,
 		onModifyMove(move, pokemon) {
 			move.type = pokemon.hpType || 'Dark';
 			const specialTypes = ['Fire', 'Water', 'Grass', 'Ice', 'Electric', 'Dark', 'Psychic', 'Dragon'];

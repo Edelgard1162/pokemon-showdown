@@ -8033,7 +8033,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Lucario",
 		types: ["Fighting", "Steel"],
 		baseStats: { hp: 70, atk: 110, def: 70, spa: 115, spd: 70, spe: 100 },
-		abilities: { 0: "Adaptability", 1: "Inner Focus", H: "Adaptability" },
+		abilities: { 0: "Adaptability", 1: "Inner Focus", H: "Justified" },
 		heightm: 1.2,
 		weightkg: 54,
 		color: "Blue",

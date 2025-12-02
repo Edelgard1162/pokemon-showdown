@@ -66525,7 +66525,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			aerialace: ["7M", "6M", "5M"],
 			allyswitch: ["8M", "7T"],
 			assurance: ["8M"],
-			blazekick: ["8M", "5S2"],
 			blizzard: ["8M", "7M", "6M", "5M"],
 			bugbite: ["7T", "6T", "5T"],
 			bugbuzz: ["8M", "8L56", "7L55", "6L55", "5L55"],

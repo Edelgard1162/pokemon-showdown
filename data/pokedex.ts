@@ -1054,7 +1054,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Alola",
 		types: ["Ice", "Fairy"],
 		genderRatio: { M: 0.25, F: 0.75 },
-		baseStats: { hp: 74, atk: 57, def: 75, spa: 85, spd: 100, spe: 109 },
+		baseStats: { hp: 74, atk: 67, def: 75, spa: 85, spd: 100, spe: 109 },
 		abilities: { 0: "Snow Cloak", H: "Snow Warning" },
 		heightm: 1.1,
 		weightkg: 19.9,

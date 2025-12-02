@@ -9907,7 +9907,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	whimsicott: {
 		num: 547,
 		name: "Whimsicott",
-		types: ["Grass", "Dark"],
+		types: ["Grass", "Fairy"],
 		baseStats: { hp: 60, atk: 67, def: 85, spa: 77, spd: 75, spe: 116 },
 		abilities: { 0: "Prankster", 1: "Infiltrator", H: "Chlorophyll" },
 		heightm: 0.7,

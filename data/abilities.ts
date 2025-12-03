@@ -654,7 +654,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Competitive",
 		rating: 2.5,
-		num: 172,
+		num: 128,
 	},
 	compoundeyes: {
 		onSourceModifyAccuracyPriority: -1,

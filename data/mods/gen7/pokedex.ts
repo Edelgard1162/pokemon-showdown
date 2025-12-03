@@ -86,11 +86,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		eggGroups: ["Amorphous"],
 	},
-	heatran: {
-		inherit: true,
-		abilities: { 0: "Flash Fire", H: "Flame Body" },
-		unreleasedHidden: true,
-	},
 	deerlingsummer: {
 		inherit: true,
 		color: "Pink",

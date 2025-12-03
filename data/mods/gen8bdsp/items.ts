@@ -11,10 +11,6 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		inherit: true,
 		isNonstandard: "Past",
 	},
-	assaultvest: {
-		inherit: true,
-		isNonstandard: "Past",
-	},
 	beastball: {
 		inherit: true,
 		isNonstandard: "Past",

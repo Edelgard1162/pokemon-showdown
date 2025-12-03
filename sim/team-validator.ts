@@ -1025,7 +1025,7 @@ export class TeamValidator {
 				problems.push(`${name} has Secret Sword, which is only compatible with Keldeo-Ordinary obtained from Gen 5.`);
 			}
 			const requiresGen3Source = setSources.maxSourceGen() <= 3;
-			if (requiresGen3Source && dex.abilities.get(set.ability).gen === 4 && !species.prevo && dex.gen <= 5) {
+			if (requiresGen3Source && dex.abilities.get(set.ability).gen === 4 && !species.prevo && dex.gen <= 4) {
 				// Ability Capsule allows this in Gen 6+
 				problems.push(`${name} has a Gen 4 ability and isn't evolved - it can't use moves from Gen 3.`);
 			}

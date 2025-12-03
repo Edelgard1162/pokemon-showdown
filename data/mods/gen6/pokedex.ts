@@ -63,21 +63,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 		inherit: true,
 		baseStats: { hp: 65, atk: 40, def: 70, spa: 80, spd: 140, spe: 70 },
 	},
-	raikou: {
-		inherit: true,
-		abilities: { 0: "Pressure", H: "Volt Absorb" },
-		unreleasedHidden: true,
-	},
-	entei: {
-		inherit: true,
-		abilities: { 0: "Pressure", H: "Flash Fire" },
-		unreleasedHidden: true,
-	},
-	suicune: {
-		inherit: true,
-		abilities: { 0: "Pressure", H: "Water Absorb" },
-		unreleasedHidden: true,
-	},
 	swellow: {
 		inherit: true,
 		baseStats: { hp: 60, atk: 85, def: 60, spa: 50, spd: 50, spe: 125 },

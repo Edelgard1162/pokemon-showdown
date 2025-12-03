@@ -7229,7 +7229,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Empoleon",
 		types: ["Water", "Steel"],
 		baseStats: { hp: 84, atk: 86, def: 88, spa: 111, spd: 101, spe: 65 },
-		abilities: { 0: "Torrent", H: "Competitive" },
+		abilities: { 0: "Torrent", H: "Swift Swim" },
 		heightm: 1.7,
 		weightkg: 84.5,
 		color: "Blue",

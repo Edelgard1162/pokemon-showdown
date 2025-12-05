@@ -114,7 +114,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NFE",
 	},
 	clefable: {
-		tier: "UU",
+		tier: "OU",
 	},
 	vulpix: {
 		tier: "LC",
@@ -222,7 +222,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	machamp: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	bellsprout: {
 		tier: "LC",
@@ -546,7 +546,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Uber",
 	},
 	mew: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	chikorita: {
 		tier: "LC",
@@ -1213,7 +1213,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	salamence: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	beldum: {
 		tier: "LC",
@@ -1419,7 +1419,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	garchomp: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	riolu: {
 		tier: "LC",
@@ -1511,16 +1511,16 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "NU",
 	},
 	manaphy: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	darkrai: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	shaymin: {
 		tier: "(OU)",
 	},
 	shayminsky: {
-		tier: "Uber",
+		tier: "OU",
 	},
 	arceus: {
 		tier: "AG",

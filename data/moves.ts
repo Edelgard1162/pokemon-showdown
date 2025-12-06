@@ -8505,8 +8505,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { contact: 1, protect: 1, mirror: 1, punch: 1, metronome: 1 },
 		self: {
 			boosts: {
+				atk: -1,
 				def: -1,
-				spd: -1,
 			},
 		},
 		secondary: null,
@@ -16420,7 +16420,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	secretsword: {
 		num: 548,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 90,
 		category: "Special",
 		overrideDefensiveStat: 'def',
 		name: "Secret Sword",

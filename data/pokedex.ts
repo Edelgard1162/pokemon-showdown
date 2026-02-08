@@ -18216,7 +18216,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Clodsire",
 		types: ["Poison", "Ground"],
 		baseStats: { hp: 130, atk: 75, def: 60, spa: 45, spd: 100, spe: 20 },
-		abilities: { 0: "Gallipato" },
+		abilities: { 0: "Damp", 1: "Water Absorb", H: "Unaware" },
 		heightm: 1.8,
 		weightkg: 223,
 		color: "Brown",

@@ -243,28 +243,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: -1,
 	},
-	defiant: {
-		inherit: true,
-		onAfterEachBoost(boost, target, source, effect) {
-			if (!source || target.isAlly(source)) {
-				if (effect.id === 'stickyweb') {
-					this.hint("In Gen 8, Court Change Sticky Web counts as lowering your own Speed, and Defiant only affects stats lowered by foes.", true, source.side);
-				}
-				return;
-			}
-			let statsLowered = false;
-			let i: BoostID;
-			for (i in boost) {
-				if (boost[i]! < 0) {
-					statsLowered = true;
-				}
-			}
-			if (statsLowered) {
-				this.boost({ atk: 2 }, target, target, null, false, true);
-			}
-		},
-		rating: 2.5,
-	},
 	deltastream: {
 		inherit: true,
 		rating: 4,
@@ -426,19 +404,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 		inherit: true,
 		rating: 0,
 	},
-	heatproof: {
-		inherit: true,
-		onSourceModifyAtk() {},
-		onSourceModifySpA() {},
-		onSourceBasePowerPriority: 18,
-		onSourceBasePower(basePower, attacker, defender, move) {
-			if (move.type === 'Fire') {
-				this.debug('Heatproof BP weaken');
-				return this.chainModify(0.5);
-			}
-		},
-		rating: 2,
-	},
 	heavymetal: {
 		inherit: true,
 		rating: 0,
@@ -552,18 +517,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	levitate: {
 		inherit: true,
 		rating: 3.5,
-	},
-	libero: {
-		inherit: true,
-		onPrepareHit(source, target, move) {
-			if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
-			const type = move.type;
-			if (type && type !== '???' && source.getTypes().join() !== type) {
-				if (!source.setType(type)) return;
-				this.add('-start', source, 'typechange', type, '[from] ability: Libero');
-			}
-		},
-		rating: 4.5,
 	},
 	lightmetal: {
 		inherit: true,
@@ -772,18 +725,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	propellertail: {
 		inherit: true,
 		rating: 0,
-	},
-	protean: {
-		inherit: true,
-		onPrepareHit(source, target, move) {
-			if (move.hasBounced || move.flags['futuremove'] || move.sourceEffect === 'snatch' || move.callsMove) return;
-			const type = move.type;
-			if (type && type !== '???' && source.getTypes().join() !== type) {
-				if (!source.setType(type)) return;
-				this.add('-start', source, 'typechange', type, '[from] ability: Protean');
-			}
-		},
-		rating: 4.5,
 	},
 	psychicsurge: {
 		inherit: true,
@@ -1111,22 +1052,6 @@ export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTa
 	trace: {
 		inherit: true,
 		rating: 3,
-	},
-	transistor: {
-		inherit: true,
-		onModifyAtk(atk, attacker, defender, move) {
-			if (move.type === 'Electric') {
-				this.debug('Transistor boost');
-				return this.chainModify(1.5);
-			}
-		},
-		onModifySpA(atk, attacker, defender, move) {
-			if (move.type === 'Electric') {
-				this.debug('Transistor boost');
-				return this.chainModify(1.5);
-			}
-		},
-		rating: 3.5,
 	},
 	triage: {
 		inherit: true,

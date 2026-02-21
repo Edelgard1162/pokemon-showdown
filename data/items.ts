@@ -2587,7 +2587,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		megaEvolves: "Greninja",
 		itemUser: ["Greninja"],
 		onTakeItem(item, source) {
-			// TODO: Figure out if this works on Greninja-Bond
+			// TODO: Figure out if this works on Greninja-Battle Bond
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},

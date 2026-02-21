@@ -239,7 +239,7 @@ describe('Team Validator', () => {
 	it('should allow egg moves on event formes in Gen 9', () => {
 		team = [
 			{ species: 'ursalunabloodmoon', ability: 'mindseye', moves: ['yawn', 'bellydrum'], evs: { hp: 1 } },
-			{ species: 'greninjabond', ability: 'battlebond', moves: ['counter', 'switcheroo'], evs: { hp: 1 } },
+			{ species: 'greninjabattlebond', ability: 'battlebond', moves: ['counter', 'switcheroo'], evs: { hp: 1 } },
 			{ species: 'pikachualola', ability: 'static', moves: ['wish', 'fakeout'], evs: { hp: 1 } },
 		];
 		assert.legalTeam(team, 'gen9anythinggoes');
@@ -247,7 +247,7 @@ describe('Team Validator', () => {
 
 	it('should not allow egg moves on event formes before Gen 9', () => {
 		team = [
-			{ species: 'greninjabond', ability: 'battlebond', moves: ['toxicspikes'], evs: { hp: 1 } },
+			{ species: 'greninjabattlebond', ability: 'battlebond', moves: ['toxicspikes'], evs: { hp: 1 } },
 		];
 		assert.false.legalTeam(team, 'gen7anythinggoes');
 	});

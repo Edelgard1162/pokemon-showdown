@@ -2035,10 +2035,10 @@
 				"moves": [["Strange Steam"], ["Pain Split"], ["Will-O-Wisp", "Toxic"], ["Defog"]]
 			}]
 		},
-		"greninjabond": {
+		"greninjabattlebond": {
 			"weight": 1,
 			"sets": [{
-				"species": "Greninja-Bond",
+				"species": "Greninja-Battle Bond",
 				"weight": 100,
 				"item": ["Life Orb"],
 				"ability": ["Battle Bond"],
@@ -2464,10 +2464,10 @@
 				"moves": [["Dark Pulse"], ["Surf", "Hydro Pump"], ["Ice Beam"], ["U-turn"]]
 			}]
 		},
-		"greninjabond": {	
+		"greninjabattlebond": {	
 			"weight": 2,
 			"sets": [{
-				"species": "Greninja-Bond",
+				"species": "Greninja-Battle Bond",
 				"weight": 100,
 				"item": ["Life Orb"],
 				"ability": ["Battle Bond"],

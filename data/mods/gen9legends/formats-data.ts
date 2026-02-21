@@ -1928,7 +1928,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	greninja: {
 		isNonstandard: null,
 	},
-	greninjabond: {
+	greninjabattlebond: {
 		isNonstandard: "Unobtainable",
 	},
 	greninjamega: {

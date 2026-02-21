@@ -64,7 +64,7 @@ describe(`Fainted forme regression`, () => {
 
 	it(`should revert Greninja-Ash and not allow it to transform again`, () => {
 		battle = common.gen(7).createBattle([[
-			{ species: 'greninjabond', ability: 'battlebond', moves: ['surf', 'memento'] },
+			{ species: 'greninjabattlebond', ability: 'battlebond', moves: ['surf', 'memento'] },
 			{ species: 'pawmot', moves: ['revivalblessing'] },
 		], [
 			{ species: 'mareep', level: 5, ability: 'static', moves: ['sleeptalk'] },
@@ -72,20 +72,20 @@ describe(`Fainted forme regression`, () => {
 			{ species: 'mareep', level: 5, ability: 'static', moves: ['sleeptalk'] },
 		]]);
 		const pokemon = battle.p1.active[0];
-		assert.species(pokemon, 'Greninja-Bond');
+		assert.species(pokemon, 'Greninja-Battle Bond');
 		battle.makeChoices();
 		assert.species(pokemon, 'Greninja-Ash');
 
 		battle.makeChoices(); // switch
 		battle.makeChoices('move memento', 'auto');
-		assert.species(pokemon, 'Greninja-Bond');
+		assert.species(pokemon, 'Greninja-Battle Bond');
 
 		battle.makeChoices(); // switch
 		battle.makeChoices();
 		battle.makeChoices(); // revival
 		battle.makeChoices('switch 2', 'auto');
 		battle.makeChoices();
-		assert.species(pokemon, 'Greninja-Bond');
+		assert.species(pokemon, 'Greninja-Battle Bond');
 	});
 
 	it(`should not revert Arceus-forms to base Arceus`, () => {

@@ -32,10 +32,10 @@ describe("Custom Rules", () => {
 		team = [
 			{ species: 'greninjaash', ability: 'battlebond', moves: ['surf'], evs: { hp: 1 } },
 		];
-		assert.false.legalTeam(team, 'gen7anythinggoes@@@-Greninja-Bond');
+		assert.false.legalTeam(team, 'gen7anythinggoes@@@-Greninja-Battle Bond');
 
 		team = [
-			{ species: 'greninjabond', ability: 'battlebond', moves: ['surf'], evs: { hp: 1 } },
+			{ species: 'greninjabattlebond', ability: 'battlebond', moves: ['surf'], evs: { hp: 1 } },
 		];
 		assert.legalTeam(team, 'gen7anythinggoes@@@!Obtainable Formes,-Greninja-Ash');
 	});

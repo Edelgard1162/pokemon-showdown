@@ -335,7 +335,7 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	gourgeisthuge: "Gourgeist-Super",
 	gourgeistjumbo: "Gourgeist-Super",
 	ashgreninja: "Greninja-Ash",
-	greninjabattlebond: "Greninja-Bond",
+	greninjabattlebond: "Greninja-Battle Bond",
 	pdon: "Groudon-Primal",
 	growlh: "Growlithe-Hisui",
 	hoopau: "Hoopa-Unbound",

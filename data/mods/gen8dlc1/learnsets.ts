@@ -60175,7 +60175,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			{generation: 6, level: 100, isHidden: true, moves: ["hydrocannon", "gunkshot", "matblock", "happyhour"], pokeball: "cherishball"},
 		],
 	},
-	greninjabond: {
+	greninjabattlebond: {
 		learnset: {
 			acrobatics: ["7M"],
 			aerialace: ["7M", "7S0"],

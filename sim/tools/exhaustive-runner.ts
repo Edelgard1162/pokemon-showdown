@@ -114,7 +114,7 @@ export class ExhaustiveRunner {
 		return {
 			pokemon: new Pool(ExhaustiveRunner.onlyValid(dex.gen, dex.data.Pokedex, p => dex.species.get(p), (_, p) =>
 				(p.name !== 'Pichu-Spiky-eared' && p.name.substr(0, 8) !== 'Pikachu-') &&
-				!['Greninja-Bond', 'Rockruff-Dusk'].includes(p.name)),
+				!['Greninja-Battle Bond', 'Rockruff-Dusk'].includes(p.name)),
 			this.prng),
 			items: new Pool(ExhaustiveRunner.onlyValid(dex.gen, dex.data.Items, i => dex.items.get(i)), this.prng),
 			abilities: new Pool(ExhaustiveRunner.onlyValid(dex.gen, dex.data.Abilities, a => dex.abilities.get(a)), this.prng),

@@ -51836,7 +51836,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			workup: ["7M"],
 		},
 	},
-	greninjabattlebond: {
+	greninjabond: {
 		inherit: true,
 		learnset: {
 			acrobatics: ["7M"],

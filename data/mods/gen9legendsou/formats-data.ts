@@ -692,7 +692,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	greninja: {
 		tier: "OU",
 	},
-	greninjabattlebond: {
+	greninjabond: {
 		tier: "OU",
 	},
 	greninjamega: {

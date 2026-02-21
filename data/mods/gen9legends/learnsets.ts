@@ -6424,7 +6424,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			watershuriken: ["9L0"],
 		},
 	},
-	greninjabattlebond: {},
+	greninjabond: {},
 	bunnelby: {
 		learnset: {
 			agility: ["9M"],

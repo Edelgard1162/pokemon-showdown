@@ -2773,7 +2773,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "OU",
 		doublesTier: "DUU",
 	},
-	greninjabattlebond: {
+	greninjabond: {
 		tier: "OU",
 		doublesTier: "DUU",
 	},

@@ -3761,7 +3761,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		tier: "Illegal",
 		natDexTier: "OU",
 	},
-	greninjabattlebond: {
+	greninjabond: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",
